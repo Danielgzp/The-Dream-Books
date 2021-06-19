@@ -1,0 +1,53 @@
+.books-container--portada{
+    width: 100%;
+}
+.books-container--portada img{
+    border: 4px var(--orange) solid;
+    box-shadow: 0px 5px 10px 2px rgba(31, 26, 11, 0.692);
+}
+.books-container--portada figcaption{
+    text-align: center;
+    color: var(--letter-grey);
+    font-size: 2rem;
+    line-height: 1.4rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.list-books--ul{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.autor{
+    margin-top: 20px;
+}
+.autor a{
+    color: var(--soft-grey);
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.6rem;
+    
+}
+
+.descargar a{
+    color: black;
+    letter-spacing: 1px;
+}
+
+.books-container--portada img{
+    min-width: 140px;
+    max-width: 200px;
+}
+.list-books--ul li{
+    width: 160px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+.descargar{
+    font-size: 0.9rem;
+    height: auto;
+    line-height: 11px;
+    margin-top: 10px;
+    padding: 6px;
+}
