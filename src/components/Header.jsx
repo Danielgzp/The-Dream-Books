@@ -15,9 +15,9 @@ const Header = () => {
                         <input type="search" name="search" class="search-input" placeholder="Busca entre los muchos libros disponibles..." /> 
                         <button type="button">Buscar</button>
                         <ul class="right valign-wrapper">
-                            <li><Link to="/">Todos los Libros</Link></li>
-                            <li><Link to="#">Hacer una contribucion</Link></li>
-                            <li><Link to="/iniciarsesion">Iniciar Sesión</Link></li>
+                            <li><Link to="/"> <i></i> Todos los Libros</Link></li>
+                            <li><Link to="#"><i></i> Hacer una contribucion</Link></li>
+                            <li><Link to="/iniciar-sesion"><i></i> Iniciar Sesión</Link></li>
                         </ul>
                     </nav>
                 </div>

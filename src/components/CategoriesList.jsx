@@ -7,7 +7,7 @@ const CategoriesList = () => {
                 <ul className="main-aside--lista">
                     <h2 className="title-list">Literatura y Ficción</h2>
                         <ol>
-                            <li className="lista-elemento"><Link to=""><span></span>Aventura</Link></li>
+                            <li className="lista-elemento"><Link to="/categories/"><span></span>Aventura</Link></li>
                             <li className="lista-elemento"><Link to=""><span></span>Algo</Link></li> 
                             <li className="lista-elemento"><Link to=""><span></span>Algo</Link></li> 
                             <li className="lista-elemento"><Link to=""><span></span>Algo</Link></li> 

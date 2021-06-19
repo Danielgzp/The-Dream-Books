@@ -1,9 +1,11 @@
 import React from 'react'
 
+import AccountSing from '../components/AccountSing'
+
 const SingUp = () => {
     return (
         <div>
-            <h1>Loquita</h1>
+            <AccountSing />
         </div>
     )
 }

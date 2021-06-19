@@ -1,9 +1,11 @@
 import React from 'react'
 
+import NewAccount from '../components/NewAccount'
+
 const CreateAccount = () => {
     return (
         <div>
-            <h2>Wpoas</h2>
+            <NewAccount />
         </div>
     )
 }
