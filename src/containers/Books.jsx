@@ -1,12 +1,11 @@
 import React from 'react'
 
-import BooksList from '../components/BooksList'
 
 const Books = (props) => {
     
     return (
         <div>   
-            
+            <h1>Books</h1>
         </div>
     )
 }

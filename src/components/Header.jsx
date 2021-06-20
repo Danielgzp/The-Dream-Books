@@ -9,8 +9,8 @@ const Header = () => {
             <header>
                 <div className="navbar-fixed">
                     <nav className="grey darken-4">
-                        <a href="#" className="brand-logo">
-                            <img src={logo} alt="The Dream Books Logo" classNameName="responsive-img" />
+                        <a href="" className="brand-logo">
+                            <img src={logo} alt="The Dream Books Logo" className="responsive-img" />
                         </a>
                         <input type="search" name="search" className="search-input" placeholder="Busca entre los muchos libros disponibles..." /> 
                         <button type="button">Buscar</button>
