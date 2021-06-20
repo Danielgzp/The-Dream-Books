@@ -7,14 +7,14 @@ const Header = () => {
     return (
         <React.Fragment>
             <header>
-                <div class="navbar-fixed">
-                    <nav class="grey darken-4">
-                        <a href="#" class="brand-logo">
-                            <img src={logo} alt="The Dream Books Logo" className="responsive-img" />
+                <div className="navbar-fixed">
+                    <nav className="grey darken-4">
+                        <a href="#" className="brand-logo">
+                            <img src={logo} alt="The Dream Books Logo" classNameName="responsive-img" />
                         </a>
-                        <input type="search" name="search" class="search-input" placeholder="Busca entre los muchos libros disponibles..." /> 
+                        <input type="search" name="search" className="search-input" placeholder="Busca entre los muchos libros disponibles..." /> 
                         <button type="button">Buscar</button>
-                        <ul class="right valign-wrapper">
+                        <ul className="right valign-wrapper">
                             <li><Link to="/"> <i></i> Todos los Libros</Link></li>
                             <li><Link to="#"><i></i> Hacer una contribucion</Link></li>
                             <li><Link to="/iniciar-sesion"><i></i> Iniciar Sesión</Link></li>
