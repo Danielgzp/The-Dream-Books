@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Books = () => {
+import BooksList from '../components/BooksList'
+
+const Books = (props) => {
+    
     return (
-        <div>
-            <h1>Books</h1>
+        <div>   
+            
         </div>
     )
 }

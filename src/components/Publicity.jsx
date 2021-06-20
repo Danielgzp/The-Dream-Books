@@ -1,31 +1,37 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+import nike from '../images/nike.png'
+import mcdonals from '../images/mcdonalds.png'
+import cocacola from '../images/publicidad-coca-cola.jpg'
+
 
 const Publicity = () => {
     return (
         <div className="publicidad">
             <div className="publi1">
-                <a href="">
+                <Link to="">
                     <figure>
-                        <img src="./images/publicidad-coca-cola.jpg" alt=""/>
+                        <img src={nike} alt=""/>
                         <figcaption>Publicidad</figcaption>
                     </figure>
-                </a>
+                </Link>
             </div>
             <div className="publi2">
-                <a href="">
+                <Link to="">
                     <figure>
-                        <img src="./images/publicidad/nike.png" alt=""/>
+                        <img src={mcdonals} alt=""/>
                         <figcaption>Publicidad</figcaption>
                     </figure>
-                </a>
+                </Link>
             </div>
             <div className="publi3">
-                <a href="">
+                <Link to="">
                     <figure>
-                        <img src="./images/publicidad/mcdonalds.png" alt=""/>
+                        <img src={cocacola} alt=""/>
                         <figcaption>Publicidad</figcaption>
                     </figure>
-                </a>
+                </Link>
             </div>
         </div>
     )

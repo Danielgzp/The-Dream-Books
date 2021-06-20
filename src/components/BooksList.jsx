@@ -4,8 +4,8 @@ import BookItem from './BookItem'
 import useCharacters from '../useCharacters'
 import Swal from '../../node_modules/sweetalert2/dist/sweetalert2.all'
 
-const BooksList = () => {
-    
+const BooksList = (props) => {
+   
     const [nextPage, setNextPage] = useState(1)
     const API = `https://rickandmortyapi.com/api/character/?page=${nextPage}`
     const [state, setState] = useState([useCharacters])
