@@ -1,24 +1,26 @@
-import React, { useCallback, useMemo, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 import BookItem from './BookItem'
 import useCharacters from '../useCharacters'
 import Swal from '../../node_modules/sweetalert2/dist/sweetalert2.all'
 
-const BooksList = (props) => {
+const BooksList = () => {
    
-    const [nextPage, setNextPage] = useState(1)
-    const API = `https://rickandmortyapi.com/api/character/?page=${nextPage}`
-    const [state, setState] = useState([useCharacters])
-    const characters = useCharacters(API)
+    const [characters, setCharacters] = useState([])
+
+    
+    useCharacters({ nextPage: 1 }).then(characters => setCharacters( characters))
+    
+    // const characters = useCharacters(API)
     const [search, setSearch] = useState('')
     const searchInput = useRef(null);
     
     const handleClick = () => {
         if(nextPage < 3){
-            setNextPage(nextPage + 1)
-            setState({
-            ...state,
-            })
+            nextPage++
+            setCharacters(
+                ...characters
+            )
             return characters
         } else{
             Swal.fire('Ya no hay mas personajes!!')

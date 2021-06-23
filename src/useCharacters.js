@@ -1,15 +1,10 @@
-import { useState, useEffect } from 'react';
 
-const useCharacters = (url) => {
-    const [characters, setCharacters] = useState([]);
+function useCharacters({nextPage}) {
+  const API = `https://rickandmortyapi.com/api/character/?page=${nextPage}`
 
-    useEffect(() => {
-      fetch(url)
+  return fetch(API)
         .then(response => response.json())
-        .then(data => setCharacters(data.results));
-    }, [url]);
-
-  return characters;
-};
+        .then(data => data.results);
+}
 
 export default useCharacters;
