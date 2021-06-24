@@ -4,10 +4,9 @@ import BookItem from './BookItem'
 import UseListCharacters from '../UseListCharacters'
 import Swal from '../../node_modules/sweetalert2/dist/sweetalert2.all'
 
-import { Link, Route } from 'wouter'
+import { Link, Route, useLocation } from 'wouter'
 
 export default function BooksList() {
-    
     
     const [nextPage, setNextPage] = useState(1) 
     const [characters, setCharacters] = useState([])
@@ -19,9 +18,6 @@ export default function BooksList() {
     }, [nextPage])
     
 
-    const [search, setSearch] = useState('')
-    const searchInput = useRef(null);
-    
     const handleClickNext = () => {
         if(nextPage < 5){
             setNextPage(nextPage + 1)
@@ -35,34 +31,41 @@ export default function BooksList() {
         } 
     }
 
-    const handleSearch = useCallback(() => {
-        setSearch(searchInput.current.value);
-      }, []);
+    const [numberCharacter, setNumberCharacter] = useState('')
+    const [path, pushLocation] = useLocation()
 
-    const filteredUsers = useMemo(() =>
-    characters.filter((character) => {
-      return character.name.toLowerCase().includes(search.toLowerCase());
-    }),
-    [characters, search]
-  );
-
-    if(loading){
-        return <h1>Cargando</h1>
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        pushLocation(`/libro/${numberCharacter}`)
+    }
+    
+    const handleChange = (event) => {
+        setNumberCharacter(event.target.value)
     }
 
     return (
         <div>
-           {loading && (
-               <h1>Cargandooooo</h1>
-           )}
+            {loading && (
+                <h1>Cargandooooo</h1>
+            )}
             <div className="books-container">
                 <h2>Search Character</h2>
-                <input type="text" value={search} onChange={handleSearch} ref={searchInput} className="form-control" />
+                <form onSubmit={handleSubmit} >
+                    <input 
+                        type="text"
+                        name="search" 
+                        className="search-input" 
+                        value={numberCharacter} 
+                        onChange={handleChange}  
+                        placeholder="Search Character..." 
+                        />
+                </form>
                 <ul className="list-books--ul">
                 
-                    {filteredUsers.map(character => (
+                    {characters.map(character => (
                             <li key={character.id}>
                                 <BookItem character={character} />
+                                <Link to={`/libro/${character.id}`} >aaa</Link>
                             </li>
                     ))} 
                 </ul>

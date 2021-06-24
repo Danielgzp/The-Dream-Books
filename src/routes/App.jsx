@@ -1,19 +1,14 @@
 import React from 'react'
-import { BrowserRouter, Switch} from 'react-router-dom'
-import { Link, Route } from 'wouter'
+import { BrowserRouter, Switch, Link} from 'react-router-dom'
+import { Route } from 'wouter'
 
 import Layout from '../components/Layout'
 import Index from '../containers/Index'
 import SingUp from '../containers/SingUp'
 import CreateAccount from '../containers/CreateAccount'
-import Books from '../containers/Books'
 import NotFound from '../containers/NotFound'
 import Categories  from '../containers/Categories'
-
-
-import BooksList from '../components/BooksList'
-import BookItem from '../components/BookItem'
-import Character from '../components/Character'
+import Books from '../containers/Books'
 
 const App = () => {
     return (
@@ -24,7 +19,7 @@ const App = () => {
                     <Route exact path="/iniciar-sesion" component={SingUp} />
                     <Route exact path="/iniciar-sesion/crear-cuenta" component={CreateAccount} />
                     <Route exact path="/categories/" component={Categories} /> 
-                    <Route exact path="/libro/:numberCharacter" component={Character} />
+                    <Route path="/libro/:numberCharacter" component={Books} />
                     <Route component={NotFound} />
                 </Switch>
             </Layout>

@@ -1,23 +1,23 @@
-import React from 'react'
-import { Link, Route } from 'wouter'
+import React, { useEffect } from 'react'
+import { Link, Route } from 'react-router-dom'
 
-const BookItem = ({ character, numberCharacter }) => {
+import UseCharacter from '../UseCharacter'
 
-    numberCharacter = character.id
-
+const BookItem = ({ character }) => {
+    
     return(
         <div>
             <div className="books-container--portada">
-                <a href="http://descargar.lelibros.online/William%20Faulkner/Mientras%20Agonizo%20(515)/Mientras%20Agonizo%20-%20William%20Faulkner.pdf" >
+                <Link to={`/libro/${character.id}`} >
                     <img src={character.image} alt="" />
-                </a>
+                </Link>
                 <h3>{character.name}</h3>
             </div>
             <div className="autor">
-                <a href="http://descargar.lelibros.online/William%20Faulkner/La%20Escapada%20(534)/La%20Escapada%20-%20William%20Faulkner.pdf">{character.type} </a>
+                <Link to={`/libro/${character.id}`} >{character.type} </Link>
             </div>
             <div className="descargar">
-                <Link to="http://descargar.lelibros.online/William%20Faulkner/La%20Escapada%20(534)/La%20Escapada%20-%20William%20Faulkner.pdf">{character.species} {character.origin.name} ({character.status})</Link>
+                <Link to={`/libro/${character.id}`} >{character.species} {character.origin.name} ({character.status})</Link>
             </div>
         </div>
     )
