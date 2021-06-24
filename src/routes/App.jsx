@@ -9,6 +9,7 @@ import CreateAccount from '../containers/CreateAccount'
 import NotFound from '../containers/NotFound'
 import Categories  from '../containers/Categories'
 import Books from '../containers/Books'
+import SearchPage from '../containers/SearchPage'
 
 const App = () => {
     return (
@@ -18,8 +19,9 @@ const App = () => {
                     <Route exact path="/" component={Index} />
                     <Route exact path="/iniciar-sesion" component={SingUp} />
                     <Route exact path="/iniciar-sesion/crear-cuenta" component={CreateAccount} />
-                    <Route exact path="/categories/" component={Categories} /> 
-                    <Route path="/libro/:numberCharacter" component={Books} />
+                    <Route exact path="/categories/:categoryId" component={Categories} /> 
+                    <Route path="/libro/:characterName" component={Books} />
+                    <Route exact path="/search/" component={SearchPage} />
                     <Route component={NotFound} />
                 </Switch>
             </Layout>

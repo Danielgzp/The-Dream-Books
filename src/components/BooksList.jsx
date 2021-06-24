@@ -4,7 +4,7 @@ import BookItem from './BookItem'
 import UseListCharacters from '../UseListCharacters'
 import Swal from '../../node_modules/sweetalert2/dist/sweetalert2.all'
 
-import { Link, Route, useLocation } from 'wouter'
+import { Link, useLocation, Route } from 'wouter'
 
 export default function BooksList() {
     
@@ -34,12 +34,12 @@ export default function BooksList() {
     const [numberCharacter, setNumberCharacter] = useState('')
     const [path, pushLocation] = useLocation()
 
-    const handleSubmit = (event) => {
+    const handleSubmit = event => {
         event.preventDefault()
         pushLocation(`/libro/${numberCharacter}`)
     }
     
-    const handleChange = (event) => {
+    const handleChange = event => {
         setNumberCharacter(event.target.value)
     }
 
@@ -52,9 +52,7 @@ export default function BooksList() {
                 <h2>Search Character</h2>
                 <form onSubmit={handleSubmit} >
                     <input 
-                        type="text"
-                        name="search" 
-                        className="search-input" 
+                        type="text" 
                         value={numberCharacter} 
                         onChange={handleChange}  
                         placeholder="Search Character..." 
