@@ -1,30 +1,33 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 import BookItem from './BookItem'
-import useCharacters from '../useCharacters'
-import Swal from '../../node_modules/sweetalert2/dist/sweetalert2.all'
+import UseCharacters from '../useCharacters'
+import Swal, { swal } from '../../node_modules/sweetalert2/dist/sweetalert2.all'
 
-const BooksList = () => {
+export default function BooksList() {
    
     const [characters, setCharacters] = useState([])
+    const [nextPage, setNextPage] = useState(1)
+    
+    useEffect(() => {
+        UseCharacters({ nextPage }).then(characters => setCharacters(characters))
+    }, [nextPage])
+    
 
-    
-    useCharacters({ nextPage: 1 }).then(characters => setCharacters( characters))
-    
-    // const characters = useCharacters(API)
     const [search, setSearch] = useState('')
     const searchInput = useRef(null);
     
-    const handleClick = () => {
-        if(nextPage < 3){
-            nextPage++
-            setCharacters(
-                ...characters
-            )
-            return characters
+    const handleClickNext = () => {
+        if(nextPage < 5){
+            setNextPage(nextPage + 1)
         } else{
             Swal.fire('Ya no hay mas personajes!!')
         }
+    }
+    const handleClickPrev = () => {
+        if(nextPage > 1){
+            setNextPage(nextPage - 1)
+        } 
     }
 
     const handleSearch = useCallback(() => {
@@ -65,7 +68,8 @@ const BooksList = () => {
                                 </li>
                             </ul>
                         </div> */}
-                    <button type="button" onClick={handleClick} >Next Page</button>
+                    <button type="button" onClick={handleClickPrev} >Prev Page</button>
+                    <button type="button" onClick={handleClickNext} >Next Page</button>
                     <div className="counter-pages">
                         <p>Pagina 1 de 216</p>
                     </div>
@@ -76,4 +80,3 @@ const BooksList = () => {
     )
 }
 
-export default BooksList

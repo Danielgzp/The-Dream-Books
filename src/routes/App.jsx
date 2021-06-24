@@ -18,7 +18,7 @@ const App = () => {
                     <Route exact path="/iniciar-sesion" component={SingUp} />
                     <Route exact path="/iniciar-sesion/crear-cuenta" component={CreateAccount} />
                     <Route exact path="/categories/" component={Categories} /> 
-                    <Route path ="/libro" component={Books} />
+                    <Route path ="/libro/" component={Books} />
                     <Route component={NotFound} />
                 </Switch>
             </Layout>
