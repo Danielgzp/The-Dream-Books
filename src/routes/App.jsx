@@ -13,6 +13,7 @@ import Categories  from '../containers/Categories'
 
 import BooksList from '../components/BooksList'
 import BookItem from '../components/BookItem'
+import Character from '../components/Character'
 
 const App = () => {
     return (
@@ -23,7 +24,7 @@ const App = () => {
                     <Route exact path="/iniciar-sesion" component={SingUp} />
                     <Route exact path="/iniciar-sesion/crear-cuenta" component={CreateAccount} />
                     <Route exact path="/categories/" component={Categories} /> 
-                    <Route exact path="/libro/:nextPage" component={BooksList} />
+                    <Route exact path="/libro/:numberCharacter" component={Character} />
                     <Route component={NotFound} />
                 </Switch>
             </Layout>

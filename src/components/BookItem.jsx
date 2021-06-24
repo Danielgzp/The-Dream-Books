@@ -1,21 +1,23 @@
 import React from 'react'
 import { Link, Route } from 'wouter'
 
-const BookItem = (props) => {
+const BookItem = ({ character, numberCharacter }) => {
+
+    numberCharacter = character.id
 
     return(
         <div>
             <div className="books-container--portada">
-                <Link to="/libro/2">
-                    <img src={props.character.image} alt="" />
-                </Link>
-                <h3>{props.character.name}</h3>
+                <a href="http://descargar.lelibros.online/William%20Faulkner/Mientras%20Agonizo%20(515)/Mientras%20Agonizo%20-%20William%20Faulkner.pdf" >
+                    <img src={character.image} alt="" />
+                </a>
+                <h3>{character.name}</h3>
             </div>
             <div className="autor">
-                <Link to="/libro/10">{props.character.type} </Link>
+                <a href="http://descargar.lelibros.online/William%20Faulkner/La%20Escapada%20(534)/La%20Escapada%20-%20William%20Faulkner.pdf">{character.type} </a>
             </div>
             <div className="descargar">
-                <Link to="/libro/15">{props.character.species} {props.character.origin.name} ({props.character.status})</Link>
+                <Link to="http://descargar.lelibros.online/William%20Faulkner/La%20Escapada%20(534)/La%20Escapada%20-%20William%20Faulkner.pdf">{character.species} {character.origin.name} ({character.status})</Link>
             </div>
         </div>
     )
