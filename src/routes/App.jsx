@@ -1,5 +1,6 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route} from 'react-router-dom'
+import { BrowserRouter, Switch} from 'react-router-dom'
+import { Link, Route } from 'wouter'
 
 import Layout from '../components/Layout'
 import Index from '../containers/Index'
@@ -8,6 +9,10 @@ import CreateAccount from '../containers/CreateAccount'
 import Books from '../containers/Books'
 import NotFound from '../containers/NotFound'
 import Categories  from '../containers/Categories'
+
+
+import BooksList from '../components/BooksList'
+import BookItem from '../components/BookItem'
 
 const App = () => {
     return (
@@ -18,7 +23,7 @@ const App = () => {
                     <Route exact path="/iniciar-sesion" component={SingUp} />
                     <Route exact path="/iniciar-sesion/crear-cuenta" component={CreateAccount} />
                     <Route exact path="/categories/" component={Categories} /> 
-                    <Route path ="/libro/" component={Books} />
+                    <Route exact path="/libro/:nextPage" component={BooksList} />
                     <Route component={NotFound} />
                 </Switch>
             </Layout>

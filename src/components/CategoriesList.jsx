@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const CategoriesList = () => {
     return (
-        <div classNameName="main-div--aside">
+        <div className="main-div--aside">
                 <ul className="main-aside--lista">
                     <h2 className="title-list">Literatura y Ficción</h2>
                         <ol>
