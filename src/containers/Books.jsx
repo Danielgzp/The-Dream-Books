@@ -18,6 +18,7 @@ const Books = ({ params }) => {
     
 
     /*hice algunso cambios aqui para proabr ciertas cosas*/
+    
     return (
         <div>   
             <div>
