@@ -13,7 +13,7 @@ const Books = ({ params }) => {
     
     useEffect(() => {
         setLoading(true)
-        UseCharacter({ numberCharacter:3 }).then(character => setCharacter(character), setLoading(false))
+        UseCharacter({ numberCharacter: 3 }).then(character => setCharacter(character), setLoading(false))
     }, [characterName])
     
 
