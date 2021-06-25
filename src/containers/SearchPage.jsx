@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react'
 
-import {Link, Route} from 'wouter'
-
-// import SearchList from '../components/SearchList'
 import BookItem from '../components/BookItem'
 import UseListCharacters from '../UseListCharacters'
 

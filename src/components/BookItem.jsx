@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react'
-import { Link, Route } from 'react-router-dom'
-
-import UseCharacter from '../UseCharacter'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BookItem = ({ character }) => {
     
