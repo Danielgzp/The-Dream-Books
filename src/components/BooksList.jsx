@@ -32,7 +32,7 @@ export default function BooksList() {
     }
 
     const [numberCharacter, setNumberCharacter] = useState('')
-    const pushLocation = useLocation()
+    const [path, pushLocation] = useLocation()
 
     const handleSubmit = event => {
         event.preventDefault()
