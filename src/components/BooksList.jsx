@@ -4,30 +4,30 @@ import BookItem from './BookItem'
 import UseListCharacters from '../UseListCharacters'
 import Swal from '../../node_modules/sweetalert2/dist/sweetalert2.all'
 
-import { Link, useLocation, Route } from 'wouter'
+import { Link, useLocation } from 'wouter'
 
 export default function BooksList() {
     
-    const [nextPage, setNextPage] = useState(1) 
+    const [numberPage, setnumberPage] = useState(1) 
     const [characters, setCharacters] = useState([])
     const [loading, setLoading] = useState(false)
     
     useEffect(() => {
         setLoading(true)
-        UseListCharacters({ nextPage }).then(characters => setCharacters(characters), setLoading(false))
-    }, [nextPage])
+        UseListCharacters({ numberPage }).then(characters => setCharacters(characters), setLoading(false))
+    }, [numberPage])
     
 
     const handleClickNext = () => {
-        if(nextPage < 5){
-            setNextPage(nextPage + 1)
+        if(numberPage < 5){
+            setnumberPage(numberPage + 1)
         } else{
             Swal.fire('Ya no hay mas personajes!!')
         }
     }
     const handleClickPrev = () => {
-        if(nextPage > 1){
-            setNextPage(nextPage - 1)
+        if(numberPage > 1){
+            setnumberPage(numberPage - 1)
         } 
     }
 
@@ -36,7 +36,7 @@ export default function BooksList() {
 
     const handleSubmit = event => {
         event.preventDefault()
-        pushLocation(`/libro/${numberCharacter}`)
+        pushLocation(`/search/${numberCharacter}`)
     }
     
     const handleChange = event => {

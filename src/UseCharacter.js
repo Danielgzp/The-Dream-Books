@@ -1,4 +1,4 @@
-export default function UseCharacter ({ numberCharacter, characterName }) {
+export default function UseCharacter ({ numberCharacter }) {
 
     const API_CHARACTER = `https://rickandmortyapi.com/api/character/${numberCharacter}`
    

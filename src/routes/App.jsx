@@ -1,6 +1,6 @@
 import React from 'react'
-import { BrowserRouter, Switch, Link} from 'react-router-dom'
-import { Route } from 'wouter'
+import { BrowserRouter } from 'react-router-dom'
+import { Route, Switch } from 'wouter'
 
 import Layout from '../components/Layout'
 import Index from '../containers/Index'
@@ -20,8 +20,8 @@ const App = () => {
                     <Route exact path="/iniciar-sesion" component={SingUp} />
                     <Route exact path="/iniciar-sesion/crear-cuenta" component={CreateAccount} />
                     <Route exact path="/categories/:categoryId" component={Categories} /> 
-                    <Route path="/libro/:characterName" component={Books} />
-                    <Route exact path="/search/" component={SearchPage} />
+                    <Route exact path="/libro/:numberCharacter" component={Books} />
+                    <Route exact path="/search/:numberPage" component={SearchPage} />
                     <Route component={NotFound} />
                 </Switch>
             </Layout>

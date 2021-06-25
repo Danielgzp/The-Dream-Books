@@ -6,15 +6,15 @@ import UseCharacter from '../UseCharacter'
 const Books = ({ params }) => {
 
     console.log(params)
-    const { characterName, numberCharacter} = params
-    console.log(characterName)
+    const { numberCharacter } = params
+    console.log(numberCharacter)
     const [character, setCharacter] = useState([])
     const [loading, setLoading] = useState(false)
     
     useEffect(() => {
         setLoading(true)
-        UseCharacter({ numberCharacter: 3 }).then(character => setCharacter(character), setLoading(false))
-    }, [characterName])
+        UseCharacter({ numberCharacter }).then(character => setCharacter(character), setLoading(false))
+    }, [numberCharacter])
     
 
     /*hice algunso cambios aqui para proabr ciertas cosas*/
