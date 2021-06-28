@@ -3,13 +3,13 @@ import { BrowserRouter } from 'react-router-dom'
 import { Route, Switch } from 'wouter'
 
 import Layout from '../components/Layout'
-import Index from '../containers/Index'
-import SingUp from '../containers/SingUp'
-import CreateAccount from '../containers/CreateAccount'
-import NotFound from '../containers/NotFound'
-import Categories  from '../containers/Categories'
-import Books from '../containers/Books'
-import SearchPage from '../containers/SearchPage'
+import Index from '../pages/Index'
+import SingUp from '../pages/SingUp'
+import CreateAccount from '../pages/CreateAccount'
+import NotFound from '../pages/NotFound'
+import Categories  from '../pages/Categories'
+import Books from '../pages/Books'
+import SearchPage from '../pages/SearchPage'
 
 const App = () => {
     return (
