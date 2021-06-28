@@ -3,10 +3,10 @@ import React from 'react'
 const Character = ({ character }) => {
     return (
         <React.Fragment>
-            <div>
+            <article>
                 <h1>{character.name}</h1>
-                <img src={character.image} alt="" />
-            </div>
+                <img src={character.image} alt="Portada del Libro" />
+            </article>
         </React.Fragment>
     )
 }

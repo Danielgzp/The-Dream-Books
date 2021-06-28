@@ -7,13 +7,11 @@ import Publicity from '../components/Publicity'
 
 const Index = () => {
     return (
-        <div>
-            <aside>
+        <main>
                 <CategoriesList />
-            </aside>
-            <BooksList />
-            <Publicity />
-        </div>
+                <BooksList />
+                <Publicity />
+        </main>
     )
 }
 

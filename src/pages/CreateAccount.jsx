@@ -4,9 +4,11 @@ import NewAccount from '../components/NewAccount'
 
 const CreateAccount = () => {
     return (
-        <div>
-            <NewAccount />
-        </div>
+        <main className="fondo">
+            <section>
+                <NewAccount />
+            </section>
+        </main>
     )
 }
 

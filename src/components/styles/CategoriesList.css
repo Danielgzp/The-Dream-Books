@@ -1,0 +1,8 @@
+.down-arrow{
+    background-image: url('/src/images/down-arrow.png');
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-size: 100%;
+    margin-right: 4px;
+}

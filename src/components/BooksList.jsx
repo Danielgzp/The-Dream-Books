@@ -44,12 +44,10 @@ export default function BooksList() {
     }
 
     return (
-        <div>
-            {loading && (
-                <h1>Cargandooooo</h1>
-            )}
+        <section>
+            <h2>Publicaciones Recientes</h2>
             <div className="books-container">
-                <h2>Search Character</h2>
+                {/* <h2>Search Character</h2>
                 <form onSubmit={handleSubmit} >
                     <input 
                         type="text" 
@@ -57,40 +55,49 @@ export default function BooksList() {
                         onChange={handleChange}  
                         placeholder="Search Character..." 
                         />
-                </form>
+                </form> */}
                 <ul className="list-books--ul">
-                
                     {characters.map(character => (
                             <li key={character.id}>
                                 <BookItem character={character} />
-                                <Link to={`/libro/${character.id}`} >aaa</Link>
                             </li>
                     ))} 
                 </ul>
+
                 <div className="pagination">
-                        {/* <div className="number-pages">
-                            <ul>
-                                <li>
-                                    <a href="">1</a>
-                                    <a href="">2</a>
-                                    <a href="">3</a>
-                                    <a href="">4</a>
-                                    <a href="">5</a>
-                                    <a href="">6</a>
-                                    <a href="">></a>
-                                    <a href="">ÚLTIMO</a>
-                                </li>
-                            </ul>
-                        </div> */}
                     <button type="button" onClick={handleClickPrev} >Prev Page</button>
                     <button type="button" onClick={handleClickNext} >Next Page</button>
+                        <div className="number-pages">
+                            <ul>
+                                <li>
+                                    <Link to="#">1</Link>
+                                </li>
+                                <li>
+                                    <Link to="#">2</Link>
+                                </li>
+                                <li>
+                                    <Link to="#">3</Link>
+                                </li>
+                                <li>
+                                    <Link to="#">4</Link>
+                                </li>
+                                <li>
+                                    <Link to="#">5</Link>
+                                </li>
+                                <li>
+                                    <Link to="#">6</Link>
+                                </li>
+                                <li>
+                                    <Link to="#">Ultimo</Link>
+                                </li>
+                            </ul>
+                        </div>
                     <div className="counter-pages">
                         <p>Pagina 1 de 216</p>
                     </div>
                 </div>
             </div>
-            
-        </div>
+        </section>
     )
 }
 

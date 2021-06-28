@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom'
 const BookItem = ({ character }) => {
     
     return(
-        <div>
+        <article>
             <div className="books-container--portada">
                 <Link to={`/libro/${character.id}`} >
-                    <img src={character.image} alt="" />
+                    <img src={character.image} alt="Portada del Libro" />
                 </Link>
                 <h3>{character.name}</h3>
             </div>
             <div className="autor">
-                <Link to={`/libro/${character.id}`} >{character.type} </Link>
+                <Link to={`/libro/${character.id}` /*aqui va link ahcia la pagian de autores*/} >{character.species} </Link>
             </div>
             <div className="descargar">
-                <Link to={`/libro/${character.id}`} >{character.species} {character.origin.name} ({character.status})</Link>
+                <Link to={`/libro/${character.id}`} >Descargar Libro</Link>
             </div>
-        </div>
+        </article>
     )
 }
 

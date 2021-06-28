@@ -14,13 +14,16 @@ const SearchPage = ({ params }) => {
     }, [numberPage])
 
     return (
-        <div>
-            <h1>Search Page</h1>
-            <h1>Searh List</h1>
-                {characters.map(characters => (
-                    <BookItem character={characters} key={characters.id} />
-                ))}
-        </div>
+        <main>
+            <section>
+                <h2>Search List</h2>
+                <div>
+                    {characters.map(characters => (
+                        <BookItem character={characters} key={characters.id} />
+                    ))}
+                </div>
+            </section>
+        </main>
     )
 }
 
