@@ -19,7 +19,7 @@ const App = () => {
                     <Route exact path="/" component={Index} />
                     <Route exact path="/iniciar-sesion" component={SingIn} />
                     <Route exact path="/iniciar-sesion/crear-cuenta" component={CreateAccount} />
-                    <Route exact path="/categories/:categoryId" component={Categories} /> 
+                    <Route exact path="/categories/" component={Categories} /> 
                     <Route exact path="/libro/:numberCharacter" component={Books} />
                     <Route exact path="/search/:numberPage" component={SearchPage} />
                     <Route component={NotFound} />

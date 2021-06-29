@@ -1,0 +1,731 @@
+{
+  "books": [
+    {
+      "ID": "l1",
+      "books_image": "https://i.imgur.com/HTz1oya.png",
+      "name": "El Resurgir de la Atlántida",
+      "autor": "Thomas Greanias",
+      "description": "En la Antártida, un terremoto glacial se traga a un equipo de científicos y deja al descubierto un misterioso monumento más antiguo que la propia Tierra. En Perú, el doctor Conrad Yeats, arqueólogo, es apresado por las Fuerzas Especiales de los Estados Unidos para que desentrañe la clave final de los orígenes de la raza humana. En Roma, el Papa convoca al Vaticano a una activista medioambiental, la doctora Serena Serghetti, con el fin de revelarle la terrorífica visión de un desastre apocalíptico. En el espacio, un satélite de seguimiento climático informa acerca de cuatro descomunales tormentas que se están formando alrededor del Polo Sur… Las leyendas de una civilización perdida y las profecías de las religiones más importantes del mundo conducen a un descubrimiento estremecedor que cambiará el destino de la Humanidad. Es el último viaje, una travesía hacia el núcleo del tiempo, tan asombrosa y conmovedora como los albores del hombre… Es el resurgir de la Atlántida.",
+      "download": "http://descargar.lelibros.online/Thomas%20Greanias/El%20Resurgir%20de%20la%20Atlantida%20(337)/El%20Resurgir%20de%20la%20Atlantida%20-%20Thomas%20Greanias.pdf"
+    },
+    {
+      "ID": "l2",
+      "books_image": "https://i.imgur.com/xUcnglj.png",
+      "name": "Eldest",
+      "autor": "Christopher Paolini",
+      "description": "Eragon y su dragona, Saphira, acaban de impedir que las poderosas fuerzas del rey Galbatorix, cruel regente del Imperio, destruyan para siempre el ejército rebelde de los vardenos en Farthen Dur, la ciudad montaña de los enanos. Pocos días después de la sangrienta batalla contra los urgalos, Eragon y Saphira tienen que viajar a Ellesméra, el país de los elfos, para continuar con su formación en la magia y la lucha con la espada, las dos habilidades especiales de los Jinete de Dragón, para poder enfrentarse al malvado Rey. Los acompañarán Ayra, la elfa, y Orik, el enano, en un viaje plagado de descubrimientos y aventuras, con parajes fabulosos y nuevas amistades. Pero el caos y la traición los acecharán sin descanso, y Eragon no sabrá en quién confiar. Entre tanto, los sones inconfundibles de la guerra tienen en vilo al reino de Alagaësia. Las espadas se afilan y las nubes de oscuridad presagian terror y muerte. A Carvahall, cerca de las montañas Vertebradas, también llega el miedo: dos Ra’zac han aparecido acompañados de un destacamento para capturar a Roran, el primo de Eragon. Roran tendrá que huir, pero pronto se dará cuenta de que no es posible escapar siempre.",
+      "download": "http://descargar.lelibros.online/Christopher%20Paolini/Eldest%20%28146%29/Eldest%20-%20Christopher%20Paolini.pdf"
+    },
+    {
+      "ID": "l3",
+      "books_image": "https://i.imgur.com/7Iy9R0X.png",
+      "name": "Las Aventuras de Tom Sawyer",
+      "autor": "Mark Twain",
+      "description": "Las aventuras de Tom Sawyer es el relato de unos meses en la vida de este niño que vive en una ciudad pequeña del suroeste de Estados Unidos a orillas del río Misisipi. Criado por su tía Polly, que lo quiere de corazón pero que lo somete a una disciplina que se le hace absurda y desagradable, Tom contempla el mundo de una manera muy distinta a como lo hacen los adultos con los que tiene que convivir. Precisamente porque existe ese distanciamiento nos entretiene con sus reacciones divertidas y nobles. Más agreste y rebelde contra ese universo de las personas mayores es su amigo Huckleberry Finn, el compañero ideal de Tom que es envidiado por los demás niños que contemplan en su vida una forma de existencia que a ellos les gustaría llevar. Juntos vivirán aventuras humorísticas y dramáticas de las que podrán salir más airosos de lo que hubiera podido hacerlo cualquier adulto.",
+      "download": "http://descargar.lelibros.online/Mark%20Twain/Las%20Aventuras%20de%20Tom%20Sawyer%20(12)/Las%20Aventuras%20de%20Tom%20Sawyer%20-%20Mark%20Twain.pdf"
+    },
+    {
+      "ID": "l4",
+      "books_image": "https://i.imgur.com/nYA3S4D.png",
+      "name": "Aristóteles en 90 Minutos",
+      "autor": "Paul Strathern",
+      "description": "La colección Filósofos en 90 minutos incluye interpretaciones breves, pero autorizadas, de los más grandes pensadores de la humanidad y descifra sus filosofías en una forma amena y accesible que las hace interesantes y comprensibles a casi cualquiera. Aristóteles fue preceptor de Alejandro Magno. La Historia no registra detalles de esta relación, pero sabemos que, con el tiempo, Alejandro estuvo a punto de firmar la sentencia de muerte de Aristóteles, si bien se olvidó y se dispuso, en su lugar, a invadir la India. De no ser por este golpe de suerte, habríamos perdido al hombre cuya filosofía había de dominar el pensamiento europeo durante los 1.500 años siguientes. Gracias a Aristóteles, el mundo medieval persistió en sus creencias de que el sol giraba alrededor de la tierra y que todo estaba compuesto de tierra, aire, fuego y agua. Una introducción y un epílogo sitúan la obra de Aristóteles dentro del panorama de la filosofía; también se ofrece una lista cronológica de fechas filosóficas importantes. Finalmente, una selección de citas de sus obras más importantes, incluyendo la Ética Nicomáquea, da indicación de sus intenciones, conceptos más importantes y de su estilo.",
+      "download": "http://descargar.lelibros.online/Paul%20Strathern/Aristoteles%20en%2090%20Minutos%20(11)/Aristoteles%20en%2090%20Minutos%20-%20Paul%20Strathern.pdf"
+    },
+    {
+      "ID": "l5",
+      "books_image": "https://i.imgur.com/GObZQfU.png",
+      "name": "Yo no Vengo a Decir un Discurso",
+      "autor": "Gabriel García Márquez",
+      "description": "Los textos que Gabriel García Márquez ha reunido en este libro fueron escritos con la intención de ser leídos por él mismo en público, ante una audiencia, y recorren prácticamente toda su vida, desde el primero, que escribe a los diecisiete años para despedir a sus compañeros del curso superior en Zipaquirá, hasta el que lee ante las Academias de la Lengua y los reyes de España al cumplir ochenta años. Estos discursos del premio Nobel nos ayudan a comprender más profundamente su vida y nos desvelan sus obsesiones fundamentales como escritor y ciudadano: su fervorosa vocación por la literatura, la pasión por el periodismo, su inquietud ante el desastre ecológico que se avecina, su propuesta de simplificar la gramática, los problemas de su tierra colombiana o el recuerdo emocionado de amigos escritores como Julio Cortázar o Álvaro Mutis, entre otros muchos. El lector tiene entre sus manos el complemento indispensable a una obra narrativa que nos seguirá hablando en un largo porvenir",
+      "download": "http://descargar.lelibros.online/Gabriel%20Garcia%20Marquez/Yo%20no%20vengo%20a%20decir%20un%20discurso%20(518)/Yo%20no%20vengo%20a%20decir%20un%20discurso%20-%20Gabriel%20Garcia%20Marquez.pdf"
+    },
+    {
+      "ID": "l6",
+      "books_image": "https://i.imgur.com/hUdNeig.png",
+      "name": "La Saga de Worthing",
+      "autor": "Orson Scottcard",
+      "description": "El imperio de Capitol se cimenta en el somec, la droga capaz de crear en los humanos la ilusión de la inmortalidad. Pero sólo algunos, los ricos y los poderosos, obtienen el privilegio de dormir durante largos años y despertar como si no hubiera transcurrido el tiempo. El somec permite gestar ambiciosos planes y dominar un vasto imperio, pero también implica amenazas y peligros. La saga de Worthing es una emotiva crónica de Capitol y su droga, el somec, en la que se nos habla del poder subversivo de Abner Doon, que destruyó el imperio, de la estirpe de telépatas que engendró Jason Worthing y del mundo que éstos llegaron a crear.",
+      "download": "http://descargar.lelibros.online/Orson%20Scott%20Card/La%20Saga%20de%20Worthing%20(550)/La%20Saga%20de%20Worthing%20-%20Orson%20Scott%20Card.pdf"
+    },
+    {
+      "ID": "l7",
+      "books_image": "https://i.imgur.com/aS5cjQK.png",
+      "name": "El Hombre Invisible",
+      "autor": "H.G Wells",
+      "description": "Escrita en 1897, poco después de «La máquina del tiempo», El hombre invisible cuyo personaje central ha alcanzado, como Drácula o Frankenstein, un lugar en el imaginario del mundo moderno­ da forma definitiva a uno de los motivos que habrían de cobrar más relieve, y en cierto sentido hacerse pavorosa realidad, en el siglo XX: el del uso irreflexivo e inescrupuloso del conocimiento científico y las consecuencias nefastas de ponerlo al servicio de causas egoístas o espurias.",
+      "download": "http://descargar.lelibros.online/H.%20G.%20Wells/El%20Hombre%20Invisible%20(583)/El%20Hombre%20Invisible%20-%20H.%20G.%20Wells.pdf"
+    },
+    {
+      "ID": "l8",
+      "books_image": "https://i.imgur.com/hbQX6rJ.png",
+      "name": "Como los Cuervos",
+      "autor": "Jeffrey Archer",
+      "description": "No le fue fácil a Charlie alcanzar el objetivo de amasar una fortuna; sin embargo algo había en él que le hacía un predestinado al triunfo y, como apreciará el lector, este algo tiene mucho que ver con su capacidad de trabajo, astucia, coraje, ganas de aprender y un maravilloso abuelo el de más fino olfato para la venta que le guio con su ejemplo en sus primeros tiempos. Desde las primeras páginas la historia se convierte en una trepidante aventura sobre el mundo de los negocios, en una ascensión ilusionada desde la humilde situación de vendedor de verduras callejero hasta la realización de un gran proyecto empresarial: es la historia de un tendero que metido a negociante termina creando una importante red de establecimientos comerciales mientras van desfilando los grandes acontecimientos de este siglo.",
+      "download": "http://descargar.lelibros.online/Jeffrey%20Archer/Como%20los%20Cuervos%20(357)/Como%20los%20Cuervos%20-%20Jeffrey%20Archer.pdf"
+    },
+    {
+      "ID": "l9",
+      "books_image": "https://i.imgur.com/NhozHqz.png",
+      "name": "El plan infinito",
+      "autor": "Isabel Allende",
+      "description": "El plan infinito narra la historia de Gregory Reeves, un gringo que se hace a sí mismo en el difícil mundo de los hispanos de California. Gregory quiere llevar a la práctica el peculiar «plan infinito» que se trazó a sí mismo en su infancia. Sin embargo, para conseguirlo debe recorrer un duro camino lleno de obstáculos: la marginación social, el racismo, el brutal contraste entre pobreza y riqueza, la guerra de Vietnam… Ésta es una de las novelas más logradas y apasionantes de la gran escritora chilena.",
+      "download": "http://descargar.lelibros.online/Isabel%20Allende/El%20Plan%20Infinito%20(97)/El%20Plan%20Infinito%20-%20Isabel%20Allende.pdf"
+    },
+    {
+      "ID": "l10",
+      "books_image": "https://i.imgur.com/XhjkUCv.png",
+      "name": "Esto es Agua",
+      "autor": "David Foster Wallace",
+      "description": "Había una vez dos peces jóvenes que iban nadando y se encontraron por casualidad con un pez mayor que nadaba en dirección contraria; el pez mayor les saludó con la cabeza y les dijo: “Buenos días, chicos. ¿Cómo está el agua?”». A los seis años de la muerte de David Foster Wallace se publica «Esto es agua», la legendaria conferencia que impartió en la ceremonia de graduación de la Universidad de Kenyon, ante un auditorio plagado de alumnos embelesados. Escrito en 2005 y debatido ampliamente tras su muerte, este discurso es el conciso legado de uno de los más grandes autores de nuestro tiempo, que se quitó la vida en el momento álgido de su fama y con tan solo cuarenta y seis años.",
+      "download": "http://descargar.lelibros.online/David%20Foster%20Wallace/Esto%20es%20Agua%20(374)/Esto%20es%20Agua%20-%20David%20Foster%20Wallace.pdf"
+    },
+    {
+      "ID": "l11",
+      "books_image": "https://i.imgur.com/fu0sj9V.png",
+      "name": "La Interpretación de los Sueños",
+      "autor": "Sigmund Freud",
+      "description": "La primera edición de Die Traumdeutung (La interpretación de los sueños) se publicó unos días antes del siglo, aunque en la portada constara ya la fecha «1900». Es posible observar en esta pequeña licencia algún indicio del valor inaugural que el mismo Freud, clarividente, reservaba a su obra cumbre. La primera edición tuvo una desastrosa acogida por parte del público y la crítica. En una carta a su amigo Fliess, pocos días después de la publicación del libro, el autor se lamentaba: «No hemos adelantado demasiado a nuestro tiempo…». No obstante era también consciente de que, de uno u otro modo, el enigma de los sueños había sido por fin desvelado y que el destino de La interpretación de los sueños era convertirse inexorablemente, en la obra pionera del psicoanálisis. Hoy es también una de las obras maestras de la literatura y el pensamiento del siglo XX. Los progresos científicos alcanzados no han conseguido restar valor ni actualidad a la exposición freudiana de los temas oníricos, aquí presentada en la magistral traducción de Luis López-Ballesteros y de Torres, que mereciera ya en 1923, un comentario elogioso del mismo Freud.",
+      "download": "http://descargar.lelibros.online/Sigmund%20Freud/La%20Interpretacion%20de%20los%20Suenos%20(137)/La%20Interpretacion%20de%20los%20Suenos%20-%20Sigmund%20Freud.pdf"
+    },
+    {
+      "ID": "l12",
+      "books_image": "https://i.imgur.com/W2CAsFG.png",
+      "name": "Animales fantásticos y Donde encontrarlos",
+      "autor": "J.K Rowling",
+      "description": " Hay un ejemplar de Animales fantásticos y dónde encontrarlos en casi todos los hogares de magos del país. Ahora, sólo por cierto tiempo, también los muggles pueden descubrir dónde viven los quintapeds, qué come el puffskein y por qué es mejor no dejar leche fuera de casa para un knarl.",
+      "download": "http://descargar.lelibros.online/J.%20K.%20Rowling/Animales%20Fantasticos%20y%20Donde%20Encont%20(110)/Animales%20Fantasticos%20y%20Donde%20En%20-%20J.%20K.%20Rowling.pdf"
+    },
+    {
+      "ID": "l13",
+      "books_image": "https://i.imgur.com/TG2JOlk.png",
+      "name": "American Gods",
+      "autor": "Neil Gaiman",
+      "description": "Días antes de salir de prisión, la mujer de Sombra, Laura, muere en un misterioso accidente de coche. Aturdido por el dolor, emprende el regreso a casa. En el avión, se encontrará con el enigmático señor Wednesday, que dice ser un refugiado de una guerra antigua, un dios y también el rey de América. Juntos se embarcan en un viaje extraño a través de los Estados Unidos, mientras una tormenta de dimensiones épicas amenaza con desencadenarse. Poco a poco descubriremos que Wednesday es una encarnación de Odín y que está reclutando viejos dioses, cuyos poderes han disminuido por el tiempo y la falta de creyentes, para participar en una guerra contra los nuevos dioses: aquellos que conforman la tecnología moderna.",
+      "download": "http://descargar.lelibros.online/Neil%20Gaiman/American%20Gods%20(402)/American%20Gods%20-%20Neil%20Gaiman.pdf"
+    },
+    {
+      "ID": "l14",
+      "books_image": "https://i.imgur.com/EXNVe9M.png",
+      "name": "Azazel",
+      "autor": "Isaac Asimov",
+      "description": "Azazel es un demonio rojo de dos centímetros, dotado con una impetuosa personalidad y maravillosos poderes mágicos. Susceptible de ser invocado sólo por George Bitternut, un excéntrico lingüista que ha descubierto antiguas fórmulas para llamar a demonios y a espíritus, Azazel no permitirá que sus poderes sean utilizados en provecho personal de George. Sin embargo, el diminuto demonio ayudará a los amigos de George cuando éstos lo necesiten. El único problema es que este singular ser posee poca comprensión de las cuestiones humanas y sus intervenciones producen situaciones sorprendentes",
+      "download": "http://descargar.lelibros.online/Isaac%20Asimov/Azazel%20(801)/Azazel%20-%20Isaac%20Asimov.pdf"
+    },
+    {
+      "ID": "l15",
+      "books_image": "https://i.imgur.com/KXvDROq.png",
+      "name": "El asombroso Viaje de Pompino Flato",
+      "autor": "Eduardo Mendoza",
+      "description": "En el siglo I de nuestra era, Pomponio Flato viaja por los confines del Imperio romano en busca de unas aguas de efectos portentosos. El azar y la precariedad de su fortuna lo llevan a Nazaret, donde va a ser ejecutado el carpintero del pueblo, convicto del brutal asesinato de un rico ciudadano. Muy a su pesar, Pomponio se ve inmerso en la solución del crimen, contratado por el más extraordinario de los clientes: el hijo del carpintero, un niño candoroso y singular, convencido de la inocencia de su padre, hombre en apariencia pacífico y taciturno, que oculta, sin embargo, un gran secreto. Cruce de novela histórica, novela policíaca, hagiografía y parodia de todas ellas, aquí se ajustan las cuentas a muchas novelas de consumo, y se construye una nueva modalidad del género más característico de Eduardo Mendoza: la trama detectivesca original e irónica, que desemboca en una sátira literaria y en una desternillante creación novelesca.",
+      "download": "http://descargar.lelibros.online/Eduardo%20Mendoza/El%20Asombroso%20Viaje%20de%20Pomponio%20Flat%20(538)/El%20Asombroso%20Viaje%20de%20Pomponio%20-%20Eduardo%20Mendoza.pdf"
+    },
+    {
+      "ID": "l16",
+      "books_image": "https://i.imgur.com/8AxaRzN.png",
+      "name": "Las Brujas",
+      "autor": "Roald Dahl",
+      "description": "Las brujas de todo el mundo, bajo la apariencia de señoras corrientes, están celebrando su Congreso Anual. Han decidido aniquilar con un ratonizador mágico a todos los niños. ¿Conseguirán vencerlas el protagonista de esta historia y su abuela?",
+      "download": "http://descargar.lelibros.online/Roald%20Dahl/Las%20Brujas%20(158)/Las%20Brujas%20-%20Roald%20Dahl.pdf"
+    },
+    {
+      "ID": "l17",
+      "books_image": "https://i.imgur.com/RgzIzN4.png",
+      "name": "El castillo de Roca Tacaña",
+      "autor": "Geronimo Stilton",
+      "description": "Geronimo Stilton es el editor del Eco del Roedor, el periódico más leído de la Isla de los Ratones. La profesión de Geronimo le hará vivir muchas peripecias que, trasladadas a la vida ratonil, se parecen mucho a la vida real: reporteros agresivos, noticias exclusivas, robos de manuscritos, arriesgadas expediciones… pero siempre respetando «el código de honor» del buen reportero -sinceridad, igualdad y paz- del que Stilton y su equipo hacen gala. El mundo del periodismo en clave… ratonil. Una boda es una oportunidad para encontrarse con la familia, divertirse y pasarlo en grande. Sin embargo, cuando el que se casa es la persona más tacaña de Ratonia, la oportunidad se convierte en una experiencia única. Al menos así lo vivió Geronimo Stilton cuando llegó a Roca Tacaña a felicitar por su enlace a Virgilio, el hijo del Tío Milordo, y a Cloaquita Pestoseta, su futura esposa, una ratoncita gris, pero millonaria. La visita se transformó en el gran acontecimiento. Geronimo conoció todos los secretos del ahorro, y Trampita, hasta dónde llega la paciencia de Geronimo. Pero quizás la mayor sorpresa se la llevó la sumisa Cloaquita cuando conoció a la decidida y valiente Tea, que le ayudó a dar una vuelta a su destino",
+      "download": "http://descargar.lelibros.online/Geronimo%20Stilton/El%20Castillo%20de%20Roca%20Tacana%20(181)/El%20Castillo%20de%20Roca%20Tacana%20-%20Geronimo%20Stilton.pdf"
+    },
+    {
+      "ID": "l18",
+      "books_image": "https://i.imgur.com/R4WFw3h.png",
+      "name": "Canaan negro y Otros relatos de horror sobrenaturales",
+      "autor": "Robert E. Howard",
+      "description": "A pesar de la brevedad de su carrera literaria, Rober E. Howard (1906-1936), que nunca abandonó la casa familiar en la localidad texana de Cross Plains, contribuyó de un modo decisivo al surgimiento y auge de la literatura pulp norteamericana en los años 20 y 30 del pasado siglo con la publicación en revistas populares, como Weird Tales, de centenares de relatos de terror, aventuras, fantásticos, históricos, etc., fruto de su poderosa imaginación. Impulsó junto con su amigo epistolar H.P. Lovercraft y el californiano Clark Ashton Smith, «los tres mosqueteros de Weird Tales», el fenómeno , que tanta influencia ha tenido en la cultura popular, y dio origen anticipándose unos años a JRR Tolkien, al género de fantasía heroica (Espada y Brujería) con su héroe Conan el Cimerio o el peregrino justiciero del siglo XVI Solomon Kane. Sobre la variedad de registro y temáticas de que era capaz la fértil imaginación de Howard, el aficionado encontrará en este volumen «Canaan negro y otros relatos de terror sobrenatural», una buena muestra. Los dieciocho relatos reunidos en esta antología han sido traducidos directamente de los textos originales, la mayoría publicados en vida de Howard, desechando las ilegítimas adulteraciones que sufrieron en ediciones posteriores. Entre ellos se pueden destacar «Los moradores bajo la tumba» y «Canaan negro», dos soberbias narraciones de horror sobrenatural; los cuentos de fantasmas «La perdición de Dermod» y «Aguas inquietas»; los relatos de civilización perdida «Delenda Est», «La Casa de Arabu» y «La marca del cabo», o dos piezas que podrían adscribirse al género de weird menace, «La Cosa con pezuñas» y «El fantasma del anillo».",
+      "download": "http://descargar.lelibros.online/Robert%20E.%20Howard/Canaan%20Negro%20y%20Otros%20Relatos%20de%20Hor%20(283)/Canaan%20Negro%20y%20Otros%20Relatos%20de%20-%20Robert%20E.%20Howard.pdf"
+    },
+    {
+      "ID": "l19",
+      "books_image": "https://i.imgur.com/59E43bo.png",
+      "name": "Todo oscuro, sin estrellas",
+      "autor": "Stephen King",
+      "description": "Creo que existe otro hombre dentro de cada hombre, un extraño…» son palabras de la confesión que escribe Wilfred Leland James en «1922», el primer relato de este cuarteto hipnotizador y profundamente oscuro. El ser desconocido que James lleva dentro se despierta cuando su esposa Arlette le anuncia que piensa vender el terreno que acaba de heredar y que va a trasladarse a la ciudad. Sus palabras le empujan hacia el asesinato y la locura. En «Camionero Grande». Tess, una escritora de novelas simpáticas de intriga, se encuentra con un hombre gigantesco cuando vuelve a casa por una carretera rural después de dar una charla en un club de lectura. Violada y abandonada tras ser dada por muerta, Tess planea su venganza y para llevarla a cabo tendrá que sacar de sí misma un lado totalmente desconocido. «Una extensión justa», el relato más corto, es el más malvado y el más divertido. Harry Streeter hace un pacto con el diablo quien le quitará no solamente su cáncer mortal, sino también todos los rencores que había sentido en su vida. Y finalmente, en «Un buen matrimonio» conocemos a Darcy Anderson quien, un día en que su marido está fuera por trabajo, va a buscar pilas al garaje y descubre una caja que él tenía allí escondida. Su contenido es tan horrendo como el ser desconocido que hay dentro de su marido. En un solo instante acabarán veinte felices años de matrimonio. Stephen King es autor de más de cincuenta libros, todos best sellers internacionales. Los más recientes incluyen La cúpula, Después del anochecer, Duma Key, Cell, La historia de Lisey, Todo es eventual y los últimos tomos de La Torre Oscura. En 2003 fue galardonado con la medalla del National Book Foundation for Distinguished Contribution to American Letters, y en 2007 fue nombrado Gran Maestro de los Mystery Writers of America. Vive en Maine con su esposa Tabitha King, también novelista. «Todo oscuro, Sin estrellas es una colección de relatos extraordinaria, terrorífica, sin piedad. El autor está en el cénit de su poder creativo». The Telegraph «Un libro que te obliga a seguir leyendo. King domina tanto la novela corta como la novela muy larga». The New York Times",
+      "download": "http://descargar.lelibros.online/Stephen%20King/Todo%20Oscuro,%20Sin%20Estrellas%20(304)/Todo%20Oscuro,%20Sin%20Estrellas%20-%20Stephen%20King.pdf"
+    },
+    {
+      "ID": "l20",
+      "books_image": "https://i.imgur.com/kv1doHG.png",
+      "name": "El elemento",
+      "autor": "Ken Robinson",
+      "description": "El mundo cambia a una velocidad vertiginosa. Es imposible adivinar cómo viviremos en el futuro: lo único que sabemos es que hará falta mucha imaginación y creatividad para transformarnos y afrontar los nuevos retos. Descubrir el Elemento es recuperar capacidades sorprendentes en nuestro interior, y desarrollarlo dará un giro radical no sólo a tu entorno laboral, sino también a tus relaciones y, en definitiva, a tu vida.",
+      "download": "http://descargar.lelibros.online/Ken%20Robinson/El%20Elemento%20(172)/El%20Elemento%20-%20Ken%20Robinson.pdf"
+    },
+
+    {
+      "ID": "l21",
+      "books_image": "https://i.imgur.com/9iWFnIZ.png",
+      "name": "El Arte de no amargarse la vida",
+      "autor": "Rafael Santandreu",
+      "description": "El arte de no amargarse la vida. ¿Sufres de terribilitis? Rafael Santandreu explica que muchos de los problemas emocionales actuales son causa de una mala filosofía de vida. Con gran facilidad nos creemos deprimidos, ansiosos o muy desgraciados. El arte de no amargarse la vida cuenta que todos estos trastornos emocionales podrían calificarse de terribilitis. En nuestra sociedad tenemos muchas creencias que nos hacen ser infelices como que si no tienes pareja eres desdichado o que hay que tener un puesto de trabajo muy importante para realizarse. Siguiendo la saga de los grandes libros de psicología para el gran público Rafael Santandreu, expone en esta obra un método práctico y claro, aunque completamente científico, para caminar hacia el cambio psicológico. Nuestro destino es convertirnos en personas más fuertes y felices. Con anécdotas extraídas tanto de su consulta como de su historia personal, el autor nos muestra cómo transformarnos a nosotros mismos. De deprimidos, ansiosos o “cascarrabias” podemos convertirnos en hombres y mujeres serenos, alegres y optimistas, con la ayuda de un terapeuta o ¡por nosotros mismos!",
+      "download": "http://descargar.lelibros.online/Rafael%20Santandreu/El%20arte%20de%20no%20amargarse%20la%20vida%20(153)/El%20arte%20de%20no%20amargarse%20la%20vida%20-%20Rafael%20Santandreu.pdf"
+    },
+    {
+      "ID": "l22",
+      "books_image": "https://i.imgur.com/BOlOlOB.png",
+      "name": "El sueño de Africa",
+      "autor": "Javier Reverte",
+      "description": "Surcar el continente africano, Javier Reverte emprende un camino donde a cada paso se trasluce el amor, su fascinación y su respeto por aquellas lejanas tierras. Como en las otras entregas de la trilogía, el prolífico periodista asume el papel de viajero en pos de un mito que se irá revelando a través del contacto directo con las gentes y los paisajes africanos. Este libro, que trata de la historia blanca del África negra, entrelaza las grandes y las pequeñas narraciones que surgen a su encuentro con el pasado, con las ciudades del presente, con el conocimiento de tribus ancestrales en franco proceso de extinción... Impregnada de lúcido realismo, de exuberante belleza y de leyenda, esta crónica revela en clave homérica que el placer del viaje, más que en llegar a un destino, consiste en enriquecerse como ser humano a lo largo del itinerario.",
+      "download": "http://descargar.lelibros.online/Javier%20Reverte/El%20Sueno%20de%20Africa%20(131)/El%20Sueno%20de%20Africa%20-%20Javier%20Reverte.pdf"
+    },
+    {
+      "ID": "l23",
+      "books_image": "https://i.imgur.com/f8t989e.png",
+      "name": "La prueba del Cielo",
+      "autor": "Eben Alexander",
+      "description": "«El 8 de noviembre de 2008 me desperté con un terrible dolor de cabeza que en apenas dos horas desembocó en un derrame cerebral. Caí en un coma profundo, y durante siete días permanecí en ese estado, durante el cual viví una experiencia increíble y fuera de este mundo. El lugar en el que estuve es un sitio maravilloso, reconfortante y lleno de amor. No tengo miedo a morir porque ahora sé que no es el final». Doctor Eben Alexander. La lógica científica del doctor Alexander jamás había dado crédito a las experiencias cercanas a la muerte. Sin embargo, después de haber pasado por esto sabe que no son meras fantasías: Dios y el alma existen realmente, y la muerte no es el final de la existencia personal, sino una mera transición",
+      "download": "http://descargar.lelibros.online/Eben%20Alexander/La%20Prueba%20del%20Cielo%20(100)/La%20Prueba%20del%20Cielo%20-%20Eben%20Alexander.pdf"
+    },
+    {
+      "ID": "l24",
+      "books_image": "https://i.imgur.com/IhXpL4J.png",
+      "name": "¿Puede pensar una maquina?",
+      "autor": "Alan M. Turing",
+      "description": "En 1947 Alan M. Turing pronunció una conferencia ante un auditorio compuesto en su mayor parte por miembros del National Physical Laboratory de Londres en la que intentaba responder a la vieja y controvertida pregunta ¿Puede pensar una máquina? Lo expuesto en ese acto apareció publicado tres años más tarde en Mind —una importante revista de filosofía británica— y es lo que ofrecemos aquí al lector en su traducción castellana. Este texto se convirtió enseguida en uno de los escritos fundacionales de la lógica informática y la inteligencia artificial, al presentar las líneas generales por las que debería discurrir una respuesta precisa y manejable (aunque no indiscutible) a la pregunta formulada. Se trata del famoso Test de Turing, una prueba para decidir si una máquina es inteligente (o «piensa»). Para ello Turing diseñó un juego de imitación en el que participan una máquina y seres humanos; podemos decir que una máquina piensa si un ser humano que se comunica con la máquina y con otros seres humanos no logra distinguir cuando su interlocutor es una máquina y cuando un humano. Una «máquina de Turing» como la que participa en el juego, es un dispositivo ideal de cálculo, capaz de resolver una función computable —una función cuya solución es susceptible de ser obtenida por un procedimiento mecánico—. Pero lo más significativo es que Turing demostró que hay una máquina peculiar —la máquina universal de Turing— en la que se puede representar cualquier máquina que sea capaz de computar una función particular. De acuerdo con esto, una máquina universal de Turing sería una especie de sistema operativo en el que se implementan diferentes programas (máquinas de Turing especiales), un poco a la manera en que nos es familiar en los ordenadores personales. La denominada «metáfora del ordenador» como modelo capaz de simular la mente humana y, por ende, el pensar, tiene aquí su fuente.",
+      "download": "http://descargar.lelibros.online/Alan%20M.%20Turing/_Puede%20Pensar%20una%20Maquina_%20(582)/_Puede%20Pensar%20una%20Maquina_%20-%20Alan%20M.%20Turing.pdf"
+    },
+    {
+      "ID": "l25",
+      "books_image": "https://i.imgur.com/ArU8GUS.png",
+      "name": "La tragedia de la luna",
+      "autor": "Isaac Asimov",
+      "description": "Asimov habla en esta obra de la Luna y de otros pequeños mundos que pueblan nuestro sistema solar; se ocupa del carbono, del descubrimiento del DNA, de la función de la glándula tiroidea, de los microorganismos y de la velocidad de la luz; reflexiona sobre cuestiones sociales tan importantes como el racismo y el futuro de los medios de comunicación.",
+      "download": "http://descargar.lelibros.online/Isaac%20Asimov/La%20Tragedia%20de%20la%20Luna%20(302)/La%20Tragedia%20de%20la%20Luna%20-%20Isaac%20Asimov.pdf"
+    },
+    {
+      "ID": "l26",
+      "books_image": "https://i.imgur.com/qjPu1L7.png",
+      "name": "Economía para andar por casa",
+      "autor": "AA.VV",
+      "description": "¿Por qué sube la gasolina? ¿Son de fiar las empresas que nos ofrecen refinanciar nuestras deudas? ¿Cómo me afecta la reforma laboral? ¿Qué son los fondos de inversión? ¿A qué edad es recomendable hacer un plan de pensiones? Cada día desde que nos levantamos nos enfrentamos a un sinfín de cuestiones que tienen un trasfondo económico: desde la luz que ilumina nuestro hogar hasta el combustible que utilizamos para desplazarnos, los impuestos que pagamos y los servicios que contratamos con los bancos. Un afamado economista y tres reconocidos periodistas han hecho el ejercicio de sintetizar las dudas más comunes que afectan a cualquier ciudadano para convertirlas en preguntas que se responden de forma sencilla y clara, aclarando conceptos y desmontando tópicos. El resultado es una obra de lectura obligada para todos aquellos que quieran saber qué ocurre con su dinero y cómo funciona la economía",
+      "download": "http://descargar.lelibros.online/AA.%20VV_/Economia%20Para%20Andar%20por%20Casa%20(279)/Economia%20Para%20Andar%20por%20Casa%20-%20AA.%20VV_.pdf"
+    }
+  ],
+  "categories": [
+    {
+      "literatura_ficcion": [
+        {
+          "aventura": [
+            {
+              "ID": "l1",
+              "books_image": "https://i.imgur.com/HTz1oya.png",
+              "name": "El Resurgir de la Atlántida",
+              "autor": "Thomas Greanias",
+              "description": "En la Antártida, un terremoto glacial se traga a un equipo de científicos y deja al descubierto un misterioso monumento más antiguo que la propia Tierra. En Perú, el doctor Conrad Yeats, arqueólogo, es apresado por las Fuerzas Especiales de los Estados Unidos para que desentrañe la clave final de los orígenes de la raza humana. En Roma, el Papa convoca al Vaticano a una activista medioambiental, la doctora Serena Serghetti, con el fin de revelarle la terrorífica visión de un desastre apocalíptico. En el espacio, un satélite de seguimiento climático informa acerca de cuatro descomunales tormentas que se están formando alrededor del Polo Sur… Las leyendas de una civilización perdida y las profecías de las religiones más importantes del mundo conducen a un descubrimiento estremecedor que cambiará el destino de la Humanidad. Es el último viaje, una travesía hacia el núcleo del tiempo, tan asombrosa y conmovedora como los albores del hombre… Es el resurgir de la Atlántida.",
+              "download": "http://descargar.lelibros.online/Thomas%20Greanias/El%20Resurgir%20de%20la%20Atlantida%20(337)/El%20Resurgir%20de%20la%20Atlantida%20-%20Thomas%20Greanias.pdf"
+            },
+            {
+              "ID": "l2",
+              "books_image": "https://i.imgur.com/xUcnglj.png",
+              "name": "Eldest",
+              "autor": "Christopher Paolini",
+              "description": "Eragon y su dragona, Saphira, acaban de impedir que las poderosas fuerzas del rey Galbatorix, cruel regente del Imperio, destruyan para siempre el ejército rebelde de los vardenos en Farthen Dur, la ciudad montaña de los enanos. Pocos días después de la sangrienta batalla contra los urgalos, Eragon y Saphira tienen que viajar a Ellesméra, el país de los elfos, para continuar con su formación en la magia y la lucha con la espada, las dos habilidades especiales de los Jinete de Dragón, para poder enfrentarse al malvado Rey. Los acompañarán Ayra, la elfa, y Orik, el enano, en un viaje plagado de descubrimientos y aventuras, con parajes fabulosos y nuevas amistades. Pero el caos y la traición los acecharán sin descanso, y Eragon no sabrá en quién confiar. Entre tanto, los sones inconfundibles de la guerra tienen en vilo al reino de Alagaësia. Las espadas se afilan y las nubes de oscuridad presagian terror y muerte. A Carvahall, cerca de las montañas Vertebradas, también llega el miedo: dos Ra’zac han aparecido acompañados de un destacamento para capturar a Roran, el primo de Eragon. Roran tendrá que huir, pero pronto se dará cuenta de que no es posible escapar siempre.",
+              "download": "http://descargar.lelibros.online/Christopher%20Paolini/Eldest%20%28146%29/Eldest%20-%20Christopher%20Paolini.pdf"
+            },
+            {
+              "ID": "l3",
+              "books_image": "https://i.imgur.com/7Iy9R0X.png",
+              "name": "Las Aventuras de Tom Sawyer",
+              "autor": "Mark Twain",
+              "description": "Las aventuras de Tom Sawyer es el relato de unos meses en la vida de este niño que vive en una ciudad pequeña del suroeste de Estados Unidos a orillas del río Misisipi. Criado por su tía Polly, que lo quiere de corazón pero que lo somete a una disciplina que se le hace absurda y desagradable, Tom contempla el mundo de una manera muy distinta a como lo hacen los adultos con los que tiene que convivir. Precisamente porque existe ese distanciamiento nos entretiene con sus reacciones divertidas y nobles. Más agreste y rebelde contra ese universo de las personas mayores es su amigo Huckleberry Finn, el compañero ideal de Tom que es envidiado por los demás niños que contemplan en su vida una forma de existencia que a ellos les gustaría llevar. Juntos vivirán aventuras humorísticas y dramáticas de las que podrán salir más airosos de lo que hubiera podido hacerlo cualquier adulto.",
+              "download": "http://descargar.lelibros.online/Mark%20Twain/Las%20Aventuras%20de%20Tom%20Sawyer%20(12)/Las%20Aventuras%20de%20Tom%20Sawyer%20-%20Mark%20Twain.pdf"
+            }
+          ],
+          "biografias_memorias": [
+            {
+              "ID": "l4",
+              "books_image": "https://i.imgur.com/nYA3S4D.png",
+              "name": "Aristóteles en 90 Minutos",
+              "autor": "Paul Strathern",
+              "description": "La colección Filósofos en 90 minutos incluye interpretaciones breves, pero autorizadas, de los más grandes pensadores de la humanidad y descifra sus filosofías en una forma amena y accesible que las hace interesantes y comprensibles a casi cualquiera. Aristóteles fue preceptor de Alejandro Magno. La Historia no registra detalles de esta relación, pero sabemos que, con el tiempo, Alejandro estuvo a punto de firmar la sentencia de muerte de Aristóteles, si bien se olvidó y se dispuso, en su lugar, a invadir la India. De no ser por este golpe de suerte, habríamos perdido al hombre cuya filosofía había de dominar el pensamiento europeo durante los 1.500 años siguientes. Gracias a Aristóteles, el mundo medieval persistió en sus creencias de que el sol giraba alrededor de la tierra y que todo estaba compuesto de tierra, aire, fuego y agua. Una introducción y un epílogo sitúan la obra de Aristóteles dentro del panorama de la filosofía; también se ofrece una lista cronológica de fechas filosóficas importantes. Finalmente, una selección de citas de sus obras más importantes, incluyendo la Ética Nicomáquea, da indicación de sus intenciones, conceptos más importantes y de su estilo.",
+              "download": "http://descargar.lelibros.online/Paul%20Strathern/Aristoteles%20en%2090%20Minutos%20(11)/Aristoteles%20en%2090%20Minutos%20-%20Paul%20Strathern.pdf"
+            },
+            {
+              "ID": "l5",
+              "books_image": "https://i.imgur.com/GObZQfU.png",
+              "name": "Yo no Vengo a Decir un Discurso",
+              "autor": "Gabriel García Márquez",
+              "description": "Los textos que Gabriel García Márquez ha reunido en este libro fueron escritos con la intención de ser leídos por él mismo en público, ante una audiencia, y recorren prácticamente toda su vida, desde el primero, que escribe a los diecisiete años para despedir a sus compañeros del curso superior en Zipaquirá, hasta el que lee ante las Academias de la Lengua y los reyes de España al cumplir ochenta años. Estos discursos del premio Nobel nos ayudan a comprender más profundamente su vida y nos desvelan sus obsesiones fundamentales como escritor y ciudadano: su fervorosa vocación por la literatura, la pasión por el periodismo, su inquietud ante el desastre ecológico que se avecina, su propuesta de simplificar la gramática, los problemas de su tierra colombiana o el recuerdo emocionado de amigos escritores como Julio Cortázar o Álvaro Mutis, entre otros muchos. El lector tiene entre sus manos el complemento indispensable a una obra narrativa que nos seguirá hablando en un largo porvenir",
+              "download": "http://descargar.lelibros.online/Gabriel%20Garcia%20Marquez/Yo%20no%20vengo%20a%20decir%20un%20discurso%20(518)/Yo%20no%20vengo%20a%20decir%20un%20discurso%20-%20Gabriel%20Garcia%20Marquez.pdf"
+            }
+          ],
+          "ciencia_ficcion": [
+            {
+              "ID": "l6",
+              "books_image": "https://i.imgur.com/hUdNeig.png",
+              "name": "La Saga de Worthing",
+              "autor": "Orson Scottcard",
+              "description": "El imperio de Capitol se cimenta en el somec, la droga capaz de crear en los humanos la ilusión de la inmortalidad. Pero sólo algunos, los ricos y los poderosos, obtienen el privilegio de dormir durante largos años y despertar como si no hubiera transcurrido el tiempo. El somec permite gestar ambiciosos planes y dominar un vasto imperio, pero también implica amenazas y peligros. La saga de Worthing es una emotiva crónica de Capitol y su droga, el somec, en la que se nos habla del poder subversivo de Abner Doon, que destruyó el imperio, de la estirpe de telépatas que engendró Jason Worthing y del mundo que éstos llegaron a crear.",
+              "download": "http://descargar.lelibros.online/Orson%20Scott%20Card/La%20Saga%20de%20Worthing%20(550)/La%20Saga%20de%20Worthing%20-%20Orson%20Scott%20Card.pdf"
+            },
+            {
+              "ID": "l7",
+              "books_image": "https://i.imgur.com/aS5cjQK.png",
+              "name": "El Hombre Invisible",
+              "autor": "H.G Wells",
+              "description": "Escrita en 1897, poco después de «La máquina del tiempo», El hombre invisible cuyo personaje central ha alcanzado, como Drácula o Frankenstein, un lugar en el imaginario del mundo moderno­ da forma definitiva a uno de los motivos que habrían de cobrar más relieve, y en cierto sentido hacerse pavorosa realidad, en el siglo XX: el del uso irreflexivo e inescrupuloso del conocimiento científico y las consecuencias nefastas de ponerlo al servicio de causas egoístas o espurias.",
+              "download": "http://descargar.lelibros.online/H.%20G.%20Wells/El%20Hombre%20Invisible%20(583)/El%20Hombre%20Invisible%20-%20H.%20G.%20Wells.pdf"
+            }
+          ],
+          "drama": [
+            {
+              "ID": "l8",
+              "books_image": "https://i.imgur.com/hbQX6rJ.png",
+              "name": "Como los Cuervos",
+              "autor": "Jeffrey Archer",
+              "description": "No le fue fácil a Charlie alcanzar el objetivo de amasar una fortuna; sin embargo algo había en él que le hacía un predestinado al triunfo y, como apreciará el lector, este algo tiene mucho que ver con su capacidad de trabajo, astucia, coraje, ganas de aprender y un maravilloso abuelo el de más fino olfato para la venta que le guio con su ejemplo en sus primeros tiempos. Desde las primeras páginas la historia se convierte en una trepidante aventura sobre el mundo de los negocios, en una ascensión ilusionada desde la humilde situación de vendedor de verduras callejero hasta la realización de un gran proyecto empresarial: es la historia de un tendero que metido a negociante termina creando una importante red de establecimientos comerciales mientras van desfilando los grandes acontecimientos de este siglo.",
+              "download": "http://descargar.lelibros.online/Jeffrey%20Archer/Como%20los%20Cuervos%20(357)/Como%20los%20Cuervos%20-%20Jeffrey%20Archer.pdf"
+            },
+            {
+              "ID": "l9",
+              "books_image": "https://i.imgur.com/NhozHqz.png",
+              "name": "El plan infinito",
+              "autor": "Isabel Allende",
+              "description": "El plan infinito narra la historia de Gregory Reeves, un gringo que se hace a sí mismo en el difícil mundo de los hispanos de California. Gregory quiere llevar a la práctica el peculiar «plan infinito» que se trazó a sí mismo en su infancia. Sin embargo, para conseguirlo debe recorrer un duro camino lleno de obstáculos: la marginación social, el racismo, el brutal contraste entre pobreza y riqueza, la guerra de Vietnam… Ésta es una de las novelas más logradas y apasionantes de la gran escritora chilena.",
+              "download": "http://descargar.lelibros.online/Isabel%20Allende/El%20Plan%20Infinito%20(97)/El%20Plan%20Infinito%20-%20Isabel%20Allende.pdf"
+            }
+          ],
+          "ensayos": [
+            {
+              "ID": "l10",
+              "books_image": "https://i.imgur.com/XhjkUCv.png",
+              "name": "Esto es Agua",
+              "autor": "David Foster Wallace",
+              "description": "Había una vez dos peces jóvenes que iban nadando y se encontraron por casualidad con un pez mayor que nadaba en dirección contraria; el pez mayor les saludó con la cabeza y les dijo: “Buenos días, chicos. ¿Cómo está el agua?”». A los seis años de la muerte de David Foster Wallace se publica «Esto es agua», la legendaria conferencia que impartió en la ceremonia de graduación de la Universidad de Kenyon, ante un auditorio plagado de alumnos embelesados. Escrito en 2005 y debatido ampliamente tras su muerte, este discurso es el conciso legado de uno de los más grandes autores de nuestro tiempo, que se quitó la vida en el momento álgido de su fama y con tan solo cuarenta y seis años.",
+              "download": "http://descargar.lelibros.online/David%20Foster%20Wallace/Esto%20es%20Agua%20(374)/Esto%20es%20Agua%20-%20David%20Foster%20Wallace.pdf"
+            },
+            {
+              "ID": "l11",
+              "books_image": "https://i.imgur.com/fu0sj9V.png",
+              "name": "La Interpretación de los Sueños",
+              "autor": "Sigmund Freud",
+              "description": "La primera edición de Die Traumdeutung (La interpretación de los sueños) se publicó unos días antes del siglo, aunque en la portada constara ya la fecha «1900». Es posible observar en esta pequeña licencia algún indicio del valor inaugural que el mismo Freud, clarividente, reservaba a su obra cumbre. La primera edición tuvo una desastrosa acogida por parte del público y la crítica. En una carta a su amigo Fliess, pocos días después de la publicación del libro, el autor se lamentaba: «No hemos adelantado demasiado a nuestro tiempo…». No obstante era también consciente de que, de uno u otro modo, el enigma de los sueños había sido por fin desvelado y que el destino de La interpretación de los sueños era convertirse inexorablemente, en la obra pionera del psicoanálisis. Hoy es también una de las obras maestras de la literatura y el pensamiento del siglo XX. Los progresos científicos alcanzados no han conseguido restar valor ni actualidad a la exposición freudiana de los temas oníricos, aquí presentada en la magistral traducción de Luis López-Ballesteros y de Torres, que mereciera ya en 1923, un comentario elogioso del mismo Freud.",
+              "download": "http://descargar.lelibros.online/Sigmund%20Freud/La%20Interpretacion%20de%20los%20Suenos%20(137)/La%20Interpretacion%20de%20los%20Suenos%20-%20Sigmund%20Freud.pdf"
+            }
+          ],
+          "fantasia": [
+            {
+              "ID": "l12",
+              "books_image": "https://i.imgur.com/W2CAsFG.png",
+              "name": "Animales fantásticos y Donde encontrarlos",
+              "autor": "J.K Rowling",
+              "description": " Hay un ejemplar de Animales fantásticos y dónde encontrarlos en casi todos los hogares de magos del país. Ahora, sólo por cierto tiempo, también los muggles pueden descubrir dónde viven los quintapeds, qué come el puffskein y por qué es mejor no dejar leche fuera de casa para un knarl.",
+              "download": "http://descargar.lelibros.online/J.%20K.%20Rowling/Animales%20Fantasticos%20y%20Donde%20Encont%20(110)/Animales%20Fantasticos%20y%20Donde%20En%20-%20J.%20K.%20Rowling.pdf"
+            },
+            {
+              "ID": "l13",
+              "books_image": "https://i.imgur.com/TG2JOlk.png",
+              "name": "American Gods",
+              "autor": "Neil Gaiman",
+              "description": "Días antes de salir de prisión, la mujer de Sombra, Laura, muere en un misterioso accidente de coche. Aturdido por el dolor, emprende el regreso a casa. En el avión, se encontrará con el enigmático señor Wednesday, que dice ser un refugiado de una guerra antigua, un dios y también el rey de América. Juntos se embarcan en un viaje extraño a través de los Estados Unidos, mientras una tormenta de dimensiones épicas amenaza con desencadenarse. Poco a poco descubriremos que Wednesday es una encarnación de Odín y que está reclutando viejos dioses, cuyos poderes han disminuido por el tiempo y la falta de creyentes, para participar en una guerra contra los nuevos dioses: aquellos que conforman la tecnología moderna.",
+              "download": "http://descargar.lelibros.online/Neil%20Gaiman/American%20Gods%20(402)/American%20Gods%20-%20Neil%20Gaiman.pdf"
+            }
+          ],
+          "humor": [
+            {
+              "ID": "l14",
+              "books_image": "https://i.imgur.com/EXNVe9M.png",
+              "name": "Azazel",
+              "autor": "Isaac Asimov",
+              "description": "Azazel es un demonio rojo de dos centímetros, dotado con una impetuosa personalidad y maravillosos poderes mágicos. Susceptible de ser invocado sólo por George Bitternut, un excéntrico lingüista que ha descubierto antiguas fórmulas para llamar a demonios y a espíritus, Azazel no permitirá que sus poderes sean utilizados en provecho personal de George. Sin embargo, el diminuto demonio ayudará a los amigos de George cuando éstos lo necesiten. El único problema es que este singular ser posee poca comprensión de las cuestiones humanas y sus intervenciones producen situaciones sorprendentes",
+              "download": "http://descargar.lelibros.online/Isaac%20Asimov/Azazel%20(801)/Azazel%20-%20Isaac%20Asimov.pdf"
+            },
+            {
+              "ID": "l15",
+              "books_image": "https://i.imgur.com/KXvDROq.png",
+              "name": "El asombroso Viaje de Pompino Flato",
+              "autor": "Eduardo Mendoza",
+              "description": "En el siglo I de nuestra era, Pomponio Flato viaja por los confines del Imperio romano en busca de unas aguas de efectos portentosos. El azar y la precariedad de su fortuna lo llevan a Nazaret, donde va a ser ejecutado el carpintero del pueblo, convicto del brutal asesinato de un rico ciudadano. Muy a su pesar, Pomponio se ve inmerso en la solución del crimen, contratado por el más extraordinario de los clientes: el hijo del carpintero, un niño candoroso y singular, convencido de la inocencia de su padre, hombre en apariencia pacífico y taciturno, que oculta, sin embargo, un gran secreto. Cruce de novela histórica, novela policíaca, hagiografía y parodia de todas ellas, aquí se ajustan las cuentas a muchas novelas de consumo, y se construye una nueva modalidad del género más característico de Eduardo Mendoza: la trama detectivesca original e irónica, que desemboca en una sátira literaria y en una desternillante creación novelesca.",
+              "download": "http://descargar.lelibros.online/Eduardo%20Mendoza/El%20Asombroso%20Viaje%20de%20Pomponio%20Flat%20(538)/El%20Asombroso%20Viaje%20de%20Pomponio%20-%20Eduardo%20Mendoza.pdf"
+            }
+          ],
+          "infantil": [
+            {
+              "ID": "l16",
+              "books_image": "https://i.imgur.com/8AxaRzN.png",
+              "name": "Las Brujas",
+              "autor": "Roald Dahl",
+              "description": "Las brujas de todo el mundo, bajo la apariencia de señoras corrientes, están celebrando su Congreso Anual. Han decidido aniquilar con un ratonizador mágico a todos los niños. ¿Conseguirán vencerlas el protagonista de esta historia y su abuela?",
+              "download": "http://descargar.lelibros.online/Roald%20Dahl/Las%20Brujas%20(158)/Las%20Brujas%20-%20Roald%20Dahl.pdf"
+            },
+            {
+              "ID": "l17",
+              "books_image": "https://i.imgur.com/RgzIzN4.png",
+              "name": "El castillo de Roca Tacaña",
+              "autor": "Geronimo Stilton",
+              "description": "Geronimo Stilton es el editor del Eco del Roedor, el periódico más leído de la Isla de los Ratones. La profesión de Geronimo le hará vivir muchas peripecias que, trasladadas a la vida ratonil, se parecen mucho a la vida real: reporteros agresivos, noticias exclusivas, robos de manuscritos, arriesgadas expediciones… pero siempre respetando «el código de honor» del buen reportero -sinceridad, igualdad y paz- del que Stilton y su equipo hacen gala. El mundo del periodismo en clave… ratonil. Una boda es una oportunidad para encontrarse con la familia, divertirse y pasarlo en grande. Sin embargo, cuando el que se casa es la persona más tacaña de Ratonia, la oportunidad se convierte en una experiencia única. Al menos así lo vivió Geronimo Stilton cuando llegó a Roca Tacaña a felicitar por su enlace a Virgilio, el hijo del Tío Milordo, y a Cloaquita Pestoseta, su futura esposa, una ratoncita gris, pero millonaria. La visita se transformó en el gran acontecimiento. Geronimo conoció todos los secretos del ahorro, y Trampita, hasta dónde llega la paciencia de Geronimo. Pero quizás la mayor sorpresa se la llevó la sumisa Cloaquita cuando conoció a la decidida y valiente Tea, que le ayudó a dar una vuelta a su destino",
+              "download": "http://descargar.lelibros.online/Geronimo%20Stilton/El%20Castillo%20de%20Roca%20Tacana%20(181)/El%20Castillo%20de%20Roca%20Tacana%20-%20Geronimo%20Stilton.pdf"
+            }
+          ],
+          "terror_suspenso": [
+            {
+              "ID": "l8",
+              "books_image": "https://i.imgur.com/R4WFw3h.png",
+              "name": "Canaan negro y Otros relatos de horror sobrenaturales",
+              "autor": "Robert E. Howard",
+              "description": "A pesar de la brevedad de su carrera literaria, Rober E. Howard (1906-1936), que nunca abandonó la casa familiar en la localidad texana de Cross Plains, contribuyó de un modo decisivo al surgimiento y auge de la literatura pulp norteamericana en los años 20 y 30 del pasado siglo con la publicación en revistas populares, como Weird Tales, de centenares de relatos de terror, aventuras, fantásticos, históricos, etc., fruto de su poderosa imaginación. Impulsó junto con su amigo epistolar H.P. Lovercraft y el californiano Clark Ashton Smith, «los tres mosqueteros de Weird Tales», el fenómeno , que tanta influencia ha tenido en la cultura popular, y dio origen anticipándose unos años a JRR Tolkien, al género de fantasía heroica (Espada y Brujería) con su héroe Conan el Cimerio o el peregrino justiciero del siglo XVI Solomon Kane. Sobre la variedad de registro y temáticas de que era capaz la fértil imaginación de Howard, el aficionado encontrará en este volumen «Canaan negro y otros relatos de terror sobrenatural», una buena muestra. Los dieciocho relatos reunidos en esta antología han sido traducidos directamente de los textos originales, la mayoría publicados en vida de Howard, desechando las ilegítimas adulteraciones que sufrieron en ediciones posteriores. Entre ellos se pueden destacar «Los moradores bajo la tumba» y «Canaan negro», dos soberbias narraciones de horror sobrenatural; los cuentos de fantasmas «La perdición de Dermod» y «Aguas inquietas»; los relatos de civilización perdida «Delenda Est», «La Casa de Arabu» y «La marca del cabo», o dos piezas que podrían adscribirse al género de weird menace, «La Cosa con pezuñas» y «El fantasma del anillo».",
+              "download": "http://descargar.lelibros.online/Robert%20E.%20Howard/Canaan%20Negro%20y%20Otros%20Relatos%20de%20Hor%20(283)/Canaan%20Negro%20y%20Otros%20Relatos%20de%20-%20Robert%20E.%20Howard.pdf"
+            },
+            {
+              "ID": "l19",
+              "books_image": "https://i.imgur.com/59E43bo.png",
+              "name": "Todo oscuro, sin estrellas",
+              "autor": "Stephen King",
+              "description": "Creo que existe otro hombre dentro de cada hombre, un extraño…» son palabras de la confesión que escribe Wilfred Leland James en «1922», el primer relato de este cuarteto hipnotizador y profundamente oscuro. El ser desconocido que James lleva dentro se despierta cuando su esposa Arlette le anuncia que piensa vender el terreno que acaba de heredar y que va a trasladarse a la ciudad. Sus palabras le empujan hacia el asesinato y la locura. En «Camionero Grande». Tess, una escritora de novelas simpáticas de intriga, se encuentra con un hombre gigantesco cuando vuelve a casa por una carretera rural después de dar una charla en un club de lectura. Violada y abandonada tras ser dada por muerta, Tess planea su venganza y para llevarla a cabo tendrá que sacar de sí misma un lado totalmente desconocido. «Una extensión justa», el relato más corto, es el más malvado y el más divertido. Harry Streeter hace un pacto con el diablo quien le quitará no solamente su cáncer mortal, sino también todos los rencores que había sentido en su vida. Y finalmente, en «Un buen matrimonio» conocemos a Darcy Anderson quien, un día en que su marido está fuera por trabajo, va a buscar pilas al garaje y descubre una caja que él tenía allí escondida. Su contenido es tan horrendo como el ser desconocido que hay dentro de su marido. En un solo instante acabarán veinte felices años de matrimonio. Stephen King es autor de más de cincuenta libros, todos best sellers internacionales. Los más recientes incluyen La cúpula, Después del anochecer, Duma Key, Cell, La historia de Lisey, Todo es eventual y los últimos tomos de La Torre Oscura. En 2003 fue galardonado con la medalla del National Book Foundation for Distinguished Contribution to American Letters, y en 2007 fue nombrado Gran Maestro de los Mystery Writers of America. Vive en Maine con su esposa Tabitha King, también novelista. «Todo oscuro, Sin estrellas es una colección de relatos extraordinaria, terrorífica, sin piedad. El autor está en el cénit de su poder creativo». The Telegraph «Un libro que te obliga a seguir leyendo. King domina tanto la novela corta como la novela muy larga». The New York Times",
+              "download": "http://descargar.lelibros.online/Stephen%20King/Todo%20Oscuro,%20Sin%20Estrellas%20(304)/Todo%20Oscuro,%20Sin%20Estrellas%20-%20Stephen%20King.pdf"
+            }
+          ]
+        }
+      ],
+      "vida_practica": [
+        {
+          "autoayuda": [
+            {
+              "ID": "l20",
+              "books_image": "https://i.imgur.com/kv1doHG.png",
+              "name": "El elemento",
+              "autor": "Ken Robinson",
+              "description": "El mundo cambia a una velocidad vertiginosa. Es imposible adivinar cómo viviremos en el futuro: lo único que sabemos es que hará falta mucha imaginación y creatividad para transformarnos y afrontar los nuevos retos. Descubrir el Elemento es recuperar capacidades sorprendentes en nuestro interior, y desarrollarlo dará un giro radical no sólo a tu entorno laboral, sino también a tus relaciones y, en definitiva, a tu vida.",
+              "download": "http://descargar.lelibros.online/Ken%20Robinson/El%20Elemento%20(172)/El%20Elemento%20-%20Ken%20Robinson.pdf"
+            },
+            {
+              "ID": "l21",
+              "books_image": "https://i.imgur.com/9iWFnIZ.png",
+              "name": "El Arte de no amargarse la vida",
+              "autor": "Rafael Santandreu",
+              "description": "El arte de no amargarse la vida. ¿Sufres de terribilitis? Rafael Santandreu explica que muchos de los problemas emocionales actuales son causa de una mala filosofía de vida. Con gran facilidad nos creemos deprimidos, ansiosos o muy desgraciados. El arte de no amargarse la vida cuenta que todos estos trastornos emocionales podrían calificarse de terribilitis. En nuestra sociedad tenemos muchas creencias que nos hacen ser infelices como que si no tienes pareja eres desdichado o que hay que tener un puesto de trabajo muy importante para realizarse. Siguiendo la saga de los grandes libros de psicología para el gran público Rafael Santandreu, expone en esta obra un método práctico y claro, aunque completamente científico, para caminar hacia el cambio psicológico. Nuestro destino es convertirnos en personas más fuertes y felices. Con anécdotas extraídas tanto de su consulta como de su historia personal, el autor nos muestra cómo transformarnos a nosotros mismos. De deprimidos, ansiosos o “cascarrabias” podemos convertirnos en hombres y mujeres serenos, alegres y optimistas, con la ayuda de un terapeuta o ¡por nosotros mismos!",
+              "download": "http://descargar.lelibros.online/Rafael%20Santandreu/El%20arte%20de%20no%20amargarse%20la%20vida%20(153)/El%20arte%20de%20no%20amargarse%20la%20vida%20-%20Rafael%20Santandreu.pdf"
+            }
+          ],
+          "viajes_guias": [
+            {
+              "ID": "l22",
+              "books_image": "https://i.imgur.com/BOlOlOB.png",
+              "name": "El sueño de Africa",
+              "autor": "Javier Reverte",
+              "description": "Surcar el continente africano, Javier Reverte emprende un camino donde a cada paso se trasluce el amor, su fascinación y su respeto por aquellas lejanas tierras. Como en las otras entregas de la trilogía, el prolífico periodista asume el papel de viajero en pos de un mito que se irá revelando a través del contacto directo con las gentes y los paisajes africanos. Este libro, que trata de la historia blanca del África negra, entrelaza las grandes y las pequeñas narraciones que surgen a su encuentro con el pasado, con las ciudades del presente, con el conocimiento de tribus ancestrales en franco proceso de extinción... Impregnada de lúcido realismo, de exuberante belleza y de leyenda, esta crónica revela en clave homérica que el placer del viaje, más que en llegar a un destino, consiste en enriquecerse como ser humano a lo largo del itinerario.",
+              "download": "http://descargar.lelibros.online/Javier%20Reverte/El%20Sueno%20de%20Africa%20(131)/El%20Sueno%20de%20Africa%20-%20Javier%20Reverte.pdf"
+            }
+          ],
+          "espiritualidad": [
+            {
+              "ID": "l23",
+              "books_image": "https://i.imgur.com/f8t989e.png",
+              "name": "La prueba del Cielo",
+              "autor": "Eben Alexander",
+              "description": "«El 8 de noviembre de 2008 me desperté con un terrible dolor de cabeza que en apenas dos horas desembocó en un derrame cerebral. Caí en un coma profundo, y durante siete días permanecí en ese estado, durante el cual viví una experiencia increíble y fuera de este mundo. El lugar en el que estuve es un sitio maravilloso, reconfortante y lleno de amor. No tengo miedo a morir porque ahora sé que no es el final». Doctor Eben Alexander. La lógica científica del doctor Alexander jamás había dado crédito a las experiencias cercanas a la muerte. Sin embargo, después de haber pasado por esto sabe que no son meras fantasías: Dios y el alma existen realmente, y la muerte no es el final de la existencia personal, sino una mera transición",
+              "download": "http://descargar.lelibros.online/Eben%20Alexander/La%20Prueba%20del%20Cielo%20(100)/La%20Prueba%20del%20Cielo%20-%20Eben%20Alexander.pdf"
+            }
+          ]
+        }
+      ],
+      "tecnico_academicos": [
+        {
+          "ciencias_exactas": [
+            {
+              "ID": "l24",
+              "books_image": "https://i.imgur.com/IhXpL4J.png",
+              "name": "¿Puede pensar una maquina?",
+              "autor": "Alan M. Turing",
+              "description": "En 1947 Alan M. Turing pronunció una conferencia ante un auditorio compuesto en su mayor parte por miembros del National Physical Laboratory de Londres en la que intentaba responder a la vieja y controvertida pregunta ¿Puede pensar una máquina? Lo expuesto en ese acto apareció publicado tres años más tarde en Mind —una importante revista de filosofía británica— y es lo que ofrecemos aquí al lector en su traducción castellana. Este texto se convirtió enseguida en uno de los escritos fundacionales de la lógica informática y la inteligencia artificial, al presentar las líneas generales por las que debería discurrir una respuesta precisa y manejable (aunque no indiscutible) a la pregunta formulada. Se trata del famoso Test de Turing, una prueba para decidir si una máquina es inteligente (o «piensa»). Para ello Turing diseñó un juego de imitación en el que participan una máquina y seres humanos; podemos decir que una máquina piensa si un ser humano que se comunica con la máquina y con otros seres humanos no logra distinguir cuando su interlocutor es una máquina y cuando un humano. Una «máquina de Turing» como la que participa en el juego, es un dispositivo ideal de cálculo, capaz de resolver una función computable —una función cuya solución es susceptible de ser obtenida por un procedimiento mecánico—. Pero lo más significativo es que Turing demostró que hay una máquina peculiar —la máquina universal de Turing— en la que se puede representar cualquier máquina que sea capaz de computar una función particular. De acuerdo con esto, una máquina universal de Turing sería una especie de sistema operativo en el que se implementan diferentes programas (máquinas de Turing especiales), un poco a la manera en que nos es familiar en los ordenadores personales. La denominada «metáfora del ordenador» como modelo capaz de simular la mente humana y, por ende, el pensar, tiene aquí su fuente.",
+              "download": "http://descargar.lelibros.online/Alan%20M.%20Turing/_Puede%20Pensar%20una%20Maquina_%20(582)/_Puede%20Pensar%20una%20Maquina_%20-%20Alan%20M.%20Turing.pdf"
+            }
+          ],
+          "ciencias_naturales": [
+            {
+              "ID": "l25",
+              "books_image": "https://i.imgur.com/ArU8GUS.png",
+              "name": "La tragedia de la luna",
+              "autor": "Isaac Asimov",
+              "description": "Asimov habla en esta obra de la Luna y de otros pequeños mundos que pueblan nuestro sistema solar; se ocupa del carbono, del descubrimiento del DNA, de la función de la glándula tiroidea, de los microorganismos y de la velocidad de la luz; reflexiona sobre cuestiones sociales tan importantes como el racismo y el futuro de los medios de comunicación.",
+              "download": "http://descargar.lelibros.online/Isaac%20Asimov/La%20Tragedia%20de%20la%20Luna%20(302)/La%20Tragedia%20de%20la%20Luna%20-%20Isaac%20Asimov.pdf"
+            }
+          ],
+          "ciencias_sociales": [
+            {
+              "ID": "l26",
+              "books_image": "https://i.imgur.com/qjPu1L7.png",
+              "name": "Economía para andar por casa",
+              "autor": "AA.VV",
+              "description": "¿Por qué sube la gasolina? ¿Son de fiar las empresas que nos ofrecen refinanciar nuestras deudas? ¿Cómo me afecta la reforma laboral? ¿Qué son los fondos de inversión? ¿A qué edad es recomendable hacer un plan de pensiones? Cada día desde que nos levantamos nos enfrentamos a un sinfín de cuestiones que tienen un trasfondo económico: desde la luz que ilumina nuestro hogar hasta el combustible que utilizamos para desplazarnos, los impuestos que pagamos y los servicios que contratamos con los bancos. Un afamado economista y tres reconocidos periodistas han hecho el ejercicio de sintetizar las dudas más comunes que afectan a cualquier ciudadano para convertirlas en preguntas que se responden de forma sencilla y clara, aclarando conceptos y desmontando tópicos. El resultado es una obra de lectura obligada para todos aquellos que quieran saber qué ocurre con su dinero y cómo funciona la economía",
+              "download": "http://descargar.lelibros.online/AA.%20VV_/Economia%20Para%20Andar%20por%20Casa%20(279)/Economia%20Para%20Andar%20por%20Casa%20-%20AA.%20VV_.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "autores": [
+    {
+      "thomas_greanias": [
+        {
+          "ID": "l1",
+          "books_image": "https://i.imgur.com/HTz1oya.png",
+          "name": "El Resurgir de la Atlántida",
+          "autor": "Thomas Greanias",
+          "description": "En la Antártida, un terremoto glacial se traga a un equipo de científicos y deja al descubierto un misterioso monumento más antiguo que la propia Tierra. En Perú, el doctor Conrad Yeats, arqueólogo, es apresado por las Fuerzas Especiales de los Estados Unidos para que desentrañe la clave final de los orígenes de la raza humana. En Roma, el Papa convoca al Vaticano a una activista medioambiental, la doctora Serena Serghetti, con el fin de revelarle la terrorífica visión de un desastre apocalíptico. En el espacio, un satélite de seguimiento climático informa acerca de cuatro descomunales tormentas que se están formando alrededor del Polo Sur… Las leyendas de una civilización perdida y las profecías de las religiones más importantes del mundo conducen a un descubrimiento estremecedor que cambiará el destino de la Humanidad. Es el último viaje, una travesía hacia el núcleo del tiempo, tan asombrosa y conmovedora como los albores del hombre… Es el resurgir de la Atlántida.",
+          "download": "http://descargar.lelibros.online/Thomas%20Greanias/El%20Resurgir%20de%20la%20Atlantida%20(337)/El%20Resurgir%20de%20la%20Atlantida%20-%20Thomas%20Greanias.pdf"
+        }
+      ],
+      "christopher_paolini": [
+        {
+          "ID": "l2",
+          "books_image": "https://i.imgur.com/xUcnglj.png",
+          "name": "Eldest",
+          "autor": "Christopher Paolini",
+          "description": "Eragon y su dragona, Saphira, acaban de impedir que las poderosas fuerzas del rey Galbatorix, cruel regente del Imperio, destruyan para siempre el ejército rebelde de los vardenos en Farthen Dur, la ciudad montaña de los enanos. Pocos días después de la sangrienta batalla contra los urgalos, Eragon y Saphira tienen que viajar a Ellesméra, el país de los elfos, para continuar con su formación en la magia y la lucha con la espada, las dos habilidades especiales de los Jinete de Dragón, para poder enfrentarse al malvado Rey. Los acompañarán Ayra, la elfa, y Orik, el enano, en un viaje plagado de descubrimientos y aventuras, con parajes fabulosos y nuevas amistades. Pero el caos y la traición los acecharán sin descanso, y Eragon no sabrá en quién confiar. Entre tanto, los sones inconfundibles de la guerra tienen en vilo al reino de Alagaësia. Las espadas se afilan y las nubes de oscuridad presagian terror y muerte. A Carvahall, cerca de las montañas Vertebradas, también llega el miedo: dos Ra’zac han aparecido acompañados de un destacamento para capturar a Roran, el primo de Eragon. Roran tendrá que huir, pero pronto se dará cuenta de que no es posible escapar siempre.",
+          "download": "http://descargar.lelibros.online/Christopher%20Paolini/Eldest%20%28146%29/Eldest%20-%20Christopher%20Paolini.pdf"
+        }
+      ],
+      "mark_twain": [
+        {
+          "ID": "l3",
+          "books_image": "https://i.imgur.com/7Iy9R0X.png",
+          "name": "Las Aventuras de Tom Sawyer",
+          "autor": "Mark Twain",
+          "description": "Las aventuras de Tom Sawyer es el relato de unos meses en la vida de este niño que vive en una ciudad pequeña del suroeste de Estados Unidos a orillas del río Misisipi. Criado por su tía Polly, que lo quiere de corazón pero que lo somete a una disciplina que se le hace absurda y desagradable, Tom contempla el mundo de una manera muy distinta a como lo hacen los adultos con los que tiene que convivir. Precisamente porque existe ese distanciamiento nos entretiene con sus reacciones divertidas y nobles. Más agreste y rebelde contra ese universo de las personas mayores es su amigo Huckleberry Finn, el compañero ideal de Tom que es envidiado por los demás niños que contemplan en su vida una forma de existencia que a ellos les gustaría llevar. Juntos vivirán aventuras humorísticas y dramáticas de las que podrán salir más airosos de lo que hubiera podido hacerlo cualquier adulto.",
+          "download": "http://descargar.lelibros.online/Mark%20Twain/Las%20Aventuras%20de%20Tom%20Sawyer%20(12)/Las%20Aventuras%20de%20Tom%20Sawyer%20-%20Mark%20Twain.pdf"
+        }
+      ],
+      "paul_strathern": [
+        {
+          "ID": "l4",
+          "books_image": "https://i.imgur.com/nYA3S4D.png",
+          "name": "Aristóteles en 90 Minutos",
+          "autor": "Paul Strathern",
+          "description": "La colección Filósofos en 90 minutos incluye interpretaciones breves, pero autorizadas, de los más grandes pensadores de la humanidad y descifra sus filosofías en una forma amena y accesible que las hace interesantes y comprensibles a casi cualquiera. Aristóteles fue preceptor de Alejandro Magno. La Historia no registra detalles de esta relación, pero sabemos que, con el tiempo, Alejandro estuvo a punto de firmar la sentencia de muerte de Aristóteles, si bien se olvidó y se dispuso, en su lugar, a invadir la India. De no ser por este golpe de suerte, habríamos perdido al hombre cuya filosofía había de dominar el pensamiento europeo durante los 1.500 años siguientes. Gracias a Aristóteles, el mundo medieval persistió en sus creencias de que el sol giraba alrededor de la tierra y que todo estaba compuesto de tierra, aire, fuego y agua. Una introducción y un epílogo sitúan la obra de Aristóteles dentro del panorama de la filosofía; también se ofrece una lista cronológica de fechas filosóficas importantes. Finalmente, una selección de citas de sus obras más importantes, incluyendo la Ética Nicomáquea, da indicación de sus intenciones, conceptos más importantes y de su estilo.",
+          "download": "http://descargar.lelibros.online/Paul%20Strathern/Aristoteles%20en%2090%20Minutos%20(11)/Aristoteles%20en%2090%20Minutos%20-%20Paul%20Strathern.pdf"
+        }
+      ],
+      "gabriel_garcíaa_márquez": [
+        {
+          "ID": "l5",
+          "books_image": "https://i.imgur.com/GObZQfU.png",
+          "name": "Yo no Vengo a Decir un Discurso",
+          "autor": "Gabriel García Márquez",
+          "description": "Los textos que Gabriel García Márquez ha reunido en este libro fueron escritos con la intención de ser leídos por él mismo en público, ante una audiencia, y recorren prácticamente toda su vida, desde el primero, que escribe a los diecisiete años para despedir a sus compañeros del curso superior en Zipaquirá, hasta el que lee ante las Academias de la Lengua y los reyes de España al cumplir ochenta años. Estos discursos del premio Nobel nos ayudan a comprender más profundamente su vida y nos desvelan sus obsesiones fundamentales como escritor y ciudadano: su fervorosa vocación por la literatura, la pasión por el periodismo, su inquietud ante el desastre ecológico que se avecina, su propuesta de simplificar la gramática, los problemas de su tierra colombiana o el recuerdo emocionado de amigos escritores como Julio Cortázar o Álvaro Mutis, entre otros muchos. El lector tiene entre sus manos el complemento indispensable a una obra narrativa que nos seguirá hablando en un largo porvenir",
+          "download": "http://descargar.lelibros.online/Gabriel%20Garcia%20Marquez/Yo%20no%20vengo%20a%20decir%20un%20discurso%20(518)/Yo%20no%20vengo%20a%20decir%20un%20discurso%20-%20Gabriel%20Garcia%20Marquez.pdf"
+        }
+      ],
+      "orson_scottcard": [
+        {
+          "ID": "l6",
+          "books_image": "https://i.imgur.com/hUdNeig.png",
+          "name": "La Saga de Worthing",
+          "autor": "Orson Scottcard",
+          "description": "El imperio de Capitol se cimenta en el somec, la droga capaz de crear en los humanos la ilusión de la inmortalidad. Pero sólo algunos, los ricos y los poderosos, obtienen el privilegio de dormir durante largos años y despertar como si no hubiera transcurrido el tiempo. El somec permite gestar ambiciosos planes y dominar un vasto imperio, pero también implica amenazas y peligros. La saga de Worthing es una emotiva crónica de Capitol y su droga, el somec, en la que se nos habla del poder subversivo de Abner Doon, que destruyó el imperio, de la estirpe de telépatas que engendró Jason Worthing y del mundo que éstos llegaron a crear.",
+          "download": "http://descargar.lelibros.online/Orson%20Scott%20Card/La%20Saga%20de%20Worthing%20(550)/La%20Saga%20de%20Worthing%20-%20Orson%20Scott%20Card.pdf"
+        }
+      ],
+      "hg_wells": [
+        {
+          "ID": "l7",
+          "books_image": "https://i.imgur.com/aS5cjQK.png",
+          "name": "El Hombre Invisible",
+          "autor": "H.G Wells",
+          "description": "Escrita en 1897, poco después de «La máquina del tiempo», El hombre invisible cuyo personaje central ha alcanzado, como Drácula o Frankenstein, un lugar en el imaginario del mundo moderno­ da forma definitiva a uno de los motivos que habrían de cobrar más relieve, y en cierto sentido hacerse pavorosa realidad, en el siglo XX: el del uso irreflexivo e inescrupuloso del conocimiento científico y las consecuencias nefastas de ponerlo al servicio de causas egoístas o espurias.",
+          "download": "http://descargar.lelibros.online/H.%20G.%20Wells/El%20Hombre%20Invisible%20(583)/El%20Hombre%20Invisible%20-%20H.%20G.%20Wells.pdf"
+        }
+      ],
+      "jeffrey_archer": [
+        {
+          "ID": "l8",
+          "books_image": "https://i.imgur.com/hbQX6rJ.png",
+          "name": "Como los Cuervos",
+          "autor": "Jeffrey Archer",
+          "description": "No le fue fácil a Charlie alcanzar el objetivo de amasar una fortuna; sin embargo algo había en él que le hacía un predestinado al triunfo y, como apreciará el lector, este algo tiene mucho que ver con su capacidad de trabajo, astucia, coraje, ganas de aprender y un maravilloso abuelo el de más fino olfato para la venta que le guio con su ejemplo en sus primeros tiempos. Desde las primeras páginas la historia se convierte en una trepidante aventura sobre el mundo de los negocios, en una ascensión ilusionada desde la humilde situación de vendedor de verduras callejero hasta la realización de un gran proyecto empresarial: es la historia de un tendero que metido a negociante termina creando una importante red de establecimientos comerciales mientras van desfilando los grandes acontecimientos de este siglo.",
+          "download": "http://descargar.lelibros.online/Jeffrey%20Archer/Como%20los%20Cuervos%20(357)/Como%20los%20Cuervos%20-%20Jeffrey%20Archer.pdf"
+        }
+      ],
+      "isabel_allende": [
+        {
+          "ID": "l9",
+          "books_image": "https://i.imgur.com/NhozHqz.png",
+          "name": "El plan infinito",
+          "autor": "Isabel Allende",
+          "description": "El plan infinito narra la historia de Gregory Reeves, un gringo que se hace a sí mismo en el difícil mundo de los hispanos de California. Gregory quiere llevar a la práctica el peculiar «plan infinito» que se trazó a sí mismo en su infancia. Sin embargo, para conseguirlo debe recorrer un duro camino lleno de obstáculos: la marginación social, el racismo, el brutal contraste entre pobreza y riqueza, la guerra de Vietnam… Ésta es una de las novelas más logradas y apasionantes de la gran escritora chilena.",
+          "download": "http://descargar.lelibros.online/Isabel%20Allende/El%20Plan%20Infinito%20(97)/El%20Plan%20Infinito%20-%20Isabel%20Allende.pdf"
+        }
+      ],
+      "david_foster_wallace": [
+        {
+          "ID": "l10",
+          "books_image": "https://i.imgur.com/XhjkUCv.png",
+          "name": "Esto es Agua",
+          "autor": "David Foster Wallace",
+          "description": "Había una vez dos peces jóvenes que iban nadando y se encontraron por casualidad con un pez mayor que nadaba en dirección contraria; el pez mayor les saludó con la cabeza y les dijo: “Buenos días, chicos. ¿Cómo está el agua?”». A los seis años de la muerte de David Foster Wallace se publica «Esto es agua», la legendaria conferencia que impartió en la ceremonia de graduación de la Universidad de Kenyon, ante un auditorio plagado de alumnos embelesados. Escrito en 2005 y debatido ampliamente tras su muerte, este discurso es el conciso legado de uno de los más grandes autores de nuestro tiempo, que se quitó la vida en el momento álgido de su fama y con tan solo cuarenta y seis años.",
+          "download": "http://descargar.lelibros.online/David%20Foster%20Wallace/Esto%20es%20Agua%20(374)/Esto%20es%20Agua%20-%20David%20Foster%20Wallace.pdf"
+        }
+      ],
+      "sigmund freud": [
+        {
+          "ID": "l11",
+          "books_image": "https://i.imgur.com/fu0sj9V.png",
+          "name": "La Interpretación de los Sueños",
+          "autor": "Sigmund Freud",
+          "description": "La primera edición de Die Traumdeutung (La interpretación de los sueños) se publicó unos días antes del siglo, aunque en la portada constara ya la fecha «1900». Es posible observar en esta pequeña licencia algún indicio del valor inaugural que el mismo Freud, clarividente, reservaba a su obra cumbre. La primera edición tuvo una desastrosa acogida por parte del público y la crítica. En una carta a su amigo Fliess, pocos días después de la publicación del libro, el autor se lamentaba: «No hemos adelantado demasiado a nuestro tiempo…». No obstante era también consciente de que, de uno u otro modo, el enigma de los sueños había sido por fin desvelado y que el destino de La interpretación de los sueños era convertirse inexorablemente, en la obra pionera del psicoanálisis. Hoy es también una de las obras maestras de la literatura y el pensamiento del siglo XX. Los progresos científicos alcanzados no han conseguido restar valor ni actualidad a la exposición freudiana de los temas oníricos, aquí presentada en la magistral traducción de Luis López-Ballesteros y de Torres, que mereciera ya en 1923, un comentario elogioso del mismo Freud.",
+          "download": "http://descargar.lelibros.online/Sigmund%20Freud/La%20Interpretacion%20de%20los%20Suenos%20(137)/La%20Interpretacion%20de%20los%20Suenos%20-%20Sigmund%20Freud.pdf"
+        }
+      ],
+      "jk_rowling": [
+        {
+          "ID": "l12",
+          "books_image": "https://i.imgur.com/W2CAsFG.png",
+          "name": "Animales fantásticos y Donde encontrarlos",
+          "autor": "J.K Rowling",
+          "description": " Hay un ejemplar de Animales fantásticos y dónde encontrarlos en casi todos los hogares de magos del país. Ahora, sólo por cierto tiempo, también los muggles pueden descubrir dónde viven los quintapeds, qué come el puffskein y por qué es mejor no dejar leche fuera de casa para un knarl.",
+          "download": "http://descargar.lelibros.online/J.%20K.%20Rowling/Animales%20Fantasticos%20y%20Donde%20Encont%20(110)/Animales%20Fantasticos%20y%20Donde%20En%20-%20J.%20K.%20Rowling.pdf"
+        }
+      ],
+      "neil_gaiman": [
+        {
+          "ID": "l13",
+          "books_image": "https://i.imgur.com/TG2JOlk.png",
+          "name": "American Gods",
+          "autor": "Neil Gaiman",
+          "description": "Días antes de salir de prisión, la mujer de Sombra, Laura, muere en un misterioso accidente de coche. Aturdido por el dolor, emprende el regreso a casa. En el avión, se encontrará con el enigmático señor Wednesday, que dice ser un refugiado de una guerra antigua, un dios y también el rey de América. Juntos se embarcan en un viaje extraño a través de los Estados Unidos, mientras una tormenta de dimensiones épicas amenaza con desencadenarse. Poco a poco descubriremos que Wednesday es una encarnación de Odín y que está reclutando viejos dioses, cuyos poderes han disminuido por el tiempo y la falta de creyentes, para participar en una guerra contra los nuevos dioses: aquellos que conforman la tecnología moderna.",
+          "download": "http://descargar.lelibros.online/Neil%20Gaiman/American%20Gods%20(402)/American%20Gods%20-%20Neil%20Gaiman.pdf"
+        }
+      ],
+      "Isaac Asimov": [
+        {
+          "ID": "l14",
+          "books_image": "https://i.imgur.com/EXNVe9M.png",
+          "name": "Azazel",
+          "autor": "Isaac Asimov",
+          "description": "Azazel es un demonio rojo de dos centímetros, dotado con una impetuosa personalidad y maravillosos poderes mágicos. Susceptible de ser invocado sólo por George Bitternut, un excéntrico lingüista que ha descubierto antiguas fórmulas para llamar a demonios y a espíritus, Azazel no permitirá que sus poderes sean utilizados en provecho personal de George. Sin embargo, el diminuto demonio ayudará a los amigos de George cuando éstos lo necesiten. El único problema es que este singular ser posee poca comprensión de las cuestiones humanas y sus intervenciones producen situaciones sorprendentes",
+          "download": "http://descargar.lelibros.online/Isaac%20Asimov/Azazel%20(801)/Azazel%20-%20Isaac%20Asimov.pdf"
+        }
+      ],
+      "eduardo_mendoza": [
+        {
+          "ID": "l15",
+          "books_image": "https://i.imgur.com/KXvDROq.png",
+          "name": "El asombroso Viaje de Pompino Flato",
+          "autor": "Eduardo Mendoza",
+          "description": "En el siglo I de nuestra era, Pomponio Flato viaja por los confines del Imperio romano en busca de unas aguas de efectos portentosos. El azar y la precariedad de su fortuna lo llevan a Nazaret, donde va a ser ejecutado el carpintero del pueblo, convicto del brutal asesinato de un rico ciudadano. Muy a su pesar, Pomponio se ve inmerso en la solución del crimen, contratado por el más extraordinario de los clientes: el hijo del carpintero, un niño candoroso y singular, convencido de la inocencia de su padre, hombre en apariencia pacífico y taciturno, que oculta, sin embargo, un gran secreto. Cruce de novela histórica, novela policíaca, hagiografía y parodia de todas ellas, aquí se ajustan las cuentas a muchas novelas de consumo, y se construye una nueva modalidad del género más característico de Eduardo Mendoza: la trama detectivesca original e irónica, que desemboca en una sátira literaria y en una desternillante creación novelesca.",
+          "download": "http://descargar.lelibros.online/Eduardo%20Mendoza/El%20Asombroso%20Viaje%20de%20Pomponio%20Flat%20(538)/El%20Asombroso%20Viaje%20de%20Pomponio%20-%20Eduardo%20Mendoza.pdf"
+        }
+      ],
+      "roald_dahl": [
+        {
+          "ID": "l16",
+          "books_image": "https://i.imgur.com/8AxaRzN.png",
+          "name": "Las Brujas",
+          "autor": "Roald Dahl",
+          "description": "Las brujas de todo el mundo, bajo la apariencia de señoras corrientes, están celebrando su Congreso Anual. Han decidido aniquilar con un ratonizador mágico a todos los niños. ¿Conseguirán vencerlas el protagonista de esta historia y su abuela?",
+          "download": "http://descargar.lelibros.online/Roald%20Dahl/Las%20Brujas%20(158)/Las%20Brujas%20-%20Roald%20Dahl.pdf"
+        }
+      ],
+      "geronimo_stilton": [
+        {
+          "ID": "l17",
+          "books_image": "https://i.imgur.com/RgzIzN4.png",
+          "name": "El castillo de Roca Tacaña",
+          "autor": "Geronimo Stilton",
+          "description": "Geronimo Stilton es el editor del Eco del Roedor, el periódico más leído de la Isla de los Ratones. La profesión de Geronimo le hará vivir muchas peripecias que, trasladadas a la vida ratonil, se parecen mucho a la vida real: reporteros agresivos, noticias exclusivas, robos de manuscritos, arriesgadas expediciones… pero siempre respetando «el código de honor» del buen reportero -sinceridad, igualdad y paz- del que Stilton y su equipo hacen gala. El mundo del periodismo en clave… ratonil. Una boda es una oportunidad para encontrarse con la familia, divertirse y pasarlo en grande. Sin embargo, cuando el que se casa es la persona más tacaña de Ratonia, la oportunidad se convierte en una experiencia única. Al menos así lo vivió Geronimo Stilton cuando llegó a Roca Tacaña a felicitar por su enlace a Virgilio, el hijo del Tío Milordo, y a Cloaquita Pestoseta, su futura esposa, una ratoncita gris, pero millonaria. La visita se transformó en el gran acontecimiento. Geronimo conoció todos los secretos del ahorro, y Trampita, hasta dónde llega la paciencia de Geronimo. Pero quizás la mayor sorpresa se la llevó la sumisa Cloaquita cuando conoció a la decidida y valiente Tea, que le ayudó a dar una vuelta a su destino",
+          "download": "http://descargar.lelibros.online/Geronimo%20Stilton/El%20Castillo%20de%20Roca%20Tacana%20(181)/El%20Castillo%20de%20Roca%20Tacana%20-%20Geronimo%20Stilton.pdf"
+        }
+      ],
+      "robert_howard": [
+        {
+          "ID": "l18",
+          "books_image": "https://i.imgur.com/R4WFw3h.png",
+          "name": "Canaan negro y Otros relatos de horror sobrenaturales",
+          "autor": "Robert E. Howard",
+          "description": "A pesar de la brevedad de su carrera literaria, Rober E. Howard (1906-1936), que nunca abandonó la casa familiar en la localidad texana de Cross Plains, contribuyó de un modo decisivo al surgimiento y auge de la literatura pulp norteamericana en los años 20 y 30 del pasado siglo con la publicación en revistas populares, como Weird Tales, de centenares de relatos de terror, aventuras, fantásticos, históricos, etc., fruto de su poderosa imaginación. Impulsó junto con su amigo epistolar H.P. Lovercraft y el californiano Clark Ashton Smith, «los tres mosqueteros de Weird Tales», el fenómeno , que tanta influencia ha tenido en la cultura popular, y dio origen anticipándose unos años a JRR Tolkien, al género de fantasía heroica (Espada y Brujería) con su héroe Conan el Cimerio o el peregrino justiciero del siglo XVI Solomon Kane. Sobre la variedad de registro y temáticas de que era capaz la fértil imaginación de Howard, el aficionado encontrará en este volumen «Canaan negro y otros relatos de terror sobrenatural», una buena muestra. Los dieciocho relatos reunidos en esta antología han sido traducidos directamente de los textos originales, la mayoría publicados en vida de Howard, desechando las ilegítimas adulteraciones que sufrieron en ediciones posteriores. Entre ellos se pueden destacar «Los moradores bajo la tumba» y «Canaan negro», dos soberbias narraciones de horror sobrenatural; los cuentos de fantasmas «La perdición de Dermod» y «Aguas inquietas»; los relatos de civilización perdida «Delenda Est», «La Casa de Arabu» y «La marca del cabo», o dos piezas que podrían adscribirse al género de weird menace, «La Cosa con pezuñas» y «El fantasma del anillo».",
+          "download": "http://descargar.lelibros.online/Robert%20E.%20Howard/Canaan%20Negro%20y%20Otros%20Relatos%20de%20Hor%20(283)/Canaan%20Negro%20y%20Otros%20Relatos%20de%20-%20Robert%20E.%20Howard.pdf"
+        }
+      ],
+      "stephen_king": [
+        {
+          "ID": "l19",
+          "books_image": "https://i.imgur.com/59E43bo.png",
+          "name": "Todo oscuro, sin estrellas",
+          "autor": "Stephen King",
+          "description": "Creo que existe otro hombre dentro de cada hombre, un extraño…» son palabras de la confesión que escribe Wilfred Leland James en «1922», el primer relato de este cuarteto hipnotizador y profundamente oscuro. El ser desconocido que James lleva dentro se despierta cuando su esposa Arlette le anuncia que piensa vender el terreno que acaba de heredar y que va a trasladarse a la ciudad. Sus palabras le empujan hacia el asesinato y la locura. En «Camionero Grande». Tess, una escritora de novelas simpáticas de intriga, se encuentra con un hombre gigantesco cuando vuelve a casa por una carretera rural después de dar una charla en un club de lectura. Violada y abandonada tras ser dada por muerta, Tess planea su venganza y para llevarla a cabo tendrá que sacar de sí misma un lado totalmente desconocido. «Una extensión justa», el relato más corto, es el más malvado y el más divertido. Harry Streeter hace un pacto con el diablo quien le quitará no solamente su cáncer mortal, sino también todos los rencores que había sentido en su vida. Y finalmente, en «Un buen matrimonio» conocemos a Darcy Anderson quien, un día en que su marido está fuera por trabajo, va a buscar pilas al garaje y descubre una caja que él tenía allí escondida. Su contenido es tan horrendo como el ser desconocido que hay dentro de su marido. En un solo instante acabarán veinte felices años de matrimonio. Stephen King es autor de más de cincuenta libros, todos best sellers internacionales. Los más recientes incluyen La cúpula, Después del anochecer, Duma Key, Cell, La historia de Lisey, Todo es eventual y los últimos tomos de La Torre Oscura. En 2003 fue galardonado con la medalla del National Book Foundation for Distinguished Contribution to American Letters, y en 2007 fue nombrado Gran Maestro de los Mystery Writers of America. Vive en Maine con su esposa Tabitha King, también novelista. «Todo oscuro, Sin estrellas es una colección de relatos extraordinaria, terrorífica, sin piedad. El autor está en el cénit de su poder creativo». The Telegraph «Un libro que te obliga a seguir leyendo. King domina tanto la novela corta como la novela muy larga». The New York Times",
+          "download": "http://descargar.lelibros.online/Stephen%20King/Todo%20Oscuro,%20Sin%20Estrellas%20(304)/Todo%20Oscuro,%20Sin%20Estrellas%20-%20Stephen%20King.pdf"
+        }
+      ],
+      "ken_robinson": [
+        {
+          "ID": "l20",
+          "books_image": "https://i.imgur.com/kv1doHG.png",
+          "name": "El elemento",
+          "autor": "Ken Robinson",
+          "description": "El mundo cambia a una velocidad vertiginosa. Es imposible adivinar cómo viviremos en el futuro: lo único que sabemos es que hará falta mucha imaginación y creatividad para transformarnos y afrontar los nuevos retos. Descubrir el Elemento es recuperar capacidades sorprendentes en nuestro interior, y desarrollarlo dará un giro radical no sólo a tu entorno laboral, sino también a tus relaciones y, en definitiva, a tu vida.",
+          "download": "http://descargar.lelibros.online/Ken%20Robinson/El%20Elemento%20(172)/El%20Elemento%20-%20Ken%20Robinson.pdf"
+        }
+      ],
+      "rafael santandreu": [
+        {
+          "ID": "l21",
+          "books_image": "https://i.imgur.com/9iWFnIZ.png",
+          "name": "El Arte de no amargarse la vida",
+          "autor": "Rafael Santandreu",
+          "description": "El arte de no amargarse la vida. ¿Sufres de terribilitis? Rafael Santandreu explica que muchos de los problemas emocionales actuales son causa de una mala filosofía de vida. Con gran facilidad nos creemos deprimidos, ansiosos o muy desgraciados. El arte de no amargarse la vida cuenta que todos estos trastornos emocionales podrían calificarse de terribilitis. En nuestra sociedad tenemos muchas creencias que nos hacen ser infelices como que si no tienes pareja eres desdichado o que hay que tener un puesto de trabajo muy importante para realizarse. Siguiendo la saga de los grandes libros de psicología para el gran público Rafael Santandreu, expone en esta obra un método práctico y claro, aunque completamente científico, para caminar hacia el cambio psicológico. Nuestro destino es convertirnos en personas más fuertes y felices. Con anécdotas extraídas tanto de su consulta como de su historia personal, el autor nos muestra cómo transformarnos a nosotros mismos. De deprimidos, ansiosos o “cascarrabias” podemos convertirnos en hombres y mujeres serenos, alegres y optimistas, con la ayuda de un terapeuta o ¡por nosotros mismos!",
+          "download": "http://descargar.lelibros.online/Rafael%20Santandreu/El%20arte%20de%20no%20amargarse%20la%20vida%20(153)/El%20arte%20de%20no%20amargarse%20la%20vida%20-%20Rafael%20Santandreu.pdf"
+        }
+      ],
+      "javier_reverte": [
+        {
+          "ID": "l22",
+          "books_image": "https://i.imgur.com/BOlOlOB.png",
+          "name": "El sueño de Africa",
+          "autor": "Javier Reverte",
+          "description": "Surcar el continente africano, Javier Reverte emprende un camino donde a cada paso se trasluce el amor, su fascinación y su respeto por aquellas lejanas tierras. Como en las otras entregas de la trilogía, el prolífico periodista asume el papel de viajero en pos de un mito que se irá revelando a través del contacto directo con las gentes y los paisajes africanos. Este libro, que trata de la historia blanca del África negra, entrelaza las grandes y las pequeñas narraciones que surgen a su encuentro con el pasado, con las ciudades del presente, con el conocimiento de tribus ancestrales en franco proceso de extinción... Impregnada de lúcido realismo, de exuberante belleza y de leyenda, esta crónica revela en clave homérica que el placer del viaje, más que en llegar a un destino, consiste en enriquecerse como ser humano a lo largo del itinerario.",
+          "download": "http://descargar.lelibros.online/Javier%20Reverte/El%20Sueno%20de%20Africa%20(131)/El%20Sueno%20de%20Africa%20-%20Javier%20Reverte.pdf"
+        }
+      ],
+      "eben_alexander": [
+        {
+          "ID": "l23",
+          "books_image": "https://i.imgur.com/f8t989e.png",
+          "name": "La prueba del Cielo",
+          "autor": "Eben Alexander",
+          "description": "«El 8 de noviembre de 2008 me desperté con un terrible dolor de cabeza que en apenas dos horas desembocó en un derrame cerebral. Caí en un coma profundo, y durante siete días permanecí en ese estado, durante el cual viví una experiencia increíble y fuera de este mundo. El lugar en el que estuve es un sitio maravilloso, reconfortante y lleno de amor. No tengo miedo a morir porque ahora sé que no es el final». Doctor Eben Alexander. La lógica científica del doctor Alexander jamás había dado crédito a las experiencias cercanas a la muerte. Sin embargo, después de haber pasado por esto sabe que no son meras fantasías: Dios y el alma existen realmente, y la muerte no es el final de la existencia personal, sino una mera transición",
+          "download": "http://descargar.lelibros.online/Eben%20Alexander/La%20Prueba%20del%20Cielo%20(100)/La%20Prueba%20del%20Cielo%20-%20Eben%20Alexander.pdf"
+        }
+      ],
+      "alan_turing": [
+        {
+          "ID": "l24",
+          "books_image": "https://i.imgur.com/IhXpL4J.png",
+          "name": "¿Puede pensar una maquina?",
+          "autor": "Alan M. Turing",
+          "description": "En 1947 Alan M. Turing pronunció una conferencia ante un auditorio compuesto en su mayor parte por miembros del National Physical Laboratory de Londres en la que intentaba responder a la vieja y controvertida pregunta ¿Puede pensar una máquina? Lo expuesto en ese acto apareció publicado tres años más tarde en Mind —una importante revista de filosofía británica— y es lo que ofrecemos aquí al lector en su traducción castellana. Este texto se convirtió enseguida en uno de los escritos fundacionales de la lógica informática y la inteligencia artificial, al presentar las líneas generales por las que debería discurrir una respuesta precisa y manejable (aunque no indiscutible) a la pregunta formulada. Se trata del famoso Test de Turing, una prueba para decidir si una máquina es inteligente (o «piensa»). Para ello Turing diseñó un juego de imitación en el que participan una máquina y seres humanos; podemos decir que una máquina piensa si un ser humano que se comunica con la máquina y con otros seres humanos no logra distinguir cuando su interlocutor es una máquina y cuando un humano. Una «máquina de Turing» como la que participa en el juego, es un dispositivo ideal de cálculo, capaz de resolver una función computable —una función cuya solución es susceptible de ser obtenida por un procedimiento mecánico—. Pero lo más significativo es que Turing demostró que hay una máquina peculiar —la máquina universal de Turing— en la que se puede representar cualquier máquina que sea capaz de computar una función particular. De acuerdo con esto, una máquina universal de Turing sería una especie de sistema operativo en el que se implementan diferentes programas (máquinas de Turing especiales), un poco a la manera en que nos es familiar en los ordenadores personales. La denominada «metáfora del ordenador» como modelo capaz de simular la mente humana y, por ende, el pensar, tiene aquí su fuente.",
+          "download": "http://descargar.lelibros.online/Alan%20M.%20Turing/_Puede%20Pensar%20una%20Maquina_%20(582)/_Puede%20Pensar%20una%20Maquina_%20-%20Alan%20M.%20Turing.pdf"
+        }
+      ],
+      "isaac_asimov": [
+        {
+          "ID": "l25",
+          "books_image": "https://i.imgur.com/ArU8GUS.png",
+          "name": "La tragedia de la luna",
+          "autor": "Isaac Asimov",
+          "description": "Asimov habla en esta obra de la Luna y de otros pequeños mundos que pueblan nuestro sistema solar; se ocupa del carbono, del descubrimiento del DNA, de la función de la glándula tiroidea, de los microorganismos y de la velocidad de la luz; reflexiona sobre cuestiones sociales tan importantes como el racismo y el futuro de los medios de comunicación.",
+          "download": "http://descargar.lelibros.online/Isaac%20Asimov/La%20Tragedia%20de%20la%20Luna%20(302)/La%20Tragedia%20de%20la%20Luna%20-%20Isaac%20Asimov.pdf"
+        }
+      ],
+      "aa_vv": [
+        {
+          "ID": "l26",
+          "books_image": "https://i.imgur.com/qjPu1L7.png",
+          "name": "Economía para andar por casa",
+          "autor": "AA.VV",
+          "description": "¿Por qué sube la gasolina? ¿Son de fiar las empresas que nos ofrecen refinanciar nuestras deudas? ¿Cómo me afecta la reforma laboral? ¿Qué son los fondos de inversión? ¿A qué edad es recomendable hacer un plan de pensiones? Cada día desde que nos levantamos nos enfrentamos a un sinfín de cuestiones que tienen un trasfondo económico: desde la luz que ilumina nuestro hogar hasta el combustible que utilizamos para desplazarnos, los impuestos que pagamos y los servicios que contratamos con los bancos. Un afamado economista y tres reconocidos periodistas han hecho el ejercicio de sintetizar las dudas más comunes que afectan a cualquier ciudadano para convertirlas en preguntas que se responden de forma sencilla y clara, aclarando conceptos y desmontando tópicos. El resultado es una obra de lectura obligada para todos aquellos que quieran saber qué ocurre con su dinero y cómo funciona la economía",
+          "download": "http://descargar.lelibros.online/AA.%20VV_/Economia%20Para%20Andar%20por%20Casa%20(279)/Economia%20Para%20Andar%20por%20Casa%20-%20AA.%20VV_.pdf"
+        }
+      ]
+    }
+  ]
+}
