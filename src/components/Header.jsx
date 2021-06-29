@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <React.Fragment>
             <header>
-                <div className="navbar-fixedd">
+                <div className="navbar-fixed">
                     <nav className="grey darken-4">
                         <Link to="/">
                             <img src="https://i.imgur.com/Hts1VfT.png" alt="The Dream Books Logo" className="responsive-img" />
