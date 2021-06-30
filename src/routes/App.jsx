@@ -10,6 +10,7 @@ import NotFound from '../pages/NotFound'
 import Categories  from '../pages/Categories'
 import Books from '../pages/Books'
 import SearchPage from '../pages/SearchPage'
+import Authors from '../pages/Authors'
 
 const App = () => {
     return (
@@ -22,6 +23,7 @@ const App = () => {
                     <Route exact path="/categories/" component={Categories} /> 
                     <Route exact path="/libro/:numberCharacter" component={Books} />
                     <Route exact path="/search/:numberPage" component={SearchPage} />
+                    <Route exact path="/autor/" component={Authors} />
                     <Route component={NotFound} />
                 </Switch>
             </Layout>

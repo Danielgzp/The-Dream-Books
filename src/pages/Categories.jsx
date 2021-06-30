@@ -1,25 +1,19 @@
 import React, { useEffect, useState } from 'react'
 
+import UseBooks from '../UseBooks'
+
 const Categories = () => {
 
-    const API = 'http://localhost:3001/books'
-    const [book, setBook] = useState([])
+    const books = UseBooks({endpoint: 'categories'})
 
-    useEffect(() => {
-        fetch(API)
-            .then(response => response.json())
-            .then(book => setBook(book))
-    }, [])
-    
+    console.log(books)
+
     return (
         <main>
             <h1>Categorias</h1>
-            {book.map(books => (
+            {books.map(book => (
                 <div>
-                    <h1>{books.name}</h1>
-                    <h2>{books.autor}</h2>
-                    <p>{books.description}</p>
-                    <img src={books.books_image} alt="" />
+                    <h1>{book.name}</h1>
                 </div>
             ))}
         </main>

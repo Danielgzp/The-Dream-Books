@@ -1,47 +1,26 @@
 import React, { useEffect, useState } from 'react'
 
 import BookItem from './BookItem'
-import UseListCharacters from '../UseListCharacters'
+
 import Swal from '../../node_modules/sweetalert2/dist/sweetalert2.all'
 
 import { Link, useLocation } from 'wouter'
+import UseBooks from '../UseBooks'
 
 export default function BooksList() {
+     
+    const books = UseBooks({ endpoint: 'books' })
     
-    const [numberPage, setnumberPage] = useState(1) 
-    const [characters, setCharacters] = useState([])
-    const [loading, setLoading] = useState(false)
-    
-    useEffect(() => {
-        setLoading(true)
-        UseListCharacters({ numberPage }).then(characters => setCharacters(characters), setLoading(false))
-    }, [numberPage])
-    
+    // const [path, pushLocation] = useLocation()
 
-    const handleClickNext = () => {
-        if(numberPage < 5){
-            setnumberPage(numberPage + 1)
-        } else{
-            Swal.fire('Ya no hay mas personajes!!')
-        }
-    }
-    const handleClickPrev = () => {
-        if(numberPage > 1){
-            setnumberPage(numberPage - 1)
-        } 
-    }
-
-    const [numberCharacter, setNumberCharacter] = useState('')
-    const [path, pushLocation] = useLocation()
-
-    const handleSubmit = event => {
-        event.preventDefault()
-        pushLocation(`/search/${numberCharacter}`)
-    }
+    // const handleSubmit = event => {
+    //     event.preventDefault()
+    //     pushLocation(`/search/1`)
+    // }
     
-    const handleChange = event => {
-        setNumberCharacter(event.target.value)
-    }
+    // const handleChange = event => {
+    //     // setNumberCharacter(event.target.value)
+    // }
 
     return (
         <section>
@@ -57,16 +36,16 @@ export default function BooksList() {
                         />
                 </form> */}
                 <ul className="list-books--ul">
-                    {characters.map(character => (
-                            <li key={character.id}>
-                                <BookItem character={character} />
+                    {books.initial_books.map(book => (
+                            <li key={book.id}>
+                                <BookItem book={book} />
                             </li>
                     ))} 
                 </ul>
 
                 <div className="pagination">
-                    <button type="button" onClick={handleClickPrev} >Prev Page</button>
-                    <button type="button" onClick={handleClickNext} >Next Page</button>
+                    {/* <button type="button" onClick={handleClickPrev} >Prev Page</button>
+                    <button type="button" onClick={handleClickNext} >Next Page</button> */}
                         <div className="number-pages">
                             <ul>
                                 <li>
