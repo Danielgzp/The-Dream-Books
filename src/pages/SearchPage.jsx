@@ -1,28 +1,49 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 
 import BookItem from '../components/BookItem'
-import UseListCharacters from '../UseListCharacters'
+import UseBooks from '../UseBooks'
+import Publicity from '../components/Publicity'
 
 const SearchPage = ({ params }) => {
 
-    console.log(params)
-    const { numberPage } = params
-    const [characters, setCharacters] = useState([])
+    let { bookName } = params
+    bookName = bookName.replaceAll("-", " ")
 
-    useEffect(() => {
-        UseListCharacters({ numberPage }).then(characters => setCharacters(characters))
-    }, [numberPage])
+    const books = UseBooks({endpoint: 'books'})
+    const librito = books.initial_books
+    const [filteredBook, setFilteredBook] = useState(librito)
 
+    useMemo(() => {
+        const result = librito.filter(book => {
+            return `${book.name}`.toLowerCase().includes(bookName.toLowerCase())
+        })
+        setFilteredBook(result)
+    }, [librito, bookName])
+
+    if (filteredBook.length === 0) {
+        return (
+          <div>
+              <h1>Resultado de la Búsqueda: {bookName}</h1>
+            <div>
+                <h2>No se ha encontrado el libro que buscaba</h2>
+            </div>
+          </div>
+        );
+      }
+      
     return (
         <main>
             <section>
-                <h2>Search List</h2>
+                <h2>Resultado de la Búsqueda: {bookName}</h2>
                 <div>
-                    {characters.map(characters => (
-                        <BookItem character={characters} key={characters.id} />
+                    {filteredBook.map(book => (
+                        <li key={book.id}> 
+                            <BookItem book={book}/> 
+                        </li>
                     ))}
                 </div>
             </section>
+            <Publicity />
         </main>
     )
 }

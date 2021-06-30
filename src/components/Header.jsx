@@ -19,7 +19,7 @@ const Header = () => {
                         <ul className="right valign-wrapper">
                             <li><Link to="/"> <i className="icon-book"></i> Todos los Libros</Link></li>
                             <li><Link to="#"><i className="icon-corazon"></i> Hacer una contribucion</Link></li>
-                            <li><Link to="/iniciar-sesion">Iniciar Sesión</Link></li>
+                            <li><Link to="/iniciar-sesion/">Iniciar Sesión</Link></li>
                         </ul>
                     </nav>
                 </div>

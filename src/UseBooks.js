@@ -6,23 +6,6 @@ const randomNumber = (min = 0, max = 1) =>
 const simulateNetworkLatency = (min = 30, max = 1500) =>
   delay(randomNumber(min, max));
 
-// export default function UseBooks({endpoint}){
-  
-//   const API = `http://localhost:3001/${endpoint}`
-//   const [books, setBooks] = useState([])
-  
-//   useEffect(async () => {
-//     try{
-//       await simulateNetworkLatency
-//       const response = await fetch(API)
-//       const data =  await response.json()
-//       setBooks(data)
-
-//     } catch(error){
-//       console.error(error);
-//     }
-//   }, [])
-
 export default function UseBooks({endpoint}){
   
     const API = `http://localhost:3001/${endpoint}`
@@ -77,8 +60,13 @@ export default function UseBooks({endpoint}){
             }
           ]
       },
-      'initial_books': []
-    })
+      'initial_books': [],
+      'initial_autors': [
+        {
+          'published_books': []
+        }
+      ]
+    });
     
     useEffect(() => {
       async function callApi(){

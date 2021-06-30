@@ -6,7 +6,7 @@ const BookItem = ({ book }) => {
     return(
         <article>
             <div className="books-container--portada">
-                <Link to={`/libro/${book.id}`} >
+                <Link to={`/libro/${book.id}/`} >
                     <img src={book.books_image} alt="Portada del Libro" />
                 </Link>
                 <h3>{book.name}</h3>
@@ -15,7 +15,7 @@ const BookItem = ({ book }) => {
                 <Link to={`/autor/` /*aqui va link ahcia la pagian de autores*/} >{book.autor} </Link>
             </div>
             <div className="descargar">
-                <Link to={`/libro/${book.id}`} >Descargar Libro</Link>
+                <Link to={`/libro/${book.id}/`} >Descargar Libro</Link>
             </div>
         </article>
     )

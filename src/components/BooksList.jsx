@@ -1,44 +1,50 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 
 import BookItem from './BookItem'
+import './styles/BooksList.css'
 
 import Swal from '../../node_modules/sweetalert2/dist/sweetalert2.all'
 
 import { Link, useLocation } from 'wouter'
 import UseBooks from '../UseBooks'
 
-export default function BooksList() {
-     
-    const books = UseBooks({ endpoint: 'books' })
-    
-    // const [path, pushLocation] = useLocation()
 
-    // const handleSubmit = event => {
-    //     event.preventDefault()
-    //     pushLocation(`/search/1`)
-    // }
+function BooksList() {
+
+    const books = UseBooks({ endpoint: 'books' })
+    const librito = books.initial_books
     
-    // const handleChange = event => {
-    //     // setNumberCharacter(event.target.value)
-    // }
+    const [bookName, setBookName] = useState('')
+    // const [path, pushLocation] = useLocation()
+    // const [filteredBook, setFilteredBook] = useState([])
+    const [filteredBook, setFilteredBook] = useState(librito)
+    const [query, setQuery] = useState('')
+    const [path, pushLocation] = useLocation()
+
+      const handleSubmit = (event) => {
+          event.preventDefault()
+          pushLocation(`/search/${query.replaceAll(" ", "-")}`)
+      }
 
     return (
         <section>
             <h2>Publicaciones Recientes</h2>
             <div className="books-container">
-                {/* <h2>Search Character</h2>
+                <h2>Search Book</h2>
                 <form onSubmit={handleSubmit} >
                     <input 
-                        type="text" 
-                        value={numberCharacter} 
-                        onChange={handleChange}  
+                        type="text"  
+                        onChange={e => {
+                            setQuery(e.target.value)
+                        }}  
+                        value={query}
                         placeholder="Search Character..." 
                         />
-                </form> */}
+                </form> 
                 <ul className="list-books--ul">
-                    {books.initial_books.map(book => (
+                    {librito.map(book => (
                             <li key={book.id}>
-                                <BookItem book={book} />
+                                <BookItem book={book} key={book.id}/>
                             </li>
                     ))} 
                 </ul>
@@ -79,4 +85,6 @@ export default function BooksList() {
         </section>
     )
 }
+
+export default BooksList
 

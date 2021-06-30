@@ -40,7 +40,7 @@ const AccountSing = () => {
                     <div class="registrar">
                         <p>Aun no tienes cuenta?</p>
                         <div class="registrar-div">
-                            <Link to="/iniciar-sesion/crear-cuenta">
+                            <Link to="/iniciar-sesion/crear-cuenta/">
                                 <button class="registrar-button">
                                     <span>Registrate</span>
                                 </button>
