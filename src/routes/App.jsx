@@ -12,6 +12,7 @@ import Books from '../pages/Books'
 import SearchPage from '../pages/SearchPage'
 import Authors from '../pages/Authors'
 import Logout from '../pages/Logout'
+import EditBook from '../pages/EditBook'
 
 const App = () => {
     return (
@@ -23,6 +24,7 @@ const App = () => {
                     <Route exact path="/iniciar-sesion/crear-cuenta/" component={CreateAccount} />
                     <Route exact path="/categories/:categorieName/" component={Categories} /> 
                     <Route exact path="/libro/:bookName/" component={Books} />
+                    <Route exact path="/libros/editar-libro" component={EditBook} />
                     <Route exact path="/search/:bookSearch/" component={SearchPage} />
                     <Route exact path="/autor/:autorName/" component={Authors} />
                     <Route exact path="/salir/" component={Logout} />

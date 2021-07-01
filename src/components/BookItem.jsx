@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Cookies from "universal-cookie";
+
 const BookItem = ({ book }) => {
+    const cookies = new Cookies()
+
+
   return (
     <article>
       <div className="libro-imagen">
@@ -38,6 +43,11 @@ const BookItem = ({ book }) => {
           Descargar Libro
         </Link>
       </div>
+      {cookies.get("privilegio") === "usuario" && (
+          <div>
+              <Link to="/libros/editar-libro/">Editar Libro</Link>
+          </div>
+      )}
     </article>
   );
 };

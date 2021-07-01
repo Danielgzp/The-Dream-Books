@@ -12,7 +12,7 @@ function BooksList() {
 
     const initialState = UseBooks({ endpoint: 'books' })
     const books = initialState.initial_books
-    
+
     return (
         <section>
             <div className="books-container">

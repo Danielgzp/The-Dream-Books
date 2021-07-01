@@ -5,10 +5,10 @@ const Footer = () => {
         <React.Fragment>
             <footer>
                 <div className="footer-left">
-                    <p>Echo por los panas © 2016 LeLibros. Todos los derechos reservados a sus respectivos</p>
+                    <p>Echo por los panas © 2021 The Dream Books. Todos los derechos </p>
                 </div>
                  <div className="footer-right">
-                    <p>El mejor lugar para descargar o leer en línea los mejores libros en PDF, Epub y mobi.</p>
+                    <p>El mejor lugar para descargar los mejores libros en PDF.</p>
                 </div>
             </footer>
         </React.Fragment>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Constantes from "../Constantes";
 import Swal from '../../node_modules/sweetalert2/dist/sweetalert2.all'
-import Cookies from 'universal-cookie'
+import Cookies from "universal-cookie";
 
 class AccountSing extends React.Component {
   constructor(props) {
