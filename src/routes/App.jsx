@@ -11,6 +11,7 @@ import Categories  from '../pages/Categories'
 import Books from '../pages/Books'
 import SearchPage from '../pages/SearchPage'
 import Authors from '../pages/Authors'
+import Logout from '../pages/Logout'
 
 const App = () => {
     return (
@@ -24,6 +25,7 @@ const App = () => {
                     <Route exact path="/libro/:bookName/" component={Books} />
                     <Route exact path="/search/:bookSearch/" component={SearchPage} />
                     <Route exact path="/autor/:autorName/" component={Authors} />
+                    <Route exact path="/salir/" component={Logout} />
                     <Route component={NotFound} />
                 </Switch>
             </Layout>
