@@ -8,7 +8,7 @@ const Publicity = () => {
                 <div className="publi1">
                     <Link to="">
                         <figure>
-                            <img src="https://i.imgur.com/TXRRN60.png" alt=""/>
+                            <img src="https://i.imgur.com/TXRRN60.png" alt="Publicty"/>
                             <figcaption>Publicidad</figcaption>
                         </figure>
                     </Link>
@@ -16,7 +16,7 @@ const Publicity = () => {
                 <div className="publi2">
                     <Link to="">
                         <figure>
-                        <img src="https://i.imgur.com/Cfs8k1L.png" alt=""/>
+                        <img src="https://i.imgur.com/Cfs8k1L.png" alt="Publicty"/>
                             <figcaption>Publicidad</figcaption>
                         </figure>
                     </Link>
@@ -24,7 +24,7 @@ const Publicity = () => {
                 <div className="publi3">
                     <Link to="">
                         <figure>
-                            <img src="https://i.imgur.com/CCFKVm3.jpg" alt=""/>
+                            <img src="https://i.imgur.com/CCFKVm3.jpg" alt="Publicty"/>
                             <figcaption>Publicidad</figcaption>
                         </figure>
                     </Link>

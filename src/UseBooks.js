@@ -10,56 +10,11 @@ export default function UseBooks({endpoint}){
   
     const API = `http://localhost:3001/${endpoint}`
     const [books, setBooks] = useState({
-      'initial_categories': {
-          'literatura_ficcion':[
-            {
-              'aventura': [],
-            },
-            {
-              'biografias_memorias': [],
-            },
-            {
-              'ciencia_ficcion': [],
-            },
-            {
-              'ensayos': [],
-            },
-            {
-              'fantasia': [],
-            },
-            {
-              'humor': [],
-            },
-            {
-              'infantil': [],
-            },
-            {
-              'terror_suspenso': []
-            }
-          ],
-          'vida_practica': [
-            {
-              'autoayuda': [],
-            },
-            {
-              'viajes_guias': [],
-            },
-            {
-              'espiritualidad': [],
-            }
-          ],
-          'tecnico_academicos': [
-            {
-              'ciencias_exactas': [],
-            },
-            {
-              'ciencias_naturales': [],
-            },
-            {
-              'ciencias_sociales': [],
-            }
-          ]
-      },
+      'initial_categories': [
+        {
+          'categorie_books': []
+        }
+      ],
       'initial_books': [],
       'initial_autors': [
         {

@@ -8,9 +8,9 @@ import Publicity from '../components/Publicity'
 const Index = () => {
     return (
         <main>
-                <CategoriesList />
-                <BooksList />
-                <Publicity />
+            <CategoriesList />
+            <BooksList />
+            <Publicity />
         </main>
     )
 }

@@ -11,41 +11,19 @@ import UseBooks from '../UseBooks'
 
 function BooksList() {
 
-    const books = UseBooks({ endpoint: 'books' })
-    const librito = books.initial_books
+    const initialState = UseBooks({ endpoint: 'books' })
+    const books = initialState.initial_books
     
-    const [bookName, setBookName] = useState('')
-    // const [path, pushLocation] = useLocation()
-    // const [filteredBook, setFilteredBook] = useState([])
-    const [filteredBook, setFilteredBook] = useState(librito)
-    const [query, setQuery] = useState('')
-    const [path, pushLocation] = useLocation()
-
-      const handleSubmit = (event) => {
-          event.preventDefault()
-          pushLocation(`/search/${query.replaceAll(" ", "-")}`)
-      }
-
     return (
         <section>
             <h2>Publicaciones Recientes</h2>
             <div className="books-container">
-                <h2>Search Book</h2>
-                <form onSubmit={handleSubmit} >
-                    <input 
-                        type="text"  
-                        onChange={e => {
-                            setQuery(e.target.value)
-                        }}  
-                        value={query}
-                        placeholder="Search Character..." 
-                        />
-                </form> 
+                <h2>PUBLICACIONES RECIENTES</h2>
                 <ul className="list-books--ul">
-                    {librito.map(book => (
-                            <li key={book.id}>
-                                <BookItem book={book} key={book.id}/>
-                            </li>
+                    {books.map(book => (
+                        <li key={book.id}>
+                            <BookItem book={book} key={book.id}/>
+                        </li>
                     ))} 
                 </ul>
 

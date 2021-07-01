@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useLocation } from 'wouter'
 
 import './styles/Header.css'
 
 const Header = () => {
+
+    const [query, setQuery] = useState('')
+    const [path, pushLocation] = useLocation()
+
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        pushLocation(`/search/${query.replaceAll(" ", "-")}/`)
+    }
+
     return (
         <React.Fragment>
             <header>
@@ -12,14 +22,21 @@ const Header = () => {
                         <Link to="/">
                             <img src="https://i.imgur.com/Hts1VfT.png" alt="The Dream Books Logo" className="responsive-img" />
                         </Link>
-                        
-                        <input type="search" name="search" className="search-input" placeholder="Busca entre los muchos libros disponibles..." /> 
-                        <button type="button">Buscar</button>
-
+                        <form onSubmit={handleSubmit}>
+                            <input 
+                                type="text"  
+                                onChange={e => {
+                                    setQuery(e.target.value)
+                                }}  
+                                value={query}
+                                placeholder="Busca entre los muchos libros disponibles..."
+                                className="search-input"
+                                />
+                            <button className="" type="submit" onClick={handleSubmit}>Buscar</button>
+                        </form>  
                         <ul className="right valign-wrapper">
                             <li><Link to="/"> <i className="icon-book"></i> Todos los Libros</Link></li>
-                            <li><Link to="#"><i className="icon-corazon"></i> Hacer una contribucion</Link></li>
-                            <li><Link to="/iniciar-sesion/">Iniciar Sesión</Link></li>
+                            <li><Link to="/iniciar-sesion/"><i className="icon-corazon"></i>Iniciar Sesión</Link></li>
                         </ul>
                     </nav>
                 </div>

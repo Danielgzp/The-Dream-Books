@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useMemo, useState } from 'react'
 
 import BookItem from '../components/BookItem'
 import UseBooks from '../UseBooks'
@@ -6,8 +6,8 @@ import Publicity from '../components/Publicity'
 
 const SearchPage = ({ params }) => {
 
-    let { bookName } = params
-    bookName = bookName.replaceAll("-", " ")
+    let { bookSearch } = params
+    bookSearch = bookSearch.replaceAll("-", " ")
 
     const books = UseBooks({endpoint: 'books'})
     const librito = books.initial_books
@@ -15,15 +15,15 @@ const SearchPage = ({ params }) => {
 
     useMemo(() => {
         const result = librito.filter(book => {
-            return `${book.name}`.toLowerCase().includes(bookName.toLowerCase())
+            return `${book.name}`.toLowerCase().includes(bookSearch.toLowerCase())
         })
         setFilteredBook(result)
-    }, [librito, bookName])
+    }, [librito, bookSearch])
 
     if (filteredBook.length === 0) {
         return (
           <div>
-              <h1>Resultado de la Búsqueda: {bookName}</h1>
+              <h1>Resultado de la Búsqueda: {bookSearch}</h1>
             <div>
                 <h2>No se ha encontrado el libro que buscaba</h2>
             </div>
@@ -34,7 +34,7 @@ const SearchPage = ({ params }) => {
     return (
         <main>
             <section>
-                <h2>Resultado de la Búsqueda: {bookName}</h2>
+                <h2>Resultado de la Búsqueda: {bookSearch}</h2>
                 <div>
                     {filteredBook.map(book => (
                         <li key={book.id}> 

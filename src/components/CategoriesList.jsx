@@ -1,7 +1,7 @@
-import React, { Children } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import UseBooks from '../UseBooks'
 
+import UseBooks from '../UseBooks'
 import './styles/CategoriesList.css'
 
 const CategoriesList = () => {
@@ -11,25 +11,11 @@ const CategoriesList = () => {
     return (
         <aside>
             <div className="main-div--aside">
+                <h2 className="title-list">Categorias</h2>
                 <ul className="main-aside--lista">
-                    <h2 className="title-list">Literatura y Ficcion</h2>
-                        <ol>
-                            {books_categories.initial_categories.literatura_ficcion.map(title => (
-                                <li className="lista-elemento"><Link to={`/categories/${title.sub_categorie_name}/`.toLowerCase().replaceAll(" ", "-")}><i className="down-arrow"></i>{title.sub_categorie_name}</Link></li>
-                            ))}
-                        </ol>
-                    <h2 className="title-list">Tecnico y Academicos</h2>
-                        <ol>
-                        {books_categories.initial_categories.vida_practica.map(title => (
-                                <li className="lista-elemento"><Link to={`/categories/${title.sub_categorie_name}/`.toLowerCase().replaceAll(" ", "-")}><i className="down-arrow"></i>{title.sub_categorie_name}</Link></li>
-                            ))}
-                        </ol>
-                    <h2 className="title-list">Vida Practica y Otros</h2>
-                        <ol>
-                            {books_categories.initial_categories.tecnico_academicos.map(title => (
-                                <li className="lista-elemento"><Link to={`/categories/${title.sub_categorie_name}/`.toLowerCase().replaceAll(" ", "-")}><i className="down-arrow"></i>{title.sub_categorie_name}</Link></li>
-                            ))}
-                        </ol>
+                    {books_categories.initial_categories.map(title => (
+                        <li className="lista-elemento"><Link to={`/categories/${title.categorie_name}/`.toLowerCase().replaceAll(" ", "-")}><i className="down-arrow"></i>{title.categorie_name}</Link></li>
+                    ))}
                 </ul>
             </div>
         </aside>

@@ -2,20 +2,19 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const BookItem = ({ book }) => {
-    
     return(
         <article>
-            <div className="books-container--portada">
-                <Link to={`/libro/${book.id}/`} >
+            <div className="libro-imagen">
+                <Link className="" to={`/libro/${book.name}/`.toLowerCase().replaceAll(" ", "-").toLowerCase().normalize('NFD').replace(/[?¿¡!\u0300-\u036f]/g,"")} >
                     <img src={book.books_image} alt="Portada del Libro" />
                 </Link>
                 <h3>{book.name}</h3>
             </div>
             <div className="autor">
-                <Link to={`/autor/` /*aqui va link ahcia la pagian de autores*/} >{book.autor} </Link>
+                <Link className="" to={`/autor/${book.autor}/`.toLowerCase().replaceAll(" ", "-")} >{book.autor} </Link>
             </div>
             <div className="descargar">
-                <Link to={`/libro/${book.id}/`} >Descargar Libro</Link>
+                <Link className="" to={`/libro/${book.name}/`.toLowerCase().replaceAll(" ", "-").normalize('NFD').replace(/[?¿¡!\u0300-\u036f]/g,"")} >Descargar Libro</Link>
             </div>
         </article>
     )

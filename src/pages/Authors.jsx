@@ -1,26 +1,41 @@
-import React, { useEffect, useState } from 'react'
+import React, { useMemo, useState } from 'react'
 
 import UseBooks from '../UseBooks'
+import BookItem from '../components/BookItem'
+import Publicity from '../components/Publicity'
 
-const Authors = () => {
+const Authors = ({params}) => {
    
+    let { autorName} = params
+    autorName = autorName.replaceAll("-", " ")
+
     const books = UseBooks({endpoint: 'autores'})
+    const autor = books.initial_autors
+    const [filteredAutor, setFilteredAutor] = useState(autor)
+
+    useMemo(() => {
+        const result = autor.filter(book => {
+            return `${book.autor_name}`.toLowerCase().includes(autorName.toLowerCase())
+        })
+        setFilteredAutor(result)
+    }, [autor, autorName])
 
     return (
-        
-        <div>
-            <h1>Libros del autor</h1>
-            {books.initial_autors.map(book => (
-                <div>
-                    <h2>{book.autor_name}</h2>
+        <main>
+            <section>
+                <h2>{`AUTOR: ${autorName}`.toUpperCase()}</h2>
+                {filteredAutor.map(autores => (
                     <div>
-                        {book.published_books.map(books => (
-                            <img src={books.books_image} alt="" />
+                        {autores.published_books.map(book => (
+                            <li>
+                                <BookItem book={book} key={book.id}/>
+                            </li>
                         ))}
                     </div>
-                </div>
-            ))}
-        </div>
+                ))}
+            </section>
+            <Publicity />
+        </main>
     )
 
     

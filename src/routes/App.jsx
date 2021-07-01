@@ -21,9 +21,9 @@ const App = () => {
                     <Route exact path="/iniciar-sesion/" component={SingIn} />
                     <Route exact path="/iniciar-sesion/crear-cuenta/" component={CreateAccount} />
                     <Route exact path="/categories/:categorieName/" component={Categories} /> 
-                    <Route exact path="/libro/:numberCharacter/" component={Books} />
-                    <Route exact path="/search/:bookName/" component={SearchPage} />
-                    <Route exact path="/autor/" component={Authors} />
+                    <Route exact path="/libro/:bookName/" component={Books} />
+                    <Route exact path="/search/:bookSearch/" component={SearchPage} />
+                    <Route exact path="/autor/:autorName/" component={Authors} />
                     <Route component={NotFound} />
                 </Switch>
             </Layout>
