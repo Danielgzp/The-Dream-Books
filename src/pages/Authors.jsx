@@ -3,6 +3,7 @@ import React, { useMemo, useState } from 'react'
 import UseBooks from '../UseBooks'
 import BookItem from '../components/BookItem'
 import Publicity from '../components/Publicity'
+import CategoriesList from '../components/CategoriesList'
 
 const Authors = ({params}) => {
    
@@ -22,6 +23,7 @@ const Authors = ({params}) => {
 
     return (
         <main>
+            <CategoriesList />
             <section>
                 <h2>{`AUTOR: ${autorName}`.toUpperCase()}</h2>
                 {filteredAutor.map(autores => (

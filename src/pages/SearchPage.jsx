@@ -3,6 +3,7 @@ import React, { useMemo, useState } from 'react'
 import BookItem from '../components/BookItem'
 import UseBooks from '../UseBooks'
 import Publicity from '../components/Publicity'
+import CategoriesList from '../components/CategoriesList'
 
 const SearchPage = ({ params }) => {
 
@@ -29,10 +30,11 @@ const SearchPage = ({ params }) => {
             </div>
           </div>
         );
-      }
+    }
       
     return (
         <main>
+            <CategoriesList />
             <section>
                 <h2>Resultado de la Búsqueda: {bookSearch}</h2>
                 <div>

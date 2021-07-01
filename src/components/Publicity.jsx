@@ -16,7 +16,7 @@ const Publicity = () => {
                 <div className="publi2">
                     <Link to="">
                         <figure>
-                        <img src="https://i.imgur.com/Cfs8k1L.png" alt="Publicty"/>
+                            <img src="https://i.imgur.com/Cfs8k1L.png" alt="Publicty"/>
                             <figcaption>Publicidad</figcaption>
                         </figure>
                     </Link>

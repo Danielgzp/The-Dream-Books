@@ -5,18 +5,6 @@ const NewAccount = () => {
         <React.Fragment>
             <div className="login-div">
                     <h2>Ingresa tus datos</h2>
-                        {/* <!-- <div className="redes">
-                            <div className="twitter">
-                                <a href="">
-                                    <span>twitter</span>
-                                </a>
-                            </div>
-                            <div className="facebook">
-                                <a href="">
-                                    <span>facebook</span>
-                                </a>
-                            </div>
-                        </div> --> */}
                     <div className="form-div">
                         <form action="ajax/registro.php" method="post" name="registro" className="form" >
                             <div className="input name-form">

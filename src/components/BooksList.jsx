@@ -1,11 +1,10 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React from 'react'
+import { Link } from 'wouter'
 
 import BookItem from './BookItem'
 import './styles/BooksList.css'
-
 import Swal from '../../node_modules/sweetalert2/dist/sweetalert2.all'
 
-import { Link, useLocation } from 'wouter'
 import UseBooks from '../UseBooks'
 
 
@@ -16,7 +15,6 @@ function BooksList() {
     
     return (
         <section>
-            <h2>Publicaciones Recientes</h2>
             <div className="books-container">
                 <h2>PUBLICACIONES RECIENTES</h2>
                 <ul className="list-books--ul">
