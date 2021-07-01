@@ -43,7 +43,7 @@ const BookItem = ({ book }) => {
           Descargar Libro
         </Link>
       </div>
-      {cookies.get("privilegio") === "usuario" && (
+      {cookies.get("privilegio") === "administrador" && (
           <div>
               <Link to="/libros/editar-libro/">Editar Libro</Link>
           </div>
