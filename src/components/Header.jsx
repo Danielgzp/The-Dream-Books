@@ -32,13 +32,21 @@ const Header = () => {
                 />
               </Link>
 
-              <input
-                type="search"
-                name="search"
-                className="search-input"
-                placeholder="Busca entre los muchos libros disponibles..."
-              />
-              <button type="button">Buscar</button>
+              <form onSubmit={handleSubmit}>
+                <input
+                  type="text"
+                  onChange={(e) => {
+                    setQuery(e.target.value);
+                  }}
+                  value={query}
+                  placeholder="Busca entre los muchos libros disponibles..."
+                  className="search-input"
+                />
+                <button className="" type="submit" onClick={handleSubmit}>
+                  Buscar
+                </button>
+              </form>
+      
               <ul className="right valign-wrapper">
                 <li>
                   <Link to="/">
@@ -72,13 +80,21 @@ const Header = () => {
                 />
               </Link>
 
-              <input
-                type="search"
-                name="search"
-                className="search-input"
-                placeholder="Busca entre los muchos libros disponibles..."
-              />
-              <button type="button">Buscar</button>
+              <form onSubmit={handleSubmit}>
+                <input
+                  type="text"
+                  onChange={(e) => {
+                    setQuery(e.target.value);
+                  }}
+                  value={query}
+                  placeholder="Busca entre los muchos libros disponibles..."
+                  className="search-input"
+                />
+                <button className="" type="submit" onClick={handleSubmit}>
+                  Buscar
+                </button>
+              </form>
+
               <ul className="right valign-wrapper">
                 <li>
                   <Link to="/">
