@@ -36,7 +36,7 @@ export default function UseBooks({endpoint}){
         }
       }
       callApi()
-    }, [])
+    }, [API])
 
   return books
 }

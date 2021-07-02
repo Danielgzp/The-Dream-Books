@@ -3,7 +3,6 @@ import { Link } from 'wouter'
 
 import BookItem from './BookItem'
 import './styles/BooksList.css'
-import Swal from '../../node_modules/sweetalert2/dist/sweetalert2.all'
 
 import UseBooks from '../UseBooks'
 
@@ -12,14 +11,14 @@ function BooksList() {
 
     const initialState = UseBooks({ endpoint: 'books' })
     const books = initialState.initial_books
-
+    
     return (
         <section>
             <div className="books-container">
                 <h2>PUBLICACIONES RECIENTES</h2>
                 <ul className="list-books--ul">
                     {books.map(book => (
-                        <li key={book.id}>
+                        <li>
                             <BookItem book={book} key={book.id}/>
                         </li>
                     ))} 

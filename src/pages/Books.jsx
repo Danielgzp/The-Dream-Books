@@ -5,7 +5,12 @@ import BookItem from "../components/BookItem";
 import CategoriesList from "../components/CategoriesList";
 import UseBooks from "../UseBooks";
 
-const Books = ({ params, props }) => {
+import Cookies from "universal-cookie";
+import Swal from "sweetalert2";
+
+const Books = ({ params }) => {
+  const cookies = new Cookies();
+
   let { bookName } = params;
   bookName = bookName.replaceAll("-", " ");
 
@@ -27,6 +32,7 @@ const Books = ({ params, props }) => {
         .toLowerCase()
         .includes(bookName.toLowerCase());
     });
+
     const results = autor.filter((book) => {
       return `${book.autor_name}`
         .normalize("NFD")
@@ -34,9 +40,19 @@ const Books = ({ params, props }) => {
         .toLowerCase()
         .includes(paramsBookAutor.toLowerCase());
     });
+
     setFilteredBook(result);
     setFilteredAutor(results);
   }, [book, autor, bookName, paramsBookAutor]);
+
+  const handleClick = () => {
+    if (
+      cookies.get("privilegio") !== "administrador" ||
+      cookies.get("privilegio") !== "usuario"
+    ) {
+      Swal.fire("Debes crear una cuenta para poder acceder a los libros");
+    }
+  };
 
   return (
     <React.Fragment>
@@ -45,6 +61,7 @@ const Books = ({ params, props }) => {
         <section>
           {filteredBook.map((book) => (
             <div key={book.id}>
+
               <div>
                 <h2>{book.name}</h2>
                 <Link to={`/autor/${book.autor}/`}>
@@ -54,17 +71,33 @@ const Books = ({ params, props }) => {
                   <img src={book.books_image} alt="Portada del Libro" />
                 </figure>
               </div>
+
               <div>
-                <a href={book.download}>DESCARGAR PDF</a>
-                <Link to="#">LEER ONLINE</Link>
+                {cookies.get("privilegio") !== "administrador" ||
+                cookies.get("privilegio") !== "usuario" ? (
+                  <div>
+                    <a href="#!" onClick={handleClick}>
+                      DESCARGAR PDF
+                    </a>
+                    <Link to="#!">LEER ONLINE</Link>
+                  </div>
+                ) : (
+                  <div>
+                    <a href={book.download}>DESCARGAR PDF</a>
+                    <Link to="#!">LEER ONLINE</Link>
+                  </div>
+                )}
               </div>
+
               <div>
                 <h2>Descripcion</h2>
                 <p>{book.description}</p>
               </div>
             </div>
           ))}
+
         </section>
+
         <section>
           <div>
             <h2>LIBROS DEL MISMO AUTOR</h2>

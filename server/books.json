@@ -377,6 +377,7 @@
     "initial_categories": [
           {
             "categorie_name": "Aventura",
+            "categorie_id": "c1",
             "categorie_books": [
               {
                 "id": "l1",
@@ -414,6 +415,7 @@
           },
           {
             "categorie_name": "Biografias y Memorias",
+            "categorie_id": "c2",
             "categorie_books": [
               {
                 "id": "l4",
@@ -451,6 +453,7 @@
           },
           {
             "categorie_name": "Ciencia y Ficcion",
+            "categorie_id": "c3",
             "categorie_books": [
               {
                 "id": "l6",
@@ -520,6 +523,7 @@
           },
           {
             "categorie_name": "Drama",
+            "categorie_id": "c4",
             "categorie_books": [
               {
                 "id": "l8",
@@ -541,6 +545,7 @@
           },
           {
             "categorie_name": "Ensayos",
+            "categorie_id": "c5",
             "categorie_books": [
               {
                 "id": "l10",
@@ -562,6 +567,7 @@
           },
           {
             "categorie_name": "Fantasia",
+            "categorie_id": "c6",
             "categorie_books": [
               {
                 "id": "l12",
@@ -623,6 +629,7 @@
           },
           {
             "categorie_name": "Humor",
+            "categorie_id": "c7",
             "categorie_books": [
               {
                 "id": "l14",
@@ -652,6 +659,7 @@
           },
           {
             "categorie_name": "Infantil",
+            "categorie_id": "c8",
             "categorie_books": [
               {
                 "id": "l16",
@@ -681,6 +689,7 @@
           },
           {
             "categorie_name": "Terror y Suspenso",
+            "categorie_id": "c9",
             "categorie_books": [
               {
                 "id": "l8",
@@ -718,6 +727,7 @@
           },
           {
             "categorie_name": "Autoayuda",
+            "categorie_id": "c10",
             "categorie_books": [
               {
                 "id": "l20",
@@ -747,6 +757,7 @@
           },
           {
             "categorie_name": "Viajes y Guias",
+            "categorie_id": "c11",
             "categorie_books": [
               {
                 "id": "l22",
@@ -768,6 +779,7 @@
           },
           {
             "categorie_name": "Espiritualidad",
+            "categorie_id": "c12",
             "categorie_books": [
               {
                 "id": "l23",
@@ -781,6 +793,7 @@
           },
           {
             "categorie_name": "Ciencias Exactas",
+            "categorie_id": "c13",
             "categorie_books": [
               {
                 "id": "l24",
@@ -794,6 +807,7 @@
           },
           {
             "categorie_name": "Ciencias Naturales",
+            "categorie_id": "c14",
             "categorie_books": [
               {
                 "id": "l25",
@@ -807,6 +821,7 @@
           },
           {
             "categorie_name": "Ciencias Sociales",
+            "categorie_id": "c15",
             "categorie_books": [
               {
                 "id": "l26",

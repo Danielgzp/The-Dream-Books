@@ -6,15 +6,16 @@ import "./styles/CategoriesList.css";
 
 const CategoriesList = () => {
     
-  const books_categories = UseBooks({ endpoint: "categories" });
+  const initialState = UseBooks({ endpoint: "categories" });
+  const categorie = initialState.initial_categories
 
   return (
     <aside>
       <div className="main-div--aside">
         <h2 className="title-list">Categorias</h2>
         <ul className="main-aside--lista">
-          {books_categories.initial_categories.map((title) => (
-            <li className="lista-elemento">
+          {categorie.map((title) => (
+            <li className="lista-elemento" key={title.categorie_id}>
               <Link
                 to={`/categories/${title.categorie_name}/`
                   .toLowerCase()

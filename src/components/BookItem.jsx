@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import Cookies from "universal-cookie";
 
 const BookItem = ({ book }) => {
-    const cookies = new Cookies()
 
+  const cookies = new Cookies()
 
   return (
     <article>
