@@ -112,6 +112,7 @@ const Books = ({ params }) => {
             </ul>
           </div>
         </section>
+        
       </main>
     </React.Fragment>
   );

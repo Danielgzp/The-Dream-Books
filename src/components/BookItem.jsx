@@ -28,7 +28,7 @@ const BookItem = ({ book }) => {
           className=""
           to={`/autor/${book.autor}/`.toLowerCase().replaceAll(" ", "-")}
         >
-          {book.autor}{" "}
+          {book.autor}
         </Link>
       </div>
       <div className="descargar">
