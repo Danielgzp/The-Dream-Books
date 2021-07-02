@@ -22,7 +22,7 @@ const Header = () => {
       <React.Fragment>
         <header>
             <h1>Usuario</h1>
-          <div className="navbar-fixed">
+          <div className="">
             <nav className="grey darken-4">
               <Link to="/">
                 <img
@@ -44,11 +44,6 @@ const Header = () => {
                   <Link to="/">
                     {" "}
                     <i></i> Todos los Libros
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i></i> Hacer una contribucion
                   </Link>
                 </li>
                 <li>
@@ -67,7 +62,7 @@ const Header = () => {
       <React.Fragment>
         <header>
         <h1>Admin</h1>
-          <div className="navbar-fixed">
+          <div className="">
             <nav className="grey darken-4">
               <Link to="/">
                 <img
@@ -89,11 +84,6 @@ const Header = () => {
                   <Link to="/">
                     {" "}
                     <i></i> Todos los Libros
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i></i> Hacer una contribucion
                   </Link>
                 </li>
                 <li>
@@ -115,7 +105,7 @@ const Header = () => {
       <React.Fragment>
         <header>
         <h1>No tengo cuenta</h1>
-          <div className="navbar-fixed">
+          <div className="">
             <nav className="grey darken-4">
               <Link to="/">
                 <img
