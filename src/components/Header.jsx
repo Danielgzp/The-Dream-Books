@@ -111,7 +111,6 @@ const Header = () => {
             </nav>
           </div>
         </header>
-        <h1>HOLA ADMIN</h1>
       </React.Fragment>
     );
   } else {
@@ -120,7 +119,6 @@ const Header = () => {
     return (
       <React.Fragment>
         <header>
-        <h1>No tengo cuenta</h1>
           <div className="">
             <nav className="grey darken-4">
               <Link to="/">

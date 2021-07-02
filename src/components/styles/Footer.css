@@ -1,0 +1,43 @@
+footer{
+    margin-top: 50px;
+    background: linear-gradient(to right, rgb(15, 15, 15), red);
+}
+.footer-copyright{
+    background: linear-gradient(to right, rgb(26, 25, 25), rgb(0, 0, 0)); 
+}
+.footer-copyright p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+.footer-info{
+    font-size: 1.4rem;
+}
+.footer-list a{
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+.footer-list li{
+    margin-top: 10px;
+}
+.footer-list a:hover{
+    color: black;
+}
+.footer-list span{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 100%;
+    margin-left: 5px;
+    margin-left: 5px;
+}
+.facebook{
+    background-image: url('/src/images/facebook.png');
+}
+.instagram{
+    background-image: url('/src/images/instagram.png');
+}
+.github{
+    background-image: url('/src/images/github.png');
+}
