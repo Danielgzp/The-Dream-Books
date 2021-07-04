@@ -48,10 +48,12 @@ const Books = ({ params }) => {
 
   const handleClick = () => {
     if (
-      cookies.get("privilegio") !== "administrador" ||
-      cookies.get("privilegio") !== "usuario"
+      cookies.get("privilegio") === "administrador" ||
+      cookies.get("privilegio") === "usuario"
     ) {
-      Swal.fire("Debes crear una cuenta para poder acceder a los libros");
+      Swal.fire("Descargando el libro")
+    } else{
+        Swal.fire("Debes crear una cuenta para poder acceder a los libros");
     }
   };
 
@@ -78,23 +80,26 @@ const Books = ({ params }) => {
                 />
               </div>
 
-              {cookies.get("privilegio") !== "administrador" ||
-              cookies.get("privilegio") !== "usuario" ? (
-                <div className="downloads-container">
-                  <a href="#!" className="btn download-button" onClick={handleClick}>
+              {cookies.get("privilegio") === "administrador" ||
+              cookies.get("privilegio") === "usuario" ? (
+                <div className="downloads-container bottom">
+                  <a href={book.download} className="btn download-button" onClick={handleClick}>
                     <i className="material-icons">file_download</i>DESCARGAR PDF
                   </a>
                   <a href="#!" className="btn read-button" onClick={handleClick}>
                     <i className="material-icons">description</i> LEER ONLINE
                   </a>
                 </div>
-              ) : (
-                <div className="downloads-container bottom">
-                  <a href={book.download} className="btn">
-                    <i className="material-icons">file_download</i>DESCARGAR PDF
-                  </a>
-                  <Link to="#!">LEER ONLINE</Link>
-                </div>
+              ) 
+              : (
+                <div className="downloads-container">
+                <a href="#!" className="btn download-button" onClick={handleClick}>
+                  <i className="material-icons">file_download</i>DESCARGAR PDF
+                </a>
+                <a href="#!" className="btn read-button" onClick={handleClick}>
+                  <i className="material-icons">description</i> LEER ONLINE
+                </a>
+              </div>
               )}
 
               <div className="description-book">
