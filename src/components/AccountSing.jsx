@@ -106,11 +106,11 @@ class AccountSing extends React.Component {
       <React.Fragment>
         <section className="login">
           <div className="login-div">
-            <div className="form-div">
+            <div className="form-container">
               <h2>Ingresa tus datos</h2>
               <div id="respuesta"></div>
-              <form onSubmit={this.Formulario} className="form">
-                <div className="email-form">
+              <form onSubmit={this.Formulario} id="form">
+                <div id="email-form">
                   <label for="email">
                     <input
                       type="email"
@@ -121,7 +121,7 @@ class AccountSing extends React.Component {
                     />
                   </label>
                 </div>
-                <div className="password-form">
+                <div id="password-form">
                   <label for="pass">
                     <input
                       type="password"

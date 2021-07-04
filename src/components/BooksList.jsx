@@ -24,9 +24,9 @@ function BooksList() {
                     ))} 
                 </ul>
 
-                <div className="pagination">
-                    {/* <button type="button" onClick={handleClickPrev} >Prev Page</button>
-                    <button type="button" onClick={handleClickNext} >Next Page</button> */}
+                {/* <div className="pagination">
+                    <button type="button" onClick={handleClickPrev} >Prev Page</button>
+                    <button type="button" onClick={handleClickNext} >Next Page</button> 
                         <div className="number-pages">
                             <ul>
                                 <li>
@@ -55,7 +55,7 @@ function BooksList() {
                     <div className="counter-pages">
                         <p>Pagina 1 de 216</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     )

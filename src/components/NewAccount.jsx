@@ -90,10 +90,10 @@ class NewAccount extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <section className="login">
-        <div className="login-div">
+        <section className="login-account">
+        <div className="login-container__account">
           <h2>Ingresa tus datos</h2>
-          <div className="form-div">
+          <div className="form-container__account">
             <form className="form" onSubmit={this.Formulario}>
               <div className="input name-form">
                 <h3>Nombre:</h3>
@@ -185,7 +185,7 @@ class NewAccount extends React.Component {
                   />
                 </label>
               </div>
-              <div className="input password-form">
+              <div className="input password-form2">
                 <h3>Repite contraseña: </h3>
                 <label for="clave2">
                   <input
@@ -201,7 +201,7 @@ class NewAccount extends React.Component {
               <input
                 type="submit"
                 value="Crear Cuenta"
-                className="iniciar-sesion"
+                className="create-account"
                 id="enviar"
               />
             </form>

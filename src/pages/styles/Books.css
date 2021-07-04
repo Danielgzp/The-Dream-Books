@@ -4,7 +4,7 @@
     position: relative;
     font-size: 2.2rem;
     color: #333;
-    margin-left: 30px;
+    margin-left: 40px;
     line-height: 22px;
     font-weight: bolder;
 }
@@ -13,25 +13,48 @@
     font-family: 'Roboto',sans-serif;
     font-size: 1.4rem;
     letter-spacing: 0.5px;
-    margin-left: 30px;
+    margin-left: 40px;
     font-weight: 600;
-}
-.book-image{
-    width: 350px;
-    height: 600px;
-    margin-top: 50px;
-}
-figure{
     float: left;
 }
+.details-books{
+    width: 100%;
+}
+.book-image{
+    width: 375px;
+    height: 600px;
+    margin-top: 50px;
+    float: left;
+    left: 0;
+}
+.description-book{
+    margin-left: 50px;
+}
 .description-book h2{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: black;
     letter-spacing: 1px;
     line-height: 16px;
     font-weight: bold;
 }
 .description-book p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--soft-grey);
 }
+.download-button{
+    background-color: red;
+}
+.download-button:hover{
+    background-color: rgb(105, 7, 7);
+}
+.read-button{
+    background-color: cadetblue;
+}
+.downloads-container{
+    margin-left: 45px;
+}
+.downloads-container a{
+    margin-top: 25px;
+    margin-right: 20px;
+}
+

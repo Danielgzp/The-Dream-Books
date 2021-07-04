@@ -5,10 +5,9 @@
 }
 .list-books li{
     text-align: center;
-    margin-bottom: 50px;
     margin-right: 20px;
+    margin-bottom: 40px;
     width: 140px;
-    height: auto;
 }
 .title-books{
     width: 100%;

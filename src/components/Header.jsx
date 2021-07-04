@@ -21,106 +21,7 @@ const Header = () => {
     return (
       <React.Fragment>
         <header>
-            <h1>Usuario</h1>
           <div className="">
-            <nav className="grey darken-4">
-              <Link to="/">
-                <img
-                  src="https://i.imgur.com/Hts1VfT.png"
-                  alt="The Dream Books Logo"
-                  className="responsive-img"
-                />
-              </Link>
-
-              <form onSubmit={handleSubmit}>
-                <input
-                  type="text"
-                  onChange={(e) => {
-                    setQuery(e.target.value);
-                  }}
-                  value={query}
-                  placeholder="Busca entre los muchos libros disponibles..."
-                  className="search-input"
-                />
-                <button className="" type="submit" onClick={handleSubmit}>
-                  Buscar
-                </button>
-              </form>
-      
-              <ul className="right valign-wrapper">
-                <li>
-                  <Link to="/">
-                    {" "}
-                    <i></i> Todos los Libros
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/salir/">
-                    <i></i> Salir
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-      </React.Fragment>
-    );
-  } else if (cookies.get("privilegio") === "administrador") {
-    return (
-      <React.Fragment>
-        <header>
-        <h1>Admin</h1>
-          <div className="">
-            <nav className="grey darken-4">
-              <Link to="/">
-                <img
-                  src="https://i.imgur.com/Hts1VfT.png"
-                  alt="The Dream Books Logo"
-                  className="responsive-img"
-                />
-              </Link>
-
-              <form onSubmit={handleSubmit}>
-                <input
-                  type="text"
-                  onChange={(e) => {
-                    setQuery(e.target.value);
-                  }}
-                  value={query}
-                  placeholder="Busca entre los muchos libros disponibles..."
-                  className="search-input"
-                />
-                <button className="" type="submit" onClick={handleSubmit}>
-                  Buscar
-                </button>
-              </form>
-
-              <ul className="right valign-wrapper">
-                <li>
-                  <Link to="/">
-                    {" "}
-                    <i></i> Todos los Libros
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/salir/">
-                    <i></i> Salir
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-      </React.Fragment>
-    );
-  } else {
-    //Si nadie ha iniciado sesión se muestra:
-
-    return (
-      <React.Fragment>
-        
-        <header>
-        <div className="">
             <nav className="grey darken-4">
               <a href="/" className="brand-logo">
                 <img
@@ -140,7 +41,11 @@ const Header = () => {
                   placeholder="Busca entre los muchos libros disponibles..."
                   id="input-search"
                 />
-                <button className="button-search right" type="submit" onClick={handleSubmit}>
+                <button
+                  className="button-search right"
+                  type="submit"
+                  onClick={handleSubmit}
+                >
                   Buscar
                 </button>
               </form>
@@ -149,17 +54,124 @@ const Header = () => {
                 <li>
                   <Link to="/">
                     {" "}
-                    <i className="icon-book"></i> Todos los Libros
+                    <i className="material-icons left">book</i> Todos los Libros
                   </Link>
                 </li>
                 <li>
-                  <Link to="/iniciar-sesion/">
-                    <i className="icon-corazon"></i>Iniciar Sesión
+                  <Link to="/salir/">
+                    {" "}
+                    <i className="material-icons left">keyboard_tab</i> Salir
                   </Link>
                 </li>
               </ul>
             </nav>
-            </div>
+          </div>
+        </header>
+      </React.Fragment>
+    );
+  } else if (cookies.get("privilegio") === "administrador") {
+    return (
+      <React.Fragment>
+        <header>
+          <div className="">
+            <nav className="grey darken-4">
+              <a href="/" className="brand-logo">
+                <img
+                  src="https://i.imgur.com/Hts1VfT.png"
+                  alt="The Dream Books Logo"
+                  className="responsive-img logo"
+                />
+              </a>
+
+              <form onSubmit={handleSubmit} className="search-form">
+                <input
+                  type="text"
+                  onChange={(e) => {
+                    setQuery(e.target.value);
+                  }}
+                  value={query}
+                  placeholder="Busca entre los muchos libros disponibles..."
+                  id="input-search"
+                />
+                <button
+                  className="button-search right"
+                  type="submit"
+                  onClick={handleSubmit}
+                >
+                  Buscar
+                </button>
+              </form>
+
+              <ul className="right valign-wrapper">
+                <li>
+                  <Link to="/">
+                    {" "}
+                    <i className="material-icons left">book</i> Todos los Libros
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/salir/">
+                    {" "}
+                    <i className="material-icons left">keyboard_tab</i> Salir
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </React.Fragment>
+    );
+  } else {
+    //Si nadie ha iniciado sesión se muestra:
+
+    return (
+      <React.Fragment>
+        <header>
+          <div className="">
+            <nav className="grey darken-4">
+              <a href="/" className="brand-logo">
+                <img
+                  src="https://i.imgur.com/Hts1VfT.png"
+                  alt="The Dream Books Logo"
+                  className="responsive-img logo"
+                />
+              </a>
+
+              <form onSubmit={handleSubmit} className="search-form">
+                <input
+                  type="text"
+                  onChange={(e) => {
+                    setQuery(e.target.value);
+                  }}
+                  value={query}
+                  placeholder="Busca entre los muchos libros disponibles..."
+                  id="input-search"
+                />
+                <button
+                  className="button-search right"
+                  type="submit"
+                  onClick={handleSubmit}
+                >
+                  Buscar
+                </button>
+              </form>
+
+              <ul className="right valign-wrapper">
+                <li>
+                  <Link to="/">
+                    {" "}
+                    <i className="material-icons left">book</i> Todos los Libros
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/iniciar-sesion/">
+                    <i className="material-icons left">account_circle</i>Iniciar
+                    Sesión
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </header>
       </React.Fragment>
     );

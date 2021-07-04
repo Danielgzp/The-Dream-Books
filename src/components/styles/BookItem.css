@@ -41,4 +41,11 @@
     background-color: black;
     color: white;
 }
+.edit-book{
+    margin-top: 20px;
+    background-color: orange;
+}
+.edit-book:hover{
+    background-color: back;
+}
 
