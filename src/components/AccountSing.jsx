@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Constantes from "../Constantes";
-import Swal from '../../node_modules/sweetalert2/dist/sweetalert2.all'
+import Swal from "../../node_modules/sweetalert2/dist/sweetalert2.all";
 import Cookies from "universal-cookie";
+import "./styles/AccountSing.css";
 
 class AccountSing extends React.Component {
   constructor(props) {
@@ -103,59 +104,60 @@ class AccountSing extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div class="login-div">
-          <div class="form-div">
-            <h2>Ingresa tus datos</h2>
-            <div id="respuesta"></div>
-            <form onSubmit={this.Formulario} className="form">
-              <div class="email-form">
-                <label for="email">
+        <section className="login">
+          <div className="login-div">
+            <div className="form-div">
+              <h2>Ingresa tus datos</h2>
+              <div id="respuesta"></div>
+              <form onSubmit={this.Formulario} className="form">
+                <div className="email-form">
+                  <label for="email">
+                    <input
+                      type="email"
+                      placeholder="Tu correo"
+                      id="correo"
+                      onChange={this.manejarCambio}
+                      value={this.state.datos.correo}
+                    />
+                  </label>
+                </div>
+                <div className="password-form">
+                  <label for="pass">
+                    <input
+                      type="password"
+                      placeholder="Tu contraseña"
+                      id="clave"
+                      onChange={this.manejarCambio}
+                      value={this.state.datos.clave}
+                    />
+                  </label>
+                </div>
+                <label for="sesion">
                   <input
-                    type="email"
-                    placeholder="Tu correo"
-                    id="correo"
-                    onChange={this.manejarCambio}
-                    value={this.state.datos.correo}
+                    type="submit"
+                    name="sesion"
+                    className="iniciar-sesion"
+                    value="Iniciar Sesión"
+                    id="enviar"
                   />
                 </label>
+              </form>
+            </div>
+            <div className="registrar">
+              <p>Aun no tienes cuenta?</p>
+              <div className="registrar-div">
+                <Link to="/iniciar-sesion/crear-cuenta/">
+                  <button className="registrar-button">
+                    <span>Registrate</span>
+                  </button>
+                </Link>
               </div>
-              <div class="password-form">
-                <label for="pass">
-                  <input
-                    type="password"
-                    placeholder="Tu contraseña"
-                    id="clave"
-                    onChange={this.manejarCambio}
-                    value={this.state.datos.clave}
-                  />
-                </label>
-              </div>
-              <label for="sesion">
-                <input
-                  type="submit"
-                  name="sesion"
-                  class="iniciar-sesion"
-                  value="Iniciar Sesión"
-                  id="enviar"
-                />
-              </label>
-            </form>
-          </div>
-          <div class="registrar">
-            <p>Aun no tienes cuenta?</p>
-            <div class="registrar-div">
-              <Link to="/iniciar-sesion/crear-cuenta/">
-                <button class="registrar-button">
-                  <span>Registrate</span>
-                </button>
-              </Link>
             </div>
           </div>
-        </div>
+        </section>
       </React.Fragment>
     );
   }
 }
 
 export default AccountSing;
-

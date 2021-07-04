@@ -19,18 +19,20 @@ const App = () => {
         <BrowserRouter>
             <Layout>
                 <Switch>
-                    <Route exact path="/" component={Index} />
-                    <Route exact path="/iniciar-sesion/" component={SingIn} />
-                    <Route exact path="/iniciar-sesion/crear-cuenta/" component={CreateAccount} />
-                    <Route exact path="/categories/:categorieName/" component={Categories} /> 
-                    <Route exact path="/libro/:bookName/" component={Books} />
-                    <Route exact path="/libros/editar-libro/" component={EditBook} />
-                    <Route exact path="/search/:bookSearch/" component={SearchPage} />
-                    <Route exact path="/autor/:autorName/" component={Authors} />
-                    <Route exact path="/salir/" component={Logout} />
-                    <Route component={NotFound} />
+                        <Route exact path="/" component={Index} />
+                        <Route exact path="/iniciar-sesion/" component={SingIn} />
+                        <Route exact path="/iniciar-sesion/crear-cuenta/" component={CreateAccount} />
+                        <Route exact path="/categories/:categorieName/" component={Categories} /> 
+                        <Route exact path="/libro/:bookName/" component={Books} />
+                        <Route exact path="/libros/editar-libro/" component={EditBook} />
+                        <Route exact path="/search/:bookSearch/" component={SearchPage} />
+                        <Route exact path="/autor/:autorName/" component={Authors} />
+                        <Route exact path="/salir/" component={Logout} />
+                        <Route component={NotFound} />
                 </Switch>
             </Layout>
+            
+        
         </BrowserRouter>
     )
 }

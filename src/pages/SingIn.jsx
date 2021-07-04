@@ -6,9 +6,7 @@ import './styles/SingIn.css'
 const SingIn = () => {
     return (
         <main className="fondo">
-            <section>
-                <AccountSing />
-            </section>
+            <AccountSing />
         </main>
     )
 }

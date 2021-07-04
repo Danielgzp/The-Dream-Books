@@ -3,6 +3,8 @@ import React from "react";
 import Constantes from "../Constantes";
 import Swal from "../../node_modules/sweetalert2/dist/sweetalert2.all";
 
+import './styles/NewAccount.css'
+
 class NewAccount extends React.Component {
   constructor(props) {
     super(props);
@@ -88,6 +90,7 @@ class NewAccount extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <section className="login">
         <div className="login-div">
           <h2>Ingresa tus datos</h2>
           <div className="form-div">
@@ -204,6 +207,7 @@ class NewAccount extends React.Component {
             </form>
           </div>
         </div>
+        </section>
       </React.Fragment>
     );
   }

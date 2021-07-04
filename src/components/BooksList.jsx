@@ -13,10 +13,10 @@ function BooksList() {
     const books = initialState.initial_books
     
     return (
-        <section>
+        <section className="section">
             <div className="books-container">
-                <h2>PUBLICACIONES RECIENTES</h2>
-                <ul className="list-books--ul">
+                <h2 className="title-books">Publicaciones Recientes</h2>
+                <ul className="list-books">
                     {books.map(book => (
                         <li>
                             <BookItem book={book} key={book.id}/>

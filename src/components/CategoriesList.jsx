@@ -10,12 +10,12 @@ const CategoriesList = () => {
   const categorie = initialState.initial_categories
 
   return (
-    <aside>
-      <div className="main-div--aside">
+    <aside className="section">
+      <div className="list-container">
         <h2 className="title-list">Categorias</h2>
-        <ul className="main-aside--lista">
+        <ul className="categories-list">
           {categorie.map((title) => (
-            <li className="lista-elemento" key={title.categorie_id}>
+            <li className="categories-list__element" key={title.categorie_id}>
               <Link
                 to={`/categories/${title.categorie_name}/`
                   .toLowerCase()

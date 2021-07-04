@@ -1,4 +1,61 @@
-
+nav{
+    height: 80px;
+    padding: 10px;
+}
+.brand-logo{
+    height: 80px;
+}
+.brand-logo img{
+    width: 140px;
+    height: 95px;
+    margin-top: -15px;
+    margin-left: 50px;
+}
+header nav ul{
+    height: 60px;
+}
+header ul a{
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+header ul a:hover{
+    background-color: rgb(53, 52, 52);
+}
+.search-form{
+    width: 575px;
+    height: auto;
+    display: flex;
+    position: absolute;
+    left: 275px;
+    top: 20px;
+}
+#input-search{
+    height: 39px;
+    background-color: white;
+    border-radius: 7px 0 0 7px;
+    padding-left: 20px;
+    outline-color: orange;
+    outline-width: 1px;
+    outline-style: unset;
+    outline-offset: 0px;
+}
+.button-search{
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    background: orange;
+    text-align: center;
+    color: #fff;
+    border: 0;
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+    height: 40px;
+    width: 140px;
+    margin-left: -10px;
+}
+.button-search:hover{
+    background: rgb(247, 180, 57);
+}
 .icon-corazon{
     background: url('/src/images/corazon.png');
     width: 50px;

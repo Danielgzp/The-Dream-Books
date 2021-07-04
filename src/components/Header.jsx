@@ -118,17 +118,19 @@ const Header = () => {
 
     return (
       <React.Fragment>
+        
         <header>
-          <div className="">
+        <div className="">
             <nav className="grey darken-4">
-              <Link to="/">
+              <a href="/" className="brand-logo">
                 <img
                   src="https://i.imgur.com/Hts1VfT.png"
                   alt="The Dream Books Logo"
-                  className="responsive-img"
+                  className="responsive-img logo"
                 />
-              </Link>
-              <form onSubmit={handleSubmit}>
+              </a>
+
+              <form onSubmit={handleSubmit} className="search-form">
                 <input
                   type="text"
                   onChange={(e) => {
@@ -136,12 +138,13 @@ const Header = () => {
                   }}
                   value={query}
                   placeholder="Busca entre los muchos libros disponibles..."
-                  className="search-input"
+                  id="input-search"
                 />
-                <button className="" type="submit" onClick={handleSubmit}>
+                <button className="button-search right" type="submit" onClick={handleSubmit}>
                   Buscar
                 </button>
               </form>
+
               <ul className="right valign-wrapper">
                 <li>
                   <Link to="/">
@@ -156,7 +159,7 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-          </div>
+            </div>
         </header>
       </React.Fragment>
     );
