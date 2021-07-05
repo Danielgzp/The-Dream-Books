@@ -1,6 +1,6 @@
 En la carpteta de
 
-/biblioteca
+/php
 
 estan localizados todos los archivos de php con las configuraciones y demas, ademas del archivo .sql de la base de datos
 
