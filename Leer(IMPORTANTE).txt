@@ -1,0 +1,7 @@
+En la carpteta de
+
+/biblioteca
+
+estan localizados todos los archivos de php con las configuraciones y demas, ademas del archivo .sql de la base de datos
+
+El resto del proyecto esta realizado con React JS
