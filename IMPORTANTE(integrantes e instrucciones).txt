@@ -1,0 +1,19 @@
+En la carpteta de /php
+
+estan localizados todos los archivos de php con las configuraciones y demas, ademas del archivo .sql de la base de datos
+
+El resto del proyecto esta realizado con React JS
+
+Si prefiere clonar el repositorio directamente de Gitgub en enlace es: https://github.com/Danielgzp/proyecto-alp-v2/tree/php
+
+En la rama/branch php
+
+Para ver el proyecto en funcionamiento instalar las dependencias necesarias con: npm install
+
+Integrantes:
+
+Mariangel Yajure C.I 28.454.829.                        
+Juan Escobar C.I 29.737.411.                         
+Daniel González C.I 28.585.670.                         
+Luis Triana C.I 28.604.179.
+
