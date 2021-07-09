@@ -1,24 +1,22 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require('fs')
+const path = require('path')
 const faker = require('faker');
-const md5 = require('md5');
 
-function createBadges(limit = 5) {
+function createBook(limit = 2000) {
   const result = [];
 
   for (let i = 0; i < limit; i++) {
-    const firstName = faker.name.firstName();
-    const lastName = faker.name.lastName();
-    const email = faker.internet.email();
+    const name = faker.name.name();
+    const books_image = faker.text.books_image()
+    const autor = faker.name.autor()
 
     result.push({
       id: faker.random.uuid(),
-      firstName,
-      lastName,
-      email,
-      jobTitle: faker.name.jobTitle(),
-      twitter: `${firstName}${lastName}${faker.address.zipCode()}`,
-      avatarUrl: `https://www.gravatar.com/avatar/${md5(email)}?d=identicon`,
+      books_image,
+      name,
+      autor,
+      description: faker.name.description(),
+      download: faker.name.download(),
     });
   }
 
@@ -27,12 +25,12 @@ function createBadges(limit = 5) {
 
 function main() {
   const data = {
-    badges: createBadges(),
+    books: createBook(),
   };
 
   fs.writeFileSync(
-    path.resolve(__dirname, 'db.json'),
-    JSON.stringify(data, null, 4)
+    path.resolve(__dirname, '/server/books.json'),
+    JSON.stringify(data, null, 5)
   );
 }
 

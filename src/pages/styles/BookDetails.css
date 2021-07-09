@@ -1,0 +1,38 @@
+.Book-Layout {
+    width: 100%;
+    padding: 2rem 0;
+    background: url('../../images/libros-layout.jpeg');
+    background-repeat: repeat;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    height: 250px;
+    border-top: 3px var(--orange) solid;
+  }
+  .actions{
+    height: 250px;
+  }
+  .BooksDetails__buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    height: 100%;
+  }
+  .BadgeDetails__buttons button, .BadgeDetails__buttons a{
+    max-width: 190px;
+    margin-top: 20px;
+  }
+
+  .edit-button{
+    width: 175px;
+    background-color:  var(--orange);
+  }
+  .delete-button{
+    width: 175px;
+    background-color: red;
+    margin-top: 50px;
+  }
+  .edit-button:hover, .delete-button:hover{
+    background-color: black;
+  }

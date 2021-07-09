@@ -2,12 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Cookies from "universal-cookie";
-
-import './styles/BookItem.css'
+import "./styles/BookItem.css";
 
 const BookItem = ({ book }) => {
-
-  const cookies = new Cookies()
+  const cookies = new Cookies();
 
   return (
     <article>
@@ -20,11 +18,15 @@ const BookItem = ({ book }) => {
             .normalize("NFD")
             .replace(/[?¿¡!\u0300-\u036f]/g, "")}
         >
-          <img src={book.books_image} alt="Portada del Libro" className="responsive-img z-depth-2" />
+          <img
+            src={book.books_image}
+            alt="Portada del Libro"
+            className="responsive-img z-depth-2"
+          />
         </Link>
         <h3>{book.name}</h3>
       </div>
-      
+
       <div className="autor">
         <Link
           className=""
@@ -34,7 +36,7 @@ const BookItem = ({ book }) => {
         </Link>
       </div>
       <div className="descargar">
-        <Link 
+        <Link
           className=""
           to={`/libro/${book.name}/`
             .toLowerCase()
@@ -45,11 +47,16 @@ const BookItem = ({ book }) => {
           DESCARGAR LIBRO
         </Link>
       </div>
-      {cookies.get("privilegio") === "administrador" && (
+      {/* {cookies.get("privilegio") === "administrador" && (
           <div>
-              <Link to="/libros/editar-libro/" className="btn edit-book"><i className="material-icons">edit</i> Editar Libro</Link>
+              <Link to={`/librito/${book.id}`} className="btn edit-book"><i className="material-icons">edit</i> Editar Libro</Link>
           </div>
-      )}
+      )} */}
+      <div>
+        <Link to={`/libroe/detalles/`} className="btn edit-book">
+          <i className="material-icons">edit</i> Editar Libro
+        </Link>
+      </div>
     </article>
   );
 };

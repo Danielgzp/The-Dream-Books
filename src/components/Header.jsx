@@ -110,6 +110,11 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/libros/new">
+                    <i className="material-icons left">library_add</i> New Book
+                  </Link>
+                </li>
+                <li>
                   <Link to="/salir/">
                     {" "}
                     <i className="material-icons left">keyboard_tab</i> Salir
@@ -129,7 +134,7 @@ const Header = () => {
         <header>
           <div className="">
             <nav className="grey darken-4">
-              <a href="/" className="brand-logo">
+              <a href="/" className="link-logo">
                 <img
                   src="https://i.imgur.com/Hts1VfT.png"
                   alt="The Dream Books Logo"
@@ -161,6 +166,11 @@ const Header = () => {
                   <Link to="/">
                     {" "}
                     <i className="material-icons left">book</i> Todos los Libros
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/libroa/new">
+                    <i className="material-icons left">library_add</i> New Book
                   </Link>
                 </li>
                 <li>

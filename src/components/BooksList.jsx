@@ -1,17 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'wouter'
 
 import BookItem from './BookItem'
 import './styles/BooksList.css'
 
 import UseBooks from '../UseBooks'
+import UseApi from '../UseBooks'
 
 
 function BooksList() {
 
-    const initialState = UseBooks({ endpoint: 'books' })
-    const books = initialState.initial_books
     
+    const books = UseApi.books.list()
+   
     return (
         <section className="section">
             <div className="books-container">
