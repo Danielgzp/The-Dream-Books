@@ -2,21 +2,22 @@ import React from 'react'
 
 import './styles/BookInformation.css'
 
-const BookInformation = () => {
+const BookInformation = ({ book }) => {
+    
     return (
         <div>
             <article className="information-container">
                 <figure className="portrait-container">
-                    <img src="https://imgur.com/V4gFC2a.png" alt="Portada del Libro" className="responsive-image" />
-                    <figcaption>Nombre del Libro</figcaption>
+                    <img src={book.books_image} alt="Portada del Libro" className="responsive-image" />
+                    <figcaption>{book.book_name}</figcaption>
                 </figure>
                 <div>
-                    <h4>Autor</h4>
-                    <a href="">Link de Descarga</a>
+                    <h4>{book.autor}</h4>
+                    <a href={book.download}>{book.download}</a>
                 </div>
                 <div>
                     <p>
-                        descripcion del libro
+                    {book.description}
                     </p>
                 </div>
             </article>

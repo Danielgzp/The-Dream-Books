@@ -1,25 +1,32 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 import BookItem from "../components/BookItem";
-import UseBooks from "../UseBooks";
 import Publicity from "../components/Publicity";
 import CategoriesList from "../components/CategoriesList";
 import Swal from "sweetalert2";
+import api from "../UseBooks";
 
 const SearchPage = ({ params }) => {
   let { bookSearch } = params;
   bookSearch = bookSearch.replaceAll("-", " ");
 
-  const books = UseBooks({ endpoint: "books" });
-  const librito = books.initial_books;
-  const [filteredBook, setFilteredBook] = useState(librito);
+  const [books, setBooks] = useState([])
+  useEffect(async () => {
+    try{
+      const data = await api.books.list('books')
+      setBooks(data)
+    }catch(error){
+      console.log('Error')
+    }
+  }, [])
+  const [filteredBook, setFilteredBook] = useState(books);
 
   useMemo(() => {
-    const result = librito.filter((book) => {
-      return `${book.name}`.toLowerCase().includes(bookSearch.toLowerCase());
+    const result = books.filter((book) => {
+      return `${book.book_name}`.toLowerCase().includes(bookSearch.toLowerCase());
     });
     setFilteredBook(result);
-  }, [librito, bookSearch]);
+  }, [books, bookSearch]);
 
   if (filteredBook.length === 0) {
     return (

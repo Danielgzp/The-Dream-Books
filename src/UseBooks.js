@@ -51,10 +51,10 @@ const api = {
       });
     },
     read(bookId) {
-      return UseBooks(`/libros/${bookId}/`);
+      return UseBooks(`/books/${bookId}/`);
     },
     update(bookId, updates) {
-      return UseBooks(`/libros/${bookId}/`, {
+      return UseBooks(`/books/${bookId}/`, {
         method: "PUT",
         body: JSON.stringify(updates),
       });

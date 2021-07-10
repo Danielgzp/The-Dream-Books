@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 
-
 import BookItem from "../components/BookItem";
 import api from "../UseBooks";
 import BookForm from "../components/BookForm";
 import BookInformation from "../components/BookInformation";
 
-const EditBook = () => {
-  const [state, setState] = useState({
+class BookEdit extends React.Component {
+  state = {
+    loading: true,
+    error: null,
     form: {
       books_image: "",
       name: "",
@@ -15,36 +16,52 @@ const EditBook = () => {
       description: "",
       download: "",
     },
-  });
+  };
 
-  const handleChange = (e) => {
-    setState({
+  componentDidMount() {
+    this.fetchData();
+  }
+
+  fetchData = async (e) => {
+    this.setState({ loading: true, error: null });
+
+    try {
+      const data = await api.badges.read(this.props.match.params.badgeId);
+
+      this.setState({ loading: false, form: data });
+    } catch (error) {
+      this.setState({ loading: false, error: error });
+    }
+  };
+
+  handleChange = (e) => {
+    this.setState({
       form: {
-        ...state.form,
+        ...this.state.form,
         [e.target.name]: e.target.value,
       },
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  render() {
+    const handleSubmit = async (e) => {
+      e.preventDefault();
 
-    try {
-      await api.books.create(state.form);
-    } catch (error) {
-      console.error("Error");
-    }
-  };
+      try {
+        await api.books.update(this.props.match.params.bookId , this.state.form);
+      } catch (error) {
+        console.error("Error");
+      }
+    };
+    return (
+      <React.Fragment>
+        <div className="Book-Layout"></div>
 
-  return (
-    <React.Fragment>
-      <div className="Book-Layout"></div>
-
-      <div className="container">
-        <div className="row">
-          <div className="col l6 s12">
-            <BookInformation />
-            {/* <Badge
+        <div className="container">
+          <div className="row">
+            <div className="col l6 s12">
+              <BookInformation book={this.state.form} />
+              {/* <Badge
                 firstName={this.state.form.firstName || 'FIRST_NAME'}
                 lastName={this.state.form.lastName || 'LAST_NAME'}
                 twitter={this.state.form.twitter || 'twitter'}
@@ -52,20 +69,22 @@ const EditBook = () => {
                 email={this.state.form.email || 'EMAIL'}
                 avatarUrl="https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon"
               /> */}
-          </div>
+            </div>
 
-          <div className="col l6 s12">
-            <h1>Edit Book</h1>
-            <BookForm
-              onChange={handleChange}
-              onSubmit={handleSubmit}
-              formValues={state.form}
-            />
+            <div className="col l6 s12">
+              <h1>Edit Book</h1>
+              <BookForm
+                onChange={this.handleChange}
+                onSubmit={handleSubmit}
+                formValues={this.state.form}
+                error={this.state.error}
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </React.Fragment>
-  );
-};
+      </React.Fragment>
+    );
+  }
+}
 
-export default EditBook;
+export default BookEdit;

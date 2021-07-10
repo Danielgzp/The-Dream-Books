@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Swal from "sweetalert2";
 
 import BookForm from "../components/BookForm";
 import BookInformation from "../components/BookInformation";
@@ -27,7 +28,7 @@ class BookNew extends React.Component {
   };
 
   render() {
-    
+
     const handleSubmit = async (e) => {
       e.preventDefault();
       this.setState({ loading: true, error: null });
@@ -41,6 +42,8 @@ class BookNew extends React.Component {
       } catch (error) {
         this.setState({ loading: false, error: error });
       }
+
+      Swal.fire('El libro ha sido creado exitosamente')
     };
 
     return (
@@ -50,7 +53,7 @@ class BookNew extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col l6 s12">
-              <BookInformation />
+              <BookInformation book={this.state.form} />
               {/* <Badge
                 firstName={this.state.form.firstName || 'FIRST_NAME'}
                 lastName={this.state.form.lastName || 'LAST_NAME'}

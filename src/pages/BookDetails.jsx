@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 
 import "./styles/BookDetails.css";
 import BookInformation from "../components/BookInformation";
+import DeleteBookModal from "../components/DeleteBookModal";
 
-const BookDetails = () => {
+const BookDetails = (props) => {
+
+  const books = props.books
+
   return (
     <React.Fragment>
       <div>
@@ -13,7 +17,7 @@ const BookDetails = () => {
         <div className="container">
           <div className="row">
             <div className="col l6 s12">
-                <BookInformation />
+                
               {/* <Badge
                 firstName={badge.firstName}
                 lastName={badge.lastName}
@@ -40,15 +44,15 @@ const BookDetails = () => {
                   Edit Book
                 </Link>
                 <button
-                  /*onClick={props.onOpenModal}*/ className="btn delete-button"
+                  onClick={props.onOpenModal} className="btn delete-button"
                 >
                   Delete Book
                 </button>
-                {/* <DeleteBadgeModal
+                <DeleteBookModal
                   isOpen={props.modalIsOpen}
                   onClose={props.onCloseModal}
                   onDeleteBadge={props.onDeleteBadge}
-                /> */}
+                />
               </div>
             </div>
           </div>
