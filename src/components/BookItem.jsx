@@ -11,7 +11,7 @@ const BookItem = ({ book }) => {
     <article>
       <div className="book-portrait">
         <Link
-          to={`/libro/${book.name}/`
+          to={`/libro/${book.book_name}/`
             .toLowerCase()
             .replaceAll(" ", "-")
             .toLowerCase()
@@ -24,7 +24,7 @@ const BookItem = ({ book }) => {
             className="responsive-img z-depth-2"
           />
         </Link>
-        <h3>{book.name}</h3>
+        <h3>{book.book_name}</h3>
       </div>
 
       <div className="autor">
@@ -38,7 +38,7 @@ const BookItem = ({ book }) => {
       <div className="descargar">
         <Link
           className=""
-          to={`/libro/${book.name}/`
+          to={`/libro/${book.book_name}/`
             .toLowerCase()
             .replaceAll(" ", "-")
             .normalize("NFD")
@@ -47,11 +47,11 @@ const BookItem = ({ book }) => {
           DESCARGAR LIBRO
         </Link>
       </div>
-      {/* {cookies.get("privilegio") === "administrador" && (
+      {cookies.get("privilegio") === "administrador" && (
           <div>
               <Link to={`/librito/${book.id}`} className="btn edit-book"><i className="material-icons">edit</i> Editar Libro</Link>
           </div>
-      )} */}
+      )}
       <div>
         <Link to={`/libroe/detalles/`} className="btn edit-book">
           <i className="material-icons">edit</i> Editar Libro

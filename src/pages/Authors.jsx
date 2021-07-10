@@ -1,16 +1,25 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
-import UseBooks from "../UseBooks";
 import BookItem from "../components/BookItem";
 import Publicity from "../components/Publicity";
 import CategoriesList from "../components/CategoriesList";
+import api from "../UseBooks";
 
 const Authors = ({ params }) => {
   let { autorName } = params;
   autorName = autorName.replaceAll("-", " ");
 
-  const books = UseBooks({ endpoint: "autores" });
-  const autor = books.initial_autors;
+  const [autor, setAutor] = useState([]);
+
+  useEffect(async () => {
+    try {
+      const data = await api.books.list("autores");
+      setAutor(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+
   const [filteredAutor, setFilteredAutor] = useState(autor);
 
   useMemo(() => {

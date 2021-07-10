@@ -1,9 +1,9 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 
 import BookItem from "../components/BookItem";
 import CategoriesList from "../components/CategoriesList";
-import UseBooks from "../UseBooks";
+import api from "../UseBooks";
 import "./styles/Books.css";
 
 import Cookies from "universal-cookie";
@@ -15,10 +15,20 @@ const Books = ({ params }) => {
   let { bookName } = params;
   bookName = bookName.replaceAll("-", " ");
 
-  const initialState = UseBooks({ endpoint: "books" });
-  const initialStateAutor = UseBooks({ endpoint: "autores" });
-  const book = initialState.initial_books;
-  const autor = initialStateAutor.initial_autors;
+  const [book, setBook] = useState([]);
+  const [autor, setAutor] = useState([]);
+
+  useEffect(async () => {
+    try {
+      const data = await api.books.list("books");
+      const autorData = await api.books.list("autores");
+      setBook(data);
+      setAutor(autorData);
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
+
   const [filteredBook, setFilteredBook] = useState(book);
   const [filteredAutor, setFilteredAutor] = useState(autor);
 
@@ -27,7 +37,7 @@ const Books = ({ params }) => {
 
   useMemo(() => {
     const result = book.filter((libro) => {
-      return `${libro.name}`
+      return `${libro.book_name}`
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
         .toLowerCase()
@@ -51,9 +61,9 @@ const Books = ({ params }) => {
       cookies.get("privilegio") === "administrador" ||
       cookies.get("privilegio") === "usuario"
     ) {
-      Swal.fire("Descargando el libro")
-    } else{
-        Swal.fire("Debes crear una cuenta para poder acceder a los libros");
+      Swal.fire("Descargando el libro");
+    } else {
+      Swal.fire("Debes crear una cuenta para poder acceder a los libros");
     }
   };
 
@@ -68,7 +78,7 @@ const Books = ({ params }) => {
           {filteredBook.map((book) => (
             <section className="section col l9 s12">
               <div className="details-book col l12 s12 left">
-                <h2 className="book-title">{book.name}</h2>
+                <h2 className="book-title">{book.book_name}</h2>
                 <Link to={`/autor/${book.autor}/`} className="autor-name">
                   {book.autor}
                 </Link>
@@ -83,23 +93,38 @@ const Books = ({ params }) => {
               {cookies.get("privilegio") === "administrador" ||
               cookies.get("privilegio") === "usuario" ? (
                 <div className="downloads-container bottom">
-                  <a href={book.download} className="btn download-button" onClick={handleClick}>
+                  <a
+                    href={book.download}
+                    className="btn download-button"
+                    onClick={handleClick}
+                  >
                     <i className="material-icons">file_download</i>DESCARGAR PDF
                   </a>
-                  <a href="#!" className="btn read-button" onClick={handleClick}>
+                  <a
+                    href="#!"
+                    className="btn read-button"
+                    onClick={handleClick}
+                  >
                     <i className="material-icons">description</i> LEER ONLINE
                   </a>
                 </div>
-              ) 
-              : (
+              ) : (
                 <div className="downloads-container">
-                <a href="#!" className="btn download-button" onClick={handleClick}>
-                  <i className="material-icons">file_download</i>DESCARGAR PDF
-                </a>
-                <a href="#!" className="btn read-button" onClick={handleClick}>
-                  <i className="material-icons">description</i> LEER ONLINE
-                </a>
-              </div>
+                  <a
+                    href="#!"
+                    className="btn download-button"
+                    onClick={handleClick}
+                  >
+                    <i className="material-icons">file_download</i>DESCARGAR PDF
+                  </a>
+                  <a
+                    href="#!"
+                    className="btn read-button"
+                    onClick={handleClick}
+                  >
+                    <i className="material-icons">description</i> LEER ONLINE
+                  </a>
+                </div>
               )}
 
               <div className="description-book">

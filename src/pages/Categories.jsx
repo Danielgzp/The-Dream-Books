@@ -1,16 +1,26 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
-import UseBooks from "../UseBooks";
+import api from "../UseBooks";
 import BookItem from "../components/BookItem";
 import CategoriesList from "../components/CategoriesList";
 import Publicity from "../components/Publicity";
 
 const Categories = ({ params }) => {
+  
   let { categorieName } = params;
   categorieName = categorieName.replaceAll("-", " ");
 
-  const initialState = UseBooks({ endpoint: "categories" });
-  const categories = initialState.initial_categories;
+  const [categories, setCategories] = useState([]);
+
+  useEffect(async () => {
+    try {
+      const data = await api.books.list("categories");
+      setCategories(data);
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
+
   const [filteredCategorie, setFilteredCategorie] = useState(categories);
 
   useMemo(() => {
@@ -32,7 +42,9 @@ const Categories = ({ params }) => {
           <section>
             {filteredCategorie.map((categorie) => (
               <div>
-                <h2 className="title-books">CATEGORIA: {categorie.categorie_name}</h2>
+                <h2 className="title-books">
+                  CATEGORIA: {categorie.categorie_name}
+                </h2>
                 <ul className="list-books">
                   {categorie.categorie_books.map((book) => (
                     <li>

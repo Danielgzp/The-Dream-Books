@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import api from "../UseBooks";
@@ -6,8 +6,16 @@ import "./styles/CategoriesList.css";
 
 const CategoriesList = () => {
     
-  // const categories = api.books.list()
-  // console.log(categories)
+  const [categories, setCategories] = useState([]);
+    
+     useEffect( async () => {
+         try {
+            const data = await api.books.list('categories');
+            setCategories(data);
+         } catch (err) {
+            console.log(err);
+         }
+     }, []);
   
 
   return (
@@ -15,7 +23,7 @@ const CategoriesList = () => {
       <div className="list-container">
         <h2 className="title-list">Categorias</h2>
         <ul className="categories-list">
-          {/* {categories.map((title) => (
+          {categories.map((title) => (
             <li className="categories-list__element" key={title.categorie_id}>
               <Link
                 to={`/categories/${title.categorie_name}/`
@@ -26,8 +34,7 @@ const CategoriesList = () => {
                 {title.categorie_name}
               </Link>
             </li>
-          ))} */}
-          <h2>a</h2>
+          ))}
         </ul>
       </div>
     </aside>

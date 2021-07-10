@@ -27,6 +27,7 @@ class BookNew extends React.Component {
   };
 
   render() {
+    
     const handleSubmit = async (e) => {
       e.preventDefault();
       this.setState({ loading: true, error: null });
