@@ -2,21 +2,21 @@ const fs = require('fs')
 const path = require('path')
 const faker = require('faker');
 
-function createBook(limit = 2000) {
+function createBook(limit = 100) {
   const result = [];
 
   for (let i = 0; i < limit; i++) {
-    const name = faker.name.name();
-    const books_image = faker.text.books_image()
-    const autor = faker.name.autor()
+    const book_name = faker.name.firstName();
+    const books_image = faker.image.imageUrl()
+    const autor = faker.name.title()
 
     result.push({
       id: faker.random.uuid(),
       books_image,
-      name,
+      book_name,
       autor,
-      description: faker.name.description(),
-      download: faker.name.download(),
+      description: faker.name.jobTitle(),
+      download: faker.internet.url(),
     });
   }
 
@@ -29,8 +29,8 @@ function main() {
   };
 
   fs.writeFileSync(
-    path.resolve(__dirname, '/server/books.json'),
-    JSON.stringify(data, null, 5)
+    path.resolve(__dirname, 'books.json'),
+    JSON.stringify(data, null, 4)
   );
 }
 

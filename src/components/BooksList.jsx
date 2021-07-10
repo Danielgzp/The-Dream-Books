@@ -4,26 +4,26 @@ import { Link } from 'wouter'
 import BookItem from './BookItem'
 import './styles/BooksList.css'
 
-import UseBooks from '../UseBooks'
-import UseApi from '../UseBooks'
+
+import api from '../UseBooks'
 
 
 function BooksList() {
 
     
-    const books = UseApi.books.list()
-   
+    // const books = api.books.list()
+
     return (
         <section className="section">
             <div className="books-container">
                 <h2 className="title-books">Publicaciones Recientes</h2>
-                <ul className="list-books">
+                {/* <ul className="list-books">
                     {books.map(book => (
                         <li>
                             <BookItem book={book} key={book.id}/>
                         </li>
                     ))} 
-                </ul>
+                </ul> */}
 
                 {/* <div className="pagination">
                     <button type="button" onClick={handleClickPrev} >Prev Page</button>

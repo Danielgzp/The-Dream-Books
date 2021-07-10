@@ -1,20 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import UseBooks from "../UseBooks";
+import api from "../UseBooks";
 import "./styles/CategoriesList.css";
 
 const CategoriesList = () => {
     
-  // const initialState = UseBooks({ endpoint: "categories" });
-  // const categorie = initialState.initial_categories
+  // const categories = api.books.list()
+  // console.log(categories)
+  
 
   return (
     <aside className="section">
       <div className="list-container">
         <h2 className="title-list">Categorias</h2>
-        {/* <ul className="categories-list">
-          {categorie.map((title) => (
+        <ul className="categories-list">
+          {/* {categories.map((title) => (
             <li className="categories-list__element" key={title.categorie_id}>
               <Link
                 to={`/categories/${title.categorie_name}/`
@@ -25,8 +26,9 @@ const CategoriesList = () => {
                 {title.categorie_name}
               </Link>
             </li>
-          ))}
-        </ul> */}
+          ))} */}
+          <h2>a</h2>
+        </ul>
       </div>
     </aside>
   );

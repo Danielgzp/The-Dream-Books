@@ -1,47 +1,48 @@
 import { useEffect, useState } from "react";
 
+const API = 'http://localhost:4001'
+
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const randomNumber = (min = 0, max = 1) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
 const simulateNetworkLatency = (min = 30, max = 1500) =>
   delay(randomNumber(min, max));
 
-function UseBooks(endpoint, options = {}){
+async function UseBooks(endpoint, options = {}){
   
-    const API = `http://localhost:3001/books`
-    
+    const url = API + endpoint
+
     options.headers = {
       'Content-Type': 'application/json',
       Accept: 'application/json',
     };
 
-    const [books, setBooks] = useState([]);
-    
-    useEffect(() => {
-      async function callApi(){
-        try{
-          await simulateNetworkLatency
-          const response = await fetch(API, options)
+    // // useEffect(() => {
+    //   async function callApi(){
+    //     try{
+          await simulateNetworkLatency()
+          const response = await fetch(url, options)
           const data =  await response.json()
-          setBooks(data)
+    //       setBooks(data)
     
-        } catch(error){
-          console.error(error);
-        }
-      }
-      callApi()
-    }, [API])
+    //     } catch(error){
+    //       console.error(error);
+    //     }
+    //   }
+    // callApi()
+    //   callApi()
+    // }, [API])
 
-  return books
+  return data
 }
 
 const api = {
   books: {
     list() {
-      return UseBooks('/');
+      return UseBooks('/books');
     },
     create(book) {
-      return UseBooks(`/libros/new`, {
+      return UseBooks('/books', {
         method: 'POST',
         body: JSON.stringify(book),
       });
