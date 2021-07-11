@@ -9,10 +9,10 @@ import "./styles/Books.css";
 import Cookies from "universal-cookie";
 import Swal from "sweetalert2";
 
-const Books = ({ params }) => {
+const Books = (props) => {
   const cookies = new Cookies();
 
-  let { bookName } = params;
+  let bookName = props.match.params.bookName;
   bookName = bookName.replaceAll("-", " ");
 
   const [book, setBook] = useState([]);
@@ -46,9 +46,9 @@ const Books = ({ params }) => {
 
     const results = autor.filter((book) => {
       return `${book.autor_name}`
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
         .toLowerCase()
+        .normalize("NFD")
+        .replace(/[?¿¡!\u0300-\u036f]/g, "")
         .includes(paramsBookAutor.toLowerCase());
     });
 

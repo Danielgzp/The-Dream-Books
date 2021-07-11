@@ -5,8 +5,8 @@ import Publicity from "../components/Publicity";
 import CategoriesList from "../components/CategoriesList";
 import api from "../UseBooks";
 
-const Authors = ({ params }) => {
-  let { autorName } = params;
+const Authors = (props) => {
+  let autorName = props.match.params.autorName;
   autorName = autorName.replaceAll("-", " ");
 
   const [autor, setAutor] = useState([]);
@@ -26,6 +26,8 @@ const Authors = ({ params }) => {
     const result = autor.filter((book) => {
       return `${book.autor_name}`
         .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
         .includes(autorName.toLowerCase());
     });
     setFilteredAutor(result);

@@ -5,9 +5,11 @@ import BookItem from "../components/BookItem";
 import CategoriesList from "../components/CategoriesList";
 import Publicity from "../components/Publicity";
 
-const Categories = ({ params }) => {
-  let { categorieName } = params;
-  categorieName = categorieName.replaceAll("-", " ");
+const Categories = (props) => {
+  console.log(props);
+  let categorieName = props.match.params.categorieName;
+  // categorieName = categorieName.replaceAll("-", " ");
+  console.log(categorieName);
 
   const [categories, setCategories] = useState([]);
 
@@ -26,7 +28,9 @@ const Categories = ({ params }) => {
     const result = categories.filter((book) => {
       return `${book.categorie_name}`
         .toLowerCase()
-        .includes(categorieName.toLowerCase());
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .includes(categorieName.toLowerCase().replaceAll("-", " "));
     });
     setFilteredCategorie(result);
   }, [categories, categorieName]);

@@ -30,14 +30,14 @@ const App = () => {
           />
           <Route
             exact
-            path="/categories/:categorieName/"
+            path="/categories/:categorieName"
             component={Categories}
           />
-          <Route exact path="/libro/:bookName/" component={Books} />
+          <Route exact path="/libro/:bookName" component={Books} />
 
-          <Route exact path="/libroa/new" component={BookNew} />
-          <Route exact path="/books/:bookId" component={BookDetails} />
-          <Route exact path="/books/:bookId/editar" component={BookEdit} />
+          <Route exact path="/libro/new" component={BookNew} />
+          <Route exact path="/libro/:bookId" component={BookDetails} />
+          <Route exact path="/libro/:bookId/editar" component={BookEdit} />
 
           <Route exact path="/search/:bookSearch/" component={SearchPage} />
           <Route exact path="/autor/:autorName/" component={Authors} />

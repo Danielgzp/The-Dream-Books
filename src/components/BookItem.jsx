@@ -11,10 +11,9 @@ const BookItem = ({ book }) => {
     <article>
       <div className="book-portrait">
         <Link
-          to={`/libro/${book.book_name}/`
+          to={`/libro/${book.book_name}`
             .toLowerCase()
             .replaceAll(" ", "-")
-            .toLowerCase()
             .normalize("NFD")
             .replace(/[?¿¡!\u0300-\u036f]/g, "")}
         >
@@ -30,7 +29,11 @@ const BookItem = ({ book }) => {
       <div className="autor">
         <Link
           className=""
-          to={`/autor/${book.autor}/`.toLowerCase().replaceAll(" ", "-")}
+          to={`/autor/${book.autor}/`
+            .toLowerCase()
+            .replaceAll(" ", "-")
+            .normalize("NFD")
+            .replace(/[?¿¡!\u0300-\u036f]/g, "")}
         >
           {book.autor}
         </Link>
@@ -38,7 +41,7 @@ const BookItem = ({ book }) => {
       <div className="descargar">
         <Link
           className=""
-          to={`/libro/${book.book_name}/`
+          to={`/libro/${book.book_name}`
             .toLowerCase()
             .replaceAll(" ", "-")
             .normalize("NFD")
@@ -48,12 +51,14 @@ const BookItem = ({ book }) => {
         </Link>
       </div>
       {cookies.get("privilegio") === "administrador" && (
-          <div>
-              <Link to={`/librito/${book.id}`} className="btn edit-book"><i className="material-icons">edit</i> Editar Libro</Link>
-          </div>
+        <div>
+          <Link to={`/libro/${book.id}`} className="btn edit-book">
+            <i className="material-icons">edit</i> Editar Libro
+          </Link>
+        </div>
       )}
       <div>
-        <Link to={`/books/${book.id}`} className="btn edit-book">
+        <Link to={`/libro/${book.id}`} className="btn edit-book">
           <i className="material-icons">edit</i> Editar Libro
         </Link>
       </div>
