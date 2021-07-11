@@ -53,7 +53,7 @@ const BookItem = ({ book }) => {
           </div>
       )}
       <div>
-        <Link to={`/libroe/detalles/`} className="btn edit-book">
+        <Link to={`/books/${book.id}`} className="btn edit-book">
           <i className="material-icons">edit</i> Editar Libro
         </Link>
       </div>

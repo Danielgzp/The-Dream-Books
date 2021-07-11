@@ -51,17 +51,17 @@ const api = {
       });
     },
     read(bookId) {
-      return UseBooks(`/books/${bookId}/`);
+      return UseBooks(`/books/${bookId}`);
     },
     update(bookId, updates) {
-      return UseBooks(`/books/${bookId}/`, {
+      return UseBooks(`/books/${bookId}`, {
         method: "PUT",
         body: JSON.stringify(updates),
       });
     },
     // Lo hubiera llamado `delete`, pero `delete` es un keyword en JavaScript asi que no es buena idea :P
     remove(bookId) {
-      return UseBooks(`/libros/${bookId}/`, {
+      return UseBooks(`/books/${bookId}`, {
         method: "DELETE",
       });
     },

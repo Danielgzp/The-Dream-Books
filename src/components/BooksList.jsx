@@ -3,20 +3,40 @@ import { Link } from "wouter";
 
 import BookItem from "./BookItem";
 import "./styles/BooksList.css";
+import PageLoading from "../components/PageLoading";
+import PageError from "../components/PageError";
+
 
 import api from "../UseBooks";
 
 const BooksList = () => {
-  const [books, setBooks] = useState([]);
+  const [state, setState] = useState({
+    loading: false,
+    error: null,
+  });
+  const [books, setBooks] = useState([])
+  
 
   useEffect(async () => {
+    setState({loading: true, error: null})
+
     try {
       const data = await api.books.list("books");
-      setBooks(data);
-    } catch (err) {
-      console.log(err);
+      setBooks(data)
+      setState({
+        loading: false,
+      });
+    } catch (error) {
+      setState({ loading: false, error: error })
     }
   }, []);
+
+  if (state.loading) {
+    return <PageLoading />;
+  } 
+  if(state.error){
+    return <PageError />
+  }
 
   return (
     <section className="section">

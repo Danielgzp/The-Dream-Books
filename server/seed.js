@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const faker = require('faker');
 
-function createBook(limit = 100) {
+function createBook(limit = 200) {
   const result = [];
 
   for (let i = 0; i < limit; i++) {

@@ -5,24 +5,22 @@ import api from "../UseBooks";
 import "./styles/CategoriesList.css";
 
 const CategoriesList = () => {
-    
   const [categories, setCategories] = useState([]);
-    
-     useEffect( async () => {
-         try {
-            const data = await api.books.list('categories');
-            setCategories(data);
-         } catch (err) {
-            console.log(err);
-         }
-     }, []);
-  
+
+  useEffect(async () => {
+    try {
+      const data = await api.books.list("categories");
+      setCategories(data);
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
 
   return (
     <aside className="section">
       <div className="list-container">
-        <h2 className="title-list">Categorias</h2>
         <ul className="categories-list">
+          <h2 className="title-list">Categorias</h2>
           {categories.map((title) => (
             <li className="categories-list__element" key={title.categorie_id}>
               <Link

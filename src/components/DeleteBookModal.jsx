@@ -10,7 +10,7 @@ function DeleteBookModal(props) {
         <p>You are about to delete this badge.</p>
 
         <div>
-          <button onClick={props.onDeleteBadge} className="btn btn-danger mr-4">
+          <button onClick={props.onDeleteBook} className="btn btn-danger mr-4">
             Delete
           </button>
           <button onClick={props.onClose} className="btn btn-primary">

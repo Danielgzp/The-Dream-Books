@@ -1,30 +1,72 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./styles/BookDetails.css";
+import Swal from "sweetalert2";
+
 import BookInformation from "../components/BookInformation";
 import DeleteBookModal from "../components/DeleteBookModal";
+import PageLoading from "../components/PageLoading";
+import PageError from "../components/PageError";
+import api from "../UseBooks";
 
-const BookDetails = (props) => {
+function BookDetails(props) {
+  console.log("probando1");
+  const [state, setState] = useState({
+    loading: true,
+    error: null,
+    data: undefined,
+    modalIsOpen: false,
+  });
 
-  const books = props.books
+  useEffect(async () => {
+    setState({
+      loading: true,
+    });
+    console.log("probando2");
+    try {
+      const data = await api.books.read(props.match.params.bookId);
+      setState({
+        data: data,
+        loading: false,
+      });
+      console.log("probando3");
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+  console.log("probando4");
+
+  const handleDeletebook = async (e) => {
+    try {
+      await api.books.remove(props.match.params.bookId);
+      props.history.push('/')
+    } catch (error) {
+      console.error("Error");
+    }
+    Swal.fire("El libro ha sido eliminado exitosamente");
+  };
+
+  console.log("probando5");
+
+  if (state.loading) {
+    return <PageLoading />;
+  }
+  if (state.error) {
+    return <PageError />;
+  }
 
   return (
     <React.Fragment>
+      {console.log("probando6")}
       <div>
         <div className="Book-Layout"></div>
 
         <div className="container">
           <div className="row">
             <div className="col l6 s12">
-                
-              {/* <Badge
-                firstName={badge.firstName}
-                lastName={badge.lastName}
-                email={badge.email}
-                twitter={badge.twitter}
-                jobTitle={badge.jobTitle}
-              /> */}
+              <h2></h2>
+              <BookInformation book={state.data} />
             </div>
             <div className="col l6 s12 actions">
               <h2 className="center-align">Actions</h2>
@@ -39,20 +81,21 @@ const BookDetails = (props) => {
                 </button> */}
                 <Link
                   className="btn edit-button"
-                  to={`/libroi/detalles/editar/`}
+                  to={`/books/${state.data.id}/editar`}
                 >
                   Edit Book
                 </Link>
                 <button
-                  onClick={props.onOpenModal} className="btn delete-button"
+                  onClick={handleDeletebook}
+                  className="btn delete-button"
                 >
-                  Delete Book
+                  Delete
                 </button>
-                <DeleteBookModal
+                {/* <DeleteBookModal
                   isOpen={props.modalIsOpen}
                   onClose={props.onCloseModal}
-                  onDeleteBadge={props.onDeleteBadge}
-                />
+                  onDeleteBook={props.onDeleteBook}
+                /> */}
               </div>
             </div>
           </div>
@@ -60,6 +103,6 @@ const BookDetails = (props) => {
       </div>
     </React.Fragment>
   );
-};
+}
 
 export default BookDetails;

@@ -3,6 +3,9 @@ import Swal from "sweetalert2";
 
 import BookForm from "../components/BookForm";
 import BookInformation from "../components/BookInformation";
+import PageLoading from "../components/PageLoading";
+import PageError from "../components/PageError";
+
 import api from "../UseBooks";
 
 class BookNew extends React.Component {
@@ -10,11 +13,11 @@ class BookNew extends React.Component {
     loading: false,
     error: null,
     form: {
-      books_image: "",
-      book_name: "",
-      autor: "",
-      description: "",
-      download: "",
+      books_image: "https://i.imgur.com/1HJXMsR.jpeg",
+      book_name: "Nombre del libro",
+      autor: "Autor",
+      description: "Descripcion",
+      download: "Link de descarga",
     },
   };
 
@@ -28,22 +31,25 @@ class BookNew extends React.Component {
   };
 
   render() {
+    if (this.state.loading) {
+      return <PageLoading />;
+    }
+    if (this.state.error) {
+      return <PageError />;
+    }
 
     const handleSubmit = async (e) => {
       e.preventDefault();
       this.setState({ loading: true, error: null });
-      console.log(this.state.form)
-  
+
       try {
-        console.log(this.state.form)
         await api.books.create(this.state.form);
+        Swal.fire("El libro ha sido creado exitosamente!!");
         this.setState({ loading: false });
-  
+        this.props.history.push("/");
       } catch (error) {
         this.setState({ loading: false, error: error });
       }
-
-      Swal.fire('El libro ha sido creado exitosamente')
     };
 
     return (
@@ -54,14 +60,6 @@ class BookNew extends React.Component {
           <div className="row">
             <div className="col l6 s12">
               <BookInformation book={this.state.form} />
-              {/* <Badge
-                firstName={this.state.form.firstName || 'FIRST_NAME'}
-                lastName={this.state.form.lastName || 'LAST_NAME'}
-                twitter={this.state.form.twitter || 'twitter'}
-                jobTitle={this.state.form.jobTitle || 'JOB_TITLE'}
-                email={this.state.form.email || 'EMAIL'}
-                avatarUrl="https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon"
-              /> */}
             </div>
 
             <div className="col l6 s12">

@@ -6,7 +6,6 @@ import CategoriesList from "../components/CategoriesList";
 import Publicity from "../components/Publicity";
 
 const Categories = ({ params }) => {
-  
   let { categorieName } = params;
   categorieName = categorieName.replaceAll("-", " ");
 
