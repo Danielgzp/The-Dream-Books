@@ -4,10 +4,9 @@ import { Link, useHistory } from "react-router-dom";
 import Cookies from "universal-cookie";
 import "./styles/Header.css";
 
-const Header = (props) => {
-  
+const Header = () => {
   const cookies = new Cookies();
-  console.log(cookies)
+  const userName = cookies.get("nombre");
   const [query, setQuery] = useState("");
   let history = useHistory();
 
@@ -60,8 +59,12 @@ const Header = (props) => {
                   </Link>
                 </li>
                 <li>
+                  <i className="material-icons left">account_circle</i>
+                  {userName}
+                </li>
+                <li>
                   <Link to="/salir/">
-                    <i className="material-icons left">keyboard_tab</i> Salir
+                    <i className="material-icons right">keyboard_tab</i> Salir
                   </Link>
                 </li>
               </ul>
@@ -176,6 +179,8 @@ const Header = (props) => {
                     Sesión
                   </Link>
                 </li>
+
+                {console.log(cookies.get("nombre"))}
               </ul>
             </nav>
           </div>
