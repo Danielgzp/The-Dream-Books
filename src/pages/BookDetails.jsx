@@ -40,7 +40,7 @@ function BookDetails(props) {
   const handleDeletebook = async (e) => {
     try {
       await api.books.remove(props.match.params.bookId);
-      props.history.push('/')
+      props.history.push("/");
     } catch (error) {
       console.error("Error");
     }
@@ -71,17 +71,9 @@ function BookDetails(props) {
             <div className="col l6 s12 actions">
               <h2 className="center-align">Actions</h2>
               <div className="BooksDetails__buttons">
-                {/* <button
-                  onClick={() => {
-                    setCount(count + 1);
-                  }}
-                  className="btn btn-primary mr-4"
-                >
-                  Increase Count: {count}
-                </button> */}
                 <Link
                   className="btn edit-button"
-                  to={`/books/${state.data.id}/editar`}
+                  to={`/libro/${state.data.id}/editar`}
                 >
                   Edit Book
                 </Link>

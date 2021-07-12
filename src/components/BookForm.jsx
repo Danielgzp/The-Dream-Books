@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "./styles/BadgeForm.css";
 
 class BookForm extends React.Component {
-
   handleClick = (e) => {
     console.log("Button was clicked");
   };
@@ -68,10 +67,7 @@ class BookForm extends React.Component {
             />
           </div>
           <div className="buttons">
-            <button
-              onClick={this.handleClick}
-              className="btn save-button left"
-            >
+            <button onClick={this.handleClick} className="btn save-button left">
               Save
             </button>
             <Link className="ml-2 btn cancel-button" to="/">

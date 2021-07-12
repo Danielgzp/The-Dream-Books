@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "wouter";
 
 import BookItem from "./BookItem";
 import "./styles/BooksList.css";
 import PageLoading from "../components/PageLoading";
 import PageError from "../components/PageError";
-
 
 import api from "../UseBooks";
 
@@ -14,28 +12,27 @@ const BooksList = () => {
     loading: false,
     error: null,
   });
-  const [books, setBooks] = useState([])
-  
+  const [books, setBooks] = useState([]);
 
   useEffect(async () => {
-    setState({loading: true, error: null})
+    setState({ loading: true, error: null });
 
     try {
       const data = await api.books.list("books");
-      setBooks(data)
+      setBooks(data);
       setState({
         loading: false,
       });
     } catch (error) {
-      setState({ loading: false, error: error })
+      setState({ loading: false, error: error });
     }
   }, []);
 
   if (state.loading) {
     return <PageLoading />;
-  } 
-  if(state.error){
-    return <PageError />
+  }
+  if (state.error) {
+    return <PageError />;
   }
 
   return (
@@ -44,8 +41,8 @@ const BooksList = () => {
         <h2 className="title-books">Publicaciones Recientes</h2>
         <ul className="list-books">
           {books.map((book) => (
-            <li>
-              <BookItem book={book} key={book.id} />
+            <li key={book.id}>
+              <BookItem book={book} />
             </li>
           ))}
         </ul>

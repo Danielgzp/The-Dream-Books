@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import api from "../UseBooks";
 import BookForm from "../components/BookForm";
@@ -59,48 +59,6 @@ class BookEdit extends React.Component {
 
     Swal.fire("Los cambios han sido guardados exitosamente!");
   };
-
-  // const [state, setState] = useState({
-  //   loading: true,
-  //   error: null,
-  //   form: {
-  //     books_image: '',
-  //     name: '',
-  //     autor: '',
-  //     description: '',
-  //     download: '',
-  //   },
-  // });
-
-  // useEffect(async () => {
-  //   try {
-  //     const data = await api.books.read(props.match.params.bookId);
-  //     setState({
-  //       data: data,
-  //     });
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // }, []);
-
-  // const handleChange = (e) => {
-  //   this.setState({
-  //     form: {
-  //       ...state,
-  //       [e.target.name]: e.target.value,
-  //     },
-  //   });
-  // };
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   try {
-  //     await api.books.update(props.match.params.bookId, state.form);
-  //   } catch (error) {
-  //     console.error("Error");
-  //   }
-  // };
 
   render() {
     if (this.state.loading) {

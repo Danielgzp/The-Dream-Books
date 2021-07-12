@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import AccountSing from '../components/AccountSing'
-import './styles/SingIn.css'
+import AccountSing from "../components/AccountSing";
+import "./styles/SingIn.css";
 
 const SingIn = () => {
-    return (
-        <main className="fondo">
-            <AccountSing />
-        </main>
-    )
-}
+  return (
+    <main className="fondo">
+      <AccountSing />
+    </main>
+  );
+};
 
-export default SingIn
+export default SingIn;

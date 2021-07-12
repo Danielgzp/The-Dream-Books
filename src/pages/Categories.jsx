@@ -4,21 +4,26 @@ import api from "../UseBooks";
 import BookItem from "../components/BookItem";
 import CategoriesList from "../components/CategoriesList";
 import Publicity from "../components/Publicity";
+import PageLoading from "../components/PageLoading";
+import PageError from "../components/PageError";
 
 const Categories = (props) => {
-  console.log(props);
   let categorieName = props.match.params.categorieName;
-  // categorieName = categorieName.replaceAll("-", " ");
-  console.log(categorieName);
 
   const [categories, setCategories] = useState([]);
+  const [state, setState] = useState({
+    loading: false,
+    error: null,
+  });
 
   useEffect(async () => {
+    setState({ loading: true, error: null });
     try {
       const data = await api.books.list("categories");
       setCategories(data);
-    } catch (err) {
-      console.log(err);
+      setState({ loading: false });
+    } catch (error) {
+      setState({ loading: false, error: error });
     }
   }, []);
 
@@ -34,6 +39,13 @@ const Categories = (props) => {
     });
     setFilteredCategorie(result);
   }, [categories, categorieName]);
+
+  if (state.loading) {
+    return <PageLoading />;
+  }
+  if (state.error) {
+    return <PageError />;
+  }
 
   return (
     <main className="container">

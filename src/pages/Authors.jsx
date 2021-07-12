@@ -4,19 +4,27 @@ import BookItem from "../components/BookItem";
 import Publicity from "../components/Publicity";
 import CategoriesList from "../components/CategoriesList";
 import api from "../UseBooks";
+import PageLoading from "../components/PageLoading";
+import PageError from "../components/PageError";
 
 const Authors = (props) => {
   let autorName = props.match.params.autorName;
   autorName = autorName.replaceAll("-", " ");
 
   const [autor, setAutor] = useState([]);
+  const [state, setState] = useState({
+    loading: false,
+    error: null,
+  });
 
   useEffect(async () => {
+    setState({ loading: true, error: null });
     try {
       const data = await api.books.list("autores");
       setAutor(data);
+      setState({ loading: false });
     } catch (error) {
-      console.log(error);
+      setState({ loading: false, error: error });
     }
   }, []);
 
@@ -32,6 +40,13 @@ const Authors = (props) => {
     });
     setFilteredAutor(result);
   }, [autor, autorName]);
+
+  if (state.loading) {
+    return <PageLoading />;
+  }
+  if (state.error) {
+    return <PageError />;
+  }
 
   return (
     <main className="container">

@@ -5,6 +5,8 @@ import BookItem from "../components/BookItem";
 import CategoriesList from "../components/CategoriesList";
 import api from "../UseBooks";
 import "./styles/Books.css";
+import PageLoading from "../components/PageLoading";
+import PageError from "../components/PageError";
 
 import Cookies from "universal-cookie";
 import Swal from "sweetalert2";
@@ -16,16 +18,22 @@ const Books = (props) => {
   bookName = bookName.replaceAll("-", " ");
 
   const [book, setBook] = useState([]);
+  const [state, setState] = useState({
+    loading: false,
+    error: null,
+  });
   const [autor, setAutor] = useState([]);
 
   useEffect(async () => {
+    setState({ loading: true, error: null });
     try {
       const data = await api.books.list("books");
       const autorData = await api.books.list("autores");
       setBook(data);
       setAutor(autorData);
-    } catch (err) {
-      console.log(err);
+      setState({ loading: false });
+    } catch (error) {
+      setState({ loading: false, error: error });
     }
   }, []);
 
@@ -66,6 +74,13 @@ const Books = (props) => {
       Swal.fire("Debes crear una cuenta para poder acceder a los libros");
     }
   };
+
+  if (state.loading) {
+    return <PageLoading />;
+  }
+  if (state.error) {
+    return <PageError />;
+  }
 
   return (
     <React.Fragment>

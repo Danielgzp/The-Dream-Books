@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 const API = "http://localhost:4001";
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -14,29 +12,12 @@ async function UseBooks(endpoint, options = {}) {
     Accept: "application/json",
   };
 
-  // const [books, setBooks] = useState([]);
-
-  // useEffect(() => {
-  //   async function callApi() {
-  //     try {
-  //       await simulateNetworkLatency();
-  //       const response = await fetch(url, options);
-  //       const data = await response.json();
-  //       setBooks(data);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   }
-  //   callApi();
-  // }, [url]);
-
-  await simulateNetworkLatency()
+  await simulateNetworkLatency();
   const url = API + endpoint;
   const response = await fetch(url, options);
   const data = await response.json();
-  
-  return data;
 
+  return data;
 }
 
 const api = {
@@ -59,6 +40,7 @@ const api = {
         body: JSON.stringify(updates),
       });
     },
+
     // Lo hubiera llamado `delete`, pero `delete` es un keyword en JavaScript asi que no es buena idea :P
     remove(bookId) {
       return UseBooks(`/books/${bookId}`, {

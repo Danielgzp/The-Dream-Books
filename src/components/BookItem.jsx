@@ -11,7 +11,7 @@ const BookItem = ({ book }) => {
     <article>
       <div className="book-portrait">
         <Link
-          to={`/libro/${book.book_name}`
+          to={`/libros/${book.book_name}`
             .toLowerCase()
             .replaceAll(" ", "-")
             .normalize("NFD")
@@ -41,7 +41,7 @@ const BookItem = ({ book }) => {
       <div className="descargar">
         <Link
           className=""
-          to={`/libro/${book.book_name}`
+          to={`/libros/${book.book_name}`
             .toLowerCase()
             .replaceAll(" ", "-")
             .normalize("NFD")

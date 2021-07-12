@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import './styles/Modal.css';
+import "./styles/Modal.css";
 
 function Modal(props) {
   if (!props.isOpen) {
@@ -18,8 +18,8 @@ function Modal(props) {
         {props.children}
       </div>
     </div>,
-    document.getElementById('modal')
+    document.getElementById("modal")
   );
 }
 
-export default Modal
+export default Modal;

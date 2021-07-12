@@ -19,12 +19,18 @@ const Footer = () => {
               <h4 className="">Redes</h4>
               <ul className="footer-list">
                 <li>
-                  <a className="valign-wrapper" href="https://www.facebook.com/juan.escobar.944">
+                  <a
+                    className="valign-wrapper"
+                    href="https://www.facebook.com/juan.escobar.944"
+                  >
                     Facebook <span className="facebook"></span>
                   </a>
                 </li>
                 <li>
-                  <a className="valign-wrapper" href="https://www.instagram.com/blackstorecargas/">
+                  <a
+                    className="valign-wrapper"
+                    href="https://www.instagram.com/blackstorecargas/"
+                  >
                     Instagram <span className="instagram"></span>
                   </a>
                 </li>
@@ -42,11 +48,10 @@ const Footer = () => {
         </div>
         <div className="footer-copyright black">
           <p className="grey-text text-lighten-3">
-              Echo por los panas © 2021 The Dream Books. Todos los derechos. El
-              mejor lugar para descargar los libros mas famosos en PDF.
+            Echo por los panas © 2021 The Dream Books. Todos los derechos. El
+            mejor lugar para descargar los libros mas famosos en PDF.
           </p>
         </div>
-        
       </footer>
     </React.Fragment>
   );

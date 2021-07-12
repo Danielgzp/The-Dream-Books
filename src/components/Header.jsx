@@ -1,20 +1,17 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
+import { Link, useHistory } from "react-router-dom";
 
 import Cookies from "universal-cookie";
-import { useLocation } from "wouter";
-
 import "./styles/Header.css";
 
 const Header = () => {
   const cookies = new Cookies();
   const [query, setQuery] = useState("");
-  const [path, pushLocation] = useLocation();
+  let history = useHistory();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    pushLocation(`/search/${query.replaceAll(" ", "-")}/`);
+    history.push(`/search/${query.replaceAll(" ", "-").toLowerCase()}`);
   };
 
   //Se comprueba si se inicio sesión como usuario, administrador, o si aún no se ha iniciado sesión
@@ -153,6 +150,7 @@ const Header = () => {
                   value={query}
                   placeholder="Busca entre los muchos libros disponibles..."
                   id="input-search"
+                  required
                 />
                 <button
                   className="button-search right"
@@ -171,7 +169,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/libroa/new">
+                  <Link to="/new/book">
                     <i className="material-icons left">library_add</i> New Book
                   </Link>
                 </li>

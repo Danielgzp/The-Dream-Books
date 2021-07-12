@@ -3,30 +3,47 @@ import React, { useEffect, useMemo, useState } from "react";
 import BookItem from "../components/BookItem";
 import Publicity from "../components/Publicity";
 import CategoriesList from "../components/CategoriesList";
-import Swal from "sweetalert2";
 import api from "../UseBooks";
+import PageLoading from "../components/PageLoading";
+import PageError from "../components/PageError";
 
-const SearchPage = ({ params }) => {
-  let { bookSearch } = params;
+const SearchPage = (props) => {
+  let bookSearch = props.match.params.bookSearch;
   bookSearch = bookSearch.replaceAll("-", " ");
 
-  const [books, setBooks] = useState([])
+  const [books, setBooks] = useState([]);
+  const [state, setState] = useState({
+    loading: false,
+    error: null,
+  });
+
   useEffect(async () => {
-    try{
-      const data = await api.books.list('books')
-      setBooks(data)
-    }catch(error){
-      console.log('Error')
+    setState({ loading: true, error: null });
+    try {
+      const data = await api.books.list("books");
+      setBooks(data);
+      setState({ loading: false });
+    } catch (error) {
+      setState({ loading: false, error: error });
     }
-  }, [])
+  }, []);
   const [filteredBook, setFilteredBook] = useState(books);
 
   useMemo(() => {
     const result = books.filter((book) => {
-      return `${book.book_name}`.toLowerCase().includes(bookSearch.toLowerCase());
+      return `${book.book_name}`
+        .toLowerCase()
+        .includes(bookSearch.toLowerCase());
     });
     setFilteredBook(result);
   }, [books, bookSearch]);
+
+  if (state.loading) {
+    return <PageLoading />;
+  }
+  if (state.error) {
+    return <PageError />;
+  }
 
   if (filteredBook.length === 0) {
     return (

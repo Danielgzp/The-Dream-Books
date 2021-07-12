@@ -1,18 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import NewAccount from '../components/NewAccount'
-
-
+import NewAccount from "../components/NewAccount";
 
 const CreateAccount = () => {
-    return (
-        <main>
-            <section className="fondo">
-            <NewAccount />
-            </section>
-            
-        </main>
-    )
-}
+  return (
+    <main>
+      <section className="fondo">
+        <NewAccount />
+      </section>
+    </main>
+  );
+};
 
-export default CreateAccount
+export default CreateAccount;
