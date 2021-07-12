@@ -4,8 +4,10 @@ import { Link, useHistory } from "react-router-dom";
 import Cookies from "universal-cookie";
 import "./styles/Header.css";
 
-const Header = () => {
+const Header = (props) => {
+  
   const cookies = new Cookies();
+  console.log(cookies)
   const [query, setQuery] = useState("");
   let history = useHistory();
 
@@ -22,7 +24,7 @@ const Header = () => {
         <header>
           <div className="">
             <nav className="grey darken-4">
-              <a href="/" className="brand-logo">
+              <a href="/" className="link-logo">
                 <img
                   src="https://i.imgur.com/Hts1VfT.png"
                   alt="The Dream Books Logo"
@@ -39,6 +41,7 @@ const Header = () => {
                   value={query}
                   placeholder="Busca entre los muchos libros disponibles..."
                   id="input-search"
+                  required
                 />
                 <button
                   className="button-search right"
@@ -58,7 +61,6 @@ const Header = () => {
                 </li>
                 <li>
                   <Link to="/salir/">
-                    {" "}
                     <i className="material-icons left">keyboard_tab</i> Salir
                   </Link>
                 </li>
@@ -74,7 +76,7 @@ const Header = () => {
         <header>
           <div className="">
             <nav className="grey darken-4">
-              <a href="/" className="brand-logo">
+              <a href="/" className="link-logo">
                 <img
                   src="https://i.imgur.com/Hts1VfT.png"
                   alt="The Dream Books Logo"
@@ -91,6 +93,7 @@ const Header = () => {
                   value={query}
                   placeholder="Busca entre los muchos libros disponibles..."
                   id="input-search"
+                  required
                 />
                 <button
                   className="button-search right"
@@ -115,7 +118,6 @@ const Header = () => {
                 </li>
                 <li>
                   <Link to="/salir/">
-                    {" "}
                     <i className="material-icons left">keyboard_tab</i> Salir
                   </Link>
                 </li>

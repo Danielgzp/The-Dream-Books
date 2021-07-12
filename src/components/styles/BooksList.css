@@ -10,7 +10,7 @@
     width: 140px;
 }
 .title-books{
-    width: 100%;
+    /* width: 100%;
     text-align: left;
     position: relative;
     font-size: 1.8rem;
@@ -19,7 +19,16 @@
     color: #8f8f8f;
     font-family: 'Roboto',sans-serif;
     margin-left: 20px;
-    text-transform: uppercase;
+    text-transform: uppercase; */
+    width: 100%;
+    text-align: left;
+    position: relative;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #8f8f8f;
+    font-family: 'Roboto',sans-serif;
+    margin-bottom: 40px;
 }
 .title-books::after{
     position: absolute;

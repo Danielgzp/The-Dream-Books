@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { Link } from "wouter";
+import { Link } from "react-router-dom";
 
 import BookItem from "../components/BookItem";
 import CategoriesList from "../components/CategoriesList";
@@ -97,7 +97,14 @@ const Books = (props) => {
             <section className="section col l9 s12">
               <div className="details-book col l12 s12 left">
                 <h2 className="book-title">{book.book_name}</h2>
-                <Link to={`/autor/${book.autor}/`} className="autor-name">
+                <Link
+                  to={`/autor/${book.autor}`
+                    .toLowerCase()
+                    .replaceAll(" ", "-")
+                    .normalize("NFD")
+                    .replace(/[?¿¡!\u0300-\u036f]/g, "")}
+                  className="autor-name"
+                >
                   {book.autor}
                 </Link>
 

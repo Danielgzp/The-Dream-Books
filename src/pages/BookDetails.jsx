@@ -5,7 +5,6 @@ import "./styles/BookDetails.css";
 import Swal from "sweetalert2";
 
 import BookInformation from "../components/BookInformation";
-import DeleteBookModal from "../components/DeleteBookModal";
 import PageLoading from "../components/PageLoading";
 import PageError from "../components/PageError";
 import api from "../UseBooks";

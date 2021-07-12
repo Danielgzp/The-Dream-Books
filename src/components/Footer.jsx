@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
         <div className="footer-copyright black">
           <p className="grey-text text-lighten-3">
-            Echo por los panas © 2021 The Dream Books. Todos los derechos. El
+            Hecho por los panas © 2021 The Dream Books. Todos los derechos. El
             mejor lugar para descargar los libros mas famosos en PDF.
           </p>
         </div>

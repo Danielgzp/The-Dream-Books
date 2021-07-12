@@ -19,15 +19,23 @@
     {
       "id": "l3",
       "books_image": "https://i.imgur.com/7Iy9R0X.png",
-      "book_name": "juan gay",
+      "book_name": "Las Aventuras de Tom Sawyer",
       "autor": "Mark Twain",
       "description": "Las aventuras de Tom Sawyer es el relato de unos meses en la vida de este niño que vive en una ciudad pequeña del suroeste de Estados Unidos a orillas del río Misisipi. Criado por su tía Polly, que lo quiere de corazón pero que lo somete a una disciplina que se le hace absurda y desagradable, Tom contempla el mundo de una manera muy distinta a como lo hacen los adultos con los que tiene que convivir. Precisamente porque existe ese distanciamiento nos entretiene con sus reacciones divertidas y nobles. Más agreste y rebelde contra ese universo de las personas mayores es su amigo Huckleberry Finn, el compañero ideal de Tom que es envidiado por los demás niños que contemplan en su vida una forma de existencia que a ellos les gustaría llevar. Juntos vivirán aventuras humorísticas y dramáticas de las que podrán salir más airosos de lo que hubiera podido hacerlo cualquier adulto.",
       "download": "http://descargar.lelibros.online/Mark%20Twain/Las%20Aventuras%20de%20Tom%20Sawyer%20(12)/Las%20Aventuras%20de%20Tom%20Sawyer%20-%20Mark%20Twain.pdf"
     },
     {
+      "id": "l4",
+      "books_image": "https://i.imgur.com/nYA3S4D.png",
+      "book_name": "Aristóteles en 90 Minutos",
+      "autor": "Paul Strathern",
+      "description": "La colección Filósofos en 90 minutos incluye interpretaciones breves, pero autorizadas, de los más grandes pensadores de la humanidad y descifra sus filosofías en una forma amena y accesible que las hace interesantes y comprensibles a casi cualquiera. Aristóteles fue preceptor de Alejandro Magno. La Historia no registra detalles de esta relación, pero sabemos que, con el tiempo, Alejandro estuvo a punto de firmar la sentencia de muerte de Aristóteles, si bien se olvidó y se dispuso, en su lugar, a invadir la India. De no ser por este golpe de suerte, habríamos perdido al hombre cuya filosofía había de dominar el pensamiento europeo durante los 1.500 años siguientes. Gracias a Aristóteles, el mundo medieval persistió en sus creencias de que el sol giraba alrededor de la tierra y que todo estaba compuesto de tierra, aire, fuego y agua. Una introducción y un epílogo sitúan la obra de Aristóteles dentro del panorama de la filosofía; también se ofrece una lista cronológica de fechas filosóficas importantes. Finalmente, una selección de citas de sus obras más importantes, incluyendo la Ética Nicomáquea, da indicación de sus intenciones, conceptos más importantes y de su estilo.",
+      "download": "http://descargar.lelibros.online/Paul%20Strathern/Aristoteles%20en%2090%20Minutos%20(11)/Aristoteles%20en%2090%20Minutos%20-%20Paul%20Strathern.pdf"
+    },
+    {
       "id": "l5",
       "books_image": "https://i.imgur.com/GObZQfU.png",
-      "book_name": "Yo no vengo a decir un discurso",
+      "book_name": "Yo no Vengo a Decir un Discurso",
       "autor": "Gabriel García Márquez",
       "description": "Los textos que Gabriel García Márquez ha reunido en este libro fueron escritos con la intención de ser leídos por él mismo en público, ante una audiencia, y recorren prácticamente toda su vida, desde el primero, que escribe a los diecisiete años para despedir a sus compañeros del curso superior en Zipaquirá, hasta el que lee ante las Academias de la Lengua y los reyes de España al cumplir ochenta años. Estos discursos del premio Nobel nos ayudan a comprender más profundamente su vida y nos desvelan sus obsesiones fundamentales como escritor y ciudadano: su fervorosa vocación por la literatura, la pasión por el periodismo, su inquietud ante el desastre ecológico que se avecina, su propuesta de simplificar la gramática, los problemas de su tierra colombiana o el recuerdo emocionado de amigos escritores como Julio Cortázar o Álvaro Mutis, entre otros muchos. El lector tiene entre sus manos el complemento indispensable a una obra narrativa que nos seguirá hablando en un largo porvenir",
       "download": "http://descargar.lelibros.online/Gabriel%20Garcia%20Marquez/Yo%20no%20vengo%20a%20decir%20un%20discurso%20(518)/Yo%20no%20vengo%20a%20decir%20un%20discurso%20-%20Gabriel%20Garcia%20Marquez.pdf"
@@ -321,6 +329,14 @@
       "download": "http://descargar.lelibros.online/Rafael%20Santandreu/Las%20gafas%20de%20la%20felicidad%20(209)/Las%20gafas%20de%20la%20felicidad%20-%20Rafael%20Santandreu.pdf"
     },
     {
+      "id": "l42",
+      "books_image": "https://imgur.com/44vBaLD.png",
+      "book_name": "Corazón de Ulises",
+      "autor": "Javier Reverte",
+      "description": "«Corazón de Ulises» es un libro que, desde su primera edición, ha sido considerado un clásico de la literatura de viajes de nuestro país. Leído y estudiado en las universidades y recomendado también en numerosas guías, profundo y ameno, sabio y cercano, este libro reúne lo mejor de la literatura de su autor: la pedagogía y la emoción, el saber y la información, la poesía y la historia, el humor y la reflexión. Javier Reverte nos cuenta en él su viaje por lo territorios de la Grecia actual, pero también nos acerca a los territorios del ayer griego. Y funde en sus páginas la Grecia pretérita y la del presente. Cualquiera que viaje a la Grecia de hoy, pretendiendo entender al tiempo su imponente legado, debería llevar este libro con él. Porque Corazón de Ulises es un recorrido por la Grecia del presente escrito para quien lo quiera leer mientras viaja. Y también para los que, sin ánimo de viajar, deseen saber cómo fueron los caminos que trazaron los antiguos griegos. Javier Reverte ha creado un género literario nuevo con su forma de contar la vida de las gentes. Recuperar una obra tan significativa en esta nueva edición es una forma de acercar la cultura clásica a los lectores ávidos de viajar y de saber, en un lenguaje tan eterno como nuevo. Corazón de Ulises nos enseña a viajar con la cultura a cuestas.",
+      "download": "http://descargar.lelibros.online/Javier%20Reverte/Corazon%20de%20Ulises%20(652)/Corazon%20de%20Ulises%20-%20Javier%20Reverte.pdf"
+    },
+    {
       "id": "l43",
       "books_image": "https://imgur.com/v0YIMeT.png",
       "book_name": "Humor Cósmico",
@@ -351,6 +367,118 @@
       "autor": "J.K Rowling",
       "description": "Tras derrotar una vez más a lord Voldemort, su siniestro enemigo en Harry Potter y la piedra filosofal, Harry espera impaciente en casa de sus insoportables tíos el inicio del segundo curso del Colegio Hogwarts de Magia y hechicería. Sin embargo, la espera dura poco, pues un elfo aparece en su habitación y le advierte que una amenaza mortal se cierne sobre la escuela. Así pues, Harry no se lo piensa dos veces y, acompañado de Ron, su mejor amigo, se dirige a Hogwarts en un coche volador. Pero ¿puede un aprendiz de mago defender la escuela de los malvados que pretenden destruirla? Sin saber que alguien ha abierto la Cámara de los Secretos, dejando escapar una serie de monstruos peligrosos, Harry y sus amigos Ron y Hermione tendrán que enfrentarse con arañas gigantes, serpientes encantadas, fantasmas enfurecidos y, sobre todo, con la mismísima reencarnación de su más temible adversario.",
       "download": "http://descargar.lelibros.online/J.%20K.%20Rowling/Harry%20Potter%20y%20la%20Camara%20Secreta%20(15)/Harry%20Potter%20y%20la%20Camara%20Secret%20-%20J.%20K.%20Rowling.pdf"
+    },
+    {
+      "id": "l47",
+      "books_image": "https://imgur.com/kSqG5Gu.png",
+      "book_name": "Trajano y Decébalo en la Rumanía del Siglo XXI",
+      "autor": "Santiago Posteguillo",
+      "description": "Las novelas de Santiago Posteguillo consiguen atrapar a los lectores gracias, entre otras cosas, a su exhaustiva labor de documentación. Para recrear con la mayor fidelidad posible la conquista de la Dacia por Trajano, Santiago Posteguillo realizó un viaje por la Rumanía actual siguiendo los pasos del emperador hispano. En este documento el lector podrá recorrer paso a paso, calzada a calzada, los movimientos que el ejército romano realizó en su guerra contra Decébalo. Un documento de gran valor informativo, escrito con una pizca de humor y aderezado con imágenes de fotografías tomadas por el propio autor; así surge la complicidad con los lectores.",
+      "download": "http://descargar.lelibros.online/Santiago%20Posteguillo/Trajano%20y%20Decebalo%20en%20la%20Rumania%20del%20(28)/Trajano%20y%20Decebalo%20en%20la%20Rumani%20-%20Santiago%20Posteguillo.pdf"
+    },
+    {
+      "id": "l48",
+      "books_image": "https://imgur.com/EEfGdcj.png",
+      "book_name": "El Fraude de la Sábana Santa y las Reliquias de Cristo",
+      "autor": "Juan Eslava Galán",
+      "description": "«Un artista anónimo del siglo XIV descubrió los principios de la fotografía y falsificó el sudario de Cristo. Hoy, aquella reliquia ha dado origen a una pseudociencia, la sindonología, sustentada por poderosas asociaciones y sectas de todo el mundo. El objeto de la sindonología es probar con argumentos científicos que Cristo fue Dios. Para ello, científicos poco escrupulosos, e incluso claramente mendaces, no han vacilado en emplear las técnicas más avanzadas de la era espacial en apoyo de un gigantesco fraude y de un gran negocio encubierto bajo el pretexto de la religión. Este libro, en el que la ironía y el humor se aúnan con el rigor histórico, denuncia no sólo los manejos de los sindonólogos sino el resto de fraudes perpetrados con supuestas y pintorescas reliquias de Cristo a lo largo de la Historia: los abundantes Santos Prepucios, los Santos Pañales, las innumerables astillas de la Cruz, el guardarropa de la Virgen, los Santos Rostros y Verónicas, las Santas Espinas, los Santos griales, los Santos lugares… y todo el inmenso arsenal de mentiras fraguado para estafar a los crédulos devotos.",
+      "download": "http://descargar.lelibros.online/Juan%20Eslava%20Galan/El%20Fraude%20de%20la%20Sabana%20Santa%20y%20las%20(153)/El%20Fraude%20de%20la%20Sabana%20Santa%20y%20-%20Juan%20Eslava%20Galan.pdf"
+    },
+    {
+      "id": "l49",
+      "books_image": "https://imgur.com/RoCMwAL.png",
+      "book_name": "Los Mitos Griegos",
+      "autor": "Robert Graves",
+      "description": "Apasionado por el mundo clásico, Robert Graves publicó en 1955 esta recreación narrada de los mitos griegos, que se ha convertido con el paso de los años en una obra de referencia ineludible para iniciarse en el fascinante mundo de la antigüedad. La erudición y la magistral prosa de Graves combinadas dan como resultado una deslumbrante inmersión en los avatares de los héroes y los dioses, a través de una sucesión de mitos que siguen hoy iluminándonos sobre temas eternos como las pasiones, el odio, los celos, la culpa, la ambición, la codicia, el miedo, la traición, los deseos inconfesables… Forjadores de un universo simbólico que ha marcado el imaginario de Occidente a lo largo de la historia, por estas páginas desfilan Zeus, Narciso, Afrodita, Hermes, Atenea, Orestes, las Parcas, Apolo, Poseidón, Dioniso, Perseo, Sísifo, Midas, Teseo, Edipo, Penélope, Heracles… Un delicioso paseo por el mundo de los mitos griegos. Un clásico imprescindible en cualquier biblioteca.",
+      "download": "http://descargar.lelibros.online/Robert%20Graves/Los%20Mitos%20Griegos%20(104)/Los%20Mitos%20Griegos%20-%20Robert%20Graves.pdf"
+    },
+    {
+      "id": "l50",
+      "books_image": "https://imgur.com/d6DTl80.png",
+      "book_name": "¿Hay Alguien Ahí?",
+      "autor": "Isaac Asimov",
+      "description": "El proverbial talento divulgador de Isaac Asimov se pone de manifiesto una vez más en este volumen misceláneo, que presenta una rica variedad de ensayos hilvanados antes que nada por la extraordinaria curiosidad del autor. Desde el funcionamiento del cerebro hasta los viajes en el tiempo y el futuro del Universo, muchas son en efecto las cuestiones que Asimov aborda en estas páginas. Pero si hay un tema que sobresale en esta variopinta colección, éste es el de la vida extraterrestre y sus posibilidades de existencia. ¿Hay alguien ahí, en algún lugar de los inmensos espacios del Universo, dotado de inteligencia y con el cual se pueda establecer algún tipo de comunicación? Sea cual sea la respuesta, lo cierto es que ésta desde hace años ha dejado de pertenecer ya al ámbito puramente imaginario de la ciencia-ficción.",
+      "download": "http://descargar.lelibros.online/Isaac%20Asimov/_Hay%20Alguien%20Ahi_%20(802)/_Hay%20Alguien%20Ahi_%20-%20Isaac%20Asimov.pdf"
+    },
+    {
+      "id": "l51",
+      "books_image": "https://imgur.com/9pjH9cd.png",
+      "book_name": "El Sistema Periódico",
+      "autor": "Primo Levi",
+      "description": "No es frecuente que un libro despierte el entusiasmo unánima e incondicional de la crítica en todos aquellos países en los que ha sido publicado. Así ha ocurrido con EL SISTEMA PERIÓDICO, una obra que aúna sutilmente realidad y ficción gracias a la lucidez prodigiosa y a la maestría literaria de su autor. Nacido en Turín en 1919 y doctorado en Química en 1941, PRIMO LEVI ha acumulado los premios más prestigiosos de Italia: Strega, Bagutta, Campiello (dos veces), Viareggio, Prato y Sirmione-Catullo. Científico y humanista, testigo y protagonista de algunos de los episodios más duros de nuestra historia contemporánea (fue deportado a Auschwitz en 1943), vertió sus vivencias y reflexiones, su fantasía y su capacidad de observación en una serie de obras testimoniales, relatos y novelas entre las que destaca por la originalidad de su concepción El sistema periódico. Estructurado en veintiún capítulos, dedicado cada uno de ellos a un elemento químico convertido en metáfora del hombre o de las relaciones humanas, el libro da testimonio de la variedad de registros de la prosa del autor. Si la nostalgia irónica permea el capítulo dedicado al «Argón» (en que Levi traza la historia de sus antepasados) o la poesía aflora en su reflexión sobre el «Hierro» y su amistad con Sandro (más tarde hecho prisionero por los fascistas y asesinado por un niño-carnicero), la imaginación pura domina el relato que le sugiere el «Mercurio», a la vez que un dramatismo atenuado por la lucidez preside el capítulo correspondiente al «Vanadio», narración del reencuentro del escritor —acabada la guerra y por razones profesionales— con uno de sus carceleros de Auschwitz. Microhistoria de toda una generación, El sistema periódico fue recibido por Italo Calvino como «un libro extraordinario y fascinante que no puede por menos de dejar una profunda huella en el lector»",
+      "download": "http://descargar.lelibros.online/Primo%20Levi/El%20Sistema%20Periodico%20(697)/El%20Sistema%20Periodico%20-%20Primo%20Levi.pdf"
+    },
+    {
+      "id": "l52",
+      "books_image": "https://imgur.com/bGsO7sK.png",
+      "book_name": "Todo lo Que era Sólido",
+      "autor": "Antonio Muñoz Molina",
+      "description": "Un ensayo directo y apasionado, una reflexión narrativa y testimonial, al más puro estilo de los ensayos de George Orwell o de Virginia Woolf. Una propuesta de acción concreta y entusiasta para avanzar desde el actual deterioro económico, político y social hacia la realidad que queremos construir. Partiendo tanto de documentos periodísticos como de la tradición literaria, Antonio Muñoz Molina escribe esgrimiendo razón y respeto, sin eludir verdades por amargas que estas sean, porque saber es el único camino para cambiar las cosas. «Hace falta una serena rebelión cívica. Hay cosas inaplazables». Una invitación a un debate imprescindible.",
+      "download": "http://descargar.lelibros.online/Antonio%20Munoz%20Molina/Todo%20lo%20Que%20era%20Solido%20(34)/Todo%20lo%20Que%20era%20Solido%20-%20Antonio%20Munoz%20Molina.pdf"
+    },
+    {
+      "id": "l53",
+      "books_image": "https://imgur.com/CAP1a5L.png",
+      "book_name": "Chavs",
+      "autor": "Owen Jones",
+      "description": "En la Gran Bretaña actual, la clase trabajadora se ha convertido en objeto de miedo y escarnio. Desde la Vicky Pollard de Little Britain a la demonización de Jade Goody, los medios de comunicación y los políticos desechan por irresponsable, delincuente e ignorante a un vasto y desfavorecido sector de la sociedad cuyos miembros se han estereotipado en una sola palabra cargada de odio: chavs. En este aclamado estudio, Owen Jones analiza cómo la clase trabajadora ha pasado de ser «la sal de la tierra» a la «escoria de la tierra». Owen Jones, desvelando la ignorancia y el prejuicio que están en el centro de la caricatura chav, retrata una realidad mucho más compleja: el estereotipo chav, dice, es utilizado por los gobiernos como pantalla para evitar comprometerse de verdad con los problemas sociales y económicos y justificar el aumento de la desigualdad. Basado en una investigación exhaustiva y original, este libro es una crítica irrefutable de los medios de comunicación y de la clase dirigente, y un retrato esclarecedor e inquietante de la desigualdad y el odio de clases en la Gran Bretaña actual.",
+      "download": "http://descargar.lelibros.online/Owen%20Jones/Chavs%20(185)/Chavs%20-%20Owen%20Jones.pdf"
+    },
+    {
+      "id": "l54",
+      "books_image": "https://imgur.com/jzWNpsF.png",
+      "book_name": "La Realidad Oculta",
+      "autor": "Brian Greene",
+      "description": "Del autor de los bestsellers El universo elegante y El tejido del cosmos llega su libro más ambicioso y accesible, una obra que aborda una de las preguntas de mayor complejidad: ¿es el nuestro el único universo? Tenemos la intuición de que existe una entidad que engloba y contiene «todo». Es lo que tradicionalmente se ha denominado «Universo». No existe ninguna unidad conceptual más fundamental que ésta, aunque su naturaleza y relación con el espacio y el tiempo continúen siendo problemáticas. Eso sí, de lo que no parecía haber duda es de que el Universo, fuese lo que fuese, es único. Semejante creencia comenzó a ser socavada a mediados de la década de 1950, cuando para evitar el serio problema conceptual que implicaba aceptar que en el proceso de observación la naturaleza se manifiesta solo en una de las diferentes posibilidades físicas, se propuso la teoría de los «muchos universos»: las restantes posibilidades físicas se plasman en otros universos paralelos. Ahora bien, la mecánica cuántica ya no es el único escenario teórico que la favorece, como muestra en este libro el distinguido físico teórico Brian Greene: «Veremos (…) que si el espacio se extiende indefinidamente –una proposición que es compatible con todas las observaciones– entonces debe haber dominios allá fuera (probablemente muy allá) donde copias de usted y de mí y de todo lo demás disfrutan de versiones alternativas de la realidad que experimentamos aquí». Y no sustancia estas radicales afirmaciones a la manera de la ciencia ficción, sino basándose en la física más actual: en la teoría cosmológica inflacionaria y en diversas versiones de la teoría de cuerdas. Todo esto parece mera especulación, imaginación desbordada, pero la ciencia nos ha dado ya demasiadas muestras de que lo que es hoy es inimaginable mañana puede ser realidad.",
+      "download": "http://descargar.lelibros.online/Brian%20Greene/La%20Realidad%20Oculta%20(335)/La%20Realidad%20Oculta%20-%20Brian%20Greene.pdf"
+    },
+    {
+      "id": "l55",
+      "books_image": "https://imgur.com/KTQ9sCu.png",
+      "book_name": "El Nacimiento del Tiempo",
+      "autor": "Ilya Prigogine",
+      "description": "Presentamos al lector el texto de dos breves conferencias sobre el mismo tema, el tiempo, dadas por Ilya Prigogine a pocos años de distancia una de la otra. Originadas ambas por una invitación de la empresa Montedison, tienen solamente del escrito circunstancial la frescura y el tono de divulgación obligados por las limitaciones del medio: una exposición oral para un auditorio no especializado. Con el mérito añadido de ofrecer, en pocas páginas y sin el auxilio de complejos aparatos matemáticos, con gran claridad, las sólidas tesis de su autor. Esto es lo que nos ha convencido de la utilidad de la publicación conjunta de las dos conferencias. La breve nota biográfica y el texto de la conversación que las preceden introducirán al lector en la compleja problemática que nos presenta Prigogine.",
+      "download": "http://descargar.lelibros.online/Ilya%20Prigogine/El%20Nacimiento%20del%20Tiempo%20(86)/El%20Nacimiento%20del%20Tiempo%20-%20Ilya%20Prigogine.pdf"
+    },
+    {
+      "id": "l56",
+      "books_image": "https://imgur.com/Xt3eMPn.png",
+      "book_name": "El Cuento de la isla Desconocida",
+      "autor": "José Saramago",
+      "description": "Un suceso histórico, la intención de un noble portugués de ser autorizado por el rey para utilizar una de sus carabelas en la búsqueda de la isla desconocida, le sirve al autor de pretexto para realizar una fábula descarnada del hombre moderno. «... un dulce y sutil cuento sobre el amor y la búsqueda de la identidad personal.» The Washington Post Book World Saramago nos muestra que soñar, a veces, es el verdadero camino hacia la felicidad.",
+      "download": "http://descargar.lelibros.online/Jose%20Saramago/El%20Cuento%20de%20la%20isla%20Desconocida%20(104)/El%20Cuento%20de%20la%20isla%20Desconocid%20-%20Jose%20Saramago.pdf"
+    },
+    {
+      "id": "l57",
+      "books_image": "https://imgur.com/C5tC72x.png",
+      "book_name": "Mientras Agonizo",
+      "autor": "William Faulkner",
+      "description": "Mientras agonizo es una novela publicada en 1930 escrita por William Faulkner, uno de los novelistas más reconocidos de la literatura estadounidense del siglo XX. Es la quinta de su producción literaria, y fue escrita según palabras del autor, en «seis frenéticas semanas», mientras trabajaba como bombero y vigilante nocturno en la central eléctrica de la Universidad de Missisipi. Faulkner se refirió a ella como un «tour de force». El libro está narrado mediante la técnica del flujo de conciencia con 15 narradores en 59 capítulos. Es la historia de la muerte de Addie Bundren, la mujer de un humilde granjero de Misisipi, y la búsqueda de la familia, noble o egoísta, que quiere honrar su deseo de ser enterrada con «su gente» en el pueblo de Jefferson. En el viaje, el niño favorito de Addie, Jewel, salva el cuerpo de su madre de una inundación y de las llamas. Además, se van revelando los pensamientos de cada uno de los Bundrens. Darl, el segundo mayor, demuestra dotes para averiguar el futuro e intenta terminar con el viaje familiar. Tal y como ocurre en muchos trabajos de Faulkner, la historia está ambientada en Yoknapatawpha County, Misisipi, un condado imaginario que recuerda a Lafayette Country en el que el autor vivió.",
+      "download": "http://descargar.lelibros.online/William%20Faulkner/Mientras%20Agonizo%20(515)/Mientras%20Agonizo%20-%20William%20Faulkner.pdf"
+    },
+    {
+      "id": "l58",
+      "books_image": "https://imgur.com/dH9Chz8.png",
+      "book_name": "Arthas",
+      "autor": "Christie Golden",
+      "description": "Su maldad es legendaria. Es el señor de la plaga de los no-muertos, el poseedor de la hojarruna Agonía de Escarcha y el enemigo del pueblo de Azeroth. El Rey Exánime es una entidad de poder incalculable y maldad sin paragón; su gélida alma ha sido consumida totalmente por sus planes de destruir todo lo que esta vivo en... World Of Warcraft. Pero esto no siempre fue así. Mucho antes de que su alma se fundiera con la del orco chamán Ner´Zhul, El rey Exánime era Arthas Menethil, príncipe de Lordaeron y fiel paladín de la Mano de Plata. Cuando una plaga de no-muertos amenazó todo cuanto amaba, Arthas se embarcó en una misión de trágicas consecuencias en busca de una hojarruna lo bastante poderosa como para salvar su patria. Sin embargo, poseer esa espada que tanto ansiaba conllevaba pagar un alto precio: que su nuevo duelo iniciara un aterrador descenso a los infiernos. De ese modo, los senderos de la fortuna acabarían levando a Arthas a través de los páramos árticos del norte hasta el trono helado , donde tendría que afrontar, por fin el mas tenebroso de los destinos.",
+      "download": "http://descargar.lelibros.online/Christie%20Golden/Arthas%20(281)/Arthas%20-%20Christie%20Golden.pdf"
+    },
+    {
+      "id": "l59",
+      "books_image": "https://imgur.com/24FbpUL.png",
+      "book_name": "Relatos de Faerun",
+      "autor": "Christie Golden",
+      "description": "En enero de 2003, una encuesta realizada la página de Wizards animaba a los lectores a elegir sus relatos preferidos aparecidos en las ocho antologías previas de Reinos Olvidados (que no se han publicado en castellano), y este volumen es el resultado. En él se incluyen catorce cuentos: trece escogidos por los lectores y un relato inédito de R. A. Salvatore. De la mano de Ed Greenwood, J. Robert King, Jean Rabe, Elaine Cunningham y otros autores os invitamos a este peculiar recorrido por la mítica historia de Faerun.",
+      "download": "http://descargar.lelibros.online/Christie%20Golden/Relatos%20de%20Faerun%20%28113%29/Relatos%20de%20Faerun%20-%20Christie%20Golden.pdf"
+    },
+    {
+      "id": "l60",
+      "books_image": "https://imgur.com/BOAw5pJ.png",
+      "book_name": "Mi Tío Oswald",
+      "autor": "Roald Dahl",
+      "description": "Este libro recoge una época particularmente desenfrenada de la vida del legendario tío Oswald, millonario, esteta, bon vivant y un Don Juan infatigable, cuya vida amatoria deja en pañales a la del mismísimo Casanova. El tío Oswald es el mayor fornicador de todos los tiempos, afirma su sobrino y transcriptor de sus Diarios. Muy joven empieza a amasar su fabulosa fortuna: con polvo de escarabajo sudanés inventa unas píldoras de extraordinarias virtudes afrodisíacas, funda un banco de esperma y, en compañía de la excitante Yasmin, parte en busca de celebridades cuyo semen congelado será adquirido a precio de oro por acaudaladas clientas, ansiosas de tener retoños con pedigree. En este peculiar safari, las aventuras picarescas, a veces escabrosas, otras delirantes, se suceden a un ritmo trepidante. Yasmin, armada con las infalibles píldoras, seduce a Stravinsky, Renoir, Picasso, Nijinski, Joyce, Freud, Einstein, Conan Doyle, Proust y a una apreciable colección de testas coronadas.",
+      "download": "http://descargar.lelibros.online/Roald%20Dahl/Mi%20Tio%20Oswald%20(453)/Mi%20Tio%20Oswald%20-%20Roald%20Dahl.pdf"
     }
   ],
   "categories": [
@@ -389,6 +517,22 @@
           "autor": "Mark Twain",
           "description": "El protagonista de este libro es un niño desharrapado, que no va a la escuela, roba y utiliza un lenguaje barriobajero. A través de sus atónitos ojos de chiquillo espabilado, Mark Twain consigue realizar sus mayores ambiciones literarias, pues a partir del color local creó una historia universal, cuyo impacto en el lector es profundo y duradero: todo un clásico de literatura universal.",
           "download": "http://descargar.lelibros.online/Mark%20Twain/Las%20Aventuras%20de%20Huckleberry%20Finn%20(313)/Las%20Aventuras%20de%20Huckleberry%20Fi%20-%20Mark%20Twain.pdf"
+        },
+        {
+          "id": "l58",
+          "books_image": "https://imgur.com/undefined.png",
+          "book_name": "Arthas",
+          "autor": "Christie Golden",
+          "description": "Su maldad es legendaria. Es el señor de la plaga de los no-muertos, el poseedor de la hojarruna Agonía de Escarcha y el enemigo del pueblo de Azeroth. El Rey Exánime es una entidad de poder incalculable y maldad sin paragón; su gélida alma ha sido consumida totalmente por sus planes de destruir todo lo que esta vivo en... World Of Warcraft. Pero esto no siempre fue así. Mucho antes de que su alma se fundiera con la del orco chamán Ner´Zhul, El rey Exánime era Arthas Menethil, príncipe de Lordaeron y fiel paladín de la Mano de Plata. Cuando una plaga de no-muertos amenazó todo cuanto amaba, Arthas se embarcó en una misión de trágicas consecuencias en busca de una hojarruna lo bastante poderosa como para salvar su patria. Sin embargo, poseer esa espada que tanto ansiaba conllevaba pagar un alto precio: que su nuevo duelo iniciara un aterrador descenso a los infiernos. De ese modo, los senderos de la fortuna acabarían levando a Arthas a través de los páramos árticos del norte hasta el trono helado , donde tendría que afrontar, por fin el mas tenebroso de los destinos.",
+          "download": "http://descargar.lelibros.online/Christie%20Golden/Arthas%20(281)/Arthas%20-%20Christie%20Golden.pdf"
+        },
+        {
+          "id": "l59",
+          "books_image": "https://imgur.com/24FbpUL.png",
+          "book_name": "Relatos de Faerun",
+          "autor": "Christie Golden",
+          "description": "En enero de 2003, una encuesta realizada la página de Wizards animaba a los lectores a elegir sus relatos preferidos aparecidos en las ocho antologías previas de Reinos Olvidados (que no se han publicado en castellano), y este volumen es el resultado. En él se incluyen catorce cuentos: trece escogidos por los lectores y un relato inédito de R. A. Salvatore. De la mano de Ed Greenwood, J. Robert King, Jean Rabe, Elaine Cunningham y otros autores os invitamos a este peculiar recorrido por la mítica historia de Faerun.",
+          "download": "http://descargar.lelibros.online/Christie%20Golden/Relatos%20de%20Faerun%20%28113%29/Relatos%20de%20Faerun%20-%20Christie%20Golden.pdf"
         }
       ]
     },
@@ -519,6 +663,14 @@
           "autor": "Isabel Allende",
           "description": "El plan infinito narra la historia de Gregory Reeves, un gringo que se hace a sí mismo en el difícil mundo de los hispanos de California. Gregory quiere llevar a la práctica el peculiar «plan infinito» que se trazó a sí mismo en su infancia. Sin embargo, para conseguirlo debe recorrer un duro camino lleno de obstáculos: la marginación social, el racismo, el brutal contraste entre pobreza y riqueza, la guerra de Vietnam… Ésta es una de las novelas más logradas y apasionantes de la gran escritora chilena.",
           "download": "http://descargar.lelibros.online/Isabel%20Allende/El%20Plan%20Infinito%20(97)/El%20Plan%20Infinito%20-%20Isabel%20Allende.pdf"
+        },
+        {
+          "id": "l57",
+          "books_image": "https://imgur.com/C5tC72x.png",
+          "book_name": "Mientras Agonizo",
+          "autor": "William Faulkner",
+          "description": "Mientras agonizo es una novela publicada en 1930 escrita por William Faulkner, uno de los novelistas más reconocidos de la literatura estadounidense del siglo XX. Es la quinta de su producción literaria, y fue escrita según palabras del autor, en «seis frenéticas semanas», mientras trabajaba como bombero y vigilante nocturno en la central eléctrica de la Universidad de Missisipi. Faulkner se refirió a ella como un «tour de force». El libro está narrado mediante la técnica del flujo de conciencia con 15 narradores en 59 capítulos. Es la historia de la muerte de Addie Bundren, la mujer de un humilde granjero de Misisipi, y la búsqueda de la familia, noble o egoísta, que quiere honrar su deseo de ser enterrada con «su gente» en el pueblo de Jefferson. En el viaje, el niño favorito de Addie, Jewel, salva el cuerpo de su madre de una inundación y de las llamas. Además, se van revelando los pensamientos de cada uno de los Bundrens. Darl, el segundo mayor, demuestra dotes para averiguar el futuro e intenta terminar con el viaje familiar. Tal y como ocurre en muchos trabajos de Faulkner, la historia está ambientada en Yoknapatawpha County, Misisipi, un condado imaginario que recuerda a Lafayette Country en el que el autor vivió.",
+          "download": "http://descargar.lelibros.online/William%20Faulkner/Mientras%20Agonizo%20(515)/Mientras%20Agonizo%20-%20William%20Faulkner.pdf"
         }
       ]
     },
@@ -541,6 +693,14 @@
           "autor": "Sigmund Freud",
           "description": "La primera edición de Die Traumdeutung (La interpretación de los sueños) se publicó unos días antes del siglo, aunque en la portada constara ya la fecha «1900». Es posible observar en esta pequeña licencia algún indicio del valor inaugural que el mismo Freud, clarividente, reservaba a su obra cumbre. La primera edición tuvo una desastrosa acogida por parte del público y la crítica. En una carta a su amigo Fliess, pocos días después de la publicación del libro, el autor se lamentaba: «No hemos adelantado demasiado a nuestro tiempo…». No obstante era también consciente de que, de uno u otro modo, el enigma de los sueños había sido por fin desvelado y que el destino de La interpretación de los sueños era convertirse inexorablemente, en la obra pionera del psicoanálisis. Hoy es también una de las obras maestras de la literatura y el pensamiento del siglo XX. Los progresos científicos alcanzados no han conseguido restar valor ni actualidad a la exposición freudiana de los temas oníricos, aquí presentada en la magistral traducción de Luis López-Ballesteros y de Torres, que mereciera ya en 1923, un comentario elogioso del mismo Freud.",
           "download": "http://descargar.lelibros.online/Sigmund%20Freud/La%20Interpretacion%20de%20los%20Suenos%20(137)/La%20Interpretacion%20de%20los%20Suenos%20-%20Sigmund%20Freud.pdf"
+        },
+        {
+          "id": "l56",
+          "books_image": "https://imgur.com/Xt3eMPn.png",
+          "book_name": "El Cuento de la isla Desconocida",
+          "autor": "José Saramago",
+          "description": "Un suceso histórico, la intención de un noble portugués de ser autorizado por el rey para utilizar una de sus carabelas en la búsqueda de la isla desconocida, le sirve al autor de pretexto para realizar una fábula descarnada del hombre moderno. «... un dulce y sutil cuento sobre el amor y la búsqueda de la identidad personal.» The Washington Post Book World Saramago nos muestra que soñar, a veces, es el verdadero camino hacia la felicidad.",
+          "download": "http://descargar.lelibros.online/Jose%20Saramago/El%20Cuento%20de%20la%20isla%20Desconocida%20(104)/El%20Cuento%20de%20la%20isla%20Desconocid%20-%20Jose%20Saramago.pdf"
         }
       ]
     },
@@ -633,6 +793,14 @@
           "autor": "Roald Dahl",
           "description": "Matilda es una lectora empedernida con sólo cinco años. Sensible e inteligente, todos la admiran menos sus mediocres padres, que la consideran una inútil. Además tiene poderes extraños y maravillosos… Un día, Matilda decide desquitarse y empieza a emplearlos contra la abominable y cruel señorita Trunchbull.",
           "download": "http://descargar.lelibros.online/Roald%20Dahl/Matilda%20(946)/Matilda%20-%20Roald%20Dahl.pdf"
+        },
+        {
+          "id": "l60",
+          "books_image": "https://imgur.com/BOAw5pJ.png",
+          "book_name": "Mi Tío Oswald",
+          "autor": "Roald Dahl",
+          "description": "Este libro recoge una época particularmente desenfrenada de la vida del legendario tío Oswald, millonario, esteta, bon vivant y un Don Juan infatigable, cuya vida amatoria deja en pañales a la del mismísimo Casanova. El tío Oswald es el mayor fornicador de todos los tiempos, afirma su sobrino y transcriptor de sus Diarios. Muy joven empieza a amasar su fabulosa fortuna: con polvo de escarabajo sudanés inventa unas píldoras de extraordinarias virtudes afrodisíacas, funda un banco de esperma y, en compañía de la excitante Yasmin, parte en busca de celebridades cuyo semen congelado será adquirido a precio de oro por acaudaladas clientas, ansiosas de tener retoños con pedigree. En este peculiar safari, las aventuras picarescas, a veces escabrosas, otras delirantes, se suceden a un ritmo trepidante. Yasmin, armada con las infalibles píldoras, seduce a Stravinsky, Renoir, Picasso, Nijinski, Joyce, Freud, Einstein, Conan Doyle, Proust y a una apreciable colección de testas coronadas.",
+          "download": "http://descargar.lelibros.online/Roald%20Dahl/Mi%20Tio%20Oswald%20(453)/Mi%20Tio%20Oswald%20-%20Roald%20Dahl.pdf"
         }
       ]
     },
@@ -753,6 +921,14 @@
           "autor": "Javier Reverte",
           "description": "«Corazón de Ulises» es un libro que, desde su primera edición, ha sido considerado un clásico de la literatura de viajes de nuestro país. Leído y estudiado en las universidades y recomendado también en numerosas guías, profundo y ameno, sabio y cercano, este libro reúne lo mejor de la literatura de su autor: la pedagogía y la emoción, el saber y la información, la poesía y la historia, el humor y la reflexión. Javier Reverte nos cuenta en él su viaje por lo territorios de la Grecia actual, pero también nos acerca a los territorios del ayer griego. Y funde en sus páginas la Grecia pretérita y la del presente. Cualquiera que viaje a la Grecia de hoy, pretendiendo entender al tiempo su imponente legado, debería llevar este libro con él. Porque Corazón de Ulises es un recorrido por la Grecia del presente escrito para quien lo quiera leer mientras viaja. Y también para los que, sin ánimo de viajar, deseen saber cómo fueron los caminos que trazaron los antiguos griegos. Javier Reverte ha creado un género literario nuevo con su forma de contar la vida de las gentes. Recuperar una obra tan significativa en esta nueva edición es una forma de acercar la cultura clásica a los lectores ávidos de viajar y de saber, en un lenguaje tan eterno como nuevo. Corazón de Ulises nos enseña a viajar con la cultura a cuestas.",
           "download": "http://descargar.lelibros.online/Javier%20Reverte/Corazon%20de%20Ulises%20(652)/Corazon%20de%20Ulises%20-%20Javier%20Reverte.pdf"
+        },
+        {
+          "id": "l47",
+          "books_image": "https://imgur.com/kSqG5Gu.png",
+          "book_name": "Trajano y Decébalo en la Rumanía del Siglo XXI",
+          "autor": "Santiago Posteguillo",
+          "description": "Las novelas de Santiago Posteguillo consiguen atrapar a los lectores gracias, entre otras cosas, a su exhaustiva labor de documentación. Para recrear con la mayor fidelidad posible la conquista de la Dacia por Trajano, Santiago Posteguillo realizó un viaje por la Rumanía actual siguiendo los pasos del emperador hispano. En este documento el lector podrá recorrer paso a paso, calzada a calzada, los movimientos que el ejército romano realizó en su guerra contra Decébalo. Un documento de gran valor informativo, escrito con una pizca de humor y aderezado con imágenes de fotografías tomadas por el propio autor; así surge la complicidad con los lectores.",
+          "download": "http://descargar.lelibros.online/Santiago%20Posteguillo/Trajano%20y%20Decebalo%20en%20la%20Rumania%20del%20(28)/Trajano%20y%20Decebalo%20en%20la%20Rumani%20-%20Santiago%20Posteguillo.pdf"
         }
       ]
     },
@@ -767,6 +943,22 @@
           "autor": "Eben Alexander",
           "description": "«El 8 de noviembre de 2008 me desperté con un terrible dolor de cabeza que en apenas dos horas desembocó en un derrame cerebral. Caí en un coma profundo, y durante siete días permanecí en ese estado, durante el cual viví una experiencia increíble y fuera de este mundo. El lugar en el que estuve es un sitio maravilloso, reconfortante y lleno de amor. No tengo miedo a morir porque ahora sé que no es el final». Doctor Eben Alexander. La lógica científica del doctor Alexander jamás había dado crédito a las experiencias cercanas a la muerte. Sin embargo, después de haber pasado por esto sabe que no son meras fantasías: Dios y el alma existen realmente, y la muerte no es el final de la existencia personal, sino una mera transición",
           "download": "http://descargar.lelibros.online/Eben%20Alexander/La%20Prueba%20del%20Cielo%20(100)/La%20Prueba%20del%20Cielo%20-%20Eben%20Alexander.pdf"
+        },
+        {
+          "id": "l48",
+          "books_image": "https://imgur.com/EEfGdcj.png",
+          "book_name": "El Fraude de la Sábana Santa y las Reliquias de Cristo",
+          "autor": "Juan Eslava Galán",
+          "description": "«Un artista anónimo del siglo XIV descubrió los principios de la fotografía y falsificó el sudario de Cristo. Hoy, aquella reliquia ha dado origen a una pseudociencia, la sindonología, sustentada por poderosas asociaciones y sectas de todo el mundo. El objeto de la sindonología es probar con argumentos científicos que Cristo fue Dios. Para ello, científicos poco escrupulosos, e incluso claramente mendaces, no han vacilado en emplear las técnicas más avanzadas de la era espacial en apoyo de un gigantesco fraude y de un gran negocio encubierto bajo el pretexto de la religión. Este libro, en el que la ironía y el humor se aúnan con el rigor histórico, denuncia no sólo los manejos de los sindonólogos sino el resto de fraudes perpetrados con supuestas y pintorescas reliquias de Cristo a lo largo de la Historia: los abundantes Santos Prepucios, los Santos Pañales, las innumerables astillas de la Cruz, el guardarropa de la Virgen, los Santos Rostros y Verónicas, las Santas Espinas, los Santos griales, los Santos lugares… y todo el inmenso arsenal de mentiras fraguado para estafar a los crédulos devotos.",
+          "download": "http://descargar.lelibros.online/Juan%20Eslava%20Galan/El%20Fraude%20de%20la%20Sabana%20Santa%20y%20las%20(153)/El%20Fraude%20de%20la%20Sabana%20Santa%20y%20-%20Juan%20Eslava%20Galan.pdf"
+        },
+        {
+          "id": "l49",
+          "books_image": "https://imgur.com/RoCMwAL.png",
+          "book_name": "Los Mitos Griegos",
+          "autor": "Robert Graves",
+          "description": "Apasionado por el mundo clásico, Robert Graves publicó en 1955 esta recreación narrada de los mitos griegos, que se ha convertido con el paso de los años en una obra de referencia ineludible para iniciarse en el fascinante mundo de la antigüedad. La erudición y la magistral prosa de Graves combinadas dan como resultado una deslumbrante inmersión en los avatares de los héroes y los dioses, a través de una sucesión de mitos que siguen hoy iluminándonos sobre temas eternos como las pasiones, el odio, los celos, la culpa, la ambición, la codicia, el miedo, la traición, los deseos inconfesables… Forjadores de un universo simbólico que ha marcado el imaginario de Occidente a lo largo de la historia, por estas páginas desfilan Zeus, Narciso, Afrodita, Hermes, Atenea, Orestes, las Parcas, Apolo, Poseidón, Dioniso, Perseo, Sísifo, Midas, Teseo, Edipo, Penélope, Heracles… Un delicioso paseo por el mundo de los mitos griegos. Un clásico imprescindible en cualquier biblioteca.",
+          "download": "http://descargar.lelibros.online/Robert%20Graves/Los%20Mitos%20Griegos%20(104)/Los%20Mitos%20Griegos%20-%20Robert%20Graves.pdf"
         }
       ]
     },
@@ -781,6 +973,22 @@
           "autor": "Alan M. Turing",
           "description": "En 1947 Alan M. Turing pronunció una conferencia ante un auditorio compuesto en su mayor parte por miembros del National Physical Laboratory de Londres en la que intentaba responder a la vieja y controvertida pregunta ¿Puede pensar una máquina? Lo expuesto en ese acto apareció publicado tres años más tarde en Mind —una importante revista de filosofía británica— y es lo que ofrecemos aquí al lector en su traducción castellana. Este texto se convirtió enseguida en uno de los escritos fundacionales de la lógica informática y la inteligencia artificial, al presentar las líneas generales por las que debería discurrir una respuesta precisa y manejable (aunque no indiscutible) a la pregunta formulada. Se trata del famoso Test de Turing, una prueba para decidir si una máquina es inteligente (o «piensa»). Para ello Turing diseñó un juego de imitación en el que participan una máquina y seres humanos; podemos decir que una máquina piensa si un ser humano que se comunica con la máquina y con otros seres humanos no logra distinguir cuando su interlocutor es una máquina y cuando un humano. Una «máquina de Turing» como la que participa en el juego, es un dispositivo ideal de cálculo, capaz de resolver una función computable —una función cuya solución es susceptible de ser obtenida por un procedimiento mecánico—. Pero lo más significativo es que Turing demostró que hay una máquina peculiar —la máquina universal de Turing— en la que se puede representar cualquier máquina que sea capaz de computar una función particular. De acuerdo con esto, una máquina universal de Turing sería una especie de sistema operativo en el que se implementan diferentes programas (máquinas de Turing especiales), un poco a la manera en que nos es familiar en los ordenadores personales. La denominada «metáfora del ordenador» como modelo capaz de simular la mente humana y, por ende, el pensar, tiene aquí su fuente.",
           "download": "http://descargar.lelibros.online/Alan%20M.%20Turing/_Puede%20Pensar%20una%20Maquina_%20(582)/_Puede%20Pensar%20una%20Maquina_%20-%20Alan%20M.%20Turing.pdf"
+        },
+        {
+          "id": "l54",
+          "books_image": "https://imgur.com/jzWNpsF.png",
+          "book_name": "La Realidad Oculta",
+          "autor": "Brian Greene",
+          "description": "Del autor de los bestsellers El universo elegante y El tejido del cosmos llega su libro más ambicioso y accesible, una obra que aborda una de las preguntas de mayor complejidad: ¿es el nuestro el único universo? Tenemos la intuición de que existe una entidad que engloba y contiene «todo». Es lo que tradicionalmente se ha denominado «Universo». No existe ninguna unidad conceptual más fundamental que ésta, aunque su naturaleza y relación con el espacio y el tiempo continúen siendo problemáticas. Eso sí, de lo que no parecía haber duda es de que el Universo, fuese lo que fuese, es único. Semejante creencia comenzó a ser socavada a mediados de la década de 1950, cuando para evitar el serio problema conceptual que implicaba aceptar que en el proceso de observación la naturaleza se manifiesta solo en una de las diferentes posibilidades físicas, se propuso la teoría de los «muchos universos»: las restantes posibilidades físicas se plasman en otros universos paralelos. Ahora bien, la mecánica cuántica ya no es el único escenario teórico que la favorece, como muestra en este libro el distinguido físico teórico Brian Greene: «Veremos (…) que si el espacio se extiende indefinidamente –una proposición que es compatible con todas las observaciones– entonces debe haber dominios allá fuera (probablemente muy allá) donde copias de usted y de mí y de todo lo demás disfrutan de versiones alternativas de la realidad que experimentamos aquí». Y no sustancia estas radicales afirmaciones a la manera de la ciencia ficción, sino basándose en la física más actual: en la teoría cosmológica inflacionaria y en diversas versiones de la teoría de cuerdas. Todo esto parece mera especulación, imaginación desbordada, pero la ciencia nos ha dado ya demasiadas muestras de que lo que es hoy es inimaginable mañana puede ser realidad.",
+          "download": "http://descargar.lelibros.online/Brian%20Greene/La%20Realidad%20Oculta%20(335)/La%20Realidad%20Oculta%20-%20Brian%20Greene.pdf"
+        },
+        {
+          "id": "l55",
+          "books_image": "https://imgur.com/KTQ9sCu.png",
+          "book_name": "El Nacimiento del Tiempo",
+          "autor": "Ilya Prigogine",
+          "description": "Presentamos al lector el texto de dos breves conferencias sobre el mismo tema, el tiempo, dadas por Ilya Prigogine a pocos años de distancia una de la otra. Originadas ambas por una invitación de la empresa Montedison, tienen solamente del escrito circunstancial la frescura y el tono de divulgación obligados por las limitaciones del medio: una exposición oral para un auditorio no especializado. Con el mérito añadido de ofrecer, en pocas páginas y sin el auxilio de complejos aparatos matemáticos, con gran claridad, las sólidas tesis de su autor. Esto es lo que nos ha convencido de la utilidad de la publicación conjunta de las dos conferencias. La breve nota biográfica y el texto de la conversación que las preceden introducirán al lector en la compleja problemática que nos presenta Prigogine.",
+          "download": "http://descargar.lelibros.online/Ilya%20Prigogine/El%20Nacimiento%20del%20Tiempo%20(86)/El%20Nacimiento%20del%20Tiempo%20-%20Ilya%20Prigogine.pdf"
         }
       ]
     },
@@ -795,6 +1003,22 @@
           "autor": "Isaac Asimov",
           "description": "Asimov habla en esta obra de la Luna y de otros pequeños mundos que pueblan nuestro sistema solar; se ocupa del carbono, del descubrimiento del DNA, de la función de la glándula tiroidea, de los microorganismos y de la velocidad de la luz; reflexiona sobre cuestiones sociales tan importantes como el racismo y el futuro de los medios de comunicación.",
           "download": "http://descargar.lelibros.online/Isaac%20Asimov/La%20Tragedia%20de%20la%20Luna%20(302)/La%20Tragedia%20de%20la%20Luna%20-%20Isaac%20Asimov.pdf"
+        },
+        {
+          "id": "l50",
+          "books_image": "https://imgur.com/d6DTl80.png",
+          "book_name": "¿Hay Alguien Ahí?",
+          "autor": "Isaac Asimov",
+          "description": "El proverbial talento divulgador de Isaac Asimov se pone de manifiesto una vez más en este volumen misceláneo, que presenta una rica variedad de ensayos hilvanados antes que nada por la extraordinaria curiosidad del autor. Desde el funcionamiento del cerebro hasta los viajes en el tiempo y el futuro del Universo, muchas son en efecto las cuestiones que Asimov aborda en estas páginas. Pero si hay un tema que sobresale en esta variopinta colección, éste es el de la vida extraterrestre y sus posibilidades de existencia. ¿Hay alguien ahí, en algún lugar de los inmensos espacios del Universo, dotado de inteligencia y con el cual se pueda establecer algún tipo de comunicación? Sea cual sea la respuesta, lo cierto es que ésta desde hace años ha dejado de pertenecer ya al ámbito puramente imaginario de la ciencia-ficción.",
+          "download": "http://descargar.lelibros.online/Isaac%20Asimov/_Hay%20Alguien%20Ahi_%20(802)/_Hay%20Alguien%20Ahi_%20-%20Isaac%20Asimov.pdf"
+        },
+        {
+          "id": "l51",
+          "books_image": "https://imgur.com/9pjH9cd.png",
+          "book_name": "El Sistema Periódico",
+          "autor": "Primo Levi",
+          "description": "No es frecuente que un libro despierte el entusiasmo unánima e incondicional de la crítica en todos aquellos países en los que ha sido publicado. Así ha ocurrido con EL SISTEMA PERIÓDICO, una obra que aúna sutilmente realidad y ficción gracias a la lucidez prodigiosa y a la maestría literaria de su autor. Nacido en Turín en 1919 y doctorado en Química en 1941, PRIMO LEVI ha acumulado los premios más prestigiosos de Italia: Strega, Bagutta, Campiello (dos veces), Viareggio, Prato y Sirmione-Catullo. Científico y humanista, testigo y protagonista de algunos de los episodios más duros de nuestra historia contemporánea (fue deportado a Auschwitz en 1943), vertió sus vivencias y reflexiones, su fantasía y su capacidad de observación en una serie de obras testimoniales, relatos y novelas entre las que destaca por la originalidad de su concepción El sistema periódico. Estructurado en veintiún capítulos, dedicado cada uno de ellos a un elemento químico convertido en metáfora del hombre o de las relaciones humanas, el libro da testimonio de la variedad de registros de la prosa del autor. Si la nostalgia irónica permea el capítulo dedicado al «Argón» (en que Levi traza la historia de sus antepasados) o la poesía aflora en su reflexión sobre el «Hierro» y su amistad con Sandro (más tarde hecho prisionero por los fascistas y asesinado por un niño-carnicero), la imaginación pura domina el relato que le sugiere el «Mercurio», a la vez que un dramatismo atenuado por la lucidez preside el capítulo correspondiente al «Vanadio», narración del reencuentro del escritor —acabada la guerra y por razones profesionales— con uno de sus carceleros de Auschwitz. Microhistoria de toda una generación, El sistema periódico fue recibido por Italo Calvino como «un libro extraordinario y fascinante que no puede por menos de dejar una profunda huella en el lector»",
+          "download": "http://descargar.lelibros.online/Primo%20Levi/El%20Sistema%20Periodico%20(697)/El%20Sistema%20Periodico%20-%20Primo%20Levi.pdf"
         }
       ]
     },
@@ -809,6 +1033,22 @@
           "autor": "AA.VV",
           "description": "¿Por qué sube la gasolina? ¿Son de fiar las empresas que nos ofrecen refinanciar nuestras deudas? ¿Cómo me afecta la reforma laboral? ¿Qué son los fondos de inversión? ¿A qué edad es recomendable hacer un plan de pensiones? Cada día desde que nos levantamos nos enfrentamos a un sinfín de cuestiones que tienen un trasfondo económico: desde la luz que ilumina nuestro hogar hasta el combustible que utilizamos para desplazarnos, los impuestos que pagamos y los servicios que contratamos con los bancos. Un afamado economista y tres reconocidos periodistas han hecho el ejercicio de sintetizar las dudas más comunes que afectan a cualquier ciudadano para convertirlas en preguntas que se responden de forma sencilla y clara, aclarando conceptos y desmontando tópicos. El resultado es una obra de lectura obligada para todos aquellos que quieran saber qué ocurre con su dinero y cómo funciona la economía",
           "download": "http://descargar.lelibros.online/AA.%20VV_/Economia%20Para%20Andar%20por%20Casa%20(279)/Economia%20Para%20Andar%20por%20Casa%20-%20AA.%20VV_.pdf"
+        },
+        {
+          "id": "l52",
+          "books_image": "https://imgur.com/bGsO7sK.png",
+          "book_name": "Todo lo Que era Sólido",
+          "autor": "Antonio Muñoz Molina",
+          "description": "Un ensayo directo y apasionado, una reflexión narrativa y testimonial, al más puro estilo de los ensayos de George Orwell o de Virginia Woolf. Una propuesta de acción concreta y entusiasta para avanzar desde el actual deterioro económico, político y social hacia la realidad que queremos construir. Partiendo tanto de documentos periodísticos como de la tradición literaria, Antonio Muñoz Molina escribe esgrimiendo razón y respeto, sin eludir verdades por amargas que estas sean, porque saber es el único camino para cambiar las cosas. «Hace falta una serena rebelión cívica. Hay cosas inaplazables». Una invitación a un debate imprescindible.",
+          "download": "http://descargar.lelibros.online/Antonio%20Munoz%20Molina/Todo%20lo%20Que%20era%20Solido%20(34)/Todo%20lo%20Que%20era%20Solido%20-%20Antonio%20Munoz%20Molina.pdf"
+        },
+        {
+          "id": "l53",
+          "books_image": "https://imgur.com/CAP1a5L.png",
+          "book_name": "Chavs",
+          "autor": "Owen Jones",
+          "description": "En la Gran Bretaña actual, la clase trabajadora se ha convertido en objeto de miedo y escarnio. Desde la Vicky Pollard de Little Britain a la demonización de Jade Goody, los medios de comunicación y los políticos desechan por irresponsable, delincuente e ignorante a un vasto y desfavorecido sector de la sociedad cuyos miembros se han estereotipado en una sola palabra cargada de odio: chavs. En este aclamado estudio, Owen Jones analiza cómo la clase trabajadora ha pasado de ser «la sal de la tierra» a la «escoria de la tierra». Owen Jones, desvelando la ignorancia y el prejuicio que están en el centro de la caricatura chav, retrata una realidad mucho más compleja: el estereotipo chav, dice, es utilizado por los gobiernos como pantalla para evitar comprometerse de verdad con los problemas sociales y económicos y justificar el aumento de la desigualdad. Basado en una investigación exhaustiva y original, este libro es una crítica irrefutable de los medios de comunicación y de la clase dirigente, y un retrato esclarecedor e inquietante de la desigualdad y el odio de clases en la Gran Bretaña actual.",
+          "download": "http://descargar.lelibros.online/Owen%20Jones/Chavs%20(185)/Chavs%20-%20Owen%20Jones.pdf"
         }
       ]
     }
@@ -1051,7 +1291,7 @@
       ]
     },
     {
-      "autor_name": "American Gods",
+      "autor_name": "Neil Gaiman",
       "published_books": [
         {
           "id": "l13",
@@ -1089,6 +1329,14 @@
           "autor": "Isaac Asimov",
           "description": "Asimov habla en esta obra de la Luna y de otros pequeños mundos que pueblan nuestro sistema solar; se ocupa del carbono, del descubrimiento del DNA, de la función de la glándula tiroidea, de los microorganismos y de la velocidad de la luz; reflexiona sobre cuestiones sociales tan importantes como el racismo y el futuro de los medios de comunicación.",
           "download": "http://descargar.lelibros.online/Isaac%20Asimov/La%20Tragedia%20de%20la%20Luna%20(302)/La%20Tragedia%20de%20la%20Luna%20-%20Isaac%20Asimov.pdf"
+        },
+        {
+          "id": "l50",
+          "books_image": "https://imgur.com/d6DTl80.png",
+          "book_name": "¿Hay Alguien Ahí?",
+          "autor": "Isaac Asimov",
+          "description": "El proverbial talento divulgador de Isaac Asimov se pone de manifiesto una vez más en este volumen misceláneo, que presenta una rica variedad de ensayos hilvanados antes que nada por la extraordinaria curiosidad del autor. Desde el funcionamiento del cerebro hasta los viajes en el tiempo y el futuro del Universo, muchas son en efecto las cuestiones que Asimov aborda en estas páginas. Pero si hay un tema que sobresale en esta variopinta colección, éste es el de la vida extraterrestre y sus posibilidades de existencia. ¿Hay alguien ahí, en algún lugar de los inmensos espacios del Universo, dotado de inteligencia y con el cual se pueda establecer algún tipo de comunicación? Sea cual sea la respuesta, lo cierto es que ésta desde hace años ha dejado de pertenecer ya al ámbito puramente imaginario de la ciencia-ficción.",
+          "download": "http://descargar.lelibros.online/Isaac%20Asimov/_Hay%20Alguien%20Ahi_%20(802)/_Hay%20Alguien%20Ahi_%20-%20Isaac%20Asimov.pdf"
         }
       ]
     },
@@ -1139,6 +1387,14 @@
           "autor": "Roald Dahl",
           "description": "Matilda es una lectora empedernida con sólo cinco años. Sensible e inteligente, todos la admiran menos sus mediocres padres, que la consideran una inútil. Además tiene poderes extraños y maravillosos… Un día, Matilda decide desquitarse y empieza a emplearlos contra la abominable y cruel señorita Trunchbull.",
           "download": "http://descargar.lelibros.online/Roald%20Dahl/Matilda%20(946)/Matilda%20-%20Roald%20Dahl.pdf"
+        },
+        {
+          "id": "l60",
+          "books_image": "https://imgur.com/BOAw5pJ.png",
+          "book_name": "Mi Tío Oswald",
+          "autor": "Roald Dahl",
+          "description": "Este libro recoge una época particularmente desenfrenada de la vida del legendario tío Oswald, millonario, esteta, bon vivant y un Don Juan infatigable, cuya vida amatoria deja en pañales a la del mismísimo Casanova. El tío Oswald es el mayor fornicador de todos los tiempos, afirma su sobrino y transcriptor de sus Diarios. Muy joven empieza a amasar su fabulosa fortuna: con polvo de escarabajo sudanés inventa unas píldoras de extraordinarias virtudes afrodisíacas, funda un banco de esperma y, en compañía de la excitante Yasmin, parte en busca de celebridades cuyo semen congelado será adquirido a precio de oro por acaudaladas clientas, ansiosas de tener retoños con pedigree. En este peculiar safari, las aventuras picarescas, a veces escabrosas, otras delirantes, se suceden a un ritmo trepidante. Yasmin, armada con las infalibles píldoras, seduce a Stravinsky, Renoir, Picasso, Nijinski, Joyce, Freud, Einstein, Conan Doyle, Proust y a una apreciable colección de testas coronadas.",
+          "download": "http://descargar.lelibros.online/Roald%20Dahl/Mi%20Tio%20Oswald%20(453)/Mi%20Tio%20Oswald%20-%20Roald%20Dahl.pdf"
         }
       ]
     },
@@ -1304,6 +1560,157 @@
           "autor": "AA.VV",
           "description": "La ciencia ficción —puro entretenimiento en sus inicios— se ha convertido en un género literario tremendamente serio. Sus nuevos universos, poblados por nuevas y extrañas razas, no son más que nuevos escenarios para los mismos dramas, las mismas contradicciones de nuestra vieja Tierra. Pero en su vagar por el cosmos, el lector de ciencia ficción puede también tener sorpresas. Y encontrarse, por ejemplo, con una mortífera bomba H que tiene un ojo azul, o con un robot transparente enamorado de su interior o con un ejército de Supermans. Así de insólitos —o más, y lean los relatos del presente volumen para comprobarlo— son los resultados de la alianza entre el sentido del humor y la fantasía científica: una mezcla que de puro corrosiva, puede llegar a ser detonante…",
           "download": "http://descargar.lelibros.online/AA.%20VV_/Humor%20Cosmico%20%28114%29/Humor%20Cosmico%20-%20AA.%20VV_.pdf"
+        }
+      ]
+    },
+    {
+      "autor_name": "Santiago Posteguillo",
+      "published_books": [
+        {
+          "id": "l47",
+          "books_image": "https://imgur.com/kSqG5Gu.png",
+          "book_name": "Trajano y Decébalo en la Rumanía del Siglo XXI",
+          "autor": "Santiago Posteguillo",
+          "description": "Las novelas de Santiago Posteguillo consiguen atrapar a los lectores gracias, entre otras cosas, a su exhaustiva labor de documentación. Para recrear con la mayor fidelidad posible la conquista de la Dacia por Trajano, Santiago Posteguillo realizó un viaje por la Rumanía actual siguiendo los pasos del emperador hispano. En este documento el lector podrá recorrer paso a paso, calzada a calzada, los movimientos que el ejército romano realizó en su guerra contra Decébalo. Un documento de gran valor informativo, escrito con una pizca de humor y aderezado con imágenes de fotografías tomadas por el propio autor; así surge la complicidad con los lectores.",
+          "download": "http://descargar.lelibros.online/Santiago%20Posteguillo/Trajano%20y%20Decebalo%20en%20la%20Rumania%20del%20(28)/Trajano%20y%20Decebalo%20en%20la%20Rumani%20-%20Santiago%20Posteguillo.pdf"
+        }
+      ]
+    },
+    {
+      "autor_name": "Juan Eslava Galán",
+      "published_books": [
+        {
+          "id": "l48",
+          "books_image": "https://imgur.com/EEfGdcj.png",
+          "book_name": "El Fraude de la Sábana Santa y las Reliquias de Cristo",
+          "autor": "Juan Eslava Galán",
+          "description": "«Un artista anónimo del siglo XIV descubrió los principios de la fotografía y falsificó el sudario de Cristo. Hoy, aquella reliquia ha dado origen a una pseudociencia, la sindonología, sustentada por poderosas asociaciones y sectas de todo el mundo. El objeto de la sindonología es probar con argumentos científicos que Cristo fue Dios. Para ello, científicos poco escrupulosos, e incluso claramente mendaces, no han vacilado en emplear las técnicas más avanzadas de la era espacial en apoyo de un gigantesco fraude y de un gran negocio encubierto bajo el pretexto de la religión. Este libro, en el que la ironía y el humor se aúnan con el rigor histórico, denuncia no sólo los manejos de los sindonólogos sino el resto de fraudes perpetrados con supuestas y pintorescas reliquias de Cristo a lo largo de la Historia: los abundantes Santos Prepucios, los Santos Pañales, las innumerables astillas de la Cruz, el guardarropa de la Virgen, los Santos Rostros y Verónicas, las Santas Espinas, los Santos griales, los Santos lugares… y todo el inmenso arsenal de mentiras fraguado para estafar a los crédulos devotos.",
+          "download": "http://descargar.lelibros.online/Juan%20Eslava%20Galan/El%20Fraude%20de%20la%20Sabana%20Santa%20y%20las%20(153)/El%20Fraude%20de%20la%20Sabana%20Santa%20y%20-%20Juan%20Eslava%20Galan.pdf"
+        }
+      ]
+    },
+    {
+      "autor_name": "Robert Graves",
+      "published_books": [
+        {
+          "id": "l49",
+          "books_image": "https://imgur.com/RoCMwAL.png",
+          "book_name": "Los Mitos Griegos",
+          "autor": "Robert Graves",
+          "description": "Apasionado por el mundo clásico, Robert Graves publicó en 1955 esta recreación narrada de los mitos griegos, que se ha convertido con el paso de los años en una obra de referencia ineludible para iniciarse en el fascinante mundo de la antigüedad. La erudición y la magistral prosa de Graves combinadas dan como resultado una deslumbrante inmersión en los avatares de los héroes y los dioses, a través de una sucesión de mitos que siguen hoy iluminándonos sobre temas eternos como las pasiones, el odio, los celos, la culpa, la ambición, la codicia, el miedo, la traición, los deseos inconfesables… Forjadores de un universo simbólico que ha marcado el imaginario de Occidente a lo largo de la historia, por estas páginas desfilan Zeus, Narciso, Afrodita, Hermes, Atenea, Orestes, las Parcas, Apolo, Poseidón, Dioniso, Perseo, Sísifo, Midas, Teseo, Edipo, Penélope, Heracles… Un delicioso paseo por el mundo de los mitos griegos. Un clásico imprescindible en cualquier biblioteca.",
+          "download": "http://descargar.lelibros.online/Robert%20Graves/Los%20Mitos%20Griegos%20(104)/Los%20Mitos%20Griegos%20-%20Robert%20Graves.pdf"
+        }
+      ]
+    },
+    {
+      "autor_name": "Primo Levi",
+      "published_books": [
+        {
+          "id": "l51",
+          "books_image": "https://imgur.com/9pjH9cd.png",
+          "book_name": "El Sistema Periódico",
+          "autor": "Primo Levi",
+          "description": "No es frecuente que un libro despierte el entusiasmo unánima e incondicional de la crítica en todos aquellos países en los que ha sido publicado. Así ha ocurrido con EL SISTEMA PERIÓDICO, una obra que aúna sutilmente realidad y ficción gracias a la lucidez prodigiosa y a la maestría literaria de su autor. Nacido en Turín en 1919 y doctorado en Química en 1941, PRIMO LEVI ha acumulado los premios más prestigiosos de Italia: Strega, Bagutta, Campiello (dos veces), Viareggio, Prato y Sirmione-Catullo. Científico y humanista, testigo y protagonista de algunos de los episodios más duros de nuestra historia contemporánea (fue deportado a Auschwitz en 1943), vertió sus vivencias y reflexiones, su fantasía y su capacidad de observación en una serie de obras testimoniales, relatos y novelas entre las que destaca por la originalidad de su concepción El sistema periódico. Estructurado en veintiún capítulos, dedicado cada uno de ellos a un elemento químico convertido en metáfora del hombre o de las relaciones humanas, el libro da testimonio de la variedad de registros de la prosa del autor. Si la nostalgia irónica permea el capítulo dedicado al «Argón» (en que Levi traza la historia de sus antepasados) o la poesía aflora en su reflexión sobre el «Hierro» y su amistad con Sandro (más tarde hecho prisionero por los fascistas y asesinado por un niño-carnicero), la imaginación pura domina el relato que le sugiere el «Mercurio», a la vez que un dramatismo atenuado por la lucidez preside el capítulo correspondiente al «Vanadio», narración del reencuentro del escritor —acabada la guerra y por razones profesionales— con uno de sus carceleros de Auschwitz. Microhistoria de toda una generación, El sistema periódico fue recibido por Italo Calvino como «un libro extraordinario y fascinante que no puede por menos de dejar una profunda huella en el lector»",
+          "download": "http://descargar.lelibros.online/Primo%20Levi/El%20Sistema%20Periodico%20(697)/El%20Sistema%20Periodico%20-%20Primo%20Levi.pdf"
+        }
+      ]
+    },
+    {
+      "autor_name": "Antonio Muñoz Molina",
+      "published_books": [
+        {
+          "id": "l52",
+          "books_image": "https://imgur.com/bGsO7sK.png",
+          "book_name": "Todo lo Que era Sólido",
+          "autor": "Antonio Muñoz Molina",
+          "description": "Un ensayo directo y apasionado, una reflexión narrativa y testimonial, al más puro estilo de los ensayos de George Orwell o de Virginia Woolf. Una propuesta de acción concreta y entusiasta para avanzar desde el actual deterioro económico, político y social hacia la realidad que queremos construir. Partiendo tanto de documentos periodísticos como de la tradición literaria, Antonio Muñoz Molina escribe esgrimiendo razón y respeto, sin eludir verdades por amargas que estas sean, porque saber es el único camino para cambiar las cosas. «Hace falta una serena rebelión cívica. Hay cosas inaplazables». Una invitación a un debate imprescindible.",
+          "download": "http://descargar.lelibros.online/Antonio%20Munoz%20Molina/Todo%20lo%20Que%20era%20Solido%20(34)/Todo%20lo%20Que%20era%20Solido%20-%20Antonio%20Munoz%20Molina.pdf"
+        }
+      ]
+    },
+    {
+      "autor_name": "Owen Jones",
+      "published_books": [
+        {
+          "id": "l53",
+          "books_image": "https://imgur.com/CAP1a5L.png",
+          "book_name": "Chavs",
+          "autor": "Owen Jones",
+          "description": "En la Gran Bretaña actual, la clase trabajadora se ha convertido en objeto de miedo y escarnio. Desde la Vicky Pollard de Little Britain a la demonización de Jade Goody, los medios de comunicación y los políticos desechan por irresponsable, delincuente e ignorante a un vasto y desfavorecido sector de la sociedad cuyos miembros se han estereotipado en una sola palabra cargada de odio: chavs. En este aclamado estudio, Owen Jones analiza cómo la clase trabajadora ha pasado de ser «la sal de la tierra» a la «escoria de la tierra». Owen Jones, desvelando la ignorancia y el prejuicio que están en el centro de la caricatura chav, retrata una realidad mucho más compleja: el estereotipo chav, dice, es utilizado por los gobiernos como pantalla para evitar comprometerse de verdad con los problemas sociales y económicos y justificar el aumento de la desigualdad. Basado en una investigación exhaustiva y original, este libro es una crítica irrefutable de los medios de comunicación y de la clase dirigente, y un retrato esclarecedor e inquietante de la desigualdad y el odio de clases en la Gran Bretaña actual.",
+          "download": "http://descargar.lelibros.online/Owen%20Jones/Chavs%20(185)/Chavs%20-%20Owen%20Jones.pdf"
+        }
+      ]
+    },
+    {
+      "autor_name": "Brian Greene",
+      "published_books": [
+        {
+          "id": "l54",
+          "books_image": "https://imgur.com/jzWNpsF.png",
+          "book_name": "La Realidad Oculta",
+          "autor": "Brian Greene",
+          "description": "Del autor de los bestsellers El universo elegante y El tejido del cosmos llega su libro más ambicioso y accesible, una obra que aborda una de las preguntas de mayor complejidad: ¿es el nuestro el único universo? Tenemos la intuición de que existe una entidad que engloba y contiene «todo». Es lo que tradicionalmente se ha denominado «Universo». No existe ninguna unidad conceptual más fundamental que ésta, aunque su naturaleza y relación con el espacio y el tiempo continúen siendo problemáticas. Eso sí, de lo que no parecía haber duda es de que el Universo, fuese lo que fuese, es único. Semejante creencia comenzó a ser socavada a mediados de la década de 1950, cuando para evitar el serio problema conceptual que implicaba aceptar que en el proceso de observación la naturaleza se manifiesta solo en una de las diferentes posibilidades físicas, se propuso la teoría de los «muchos universos»: las restantes posibilidades físicas se plasman en otros universos paralelos. Ahora bien, la mecánica cuántica ya no es el único escenario teórico que la favorece, como muestra en este libro el distinguido físico teórico Brian Greene: «Veremos (…) que si el espacio se extiende indefinidamente –una proposición que es compatible con todas las observaciones– entonces debe haber dominios allá fuera (probablemente muy allá) donde copias de usted y de mí y de todo lo demás disfrutan de versiones alternativas de la realidad que experimentamos aquí». Y no sustancia estas radicales afirmaciones a la manera de la ciencia ficción, sino basándose en la física más actual: en la teoría cosmológica inflacionaria y en diversas versiones de la teoría de cuerdas. Todo esto parece mera especulación, imaginación desbordada, pero la ciencia nos ha dado ya demasiadas muestras de que lo que es hoy es inimaginable mañana puede ser realidad.",
+          "download": "http://descargar.lelibros.online/Brian%20Greene/La%20Realidad%20Oculta%20(335)/La%20Realidad%20Oculta%20-%20Brian%20Greene.pdf"
+        }
+      ]
+    },
+    {
+      "autor_name": "Ilya Prigogine",
+      "published_books": [
+        {
+          "id": "l55",
+          "books_image": "https://imgur.com/KTQ9sCu.png",
+          "book_name": "El Nacimiento del Tiempo",
+          "autor": "Ilya Prigogine",
+          "description": "Presentamos al lector el texto de dos breves conferencias sobre el mismo tema, el tiempo, dadas por Ilya Prigogine a pocos años de distancia una de la otra. Originadas ambas por una invitación de la empresa Montedison, tienen solamente del escrito circunstancial la frescura y el tono de divulgación obligados por las limitaciones del medio: una exposición oral para un auditorio no especializado. Con el mérito añadido de ofrecer, en pocas páginas y sin el auxilio de complejos aparatos matemáticos, con gran claridad, las sólidas tesis de su autor. Esto es lo que nos ha convencido de la utilidad de la publicación conjunta de las dos conferencias. La breve nota biográfica y el texto de la conversación que las preceden introducirán al lector en la compleja problemática que nos presenta Prigogine.",
+          "download": "http://descargar.lelibros.online/Ilya%20Prigogine/El%20Nacimiento%20del%20Tiempo%20(86)/El%20Nacimiento%20del%20Tiempo%20-%20Ilya%20Prigogine.pdf"
+        }
+      ]
+    },
+    {
+      "autor_name": "José Saramago",
+      "published_books": [
+        {
+          "id": "l56",
+          "books_image": "https://imgur.com/Xt3eMPn.png",
+          "book_name": "El Cuento de la isla Desconocida",
+          "autor": "José Saramago",
+          "description": "Un suceso histórico, la intención de un noble portugués de ser autorizado por el rey para utilizar una de sus carabelas en la búsqueda de la isla desconocida, le sirve al autor de pretexto para realizar una fábula descarnada del hombre moderno. «... un dulce y sutil cuento sobre el amor y la búsqueda de la identidad personal.» The Washington Post Book World Saramago nos muestra que soñar, a veces, es el verdadero camino hacia la felicidad.",
+          "download": "http://descargar.lelibros.online/Jose%20Saramago/El%20Cuento%20de%20la%20isla%20Desconocida%20(104)/El%20Cuento%20de%20la%20isla%20Desconocid%20-%20Jose%20Saramago.pdf"
+        }
+      ]
+    },
+    {
+      "autor_name": "William Faulkner",
+      "published_books": [
+        {
+          "id": "l57",
+          "books_image": "https://imgur.com/C5tC72x.png",
+          "book_name": "Mientras Agonizo",
+          "autor": "William Faulkner",
+          "description": "Mientras agonizo es una novela publicada en 1930 escrita por William Faulkner, uno de los novelistas más reconocidos de la literatura estadounidense del siglo XX. Es la quinta de su producción literaria, y fue escrita según palabras del autor, en «seis frenéticas semanas», mientras trabajaba como bombero y vigilante nocturno en la central eléctrica de la Universidad de Missisipi. Faulkner se refirió a ella como un «tour de force». El libro está narrado mediante la técnica del flujo de conciencia con 15 narradores en 59 capítulos. Es la historia de la muerte de Addie Bundren, la mujer de un humilde granjero de Misisipi, y la búsqueda de la familia, noble o egoísta, que quiere honrar su deseo de ser enterrada con «su gente» en el pueblo de Jefferson. En el viaje, el niño favorito de Addie, Jewel, salva el cuerpo de su madre de una inundación y de las llamas. Además, se van revelando los pensamientos de cada uno de los Bundrens. Darl, el segundo mayor, demuestra dotes para averiguar el futuro e intenta terminar con el viaje familiar. Tal y como ocurre en muchos trabajos de Faulkner, la historia está ambientada en Yoknapatawpha County, Misisipi, un condado imaginario que recuerda a Lafayette Country en el que el autor vivió.",
+          "download": "http://descargar.lelibros.online/William%20Faulkner/Mientras%20Agonizo%20(515)/Mientras%20Agonizo%20-%20William%20Faulkner.pdf"
+        }
+      ]
+    },
+    {
+      "autor_name": "Christie Golden",
+      "published_books": [
+        {
+          "id": "l58",
+          "books_image": "https://imgur.com/dH9Chz8.png",
+          "book_name": "Arthas",
+          "autor": "Christie Golden",
+          "description": "Su maldad es legendaria. Es el señor de la plaga de los no-muertos, el poseedor de la hojarruna Agonía de Escarcha y el enemigo del pueblo de Azeroth. El Rey Exánime es una entidad de poder incalculable y maldad sin paragón; su gélida alma ha sido consumida totalmente por sus planes de destruir todo lo que esta vivo en... World Of Warcraft. Pero esto no siempre fue así. Mucho antes de que su alma se fundiera con la del orco chamán Ner´Zhul, El rey Exánime era Arthas Menethil, príncipe de Lordaeron y fiel paladín de la Mano de Plata. Cuando una plaga de no-muertos amenazó todo cuanto amaba, Arthas se embarcó en una misión de trágicas consecuencias en busca de una hojarruna lo bastante poderosa como para salvar su patria. Sin embargo, poseer esa espada que tanto ansiaba conllevaba pagar un alto precio: que su nuevo duelo iniciara un aterrador descenso a los infiernos. De ese modo, los senderos de la fortuna acabarían levando a Arthas a través de los páramos árticos del norte hasta el trono helado , donde tendría que afrontar, por fin el mas tenebroso de los destinos.",
+          "download": "http://descargar.lelibros.online/Christie%20Golden/Arthas%20(281)/Arthas%20-%20Christie%20Golden.pdf"
+        },
+        {
+          "id": "l59",
+          "books_image": "https://imgur.com/24FbpUL.png",
+          "book_name": "Relatos de Faerun",
+          "autor": "Christie Golden",
+          "description": "En enero de 2003, una encuesta realizada la página de Wizards animaba a los lectores a elegir sus relatos preferidos aparecidos en las ocho antologías previas de Reinos Olvidados (que no se han publicado en castellano), y este volumen es el resultado. En él se incluyen catorce cuentos: trece escogidos por los lectores y un relato inédito de R. A. Salvatore. De la mano de Ed Greenwood, J. Robert King, Jean Rabe, Elaine Cunningham y otros autores os invitamos a este peculiar recorrido por la mítica historia de Faerun.",
+          "download": "http://descargar.lelibros.online/Christie%20Golden/Relatos%20de%20Faerun%20%28113%29/Relatos%20de%20Faerun%20-%20Christie%20Golden.pdf"
         }
       ]
     }
