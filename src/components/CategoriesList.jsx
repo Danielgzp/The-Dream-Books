@@ -7,13 +7,16 @@ import "./styles/CategoriesList.css";
 const CategoriesList = () => {
   const [categories, setCategories] = useState([]);
 
-  useEffect(async () => {
-    try {
-      const data = await api.books.list("categories");
-      setCategories(data);
-    } catch (err) {
-      console.log(err);
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const data = await api.books.list("categories");
+        setCategories(data);
+      } catch (error) {
+        console.log(error);
+      }
     }
+    fetchData();
   }, []);
 
   return (

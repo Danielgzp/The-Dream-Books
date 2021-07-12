@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: white;
 }
 .information-container h4{
     font-size: 1.8rem;
@@ -26,4 +27,5 @@
     font-size: 1.8rem;
     font-weight: 500;
     max-width: 300px;
+    line-height: 2rem;
 }

@@ -24,17 +24,20 @@ const Books = (props) => {
   });
   const [autor, setAutor] = useState([]);
 
-  useEffect(async () => {
-    setState({ loading: true, error: null });
-    try {
-      const data = await api.books.list("books");
-      const autorData = await api.books.list("autores");
-      setBook(data);
-      setAutor(autorData);
-      setState({ loading: false });
-    } catch (error) {
-      setState({ loading: false, error: error });
+  useEffect(() => {
+    async function fetchData() {
+      setState({ loading: true, error: null });
+      try {
+        const data = await api.books.list("books");
+        const autorData = await api.books.list("autores");
+        setBook(data);
+        setAutor(autorData);
+        setState({ loading: false });
+      } catch (error) {
+        setState({ loading: false, error: error });
+      }
     }
+    fetchData();
   }, []);
 
   const [filteredBook, setFilteredBook] = useState(book);

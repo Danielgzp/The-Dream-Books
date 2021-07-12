@@ -17,15 +17,18 @@ const Authors = (props) => {
     error: null,
   });
 
-  useEffect(async () => {
-    setState({ loading: true, error: null });
-    try {
-      const data = await api.books.list("autores");
-      setAutor(data);
-      setState({ loading: false });
-    } catch (error) {
-      setState({ loading: false, error: error });
+  useEffect(() => {
+    async function fetchData() {
+      setState({ loading: true, error: null });
+      try {
+        const data = await api.books.list("autores");
+        setAutor(data);
+        setState({ loading: false });
+      } catch (error) {
+        setState({ loading: false, error: error });
+      }
     }
+    fetchData();
   }, []);
 
   const [filteredAutor, setFilteredAutor] = useState(autor);
@@ -60,10 +63,10 @@ const Authors = (props) => {
               {`AUTOR: ${autorName}`.toUpperCase()}
             </h2>
             {filteredAutor.map((autores) => (
-              <ul className="list-books">
+              <ul className="list-books" key="lista">
                 {autores.published_books.map((book) => (
-                  <li>
-                    <BookItem book={book} key={book.id} />
+                  <li key={book.id}>
+                    <BookItem book={book} />
                   </li>
                 ))}
               </ul>

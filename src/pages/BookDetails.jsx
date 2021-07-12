@@ -11,31 +11,28 @@ import PageError from "../components/PageError";
 import api from "../UseBooks";
 
 function BookDetails(props) {
-  console.log("probando1");
   const [state, setState] = useState({
     loading: true,
     error: null,
     data: undefined,
-    modalIsOpen: false,
   });
 
-  useEffect(async () => {
-    setState({
-      loading: true,
-    });
-    console.log("probando2");
-    try {
-      const data = await api.books.read(props.match.params.bookId);
-      setState({
-        data: data,
-        loading: false,
-      });
-      console.log("probando3");
-    } catch (error) {
-      console.log(error);
+  useEffect(() => {
+    async function fetchData() {
+      setState({ loading: true, error: null });
+
+      try {
+        const data = await api.books.read(props.match.params.bookId);
+        setState({
+          data: data,
+          loading: false,
+        });
+      } catch (error) {
+        setState({ loading: false, error: error });
+      }
     }
+    fetchData();
   }, []);
-  console.log("probando4");
 
   const handleDeletebook = async (e) => {
     try {
@@ -47,8 +44,6 @@ function BookDetails(props) {
     Swal.fire("El libro ha sido eliminado exitosamente");
   };
 
-  console.log("probando5");
-
   if (state.loading) {
     return <PageLoading />;
   }
@@ -58,14 +53,12 @@ function BookDetails(props) {
 
   return (
     <React.Fragment>
-      {console.log("probando6")}
       <div>
         <div className="Book-Layout"></div>
 
         <div className="container">
           <div className="row">
             <div className="col l6 s12">
-              <h2></h2>
               <BookInformation book={state.data} />
             </div>
             <div className="col l6 s12 actions">

@@ -16,15 +16,18 @@ const Categories = (props) => {
     error: null,
   });
 
-  useEffect(async () => {
-    setState({ loading: true, error: null });
-    try {
-      const data = await api.books.list("categories");
-      setCategories(data);
-      setState({ loading: false });
-    } catch (error) {
-      setState({ loading: false, error: error });
+  useEffect(() => {
+    async function fetchData() {
+      setState({ loading: true, error: null });
+      try {
+        const data = await api.books.list("categories");
+        setCategories(data);
+        setState({ loading: false });
+      } catch (error) {
+        setState({ loading: false, error: error });
+      }
     }
+    fetchData();
   }, []);
 
   const [filteredCategorie, setFilteredCategorie] = useState(categories);
@@ -56,13 +59,13 @@ const Categories = (props) => {
         <div className="col l9 s12">
           <section>
             {filteredCategorie.map((categorie) => (
-              <div>
+              <div key="categorie">
                 <h2 className="title-books">
                   CATEGORIA: {categorie.categorie_name}
                 </h2>
                 <ul className="list-books">
                   {categorie.categorie_books.map((book) => (
-                    <li>
+                    <li key={book.id}>
                       <BookItem book={book} />
                     </li>
                   ))}

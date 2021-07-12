@@ -14,18 +14,21 @@ const BooksList = () => {
   });
   const [books, setBooks] = useState([]);
 
-  useEffect(async () => {
-    setState({ loading: true, error: null });
+  useEffect(() => {
+    async function fetchData() {
+      setState({ loading: true, error: null });
 
-    try {
-      const data = await api.books.list("books");
-      setBooks(data);
-      setState({
-        loading: false,
-      });
-    } catch (error) {
-      setState({ loading: false, error: error });
+      try {
+        const data = await api.books.list("books");
+        setBooks(data);
+        setState({
+          loading: false,
+        });
+      } catch (error) {
+        setState({ loading: false, error: error });
+      }
     }
+    fetchData();
   }, []);
 
   if (state.loading) {

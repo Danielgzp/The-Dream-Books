@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./styles/BadgeForm.css";
+import "./styles/BookForm.css";
 
 class BookForm extends React.Component {
   handleClick = (e) => {
@@ -11,12 +11,12 @@ class BookForm extends React.Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.props.onSubmit}>
+        <form onSubmit={this.props.onSubmit} id="information-form">
           <div className="form-group">
-            <label>Book Name</label>
+            <label id="information-label">Book Name</label>
             <input
               onChange={this.props.onChange}
-              className="form-control"
+              id="input-form"
               type="text"
               name="book_name"
               value={this.props.formValues.book_name}
@@ -27,7 +27,7 @@ class BookForm extends React.Component {
             <label>Autor</label>
             <input
               onChange={this.props.onChange}
-              className="form-control"
+              id="input-form"
               type="text"
               name="autor"
               value={this.props.formValues.autor}
@@ -38,7 +38,7 @@ class BookForm extends React.Component {
             <label>Imagen del libro(url)</label>
             <input
               onChange={this.props.onChange}
-              className="form-control"
+              id="input-form"
               type="text"
               name="books_image"
               value={this.props.formValues.books_image}
@@ -49,7 +49,7 @@ class BookForm extends React.Component {
             <label>Description</label>
             <input
               onChange={this.props.onChange}
-              className="form-control"
+              id="input-form"
               type="text"
               name="description"
               value={this.props.formValues.description}
@@ -60,7 +60,7 @@ class BookForm extends React.Component {
             <label>Link de descarga</label>
             <input
               onChange={this.props.onChange}
-              className="form-control"
+              id="input-form"
               type="text"
               name="download"
               value={this.props.formValues.download}

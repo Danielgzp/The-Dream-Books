@@ -109,7 +109,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/libros/new">
+                  <Link to="/new/book">
                     <i className="material-icons left">library_add</i> New Book
                   </Link>
                 </li>
@@ -166,11 +166,6 @@ const Header = () => {
                   <Link to="/">
                     {" "}
                     <i className="material-icons left">book</i> Todos los Libros
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/new/book">
-                    <i className="material-icons left">library_add</i> New Book
                   </Link>
                 </li>
                 <li>

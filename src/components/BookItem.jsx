@@ -57,11 +57,6 @@ const BookItem = ({ book }) => {
           </Link>
         </div>
       )}
-      <div>
-        <Link to={`/libro/${book.id}`} className="btn edit-book">
-          <i className="material-icons">edit</i> Editar Libro
-        </Link>
-      </div>
     </article>
   );
 };

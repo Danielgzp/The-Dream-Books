@@ -7,7 +7,7 @@
     align-items: center;
 }
 .Errors_container{
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     position: relative;
@@ -41,6 +41,11 @@
     font-size: 20px;
     margin-top: 20px;
     float: right;
+    font-size: 1.6rem;
+    background-color: var(--orange);
+}
+.home-link:hover{
+    background-color: black;
 }
 
 @media screen and (min-width: 768px) {

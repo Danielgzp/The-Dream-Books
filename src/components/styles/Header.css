@@ -32,14 +32,12 @@ header ul a:hover{
     margin-top: 10px;
 }
 #input-search{
-    height: 39px;
+    height: 39.5px;
     background-color: white;
     border-radius: 7px 0 0 7px;
     padding-left: 20px;
-    outline-color: orange;
-    outline-width: 1px;
-    outline-style: unset;
-    outline-offset: 0px;
+    border-bottom: 0;
+    box-shadow: 0 0 0 0;
 }
 .button-search{
     font-size: 1.6rem;

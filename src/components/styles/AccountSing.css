@@ -11,10 +11,8 @@
 .login-div{
     display: flex;
     flex-direction: column;
-    /* background-color: rgb(53, 53, 53); */
     align-items: center;
     margin-top: 40px;
-    
 }
 .form-container{
     height: auto;

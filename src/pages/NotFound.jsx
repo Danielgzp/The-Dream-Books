@@ -12,8 +12,7 @@ function NotFound() {
         <div className="container">
           <div className="row">
             <div className="Errors_container">
-              <div className="Home__col-error col-12 col-md-5">
-                <h1>ERROR 404</h1>
+              <div className="Home__col-error col l5 s12">
                 <h2>Page not found</h2>
                 <p>
                   Lo sentimos, no hemos podido encontrar la pagina que buscabas
@@ -23,7 +22,7 @@ function NotFound() {
                 </Link>
               </div>
 
-              <div className="Home__col-error d-none d-md-block col-md-7">
+              <div className="Home__col-error col l7 s12">
                 <img
                   src={errorImage}
                   alt="Astronauts"

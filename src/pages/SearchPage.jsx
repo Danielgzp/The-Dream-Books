@@ -17,15 +17,18 @@ const SearchPage = (props) => {
     error: null,
   });
 
-  useEffect(async () => {
-    setState({ loading: true, error: null });
-    try {
-      const data = await api.books.list("books");
-      setBooks(data);
-      setState({ loading: false });
-    } catch (error) {
-      setState({ loading: false, error: error });
+  useEffect(() => {
+    async function fetchData() {
+      setState({ loading: true, error: null });
+      try {
+        const data = await api.books.list("books");
+        setBooks(data);
+        setState({ loading: false });
+      } catch (error) {
+        setState({ loading: false, error: error });
+      }
     }
+    fetchData();
   }, []);
   const [filteredBook, setFilteredBook] = useState(books);
 
