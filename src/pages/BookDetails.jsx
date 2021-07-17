@@ -30,7 +30,8 @@ function BookDetails(props) {
         setState({ loading: false, error: error });
       }
     }
-    fetchData();
+    fetchData()
+
   }, []);
 
   const handleDeletebook = async (e) => {
