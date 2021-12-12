@@ -1,0 +1,8 @@
+.fondo{
+    background: url('https://i.imgur.com/7OCXZjm.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 93vh;
+    display: flex;
+    align-items: center;
+}

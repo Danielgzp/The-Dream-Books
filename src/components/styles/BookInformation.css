@@ -1,0 +1,31 @@
+.information-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+.information-container h4{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: -5px;
+}
+.information-container a{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.information-container p{
+    font-size: 1.2rem;
+}
+.portrait-container img{
+    width: 250px;
+}
+.portrait-container figcaption{
+    text-align: center;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 500;
+    max-width: 300px;
+    line-height: 2rem;
+}

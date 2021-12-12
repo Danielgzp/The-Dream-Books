@@ -1,0 +1,95 @@
+.login-account{
+    position: relative;
+    width: 550px;
+    height: 550px;
+    background-color: rgb(29, 29, 29, .95);
+    left: calc(50% - 275px);
+    border-radius: 20px;
+}
+.login-container__account{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(53, 53, 53); */
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+}
+.login-container__account h2{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+}
+.form-container__account{
+    width: 100%;
+    height: 100%;
+}
+.form-container__account h3{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+.form-container__account form{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    margin-top: -50px;
+}
+.input{
+    width: 220px;
+    height: 50px;
+    margin: 0 auto;
+}
+#nombre, #apellido, #edad, #correo, #fecha_nacimiento, #pais, #clave, #clave2{
+    width: 200px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 5px;
+    background-color: #fff;
+    border: 2.5px var(--orange) solid;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.6rem;
+    margin-top: 5px;
+} 
+
+.create-account{
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    background-color: var(--orange);
+    width: 250px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 4px black solid;   
+    border-radius: 7px;
+    left: calc(50% - 125px);
+    cursor: pointer;
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+}
+
+
+.preloader {
+    display: none;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border: 8px solid #eee;
+    border-top: 8px solid #f6921e;
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }

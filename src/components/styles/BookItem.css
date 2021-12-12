@@ -1,0 +1,55 @@
+.book-portrait{
+    width: 100%;
+}
+.book-portrait img{
+    width: 100%;
+    max-height: 200px;
+    border: 4px var(--orange) solid;
+}
+.book-portrait h3{
+    text-align: center;
+    color: var(--letter-grey);
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 8px;
+    min-height: 45px;
+    max-height: 55px;
+}
+.autor{
+    margin-top: 15px;
+    height: 40px;
+}
+.autor a{
+    color: var(--soft-grey);
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    height: 40px;
+}
+.descargar{
+    margin-top: 5px;
+}
+.descargar a{
+    font-size: 1.1rem;
+    height: auto;
+    line-height: 11px;
+    font-weight: 500;
+    padding: 7px 0;
+    border: 2px solid #080808;
+    float: left;
+    width: 100%;
+    color: #080808;
+    letter-spacing: 1px;
+}
+.descargar a:hover{
+    background-color: black;
+    color: white;
+}
+.edit-book{
+    margin-top: 20px;
+    background-color: orange;
+}
+.edit-book:hover{
+    background-color: black;
+}
+

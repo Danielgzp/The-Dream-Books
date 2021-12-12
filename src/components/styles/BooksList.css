@@ -1,0 +1,41 @@
+.list-books{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-books li{
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    width: 140px;
+}
+.title-books{
+    /* width: 100%;
+    text-align: left;
+    position: relative;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #8f8f8f;
+    font-family: 'Roboto',sans-serif;
+    margin-left: 20px;
+    text-transform: uppercase; */
+    width: 100%;
+    text-align: left;
+    position: relative;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #8f8f8f;
+    font-family: 'Roboto',sans-serif;
+    margin-bottom: 40px;
+}
+.title-books::after{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 3px;
+    width: 75px;
+    background: #a1a1a1;
+    content: '';
+}
