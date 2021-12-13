@@ -42,10 +42,10 @@
     color: var(--soft-grey);
 }
 .download-button{
-    background-color: red;
+    background-color: orange;
 }
 .download-button:hover{
-    background-color: rgb(105, 7, 7);
+    background-color: rgb(216, 122, 0);
 }
 .read-button{
     background-color: cadetblue;
@@ -57,4 +57,23 @@
     margin-top: 25px;
     margin-right: 20px;
 }
+.downloads-container i{
+    height: 100%;
+    margin-left: -7px;
+    margin-right: 10px;
+}
+.add-text{
+    position: relative;
+    top: -4px;
+}
+.book-price{
+    font-size: 2.4rem;
+    top: 20px;
+    position: relative;
+}
+.book-price i{
+    top: -6px;
+    position: relative;
+}
+
 

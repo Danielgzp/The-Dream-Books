@@ -123,15 +123,13 @@ const Books = (props) => {
                     className="btn download-button"
                     onClick={handleClick}
                   >
-                    <i className="material-icons">file_download</i>DESCARGAR PDF
+                    <i className="large material-icons">add</i>
+                    <span className="add-text">AÑADIR AL CARRO</span>
                   </a>
-                  <a
-                    href="#!"
-                    className="btn read-button"
-                    onClick={handleClick}
-                  >
-                    <i className="material-icons">description</i> LEER ONLINE
-                  </a>
+
+                  <span className="book-price">
+                    4.99 <i className="material-icons">attach_money</i>
+                  </span>
                 </div>
               ) : (
                 <div className="downloads-container">
@@ -140,18 +138,15 @@ const Books = (props) => {
                     className="btn download-button"
                     onClick={handleClick}
                   >
-                    <i className="material-icons">file_download</i>DESCARGAR PDF
+                    <i className="large material-icons">add</i>
+                    <span className="add-text">AÑADIR AL CARRO</span>
                   </a>
-                  <a
-                    href="#!"
-                    className="btn read-button"
-                    onClick={handleClick}
-                  >
-                    <i className="material-icons">description</i> LEER ONLINE
-                  </a>
+
+                  <span className="book-price">
+                    4.99 <i className="material-icons">attach_money</i>
+                  </span>
                 </div>
               )}
-
               <div className="description-book">
                 <h2>DESCRIPCIÓN</h2>
                 <p>{book.description}</p>

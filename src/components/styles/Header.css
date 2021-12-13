@@ -54,13 +54,54 @@ header ul a:hover{
 }
 .button-search:hover{
     background: rgb(247, 180, 57);
-}.material-icons{
+}
+.material-icons{
     margin-top: 4px;
+}
+#icon-header{
+    margin-right: 5px;
+    
 }
 header ul li{
     color: white;
     font-size: 1.4rem;
     letter-spacing: 1px;
     padding: 7px;
+}
+ /*                              Nuevos estilos                                         */
+
+.number-shops{
+
+    position: relative;
+    right: 55px;
+    top: -15px;
+    border-radius: 50%;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    min-width: 10px;
+    padding: 2px 5.7px;
+    font-size: 1rem;
+    /* position: absolute; */
+    text-align: center;
+    letter-spacing: 0;
+
+    /* border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+     height: 20px; 
+    letter-spacing: 0;
+    min-width: 20px;
+    padding: 4px 6px;
+    pointer-events: auto;
+    position: absolute;
+     text-align: center; 
+    text-indent: 0;
+    top: auto;
+    transition: .3s cubic-bezier(.25,.8,.5,1);
+    white-space: nowrap; */
+}
+.number-shops span{
+    font-size: 1.2rem;
 }
 

@@ -8,12 +8,20 @@ const Header = () => {
   const cookies = new Cookies();
   const userName = cookies.get("nombre");
   const [query, setQuery] = useState("");
+
   let history = useHistory();
+  const [shopping, setShopping] = useState(0);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     history.push(`/search/${query.replaceAll(" ", "-").toLowerCase()}`);
   };
+
+  const handleClick = (event) => {
+    setShopping(shopping + 1);
+  };
+
+  console.log(shopping);
 
   //Se comprueba si se inicio sesión como usuario, administrador, o si aún no se ha iniciado sesión
 
@@ -55,12 +63,36 @@ const Header = () => {
                 <li>
                   <Link to="/">
                     {" "}
-                    <i className="material-icons left">book</i> Todos los Libros
+                    <i className="material-icons left" id="icon-header">
+                      book
+                    </i>{" "}
+                    Todos los Libros
                   </Link>
                 </li>
                 <li>
-                  <i className="material-icons left">account_circle</i>
+                  <i className="material-icons left" id="icon-header">
+                    account_circle
+                  </i>
                   {userName}
+                </li>
+                <li>
+                  {/* <li>
+                    <button
+                      type="button"
+                      onClick={handleClick}>+</button>
+                  </li> */}
+                  <Link to="/compras">
+                    <i className="material-icons left" id="icon-header">
+                      shopping_cart
+                    </i>
+                    0.00$
+                    <span className="number-shops">{shopping}</span>
+                  </Link>
+                  {/* {numberProducts > 0 && (
+                      <div className="Header-alert">{numberProducts}</div>
+                    )} */}
+                  {/*  O simplemente tambien lo podemso hacer asi
+        {cart.length > 0 && <div className="Header-alert">{cart.length}</div>}  */}
                 </li>
                 <li>
                   <Link to="/salir/">
@@ -111,17 +143,26 @@ const Header = () => {
                 <li>
                   <Link to="/">
                     {" "}
-                    <i className="material-icons left">book</i> Todos los Libros
+                    <i className="material-icons left" id="icon-header">
+                      book
+                    </i>{" "}
+                    Todos los Libros
                   </Link>
                 </li>
                 <li>
                   <Link to="/new/book">
-                    <i className="material-icons left">library_add</i> New Book
+                    <i className="material-icons left" id="icon-header">
+                      library_add
+                    </i>{" "}
+                    New Book
                   </Link>
                 </li>
                 <li>
                   <Link to="/salir/">
-                    <i className="material-icons left">keyboard_tab</i> Salir
+                    <i className="material-icons left" id="icon-header">
+                      keyboard_tab
+                    </i>{" "}
+                    Salir
                   </Link>
                 </li>
               </ul>
@@ -170,13 +211,18 @@ const Header = () => {
                 <li>
                   <Link to="/">
                     {" "}
-                    <i className="material-icons left">book</i> Todos los Libros
+                    <i className="material-icons left" id="icon-header">
+                      book
+                    </i>{" "}
+                    Todos los Libros
                   </Link>
                 </li>
                 <li>
                   <Link to="/iniciar-sesion/">
-                    <i className="material-icons left">account_circle</i>Iniciar
-                    Sesión
+                    <i className="material-icons left" id="icon-header">
+                      account_circle
+                    </i>
+                    Iniciar Sesión
                   </Link>
                 </li>
 

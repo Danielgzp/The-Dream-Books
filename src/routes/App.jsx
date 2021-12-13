@@ -16,6 +16,7 @@ import BookEdit from "../pages/BookEdit";
 import BookNew from "../pages/BookNew";
 import BookDetails from "../pages/BookDetails";
 
+import ShopCar from "../pages/ShopCar";
 const App = () => {
   return (
     <BrowserRouter>
@@ -42,6 +43,7 @@ const App = () => {
           <Route exact path="/search/:bookSearch" component={SearchPage} />
           <Route exact path="/autor/:autorName" component={Authors} />
           <Route exact path="/salir/" component={Logout} />
+          <Route exact path="/compras" component={ShopCar} />
           <Route component={NotFound} />
         </Switch>
       </Layout>
