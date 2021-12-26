@@ -18,6 +18,7 @@ class BookEdit extends React.Component {
       autor: "",
       description: "",
       download: "",
+      price: ""
     },
   };
 

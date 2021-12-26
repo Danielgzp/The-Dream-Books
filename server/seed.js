@@ -15,6 +15,7 @@ function createBook(limit = 200) {
       books_image,
       book_name,
       autor,
+      price: faker.name.jobDescriptor(),
       description: faker.name.jobTitle(),
       download: faker.internet.url(),
     });

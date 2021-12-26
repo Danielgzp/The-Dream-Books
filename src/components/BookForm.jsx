@@ -66,6 +66,16 @@ class BookForm extends React.Component {
               value={this.props.formValues.download}
             />
           </div>
+          <div className="form-group">
+            <label>Price</label>
+            <input
+              onChange={this.props.onChange}
+              id="input-form"
+              type="text"
+              name="price"
+              value={this.props.formValues.price}
+            />
+          </div>
           <div className="buttons">
             <button onClick={this.handleClick} className="btn save-button left">
               Save
