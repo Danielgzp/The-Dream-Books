@@ -76,6 +76,29 @@ class BookForm extends React.Component {
               value={this.props.formValues.price}
             />
           </div>
+          {/* TOY TRABaJANDO AQUII */}
+          <div className="form-group">
+            <label>Categorie</label>
+            <input list="categories" />
+            <datalist id="categories">
+              <option value="Autoayuda"></option>
+              <option value="Aventura"></option>
+              <option value="Biografía y Memorias"></option>
+              <option value="Ciencias Exactas"></option>
+              <option value="Ciencias Naturales"></option>
+              <option value="Ciencias Sociales"></option>
+              <option value="Ciencia y Ficción"></option>
+              <option value="Drama"></option>
+              <option value="Ensayos"></option>
+              <option value="Espitirualidad"></option>
+              <option value="Fantasia"></option>
+              <option value="Humor"></option>
+              <option value="Infantil"></option>
+              <option value="Terror y Suspenso"></option>
+              <option value="Viajes y Guías"></option>
+            </datalist>
+          </div>
+          {/* TOY TRABaJANDO AQUII */}
           <div className="buttons">
             <button onClick={this.handleClick} className="btn save-button left">
               Save
