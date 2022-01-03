@@ -7,14 +7,43 @@ import PageError from "../components/PageError";
 import BuyBooks from "../components/BuyBooks";
 
 import api from "../UseBooks";
+import { PayPalButton } from "react-paypal-button-v2";
+import { useHistory } from "react-router-dom";
 
 const ShopCar = () => {
 
+  const history = useHistory()
   const [state, setState] = useState({
     loading: false,
     error: null,
   });
   const [books, setBooks] = useState([]);
+
+  const paypalOtions = {
+    clientId:
+      "ARDaimeHh9z34Luc_CKlSDHTWobwKnNxxSO2gnvwNWQDiZY-r5WsdH-yqBpg_7L47PRwuCuxDRHolWHf",
+    intent: "capture",
+    currency: "USD",
+  };
+
+  const buttonStyles = {
+    layout: "vertical",
+    shape: "rect",
+  };
+
+  const handlePaymentSuccess = (data) => {
+    console.log(data);
+    if (data.status === "COMPLETED") {
+      // const newOrder = {
+      //   buyer,
+      //   product: cart,
+      //   payment: data,
+      // };
+      // addNewOrder(newOrder, history.push("/checkout/success"));
+      console.log('hecho')
+      history.push('/')
+    }
+  };
 
   useEffect(() => {
     async function fetchData() {
@@ -65,6 +94,14 @@ const ShopCar = () => {
                   CONFIRMAR COMPRA{" "}
                   <i className="medium material-icons">arrow_forward</i>{" "}
                 </Link>
+                <PayPalButton
+                  paypalOptions={paypalOtions}
+                  buttonStyles={buttonStyles}
+                  amount='5'
+                  onSuccess={(data) => handlePaymentSuccess(data)}
+                  onError={(error) => console.log(error)}
+                  onCancel={(data) => console.log(data)}
+                />
               </div>
             </section>
           </div>

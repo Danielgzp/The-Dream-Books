@@ -20,6 +20,8 @@ class BookEdit extends React.Component {
       download: "",
       price: ""
     },
+    formCategories: [],
+    formAuthors: [],
   };
 
   componentDidMount() {
@@ -31,7 +33,9 @@ class BookEdit extends React.Component {
 
     try {
       const data = await api.books.read(this.props.match.params.bookId);
-      this.setState({ loading: false, form: data });
+      const dataCategories = await api.books.list("categories")
+      const dataAuthors = await api.books.list("autores");
+      this.setState({ loading: false, form: data, formCategories: dataCategories, formAuthors: dataAuthors });
     } catch (error) {
       this.setState({ loading: false, error: error });
     }
@@ -43,6 +47,14 @@ class BookEdit extends React.Component {
         ...this.state.form,
         [e.target.name]: e.target.value,
       },
+      formCategories: {
+        ...this.state.formCategories,
+        [e.target.name]: e.target.value,
+      },
+      formAuthors: {
+        ...this.state.formAuthors,
+        [e.target.name]: e.target.value,
+      }
     });
   };
 
@@ -85,6 +97,9 @@ class BookEdit extends React.Component {
                 onSubmit={this.handleSubmit}
                 formValues={this.state.form}
                 error={this.state.error}
+                categories={this.state.formCategories}
+                authors={this.state.formAuthors}
+                hola='b'
               />
             </div>
           </div>
