@@ -149,6 +149,16 @@ const Header = () => {
                     Todos los Libros
                   </Link>
                 </li>
+                <li className="add-categories">
+                  <Link to="/add" className="add-categories top">
+                    {" "}
+                    <i className="material-icons left" id="icon-header">
+                      add
+                    </i>{" "}
+                    Add Authors 
+                    and Categories
+                  </Link>
+                </li>
                 <li>
                   <Link to="/new/book">
                     <i className="material-icons left" id="icon-header">

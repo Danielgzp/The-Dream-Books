@@ -7,20 +7,31 @@ nav{
 }
 .link-logo{
     height: 90px;
+    margin-left: 30px;
 }
 .link-logo img{
     width: 140px;
     height: 95px;
 }
 header nav ul{
-    height: 30px;
+    height: 90px;
     right: 0;
 }
 header ul a{
     color: white;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding: 9px 9px 7px 7px;
+    width: max-content;
+    max-width: 150px;
+    height: 90px;
+    
+}
+header ul li{
+    max-width: max-content;
+    color: white;
     font-size: 1.4rem;
     letter-spacing: 1px;
-    padding: 7px;
 }
 header ul a:hover{
     background-color: rgb(53, 52, 52);
@@ -30,6 +41,7 @@ header ul a:hover{
     height: auto;
     display: flex;
     margin-top: 10px;
+    margin-right: -30px;
 }
 #input-search{
     height: 39.5px;
@@ -48,7 +60,7 @@ header ul a:hover{
     border: 0;
     border-radius: 0 7px 7px 0;
     cursor: pointer;
-    height: 40px;
+    height: 40.2px;
     width: 140px;
     margin-left: -10px;
 }
@@ -61,12 +73,6 @@ header ul a:hover{
 #icon-header{
     margin-right: 5px;
     
-}
-header ul li{
-    color: white;
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    padding: 7px;
 }
  /*                              Nuevos estilos                                         */
 
@@ -103,5 +109,10 @@ header ul li{
 }
 .number-shops span{
     font-size: 1.2rem;
+}
+.add-categories a{
+    line-height: 24pt;
+    font-size: 1.2rem;
+    padding: 12px 7px 3px 3px;
 }
 

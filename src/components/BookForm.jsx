@@ -76,7 +76,7 @@ class BookForm extends React.Component {
               value={this.props.formValues.price}
             />
           </div>
-          {this.props.hola != 'a' && (
+          {this.props.hola != "a" && (
             <React.Fragment>
               <div className="form-group">
                 <label>Categorie</label>

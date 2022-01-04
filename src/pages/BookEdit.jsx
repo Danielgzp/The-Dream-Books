@@ -47,14 +47,14 @@ class BookEdit extends React.Component {
         ...this.state.form,
         [e.target.name]: e.target.value,
       },
-      formCategories: {
+      /*formCategories: {
         ...this.state.formCategories,
         [e.target.name]: e.target.value,
       },
       formAuthors: {
         ...this.state.formAuthors,
         [e.target.name]: e.target.value,
-      }
+      }*/
     });
   };
 

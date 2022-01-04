@@ -17,6 +17,7 @@ import BookNew from "../pages/BookNew";
 import BookDetails from "../pages/BookDetails";
 
 import ShopCar from "../pages/ShopCar";
+import AddCategoriesAndAuthors from "../pages/AddCategoriesAndAuthors";
 const App = () => {
   return (
     <BrowserRouter>
@@ -44,6 +45,7 @@ const App = () => {
           <Route exact path="/autor/:autorName" component={Authors} />
           <Route exact path="/salir/" component={Logout} />
           <Route exact path="/compras" component={ShopCar} />
+          <Route exact path="/add" component={AddCategoriesAndAuthors} />
           <Route component={NotFound} />
         </Switch>
       </Layout>
