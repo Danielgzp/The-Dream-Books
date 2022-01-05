@@ -76,39 +76,32 @@ class BookForm extends React.Component {
               value={this.props.formValues.price}
             />
           </div>
-          {this.props.hola != "a" && (
-            <React.Fragment>
-              <div className="form-group">
-                <label>Categorie</label>
-                <input
-                  list="categories"
-                  id="input-form"
-                  type="text"
-                  name="categories"
-                />
-                <datalist id="categories">
-                  {this.props.categories.map((categorie) => (
-                    <option value={categorie.categorie_name}></option>
-                  ))}
-                </datalist>
-              </div>
 
-              <div className="form-group">
-                <label>Author</label>
-                <input
-                  list="authors"
-                  id="input-form"
-                  type="text"
-                  name="authors"
-                />
-                <datalist id="authors">
-                  {this.props.authors.map((author) => (
-                    <option value={author.autor_name}></option>
-                  ))}
-                </datalist>
-              </div>
-            </React.Fragment>
-          )}
+          <div className="form-group">
+            <label>Categorie</label>
+            <input
+              list="categories"
+              id="input-form"
+              type="text"
+              name="categories"
+            />
+            <datalist id="categories">
+              {this.props.categories.map((categorie) => (
+                <option value={categorie.categorie_name}></option>
+              ))}
+            </datalist>
+          </div>
+
+          <div className="form-group">
+            <label>Author</label>
+            <input list="authors" id="input-form" type="text" name="authors" />
+            <datalist id="authors">
+              {this.props.authors.map((author) => (
+                <option value={author.autor_name}></option>
+              ))}
+            </datalist>
+          </div>
+
           <div className="buttons">
             <button onClick={this.handleClick} className="btn save-button left">
               Save

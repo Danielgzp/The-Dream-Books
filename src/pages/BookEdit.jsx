@@ -99,7 +99,6 @@ class BookEdit extends React.Component {
                 error={this.state.error}
                 categories={this.state.formCategories}
                 authors={this.state.formAuthors}
-                hola='b'
               />
             </div>
           </div>

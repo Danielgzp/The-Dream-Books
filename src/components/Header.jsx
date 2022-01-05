@@ -69,7 +69,7 @@ const Header = () => {
                     Todos los Libros
                   </Link>
                 </li>
-                <li>
+                <li className="name-user">
                   <i className="material-icons left" id="icon-header">
                     account_circle
                   </i>

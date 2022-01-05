@@ -69,7 +69,6 @@ class BookNew extends React.Component {
                 onSubmit={handleSubmit}
                 formValues={this.state.form}
                 error={this.state.error}
-                hola='a'
               />
             </div>
           </div>

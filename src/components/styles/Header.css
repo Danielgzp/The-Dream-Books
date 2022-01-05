@@ -74,6 +74,8 @@ header ul a:hover{
     margin-right: 5px;
     
 }
+
+
  /*                              Nuevos estilos                                         */
 
 .number-shops{
@@ -115,4 +117,7 @@ header ul a:hover{
     font-size: 1.2rem;
     padding: 12px 7px 3px 3px;
 }
-
+.name-user{
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+}
