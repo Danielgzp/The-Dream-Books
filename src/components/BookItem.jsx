@@ -47,7 +47,7 @@ const BookItem = ({ book }) => {
             .normalize("NFD")
             .replace(/[?¿¡!\u0300-\u036f]/g, "")}
         >
-          DESCARGAR LIBRO
+          COMPRAR LIBRO
         </Link>
       </div>
       {cookies.get("privilegio") === "administrador" && (

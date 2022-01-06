@@ -10,18 +10,18 @@ const Header = () => {
   const [query, setQuery] = useState("");
 
   let history = useHistory();
-  const [shopping, setShopping] = useState(0);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     history.push(`/search/${query.replaceAll(" ", "-").toLowerCase()}`);
   };
 
+  /*const [shopping, setShopping] = useState(0);
   const handleClick = (event) => {
     setShopping(shopping + 1);
   };
 
-  console.log(shopping);
+  console.log(shopping);*/
 
   //Se comprueba si se inicio sesión como usuario, administrador, o si aún no se ha iniciado sesión
 
@@ -86,7 +86,7 @@ const Header = () => {
                       shopping_cart
                     </i>
                     0.00$
-                    <span className="number-shops">{shopping}</span>
+                    <span className="number-shops">0</span>
                   </Link>
                   {/* {numberProducts > 0 && (
                       <div className="Header-alert">{numberProducts}</div>
@@ -155,8 +155,7 @@ const Header = () => {
                     <i className="material-icons left" id="icon-header">
                       add
                     </i>{" "}
-                    Add Authors 
-                    and Categories
+                    Add Authors and Categories
                   </Link>
                 </li>
                 <li>

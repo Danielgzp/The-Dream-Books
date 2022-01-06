@@ -17,6 +17,8 @@ const Books = (props) => {
   let bookName = props.match.params.bookName;
   bookName = bookName.replaceAll("-", " ");
 
+  const [shopping, setShopping] = useState({});
+
   const [book, setBook] = useState([]);
   const [state, setState] = useState({
     loading: false,
@@ -65,6 +67,7 @@ const Books = (props) => {
 
     setFilteredBook(result);
     setFilteredAutor(results);
+    
   }, [book, autor, bookName, paramsBookAutor]);
 
   const handleClick = () => {
@@ -77,6 +80,10 @@ const Books = (props) => {
       Swal.fire("Debes crear una cuenta para poder acceder a los libros");
     }
   };
+
+   const handleClickAddToCart = () => {
+
+   }
 
   if (state.loading) {
     return <PageLoading />;
@@ -95,6 +102,8 @@ const Books = (props) => {
 
           {filteredBook.map((book) => (
             <section className="section col l9 s12">
+              {console.log(filteredBook)}
+              {console.log(setShopping)}
               <div className="details-book col l12 s12 left">
                 <h2 className="book-title">{book.book_name}</h2>
                 <Link
@@ -118,14 +127,14 @@ const Books = (props) => {
               {cookies.get("privilegio") === "administrador" ||
               cookies.get("privilegio") === "usuario" ? (
                 <div className="downloads-container bottom">
-                  <a
-                    href={book.download}
+                  <button
+                    type="button"
                     className="btn download-button"
-                    onClick={handleClick}
+                    onClick={handleClickAddToCart}
                   >
                     <i className="large material-icons">add</i>
                     <span className="add-text">AÑADIR AL CARRO</span>
-                  </a>
+                  </button>
 
                   <span className="book-price">
                     4.99 <i className="material-icons">attach_money</i>
@@ -133,14 +142,14 @@ const Books = (props) => {
                 </div>
               ) : (
                 <div className="downloads-container">
-                  <a
-                    href="#!"
+                  <button
+                    type="button"
                     className="btn download-button"
                     onClick={handleClick}
                   >
                     <i className="large material-icons">add</i>
                     <span className="add-text">AÑADIR AL CARRO</span>
-                  </a>
+                  </button>
 
                   <span className="book-price">
                     4.99 <i className="material-icons">attach_money</i>
