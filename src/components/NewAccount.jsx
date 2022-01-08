@@ -1,6 +1,7 @@
 import React from "react";
 
 import Constantes from "../Constantes";
+import PageLoading from "../components/PageLoading";
 import Swal from "../../node_modules/sweetalert2/dist/sweetalert2.all";
 
 import "./styles/NewAccount.css";
@@ -9,6 +10,7 @@ class NewAccount extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      loading: false,
       datos: {
         nombre: "",
         apellido: "",
@@ -27,15 +29,19 @@ class NewAccount extends React.Component {
 
   async Formulario(evento) {
     evento.preventDefault();
+    this.setState({loading: true});
+
 
     const cargaUtil = JSON.stringify(this.state.datos);
 
-    const respuesta = await fetch(`${Constantes.RUTA_API}/NewAccount.php`, {
+    const respuesta = await fetch(`${Constantes.RUTA_API}/signup`, {
       method: "POST",
       body: cargaUtil,
     });
 
     const respuesta_json = await respuesta.json();
+
+    this.setState({loading: false});
 
     if (respuesta_json) {
       if (respuesta_json === "S") {
@@ -88,6 +94,9 @@ class NewAccount extends React.Component {
   }
 
   render() {
+    if (this.state.loading) {
+      return <PageLoading />;
+    }
     return (
       <React.Fragment>
         <section className="login-account">

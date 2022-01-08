@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Constantes from "../Constantes";
 
 import "./styles/BookDetails.css";
 import Swal from "sweetalert2";
@@ -15,6 +16,8 @@ function BookDetails(props) {
     error: null,
     data: undefined,
   });
+
+  
 
   useEffect(() => {
     async function fetchData() {
@@ -34,14 +37,60 @@ function BookDetails(props) {
   }, []);
 
   const handleDeletebook = async (e) => {
-    try {
-      await api.books.remove(props.match.params.bookId);
-      props.history.push("/");
-    } catch (error) {
-      console.error("Error");
-    }
-    Swal.fire("El libro ha sido eliminado exitosamente");
+
+    Swal.fire({
+        title: "¿Estás seguro?",
+        text: "¿Deseas eliminar este libro?",
+        icon: "warning",
+        showDenyButton: "true",
+        confirmButtonText: "Sí, deseo eliminar el libro"
+      }).then((result) => {
+          if (result.isConfirmed) {
+            deleteBook();
+            setState({ loading: true});
+
+          } else if (result.isDenied) {
+            Swal.fire('Cancelado', '', 'info')
+          }
+        })
+
   };
+
+  async function deleteBook(e){
+
+    const send = JSON.stringify(props.match.params.bookId);
+
+      const answer = await fetch(`${Constantes.RUTA_API}/deleteBook`, {
+        method: "POST",
+        body: send,
+      });
+
+      const answer_json = await answer.json();
+
+      if (answer_json) {
+
+        if (answer_json === "S") {
+
+          Swal.fire(
+            "El libro se ha eliminado correctamente",
+            "",
+            "success"
+          );
+
+          props.history.push("/");
+
+        } else {
+          
+          Swal.fire("Oops", answer_json, "error");
+          
+        }
+      } else {
+        Swal.fire("Oops", "Ha ocurrido un error. Intente nuevamente.", "error");
+
+      }
+
+  }
+
 
   if (state.loading) {
     return <PageLoading />;

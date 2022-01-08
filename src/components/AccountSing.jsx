@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Constantes from "../Constantes";
+import PageLoading from "../components/PageLoading";
+
 import Swal from "../../node_modules/sweetalert2/dist/sweetalert2.all";
 import Cookies from "universal-cookie";
 import "./styles/AccountSing.css";
@@ -10,6 +12,7 @@ class AccountSing extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      loading: false,
       datos: {
         correo: "",
         clave: "",
@@ -25,15 +28,17 @@ class AccountSing extends React.Component {
 
   async Formulario(evento) {
     evento.preventDefault();
+    this.setState({loading: true});
 
     const cargaUtil = JSON.stringify(this.state.datos);
 
-    const respuesta = await fetch(`${Constantes.RUTA_API}/SignIn.php`, {
+    const respuesta = await fetch(`${Constantes.RUTA_API}/signin`, {
       method: "POST",
       body: cargaUtil,
     });
 
     const respuesta_json = await respuesta.json();
+    this.setState({loading: false});
 
     if (respuesta_json) {
       this.setState({ sesion: respuesta_json });
@@ -102,6 +107,10 @@ class AccountSing extends React.Component {
   }
 
   render() {
+
+    if (this.state.loading) {
+      return <PageLoading />;
+    }
     return (
       <React.Fragment>
         <section className="login">
