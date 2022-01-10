@@ -1059,6 +1059,7 @@
   "autores": [
     {
       "autor_name": "Thomas Greanias",
+      "id_author": "1",
       "published_books": [
         {
           "id": "l1",

@@ -7,7 +7,7 @@ import PageError from "../components/PageError";
 import BuyBooks from "../components/BuyBooks";
 
 import api from "../UseBooks";
-import { PayPalButton } from "react-paypal-button-v2";
+// import { PayPalButton } from "react-paypal-button-v2";
 import { useHistory } from "react-router-dom";
 
 const ShopCar = () => {
@@ -94,14 +94,14 @@ const ShopCar = () => {
                   CONFIRMAR COMPRA{" "}
                   <i className="medium material-icons">arrow_forward</i>{" "}
                 </Link>
-                <PayPalButton
+                {/*<PayPalButton
                   paypalOptions={paypalOtions}
                   buttonStyles={buttonStyles}
                   amount='5'
                   onSuccess={(data) => handlePaymentSuccess(data)}
                   onError={(error) => console.log(error)}
                   onCancel={(data) => console.log(data)}
-                />
+                />*/}
               </div>
             </section>
           </div>
