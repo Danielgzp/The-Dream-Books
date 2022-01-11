@@ -17,8 +17,6 @@ function BookDetails(props) {
     data: undefined,
   });
 
-  
-
   useEffect(() => {
     async function fetchData() {
       setState({ loading: true, error: null });
@@ -34,63 +32,47 @@ function BookDetails(props) {
       }
     }
     fetchData();
-  }, []);
+  }, [props]);
 
   const handleDeletebook = async (e) => {
-
     Swal.fire({
-        title: "¿Estás seguro?",
-        text: "¿Deseas eliminar este libro?",
-        icon: "warning",
-        showDenyButton: "true",
-        confirmButtonText: "Sí, deseo eliminar el libro"
-      }).then((result) => {
-          if (result.isConfirmed) {
-            deleteBook();
-            setState({ loading: true});
-
-          } else if (result.isDenied) {
-            Swal.fire('Cancelado', '', 'info')
-          }
-        })
-
+      title: "¿Estás seguro?",
+      text: "¿Deseas eliminar este libro?",
+      icon: "warning",
+      showDenyButton: "true",
+      confirmButtonText: "Sí, deseo eliminar el libro",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        deleteBook();
+        setState({ loading: true });
+      } else if (result.isDenied) {
+        Swal.fire("Cancelado", "", "info");
+      }
+    });
   };
 
-  async function deleteBook(e){
-
+  async function deleteBook(e) {
     const send = JSON.stringify(props.match.params.bookId);
 
-      const answer = await fetch(`${Constantes.RUTA_API}/deleteBook`, {
-        method: "POST",
-        body: send,
-      });
+    const answer = await fetch(`${Constantes.RUTA_API}/deleteBook`, {
+      method: "POST",
+      body: send,
+    });
 
-      const answer_json = await answer.json();
+    const answer_json = await answer.json();
 
-      if (answer_json) {
+    if (answer_json) {
+      if (answer_json === "S") {
+        Swal.fire("El libro se ha eliminado correctamente", "", "success");
 
-        if (answer_json === "S") {
-
-          Swal.fire(
-            "El libro se ha eliminado correctamente",
-            "",
-            "success"
-          );
-
-          props.history.push("/");
-
-        } else {
-          
-          Swal.fire("Oops", answer_json, "error");
-          
-        }
+        props.history.push("/");
       } else {
-        Swal.fire("Oops", "Ha ocurrido un error. Intente nuevamente.", "error");
-
+        Swal.fire("Oops", answer_json, "error");
       }
-
+    } else {
+      Swal.fire("Oops", "Ha ocurrido un error. Intente nuevamente.", "error");
+    }
   }
-
 
   if (state.loading) {
     return <PageLoading />;

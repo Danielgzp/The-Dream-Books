@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useContext, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
 import BookItem from "../components/BookItem";
@@ -10,17 +10,18 @@ import PageError from "../components/PageError";
 
 import Cookies from "universal-cookie";
 import Swal from "sweetalert2";
+import { AppContext } from "../context/AppContext";
 
 const Books = (props) => {
+  const { addToCart } = useContext(AppContext);
+
   const cookies = new Cookies();
 
   let bookName = props.match.params.bookName;
   bookName = bookName.replaceAll("-", " ");
 
-  const [shopping, setShopping] = useState({});
-
   const [book, setBook] = useState([]);
-  const [state, setState] = useState({
+  const [loading, setLoading] = useState({
     loading: false,
     error: null,
   });
@@ -28,15 +29,15 @@ const Books = (props) => {
 
   useEffect(() => {
     async function fetchData() {
-      setState({ loading: true, error: null });
+      setLoading({ loading: true, error: null });
       try {
         const data = await api.books.list("books");
         const autorData = await api.books.list("autores");
         setBook(data);
         setAutor(autorData);
-        setState({ loading: false });
+        setLoading({ loading: false });
       } catch (error) {
-        setState({ loading: false, error: error });
+        setLoading({ loading: false, error: error });
       }
     }
     fetchData();
@@ -67,7 +68,6 @@ const Books = (props) => {
 
     setFilteredBook(result);
     setFilteredAutor(results);
-    
   }, [book, autor, bookName, paramsBookAutor]);
 
   const handleClick = () => {
@@ -81,14 +81,14 @@ const Books = (props) => {
     }
   };
 
-   const handleClickAddToCart = () => {
+  const handleClickAddToCart = () => {
+    addToCart(filteredBook[0]);
+  };
 
-   }
-
-  if (state.loading) {
+  if (loading.loading) {
     return <PageLoading />;
   }
-  if (state.error) {
+  if (loading.error) {
     return <PageError />;
   }
 
@@ -101,9 +101,7 @@ const Books = (props) => {
           </div>
 
           {filteredBook.map((book) => (
-            <section className="section col l9 s12">
-              {console.log(filteredBook)}
-              {console.log(setShopping)}
+            <section className="section col l9 s12" key={"i"}>
               <div className="details-book col l12 s12 left">
                 <h2 className="book-title">{book.book_name}</h2>
                 <Link
@@ -116,12 +114,13 @@ const Books = (props) => {
                 >
                   {book.autor}
                 </Link>
-
-                <img
-                  src={book.books_image}
-                  alt="Portada del Libro"
-                  className="responsive-img book-image"
-                />
+                <figure className="book-image__container left">
+                  <img
+                    src={book.books_image}
+                    alt="Portada del Libro"
+                    className="responsive-img book-image left"
+                  />
+                </figure>
               </div>
 
               {cookies.get("privilegio") === "administrador" ||
@@ -137,7 +136,7 @@ const Books = (props) => {
                   </button>
 
                   <span className="book-price">
-                    4.99 <i className="material-icons">attach_money</i>
+                    {book.price} <i className="material-icons">attach_money</i>
                   </span>
                 </div>
               ) : (
@@ -152,7 +151,8 @@ const Books = (props) => {
                   </button>
 
                   <span className="book-price">
-                    4.99 <i className="material-icons">attach_money</i>
+                    {book.price}
+                    <i className="material-icons">attach_money</i>
                   </span>
                 </div>
               )}
@@ -160,26 +160,22 @@ const Books = (props) => {
                 <h2>DESCRIPCIÓN</h2>
                 <p>{book.description}</p>
               </div>
-            </section>
-          ))}
-        </div>
-
-        <div className="row">
-          <div className="col l12 s12">
-            <section className="section ">
-              <h2 className="title-books">LIBROS DEL MISMO AUTOR</h2>
-
-              {filteredAutor.map((autor) => (
+              <div className="author-books__list">
+                <h2 className="title-books">LIBROS DEL MISMO AUTOR</h2>
                 <ul className="list-books">
-                  {autor.published_books.map((book) => (
-                    <li>
-                      <BookItem book={book} key={book.id} />
-                    </li>
+                  {filteredAutor.map((autor) => (
+                    <React.Fragment key={autor.autor_name}>
+                      {autor.published_books.map((book) => (
+                        <li key={book.id}>
+                          <BookItem book={book} />
+                        </li>
+                      ))}
+                    </React.Fragment>
                   ))}
                 </ul>
-              ))}
+              </div>
             </section>
-          </div>
+          ))}
         </div>
       </main>
     </React.Fragment>

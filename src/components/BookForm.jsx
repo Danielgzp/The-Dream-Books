@@ -9,31 +9,29 @@ class BookForm extends React.Component {
   };
 
   //Función para guardar lo seleccionado en las datalist
-    handleInputChange = (e) => {
-      if(e.target.id === 'input-form1'){
-        var inputValue = document.getElementById("input-form1").value;
-        var options = document.getElementById("categories").childNodes;
-        for (var i = 0; i < options.length; i++) {
-          if (options[i].value === inputValue) {
+  handleInputChange = (e) => {
+    if (e.target.id === "input-form1") {
+      const inputValue = document.getElementById("input-form1").value;
+      const options = document.getElementById("categories").childNodes;
+      for (let i = 0; i < options.length; i++) {
+        if (options[i].value === inputValue) {
+          this.props.formValues.category = options[i].id;
 
-            this.props.formValues.category = options[i].id;
-
-            break;
-          }
-        }
-      }else{
-        var inputValue = document.getElementById("input-form2").value;
-        var options = document.getElementById("authors").childNodes;
-        for (var i = 0; i < options.length; i++) {
-          if (options[i].value === inputValue) {
-
-            this.props.formValues.author = options[i].id;
-
-            break;
-          }
+          break;
         }
       }
-  }
+    } else {
+      var inputValue = document.getElementById("input-form2").value;
+      var options = document.getElementById("authors").childNodes;
+      for (var i = 0; i < options.length; i++) {
+        if (options[i].value === inputValue) {
+          this.props.formValues.author = options[i].id;
+
+          break;
+        }
+      }
+    }
+  };
 
   render() {
     return (
@@ -52,14 +50,22 @@ class BookForm extends React.Component {
 
           <div className="form-group">
             <label>Author</label>
-            <input list="authors" id="input-form2" type="text" name="authors" onChange={this.handleInputChange}/>
+            <input
+              list="authors"
+              id="input-form2"
+              type="text"
+              name="authors"
+              onChange={this.handleInputChange}
+            />
             <datalist id="authors">
               {this.props.authors.map((author) => (
-                <option id={author.id_author} value={author.autor_name}></option>
+                <option
+                  id={author.id_author}
+                  value={author.autor_name}
+                ></option>
               ))}
             </datalist>
           </div>
-
 
           <div className="form-group">
             <label>Imagen del libro(url)</label>
@@ -116,12 +122,14 @@ class BookForm extends React.Component {
             />
             <datalist id="categories">
               {this.props.categories.map((categorie) => (
-                <option id={categorie.categorie_id} value={categorie.categorie_name}></option>
+                <option
+                  id={categorie.categorie_id}
+                  value={categorie.categorie_name}
+                ></option>
               ))}
             </datalist>
           </div>
 
-          
           <div className="buttons">
             <button onClick={this.handleClick} className="btn save-button left">
               Save

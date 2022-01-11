@@ -12,7 +12,7 @@ const Footer = () => {
               <h4 className="">The Dream Books</h4>
               <p className="footer-info">
                 Esta pagina fue desarrollada con el objetivo de trabajar el
-                proyecto de la materia de Algoritmo y Programacion II.
+                proyecto de la materias de Bases de Datos y Analisis y Diseño de Sistemas.
               </p>
             </div>
             <div className="col l4 offset-l2 s12">

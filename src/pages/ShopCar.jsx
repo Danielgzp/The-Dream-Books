@@ -1,23 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import CategoriesList from "../components/CategoriesList";
-import PageLoading from "../components/PageLoading";
-import PageError from "../components/PageError";
-import BuyBooks from "../components/BuyBooks";
+// import PageLoading from "../components/PageLoading";
+// import PageError from "../components/PageError";
+import CartItem from "../components/CartItem";
 
-import api from "../UseBooks";
-// import { PayPalButton } from "react-paypal-button-v2";
+import "./styles/ShopCar.css";
+
+import { PayPalButton } from "react-paypal-button-v2";
 import { useHistory } from "react-router-dom";
+import { useContext } from "react/cjs/react.development";
+import { AppContext } from "../context/AppContext";
+import Swal from "sweetalert2";
 
 const ShopCar = () => {
+  const { state, removeFromCart } = useContext(AppContext);
+  const { cart } = state;
 
-  const history = useHistory()
-  const [state, setState] = useState({
-    loading: false,
-    error: null,
-  });
-  const [books, setBooks] = useState([]);
+  const history = useHistory();
+  // const [loader, setLoader] = useState({
+  //   loading: false,
+  //   error: null,
+  // });
 
   const paypalOtions = {
     clientId:
@@ -40,70 +45,62 @@ const ShopCar = () => {
       //   payment: data,
       // };
       // addNewOrder(newOrder, history.push("/checkout/success"));
-      console.log('hecho')
-      history.push('/')
+      console.log("hecho");
+      history.push("/");
     }
   };
 
-  useEffect(() => {
-    async function fetchData() {
-      setState({ loading: true, error: null });
-
-      try {
-        const data = await api.books.list("books");
-        setBooks(data);
-        setState({
-          loading: false,
-        });
-      } catch (error) {
-        setState({ loading: false, error: error });
-      }
-    }
-    fetchData();
-  }, []);
-
-  if (state.loading) {
-    return <PageLoading />;
-  }
-  if (state.error) {
-    return <PageError />;
-  }
+  const handleRemoveFromCart = (book) => () => {
+    removeFromCart(book);
+    Swal.fire("Has eliminado el libro de tu carro de compras");
+  };
 
   return (
     <React.Fragment>
       <main className="container">
         <div className="row">
           <div className="col l3 s12">
-            <CategoriesList></CategoriesList>
+            <CategoriesList />
           </div>
           <div className="col l9 s12">
-            <section>
-              <h2 className="title-books">TU CARRITO DE COMPRAS</h2>
+            {cart.length === 0 ? (
+              <section>
+                <h2 className="title-books">
+                  Aun no has agregado libros a tu carro de compras
+                </h2>
+              </section>
+            ) : (
+              <section className="shop-cart">
+                <div className="shop-cart__container">
+                  <h2 className="title-books">TU CARRITO DE COMPRAS</h2>
+                  {cart.map((book) => (
+                    <CartItem
+                      book={book}
+                      handleRemove={handleRemoveFromCart(book)}
+                    ></CartItem>
+                  ))}
+                </div>
 
-              {/* <figure>
-                  <img src={books.books_image} alt="" />
-                </figure>
-                <h2>{books.book_name}</h2>
-                <h3>Autor</h3>
-                <h4>Price: </h4> */}
-              {books.map((book) => (
-                <BuyBooks book={book}></BuyBooks>
-              ))}
-              <div>
-                <Link className="btn black right">
-                  CONFIRMAR COMPRA{" "}
-                  <i className="medium material-icons">arrow_forward</i>{" "}
-                </Link>
-                {/*<PayPalButton
-                  paypalOptions={paypalOtions}
-                  buttonStyles={buttonStyles}
-                  amount='5'
-                  onSuccess={(data) => handlePaymentSuccess(data)}
-                  onError={(error) => console.log(error)}
-                  onCancel={(data) => console.log(data)}
-                />*/}
-              </div>
-            </section>
+                <div>
+                  <div>
+                    <Link id="buy-button" className="btn orange left">
+                      CONFIRMAR COMPRA{" "}
+                      <i className="medium material-icons">arrow_forward</i>{" "}
+                    </Link>
+                  </div>
+                  <div className="paypal-container center">
+                    <PayPalButton
+                      paypalOptions={paypalOtions}
+                      buttonStyles={buttonStyles}
+                      amount="5"
+                      onSuccess={(data) => handlePaymentSuccess(data)}
+                      onError={(error) => console.log(error)}
+                      onCancel={(data) => console.log(data)}
+                    />
+                  </div>
+                </div>
+              </section>
+            )}
           </div>
         </div>
       </main>

@@ -1,27 +1,29 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-
 import Cookies from "universal-cookie";
+
+import { AppContext } from "../context/AppContext";
 import "./styles/Header.css";
 
 const Header = () => {
   const cookies = new Cookies();
   const userName = cookies.get("nombre");
   const [query, setQuery] = useState("");
-
   let history = useHistory();
+  const { state } = useContext(AppContext);
+  const { cart } = state;
+  let totalPriceCar = 0;
+
+  cart.map((book) => {
+    totalPriceCar = Number(book.price) + totalPriceCar;
+
+    return totalPriceCar;
+  });
 
   const handleSubmit = (event) => {
     event.preventDefault();
     history.push(`/search/${query.replaceAll(" ", "-").toLowerCase()}`);
   };
-
-  /*const [shopping, setShopping] = useState(0);
-  const handleClick = (event) => {
-    setShopping(shopping + 1);
-  };
-
-  console.log(shopping);*/
 
   //Se comprueba si se inicio sesión como usuario, administrador, o si aún no se ha iniciado sesión
 
@@ -54,6 +56,7 @@ const Header = () => {
                   className="button-search right"
                   type="submit"
                   onClick={handleSubmit}
+                  
                 >
                   Buscar
                 </button>
@@ -76,23 +79,19 @@ const Header = () => {
                   {userName}
                 </li>
                 <li>
-                  {/* <li>
-                    <button
-                      type="button"
-                      onClick={handleClick}>+</button>
-                  </li> */}
                   <Link to="/compras">
                     <i className="material-icons left" id="icon-header">
                       shopping_cart
                     </i>
-                    0.00$
-                    <span className="number-shops">0</span>
+                    {cart.length > 0 ? (
+                      <React.Fragment>
+                        {totalPriceCar}$
+                        <span className="number-shops">{cart.length}</span>
+                      </React.Fragment>
+                    ) : (
+                      "0.00$"
+                    )}
                   </Link>
-                  {/* {numberProducts > 0 && (
-                      <div className="Header-alert">{numberProducts}</div>
-                    )} */}
-                  {/*  O simplemente tambien lo podemso hacer asi
-        {cart.length > 0 && <div className="Header-alert">{cart.length}</div>}  */}
                 </li>
                 <li>
                   <Link to="/salir/">

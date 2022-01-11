@@ -14,14 +14,14 @@ class BookEdit extends React.Component {
     loading: true,
     error: null,
     form: {
-      id: '',
+      id: "",
       books_image: "",
       book_name: "",
       description: "",
       download: "",
       price: "",
-      author: '',
-      category: '',
+      author: "",
+      category: "",
     },
     formCategories: [],
     formAuthors: [],
@@ -36,19 +36,23 @@ class BookEdit extends React.Component {
 
     try {
       const data = await api.books.read(this.props.match.params.bookId);
-      const dataCategories = await api.books.list("categories")
+      const dataCategories = await api.books.list("categories");
       const dataAuthors = await api.books.list("autores");
-      this.setState({ loading: false, form:{
-        id: data.id,
-        books_image: data.books_image,
-        book_name: data.book_name,
-        description: data.description,
-        download: data.download,
-        price: data.price,
-        author: '',
-        category: '',
-      }, formCategories: dataCategories, formAuthors: dataAuthors });
-
+      this.setState({
+        loading: false,
+        form: {
+          id: data.id,
+          books_image: data.books_image,
+          book_name: data.book_name,
+          description: data.description,
+          download: data.download,
+          price: data.price,
+          autor: data.autor,
+          category: "",
+        },
+        formCategories: dataCategories,
+        formAuthors: dataAuthors,
+      });
     } catch (error) {
       this.setState({ loading: false, error: error });
     }
@@ -73,16 +77,23 @@ class BookEdit extends React.Component {
 
   handleSubmit = async (e) => {
     e.preventDefault();
-    this.setState({ loading: true});
+    this.setState({ loading: true });
 
-    if(this.state.form.author === ''){
-      Swal.fire("Oops", "Tienes que seleccionar un autor que se encuentre en la lista o agregarlo", "error");
-      this.setState({ loading: false});
-    }else if(this.state.form.category === ''){
-      Swal.fire("Oops", "Tienes que seleccionar una categoría que se encuentre en la lista o agregarla", "error");
-      this.setState({ loading: false});
-    }else{
-
+    if (this.state.form.author === "") {
+      Swal.fire(
+        "Oops",
+        "Tienes que seleccionar un autor que se encuentre en la lista o agregarlo",
+        "error"
+      );
+      this.setState({ loading: false });
+    } else if (this.state.form.category === "") {
+      Swal.fire(
+        "Oops",
+        "Tienes que seleccionar una categoría que se encuentre en la lista o agregarla",
+        "error"
+      );
+      this.setState({ loading: false });
+    } else {
       const send = JSON.stringify(this.state.form);
 
       const answer = await fetch(`${Constantes.RUTA_API}/updateBook`, {
@@ -93,37 +104,18 @@ class BookEdit extends React.Component {
       const answer_json = await answer.json();
 
       if (answer_json) {
-        this.setState({ loading: false});
+        this.setState({ loading: false });
 
         if (answer_json === "S") {
-          Swal.fire(
-            "El libro se ha actualizado correctamente",
-            "",
-            "success"
-          );
+          Swal.fire("El libro se ha actualizado correctamente", "", "success");
 
           this.props.history.push("/");
-
         } else {
-          
           Swal.fire("Oops", answer_json, "error");
-
         }
       } else {
         Swal.fire("Oops", "Ha ocurrido un error. Intente nuevamente.", "error");
-
       }
-
-    // try {
-    //   await api.books.update(this.props.match.params.bookId, this.state.form);
-    //   Swal.fire(this.state.form.id_book);
-    //   this.setState({ loading: false });
-    //   this.props.history.push("/");
-    // } catch (error) {
-    //   this.setState({ loading: false, error: error });
-    // }
-
-    // Swal.fire("Los cambios han sido guardados exitosamente!");
     }
   };
 

@@ -1,10 +1,5 @@
 const API = "http://proyecto.x10.mx";
-
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-const randomNumber = (min = 0, max = 1) =>
-  Math.floor(Math.random() * (max - min + 1)) + min;
-const simulateNetworkLatency = (min = 30, max = 1500) =>
-  delay(randomNumber(min, max));
+//const API = "http://localhost:4001";
 
 async function UseBooks(endpoint, options = {}) {
   options.headers = {
@@ -12,7 +7,6 @@ async function UseBooks(endpoint, options = {}) {
     Accept: "application/json",
   };
 
-  await simulateNetworkLatency();
   const url = API + endpoint;
   const response = await fetch(url, options);
   const data = await response.json();

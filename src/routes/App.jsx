@@ -18,38 +18,41 @@ import BookDetails from "../pages/BookDetails";
 
 import ShopCar from "../pages/ShopCar";
 import AddCategoriesAndAuthors from "../pages/AddCategoriesAndAuthors";
+import AppProvider from "../context/AppContext";
 const App = () => {
   return (
-    <BrowserRouter>
-      <Layout>
-        <Switch>
-          <Route exact path="/" component={Index} />
-          <Route exact path="/iniciar-sesion/" component={SingIn} />
-          <Route
-            exact
-            path="/iniciar-sesion/crear-cuenta/"
-            component={CreateAccount}
-          />
-          <Route
-            exact
-            path="/categories/:categorieName"
-            component={Categories}
-          />
-          <Route exact path="/libros/:bookName" component={Books} />
+    <AppProvider>
+      <BrowserRouter>
+        <Layout>
+          <Switch>
+            <Route exact path="/" component={Index} />
+            <Route exact path="/iniciar-sesion/" component={SingIn} />
+            <Route
+              exact
+              path="/iniciar-sesion/crear-cuenta/"
+              component={CreateAccount}
+            />
+            <Route
+              exact
+              path="/categories/:categorieName"
+              component={Categories}
+            />
+            <Route exact path="/libros/:bookName" component={Books} />
 
-          <Route exact path="/new/book" component={BookNew} />
-          <Route exact path="/libro/:bookId" component={BookDetails} />
-          <Route exact path="/libro/:bookId/editar" component={BookEdit} />
+            <Route exact path="/new/book" component={BookNew} />
+            <Route exact path="/libro/:bookId" component={BookDetails} />
+            <Route exact path="/libro/:bookId/editar" component={BookEdit} />
 
-          <Route exact path="/search/:bookSearch" component={SearchPage} />
-          <Route exact path="/autor/:autorName" component={Authors} />
-          <Route exact path="/salir/" component={Logout} />
-          <Route exact path="/compras" component={ShopCar} />
-          <Route exact path="/add" component={AddCategoriesAndAuthors} />
-          <Route component={NotFound} />
-        </Switch>
-      </Layout>
-    </BrowserRouter>
+            <Route exact path="/search/:bookSearch" component={SearchPage} />
+            <Route exact path="/autor/:autorName" component={Authors} />
+            <Route exact path="/salir/" component={Logout} />
+            <Route exact path="/compras" component={ShopCar} />
+            <Route exact path="/add" component={AddCategoriesAndAuthors} />
+            <Route component={NotFound} />
+          </Switch>
+        </Layout>
+      </BrowserRouter>
+    </AppProvider>
   );
 };
 

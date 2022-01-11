@@ -1,0 +1,15 @@
+.shop-cart{
+    display: flex;
+    flex-direction: column;
+}
+.shop-cart__container{
+    width: 100%;
+}
+.buy-button:hover{
+    background-color: black;
+}
+.paypal-container{
+    width: 50%;
+    margin-top: 60px;
+    position: calc(50% - 200px);
+}

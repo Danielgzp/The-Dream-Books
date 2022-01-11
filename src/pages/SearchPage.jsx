@@ -12,6 +12,7 @@ const SearchPage = (props) => {
   bookSearch = bookSearch.replaceAll("-", " ");
 
   const [books, setBooks] = useState([]);
+  const [authors, setAuthors] = useState([])
   const [state, setState] = useState({
     loading: false,
     error: null,
@@ -23,6 +24,7 @@ const SearchPage = (props) => {
       try {
         const data = await api.books.list("books");
         setBooks(data);
+        setAuthors(data)
         setState({ loading: false });
       } catch (error) {
         setState({ loading: false, error: error });
@@ -31,6 +33,7 @@ const SearchPage = (props) => {
     fetchData();
   }, []);
   const [filteredBook, setFilteredBook] = useState(books);
+  const [filteredAuthor, setFilteredAuthor] = useState(authors)
 
   useMemo(() => {
     const result = books.filter((book) => {
@@ -38,7 +41,13 @@ const SearchPage = (props) => {
         .toLowerCase()
         .includes(bookSearch.toLowerCase());
     });
+    const authorSearch = books.filter((book) => {
+      return `${book.autor}`
+        .toLowerCase()
+        .includes(bookSearch.toLowerCase());
+    });
     setFilteredBook(result);
+    setFilteredAuthor(authorSearch)
   }, [books, bookSearch]);
 
   if (state.loading) {
@@ -48,7 +57,7 @@ const SearchPage = (props) => {
     return <PageError />;
   }
 
-  if (filteredBook.length === 0) {
+  if (filteredBook.length === 0 && filteredAuthor.length === 0) {
     return (
       <main className="section">
         <div className="container">
@@ -92,6 +101,11 @@ const SearchPage = (props) => {
               <div>
                 <ul className="list-books">
                   {filteredBook.map((book) => (
+                    <li key={book.id}>
+                      <BookItem book={book} />
+                    </li>
+                  ))}
+                  {filteredAuthor.map((book) => (
                     <li key={book.id}>
                       <BookItem book={book} />
                     </li>
