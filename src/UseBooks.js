@@ -1,5 +1,6 @@
 const API = "http://proyecto.x10.mx";
 //const API = "http://localhost:4001";
+//http://proyecto.x10.mx/books/page/1
 
 async function UseBooks(endpoint, options = {}) {
   options.headers = {
@@ -18,6 +19,9 @@ const api = {
   books: {
     list(final) {
       return UseBooks(`/${final}`);
+    },
+    listPages(page){
+      return UseBooks(`/books/page/${page}`)
     },
     create(book) {
       return UseBooks("/books", {

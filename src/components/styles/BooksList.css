@@ -1,5 +1,6 @@
 .list-books{
     margin-top: 30px;
+    margin-bottom: -20px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -38,4 +39,21 @@
     width: 75px;
     background: #a1a1a1;
     content: '';
+}
+.pagination{
+    width: 100%;
+}
+#page-button{
+    
+}
+/* #page-button p{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#page-button i{
+    font-size: 2.6rem;
+    margin-bottom: 5px;
+} */
+#page-button:hover{
+    background-color: black !important;
 }

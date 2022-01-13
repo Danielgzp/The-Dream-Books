@@ -6,6 +6,7 @@ import PageLoading from "../components/PageLoading";
 import PageError from "../components/PageError";
 
 import api from "../UseBooks";
+import Swal from "sweetalert2";
 
 const BooksList = () => {
   const [state, setState] = useState({
@@ -14,13 +15,14 @@ const BooksList = () => {
   });
   const [books, setBooks] = useState([]);
 
+  let [numberPage, setNumberPage] = useState(1);
+
   useEffect(() => {
     async function fetchData() {
       setState({ loading: true, error: null });
-
       try {
-        const data = await api.books.list("books");
-        setBooks(data);
+        const data = await api.books.listPages(numberPage);
+        setBooks(data.results);
         setState({
           loading: false,
         });
@@ -29,7 +31,50 @@ const BooksList = () => {
       }
     }
     fetchData();
-  }, []);
+  }, [numberPage]);
+
+  const handleClickNext = () => {
+    if (numberPage >= 2) {
+      Swal.fire("No hay mas libros");
+    } else {
+      setNumberPage((numberPage = numberPage + 1));
+      async function fetchData() {
+        setState({ loading: true, error: null });
+        try {
+          const dataNext = await api.books.listPages(numberPage);
+          setBooks(dataNext.results);
+          setState({
+            loading: false,
+          });
+        } catch (error) {
+          setState({ loading: false, error: error });
+        }
+      }
+      return fetchData();
+    }
+  };
+
+  const handleClickPrevPage = () => {
+    if (numberPage <= 1) {
+      Swal.fire("No hay mas libros");
+    } else {
+      async function fetchData() {
+        setNumberPage((numberPage = numberPage - 1));
+        setState({ loading: true, error: null });
+        try {
+          const dataPrev = await api.books.listPages(numberPage);
+          setBooks(dataPrev.results);
+          setState({
+            loading: false,
+          });
+        } catch (error) {
+          setState({ loading: false, error: error });
+        }
+      }
+
+      return fetchData();
+    }
+  };
 
   if (state.loading) {
     return <PageLoading />;
@@ -50,10 +95,26 @@ const BooksList = () => {
           ))}
         </ul>
 
-        {/* <div className="pagination">
-                    <button type="button" onClick={handleClickPrev} >Prev Page</button>
-                    <button type="button" onClick={handleClickNext} >Next Page</button> 
-                        <div className="number-pages">
+        <div className="pagination">
+          <button
+            type="button"
+            id="page-button"
+            className="btn orange"
+            onClick={handleClickPrevPage}
+          >
+            {/* <i className="large material-icons">navigate_before</i> */}
+            Prev Page
+          </button>
+          <button
+            id="page-button"
+            type="button"
+            className="btn orange right"
+            onClick={handleClickNext}
+          >
+            Next Page
+            {/* <i className="large material-icons">navigate_next</i> */}
+          </button>
+          {/* <div className="number-pages">
                             <ul>
                                 <li>
                                     <Link to="#">1</Link>
@@ -80,8 +141,8 @@ const BooksList = () => {
                         </div>
                     <div className="counter-pages">
                         <p>Pagina 1 de 216</p>
-                    </div>
-                </div> */}
+                    </div> */}
+        </div>
       </div>
     </section>
   );

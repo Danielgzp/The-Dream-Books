@@ -38,22 +38,37 @@ const BookItem = ({ book }) => {
           {book.autor}
         </Link>
       </div>
-      <div className="descargar">
-        <Link
-          className=""
-          to={`/libros/${book.book_name}`
-            .toLowerCase()
-            .replaceAll(" ", "-")
-            .normalize("NFD")
-            .replace(/[?¿¡!\u0300-\u036f]/g, "")}
-        >
-          COMPRAR LIBRO
-        </Link>
-      </div>
-      {cookies.get("privilegio") === "administrador" && (
-        <div>
-          <Link to={`/libro/${book.id}`} className="btn edit-book">
-            <i className="material-icons">edit</i> Editar Libro
+      {cookies.get("privilegio") === "administrador" ? (
+        <React.Fragment>
+          <div className="descargar">
+            <Link
+              className=""
+              to={`/libros/${book.book_name}`
+                .toLowerCase()
+                .replaceAll(" ", "-")
+                .normalize("NFD")
+                .replace(/[?¿¡!\u0300-\u036f]/g, "")}
+            >
+              VER LIBRO
+            </Link>
+          </div>
+          <div>
+            <Link to={`/libro/${book.id}`} className="btn edit-book">
+              <i className="material-icons">edit</i> Editar Libro
+            </Link>
+          </div>
+        </React.Fragment>
+      ) : (
+        <div className="descargar">
+          <Link
+            className=""
+            to={`/libros/${book.book_name}`
+              .toLowerCase()
+              .replaceAll(" ", "-")
+              .normalize("NFD")
+              .replace(/[?¿¡!\u0300-\u036f]/g, "")}
+          >
+            COMPRAR LIBRO
           </Link>
         </div>
       )}

@@ -70,19 +70,12 @@ const Books = (props) => {
     setFilteredAutor(results);
   }, [book, autor, bookName, paramsBookAutor]);
 
-  const handleClick = () => {
-    if (
-      cookies.get("privilegio") === "administrador" ||
-      cookies.get("privilegio") === "usuario"
-    ) {
-      Swal.fire("Descargando el libro");
-    } else {
-      Swal.fire("Debes crear una cuenta para poder acceder a los libros");
-    }
-  };
-
   const handleClickAddToCart = () => {
-    addToCart(filteredBook[0]);
+    if (cookies.get("privilegio") === "usuario") {
+      addToCart(filteredBook[0]);
+    } else {
+      Swal.fire("Debes iniciar sesion para acceder a los libros");
+    }
   };
 
   if (loading.loading) {
@@ -123,28 +116,19 @@ const Books = (props) => {
                 </figure>
               </div>
 
-              {cookies.get("privilegio") === "administrador" ||
-              cookies.get("privilegio") === "usuario" ? (
+              {cookies.get("privilegio") === "administrador" ? (
                 <div className="downloads-container bottom">
-                  <button
-                    type="button"
-                    className="btn download-button"
-                    onClick={handleClickAddToCart}
-                  >
-                    <i className="large material-icons">add</i>
-                    <span className="add-text">AÑADIR AL CARRO</span>
-                  </button>
-
-                  <span className="book-price">
-                    {book.price} <i className="material-icons">attach_money</i>
-                  </span>
+                  <a className="btn download-button" href={book.download}>
+                    <i className="large material-icons">download</i>
+                    <span className="add-text">DECARGAR LIBRO</span>
+                  </a>
                 </div>
               ) : (
                 <div className="downloads-container">
                   <button
                     type="button"
                     className="btn download-button"
-                    onClick={handleClick}
+                    onClick={handleClickAddToCart}
                   >
                     <i className="large material-icons">add</i>
                     <span className="add-text">AÑADIR AL CARRO</span>
