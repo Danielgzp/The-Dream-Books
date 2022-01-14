@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import CategoriesList from "../components/CategoriesList";
 // import PageLoading from "../components/PageLoading";
@@ -77,26 +76,26 @@ const ShopCar = () => {
                     <CartItem
                       book={book}
                       handleRemove={handleRemoveFromCart(book)}
+                      key={book.id}
                     ></CartItem>
                   ))}
                 </div>
 
                 <div>
                   <div>
-                    <Link id="buy-button" className="btn orange left">
-                      CONFIRMAR COMPRA{" "}
-                      <i className="medium material-icons">arrow_forward</i>{" "}
-                    </Link>
+                    <h3 className="center">CONFIRMAR COMPRA </h3>
                   </div>
-                  <div className="paypal-container center">
-                    <PayPalButton
-                      paypalOptions={paypalOtions}
-                      buttonStyles={buttonStyles}
-                      amount="5"
-                      onSuccess={(data) => handlePaymentSuccess(data)}
-                      onError={(error) => console.log(error)}
-                      onCancel={(data) => console.log(data)}
-                    />
+                  <div className="paypal-container">
+                    <div className="paypal-button__container">
+                      <PayPalButton
+                        paypalOptions={paypalOtions}
+                        buttonStyles={buttonStyles}
+                        amount="5"
+                        onSuccess={(data) => handlePaymentSuccess(data)}
+                        onError={(error) => console.log(error)}
+                        onCancel={(data) => console.log(data)}
+                      />
+                    </div>
                   </div>
                 </div>
               </section>

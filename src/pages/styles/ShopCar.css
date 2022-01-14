@@ -9,7 +9,11 @@
     background-color: black;
 }
 .paypal-container{
-    width: 50%;
-    margin-top: 60px;
-    position: calc(50% - 200px);
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.paypal-button__container{
+    width: 350px;
 }
