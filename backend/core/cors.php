@@ -3,5 +3,5 @@
 	header("Access-Control-Allow-Origin: $dominio");
 	header("Access-Control-Allow-Headers: content-type");
 	header("Access-Control-Allow-Methods: OPTIONS, GET, PUT, POST, DELETE");
-
+	header('Content-Type: application/json');
 ?>

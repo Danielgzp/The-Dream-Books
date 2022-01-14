@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^books/page/(.+)$$ index.php?page=$1&pagination=$2
+RewriteRule ^([a-zA-Z]+)/(.+)$$ index.php?page=$1&id=$2
+RewriteRule ^([a-zA-Z]+)$ index.php?page=$1
