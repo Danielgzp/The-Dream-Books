@@ -358,7 +358,7 @@ CREATE TABLE IF NOT EXISTS `purchase` (
   `id_user` int(11) NOT NULL DEFAULT 0,
   `payment_method` varchar(100) DEFAULT NULL,
   `paid` int(5) NOT NULL DEFAULT 0,
-  `purchase_date` varchar(50) NOT NULL DEFAULT '0'
+  `purchase_date` DATETIME NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
